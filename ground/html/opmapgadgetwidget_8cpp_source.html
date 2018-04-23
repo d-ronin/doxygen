@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">5035a2e</span>
+   &#160;<span id="projectnumber">0548c47</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -2007,7 +2007,7 @@ $(document).ready(function(){initNavTree('opmapgadgetwidget_8cpp_source.html',''
 <div class="line"><a name="l01953"></a><span class="lineno"> 1953</span>&#160;{</div>
 <div class="line"><a name="l01954"></a><span class="lineno"> 1954</span>&#160;</div>
 <div class="line"><a name="l01955"></a><span class="lineno"> 1955</span>&#160;    <span class="comment">// First, ask to ensure this is what the user wants to do</span></div>
-<div class="line"><a name="l01956"></a><span class="lineno"> 1956</span>&#160;    QMessageBox msgBox;</div>
+<div class="line"><a name="l01956"></a><span class="lineno"> 1956</span>&#160;    QMessageBox msgBox(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l01957"></a><span class="lineno"> 1957</span>&#160;    msgBox.setText(tr(<span class="stringliteral">&quot;Are you sure you want to clear waypoints?&quot;</span>));</div>
 <div class="line"><a name="l01958"></a><span class="lineno"> 1958</span>&#160;    msgBox.setInformativeText(tr(<span class="stringliteral">&quot;All associated data will be lost.&quot;</span>));</div>
 <div class="line"><a name="l01959"></a><span class="lineno"> 1959</span>&#160;    msgBox.setStandardButtons(QMessageBox::Yes | QMessageBox::No);</div>

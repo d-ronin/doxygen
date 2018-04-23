@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">5035a2e</span>
+   &#160;<span id="projectnumber">0548c47</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -132,52 +132,51 @@ $(document).ready(function(){initNavTree('pfdqmlgadgetoptionspage_8cpp_source.ht
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="uavobjectmanager_8h.html">uavobjects/uavobjectmanager.h</a>&quot;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="uavdataobject_8h.html">uavobjects/uavdataobject.h</a>&quot;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;QFileDialog&gt;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;QtAlgorithms&gt;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;QStringList&gt;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_pfd_qml_gadget_options_page.html#a2b2c06cfb1de3aeb6024153d4c14bc89">   27</a></span>&#160;<a class="code" href="class_pfd_qml_gadget_options_page.html#a2b2c06cfb1de3aeb6024153d4c14bc89">PfdQmlGadgetOptionsPage::PfdQmlGadgetOptionsPage</a>(<a class="code" href="class_pfd_qml_gadget_configuration.html">PfdQmlGadgetConfiguration</a> *config, QObject *parent)</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    : IOptionsPage(parent)</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    , m_config(config)</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">// creates options page widget (uses the UI file)</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_pfd_qml_gadget_options_page.html#ae93296a6ba03258443fbf00c3a2bec21">   34</a></span>&#160;QWidget *<a class="code" href="class_pfd_qml_gadget_options_page.html#ae93296a6ba03258443fbf00c3a2bec21">PfdQmlGadgetOptionsPage::createPage</a>(QWidget *parent)</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    options_page = <span class="keyword">new</span> Ui::PfdQmlGadgetOptionsPage();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">// main widget</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    QWidget *optionsPageWidget = <span class="keyword">new</span> QWidget(parent);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// main layout</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    options_page-&gt;setupUi(optionsPageWidget);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">// Restore the contents from the settings:</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    options_page-&gt;qmlSourceFile-&gt;setExpectedKind(Utils::PathChooser::File);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    options_page-&gt;qmlSourceFile-&gt;setPromptDialogFilter(tr(<span class="stringliteral">&quot;QML file (*.qml)&quot;</span>));</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    options_page-&gt;qmlSourceFile-&gt;setPromptDialogTitle(tr(<span class="stringliteral">&quot;Choose QML file&quot;</span>));</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    options_page-&gt;qmlSourceFile-&gt;setPath(m_config-&gt;<a class="code" href="class_pfd_qml_gadget_configuration.html#a04e7dc7124f00f2af8f09f7d005f4e30">qmlFile</a>());</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> optionsPageWidget;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_pfd_qml_gadget_options_page.html#a5bd6100058d1eadcba93dde902bf1013">   57</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pfd_qml_gadget_options_page.html#a5bd6100058d1eadcba93dde902bf1013">PfdQmlGadgetOptionsPage::apply</a>()</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    m_config-&gt;<a class="code" href="class_pfd_qml_gadget_configuration.html#add530fb1fb1a12917018e7dc239e2635">setQmlFile</a>(options_page-&gt;qmlSourceFile-&gt;path());</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_pfd_qml_gadget_options_page.html#af1bb22d6d6f54295e1ae576da4f9f89d">   62</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pfd_qml_gadget_options_page.html#af1bb22d6d6f54295e1ae576da4f9f89d">PfdQmlGadgetOptionsPage::finish</a>()</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;QtAlgorithms&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;QStringList&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_pfd_qml_gadget_options_page.html#a2b2c06cfb1de3aeb6024153d4c14bc89">   26</a></span>&#160;<a class="code" href="class_pfd_qml_gadget_options_page.html#a2b2c06cfb1de3aeb6024153d4c14bc89">PfdQmlGadgetOptionsPage::PfdQmlGadgetOptionsPage</a>(<a class="code" href="class_pfd_qml_gadget_configuration.html">PfdQmlGadgetConfiguration</a> *config, QObject *parent)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    : IOptionsPage(parent)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    , m_config(config)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">// creates options page widget (uses the UI file)</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_pfd_qml_gadget_options_page.html#ae93296a6ba03258443fbf00c3a2bec21">   33</a></span>&#160;QWidget *<a class="code" href="class_pfd_qml_gadget_options_page.html#ae93296a6ba03258443fbf00c3a2bec21">PfdQmlGadgetOptionsPage::createPage</a>(QWidget *parent)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    options_page = <span class="keyword">new</span> Ui::PfdQmlGadgetOptionsPage();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">// main widget</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    QWidget *optionsPageWidget = <span class="keyword">new</span> QWidget(parent);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// main layout</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    options_page-&gt;setupUi(optionsPageWidget);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// Restore the contents from the settings:</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    options_page-&gt;qmlSourceFile-&gt;setExpectedKind(Utils::PathChooser::File);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    options_page-&gt;qmlSourceFile-&gt;setPromptDialogFilter(tr(<span class="stringliteral">&quot;QML file (*.qml)&quot;</span>));</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    options_page-&gt;qmlSourceFile-&gt;setPromptDialogTitle(tr(<span class="stringliteral">&quot;Choose QML file&quot;</span>));</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    options_page-&gt;qmlSourceFile-&gt;setPath(m_config-&gt;<a class="code" href="class_pfd_qml_gadget_configuration.html#a04e7dc7124f00f2af8f09f7d005f4e30">qmlFile</a>());</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> optionsPageWidget;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_pfd_qml_gadget_options_page.html#a5bd6100058d1eadcba93dde902bf1013">   56</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pfd_qml_gadget_options_page.html#a5bd6100058d1eadcba93dde902bf1013">PfdQmlGadgetOptionsPage::apply</a>()</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    m_config-&gt;<a class="code" href="class_pfd_qml_gadget_configuration.html#add530fb1fb1a12917018e7dc239e2635">setQmlFile</a>(options_page-&gt;qmlSourceFile-&gt;path());</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_pfd_qml_gadget_options_page.html#af1bb22d6d6f54295e1ae576da4f9f89d">   61</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pfd_qml_gadget_options_page.html#af1bb22d6d6f54295e1ae576da4f9f89d">PfdQmlGadgetOptionsPage::finish</a>()</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
 <div class="ttc" id="class_pfd_qml_gadget_configuration_html_a04e7dc7124f00f2af8f09f7d005f4e30"><div class="ttname"><a href="class_pfd_qml_gadget_configuration.html#a04e7dc7124f00f2af8f09f7d005f4e30">PfdQmlGadgetConfiguration::qmlFile</a></div><div class="ttdeci">QString qmlFile() const </div><div class="ttdef"><b>Definition:</b> <a href="pfdqmlgadgetconfiguration_8h_source.html#l00032">pfdqmlgadgetconfiguration.h:32</a></div></div>
 <div class="ttc" id="pluginmanager_8h_html"><div class="ttname"><a href="pluginmanager_8h.html">pluginmanager.h</a></div></div>
-<div class="ttc" id="class_pfd_qml_gadget_options_page_html_af1bb22d6d6f54295e1ae576da4f9f89d"><div class="ttname"><a href="class_pfd_qml_gadget_options_page.html#af1bb22d6d6f54295e1ae576da4f9f89d">PfdQmlGadgetOptionsPage::finish</a></div><div class="ttdeci">void finish()</div><div class="ttdef"><b>Definition:</b> <a href="pfdqmlgadgetoptionspage_8cpp_source.html#l00062">pfdqmlgadgetoptionspage.cpp:62</a></div></div>
-<div class="ttc" id="class_pfd_qml_gadget_options_page_html_a5bd6100058d1eadcba93dde902bf1013"><div class="ttname"><a href="class_pfd_qml_gadget_options_page.html#a5bd6100058d1eadcba93dde902bf1013">PfdQmlGadgetOptionsPage::apply</a></div><div class="ttdeci">void apply()</div><div class="ttdef"><b>Definition:</b> <a href="pfdqmlgadgetoptionspage_8cpp_source.html#l00057">pfdqmlgadgetoptionspage.cpp:57</a></div></div>
+<div class="ttc" id="class_pfd_qml_gadget_options_page_html_af1bb22d6d6f54295e1ae576da4f9f89d"><div class="ttname"><a href="class_pfd_qml_gadget_options_page.html#af1bb22d6d6f54295e1ae576da4f9f89d">PfdQmlGadgetOptionsPage::finish</a></div><div class="ttdeci">void finish()</div><div class="ttdef"><b>Definition:</b> <a href="pfdqmlgadgetoptionspage_8cpp_source.html#l00061">pfdqmlgadgetoptionspage.cpp:61</a></div></div>
+<div class="ttc" id="class_pfd_qml_gadget_options_page_html_a5bd6100058d1eadcba93dde902bf1013"><div class="ttname"><a href="class_pfd_qml_gadget_options_page.html#a5bd6100058d1eadcba93dde902bf1013">PfdQmlGadgetOptionsPage::apply</a></div><div class="ttdeci">void apply()</div><div class="ttdef"><b>Definition:</b> <a href="pfdqmlgadgetoptionspage_8cpp_source.html#l00056">pfdqmlgadgetoptionspage.cpp:56</a></div></div>
 <div class="ttc" id="class_pfd_qml_gadget_configuration_html_add530fb1fb1a12917018e7dc239e2635"><div class="ttname"><a href="class_pfd_qml_gadget_configuration.html#add530fb1fb1a12917018e7dc239e2635">PfdQmlGadgetConfiguration::setQmlFile</a></div><div class="ttdeci">void setQmlFile(const QString &amp;fileName)</div><div class="ttdef"><b>Definition:</b> <a href="pfdqmlgadgetconfiguration_8h_source.html#l00030">pfdqmlgadgetconfiguration.h:30</a></div></div>
 <div class="ttc" id="uavdataobject_8h_html"><div class="ttname"><a href="uavdataobject_8h.html">uavdataobject.h</a></div></div>
 <div class="ttc" id="pfdqmlgadgetconfiguration_8h_html"><div class="ttname"><a href="pfdqmlgadgetconfiguration_8h.html">pfdqmlgadgetconfiguration.h</a></div></div>
-<div class="ttc" id="class_pfd_qml_gadget_options_page_html_a2b2c06cfb1de3aeb6024153d4c14bc89"><div class="ttname"><a href="class_pfd_qml_gadget_options_page.html#a2b2c06cfb1de3aeb6024153d4c14bc89">PfdQmlGadgetOptionsPage::PfdQmlGadgetOptionsPage</a></div><div class="ttdeci">PfdQmlGadgetOptionsPage(PfdQmlGadgetConfiguration *config, QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="pfdqmlgadgetoptionspage_8cpp_source.html#l00027">pfdqmlgadgetoptionspage.cpp:27</a></div></div>
+<div class="ttc" id="class_pfd_qml_gadget_options_page_html_a2b2c06cfb1de3aeb6024153d4c14bc89"><div class="ttname"><a href="class_pfd_qml_gadget_options_page.html#a2b2c06cfb1de3aeb6024153d4c14bc89">PfdQmlGadgetOptionsPage::PfdQmlGadgetOptionsPage</a></div><div class="ttdeci">PfdQmlGadgetOptionsPage(PfdQmlGadgetConfiguration *config, QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="pfdqmlgadgetoptionspage_8cpp_source.html#l00026">pfdqmlgadgetoptionspage.cpp:26</a></div></div>
 <div class="ttc" id="class_pfd_qml_gadget_configuration_html"><div class="ttname"><a href="class_pfd_qml_gadget_configuration.html">PfdQmlGadgetConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="pfdqmlgadgetconfiguration_8h_source.html#l00023">pfdqmlgadgetconfiguration.h:23</a></div></div>
-<div class="ttc" id="class_pfd_qml_gadget_options_page_html_ae93296a6ba03258443fbf00c3a2bec21"><div class="ttname"><a href="class_pfd_qml_gadget_options_page.html#ae93296a6ba03258443fbf00c3a2bec21">PfdQmlGadgetOptionsPage::createPage</a></div><div class="ttdeci">QWidget * createPage(QWidget *parent)</div><div class="ttdef"><b>Definition:</b> <a href="pfdqmlgadgetoptionspage_8cpp_source.html#l00034">pfdqmlgadgetoptionspage.cpp:34</a></div></div>
+<div class="ttc" id="class_pfd_qml_gadget_options_page_html_ae93296a6ba03258443fbf00c3a2bec21"><div class="ttname"><a href="class_pfd_qml_gadget_options_page.html#ae93296a6ba03258443fbf00c3a2bec21">PfdQmlGadgetOptionsPage::createPage</a></div><div class="ttdeci">QWidget * createPage(QWidget *parent)</div><div class="ttdef"><b>Definition:</b> <a href="pfdqmlgadgetoptionspage_8cpp_source.html#l00033">pfdqmlgadgetoptionspage.cpp:33</a></div></div>
 <div class="ttc" id="pfdqmlgadgetoptionspage_8h_html"><div class="ttname"><a href="pfdqmlgadgetoptionspage_8h.html">pfdqmlgadgetoptionspage.h</a></div></div>
 <div class="ttc" id="uavobjectmanager_8h_html"><div class="ttname"><a href="uavobjectmanager_8h.html">uavobjectmanager.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

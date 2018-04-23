@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">5035a2e</span>
+   &#160;<span id="projectnumber">0548c47</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -170,7 +170,7 @@ $(document).ready(function(){initNavTree('biascalibrationpage_8cpp_source.html',
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">void</span> BiasCalibrationPage::performCalibration()</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="group___setup_wizard.html#gabcd1c897e235b0da46ca5f032229b4c1">getWizard</a>()-&gt;getConnectionManager()-&gt;isConnected()) {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        QMessageBox msgBox;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        QMessageBox msgBox(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        msgBox.setText(tr(<span class="stringliteral">&quot;A flight controller must be connected to your computer to perform bias &quot;</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                          <span class="stringliteral">&quot;calculations.\nPlease connect your flight controller to your computer &quot;</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                          <span class="stringliteral">&quot;and try again.&quot;</span>));</div>
@@ -228,7 +228,7 @@ $(document).ready(function(){initNavTree('biascalibrationpage_8cpp_source.html',
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;{</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    stopCalibration();</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    QMessageBox msgBox;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    QMessageBox msgBox(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    msgBox.setText(tr(<span class="stringliteral">&quot;Calibration timed out&quot;</span>));</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    msgBox.setStandardButtons(QMessageBox::Ok);</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    msgBox.setDefaultButton(QMessageBox::Ok);</div>
@@ -260,7 +260,7 @@ $(document).ready(function(){initNavTree('biascalibrationpage_8cpp_source.html',
 <div class="ttc" id="group___setup_wizard_html_gaba1eaacfcae4953d307f0be06b70002b"><div class="ttname"><a href="group___setup_wizard.html#gaba1eaacfcae4953d307f0be06b70002b">BiasCalibrationPage::isComplete</a></div><div class="ttdeci">bool isComplete() const </div><div class="ttdef"><b>Definition:</b> <a href="biascalibrationpage_8cpp_source.html#l00055">biascalibrationpage.cpp:55</a></div></div>
 <div class="ttc" id="class_abstract_wizard_page_html"><div class="ttname"><a href="class_abstract_wizard_page.html">AbstractWizardPage</a></div><div class="ttdef"><b>Definition:</b> <a href="abstractwizardpage_8h_source.html#l00036">abstractwizardpage.h:36</a></div></div>
 <div class="ttc" id="setupwizard_8h_html"><div class="ttname"><a href="setupwizard_8h.html">setupwizard.h</a></div></div>
-<div class="ttc" id="group___config_plugin_html_ga0c3aedb47a4bab6ef55317de7d13d15a"><div class="ttname"><a href="group___config_plugin.html#ga0c3aedb47a4bab6ef55317de7d13d15a">Calibration::doStartBiasAndLeveling</a></div><div class="ttdeci">void doStartBiasAndLeveling()</div><div class="ttdoc">Start collecting data while vehicle is level. </div><div class="ttdef"><b>Definition:</b> <a href="calibration_8cpp_source.html#l00481">calibration.cpp:481</a></div></div>
+<div class="ttc" id="group___config_plugin_html_ga0c3aedb47a4bab6ef55317de7d13d15a"><div class="ttname"><a href="group___config_plugin.html#ga0c3aedb47a4bab6ef55317de7d13d15a">Calibration::doStartBiasAndLeveling</a></div><div class="ttdeci">void doStartBiasAndLeveling()</div><div class="ttdoc">Start collecting data while vehicle is level. </div><div class="ttdef"><b>Definition:</b> <a href="calibration_8cpp_source.html#l00482">calibration.cpp:482</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

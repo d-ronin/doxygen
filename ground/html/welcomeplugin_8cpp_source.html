@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">5035a2e</span>
+   &#160;<span id="projectnumber">0548c47</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -141,45 +141,44 @@ $(document).ready(function(){initNavTree('welcomeplugin_8cpp_source.html','');})
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &lt;QtCore/QtPlugin&gt;</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &lt;QAction&gt;</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &lt;QMenu&gt;</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &lt;QMessageBox&gt;</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &lt;QPushButton&gt;</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">using namespace </span>Welcome::Internal;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;WelcomePlugin::WelcomePlugin()</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    : m_welcomeMode(nullptr)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;WelcomePlugin::~WelcomePlugin()</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">if</span> (m_welcomeMode) {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        removeObject(m_welcomeMode);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        m_welcomeMode-&gt;deleteLater();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">bool</span> WelcomePlugin::initialize(<span class="keyword">const</span> QStringList &amp;arguments, QString *error_message)</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    Q_UNUSED(arguments)</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    Q_UNUSED(error_message)</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    QSettings *qSettings = Core::ICore::instance()-&gt;settings();</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    QString instUUID =</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        qSettings-&gt;value(&quot;Plugins/<a class="code" href="class_usage_stats_plugin.html">UsageStatsPlugin</a>/<a class="code" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>/UsageStatistics/InstallationUUID&quot;)</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            .toString();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    m_welcomeMode = new WelcomeMode(instUUID);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    addObject(m_welcomeMode);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    return true;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_welcome_1_1_internal_1_1_welcome_plugin.html">WelcomePlugin</a>::extensionsInitialized()</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;{</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="group___core_plugin.html#ga756ec59f5104cce0abf8a6990a2bba2c">Core::ModeManager::instance</a>()-&gt;<a class="code" href="group___core_plugin.html#ga9f75e14a1a348f3f46c62b4575dbca9e">activateMode</a>(m_welcomeMode-&gt;uniqueModeName());</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &lt;QPushButton&gt;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">using namespace </span>Welcome::Internal;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;WelcomePlugin::WelcomePlugin()</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    : m_welcomeMode(nullptr)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;WelcomePlugin::~WelcomePlugin()</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">if</span> (m_welcomeMode) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        removeObject(m_welcomeMode);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        m_welcomeMode-&gt;deleteLater();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">bool</span> WelcomePlugin::initialize(<span class="keyword">const</span> QStringList &amp;arguments, QString *error_message)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    Q_UNUSED(arguments)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    Q_UNUSED(error_message)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    QSettings *qSettings = Core::ICore::instance()-&gt;settings();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    QString instUUID =</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        qSettings-&gt;value(&quot;Plugins/<a class="code" href="class_usage_stats_plugin.html">UsageStatsPlugin</a>/<a class="code" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>/UsageStatistics/InstallationUUID&quot;)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            .toString();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    m_welcomeMode = new WelcomeMode(instUUID);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    addObject(m_welcomeMode);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    return true;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_welcome_1_1_internal_1_1_welcome_plugin.html">WelcomePlugin</a>::extensionsInitialized()</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;{</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="group___core_plugin.html#ga756ec59f5104cce0abf8a6990a2bba2c">Core::ModeManager::instance</a>()-&gt;<a class="code" href="group___core_plugin.html#ga9f75e14a1a348f3f46c62b4575dbca9e">activateMode</a>(m_welcomeMode-&gt;uniqueModeName());</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
 <div class="ttc" id="group___core_plugin_html_ga756ec59f5104cce0abf8a6990a2bba2c"><div class="ttname"><a href="group___core_plugin.html#ga756ec59f5104cce0abf8a6990a2bba2c">Core::ModeManager::instance</a></div><div class="ttdeci">static ModeManager * instance()</div><div class="ttdef"><b>Definition:</b> <a href="modemanager_8h_source.html#l00062">modemanager.h:62</a></div></div>
 <div class="ttc" id="uniqueidmanager_8h_html"><div class="ttname"><a href="uniqueidmanager_8h.html">uniqueidmanager.h</a></div></div>
 <div class="ttc" id="actionmanager_8h_html"><div class="ttname"><a href="actionmanager_8h.html">actionmanager.h</a></div></div>

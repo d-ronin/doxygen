@@ -1,11 +1,5 @@
 var NAVTREEINDEX51 =
 {
-"taulabsplugin_8cpp_source.html":[6,0,0,0,0,1,7,4],
-"taulabsplugin_8h.html":[6,0,0,0,0,1,7,5],
-"taulabsplugin_8h_source.html":[6,0,0,0,0,1,7,5],
-"taulink_8cpp.html":[6,0,0,0,0,1,7,6],
-"taulink_8cpp_source.html":[6,0,0,0,0,1,7,6],
-"taulink_8h.html":[6,0,0,0,0,1,7,7],
 "taulink_8h_source.html":[6,0,0,0,0,1,7,7],
 "telemetry_8cpp.html":[6,0,0,0,0,1,39,0],
 "telemetry_8cpp_source.html":[6,0,0,0,0,1,39,0],
@@ -249,5 +243,11 @@ var NAVTREEINDEX51 =
 "uavobjecttemplate_8m.html#a0b39b2580ea3ed8f16fb86c2d99cc9db":[6,0,0,0,0,1,35,22,29],
 "uavobjecttemplate_8m.html#a150ac7d868460ca5c2b91ff9b4c6c053":[6,0,0,0,0,1,35,22,44],
 "uavobjecttemplate_8m.html#a16a51e808b16c46bbfd36da2e37cd123":[6,0,0,0,0,1,35,22,52],
-"uavobjecttemplate_8m.html#a19514c4629c4f7641a38a76ccfca112f":[6,0,0,0,0,1,35,22,75]
+"uavobjecttemplate_8m.html#a19514c4629c4f7641a38a76ccfca112f":[6,0,0,0,0,1,35,22,75],
+"uavobjecttemplate_8m.html#a1c2423418c8e367fca746156bb6d3232":[6,0,0,0,0,1,35,22,0],
+"uavobjecttemplate_8m.html#a2420833d971716e9bab41cc9fb3abba1":[6,0,0,0,0,1,35,22,37],
+"uavobjecttemplate_8m.html#a26a6fe95d2c08ac810e25d922bad20b7":[6,0,0,0,0,1,35,22,47],
+"uavobjecttemplate_8m.html#a2a89187d8e8e8fba509ef9ab5f815d88":[6,0,0,0,0,1,35,22,59],
+"uavobjecttemplate_8m.html#a3691308f2a4c2f6983f2880d32e29c84":[6,0,0,0,0,1,35,22,64],
+"uavobjecttemplate_8m.html#a4752ab0ce0602125fadef615d6b3a501":[6,0,0,0,0,1,35,22,10]
 };

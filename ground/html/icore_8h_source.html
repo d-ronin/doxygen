@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">5035a2e</span>
+   &#160;<span id="projectnumber">0548c47</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -169,57 +169,51 @@ $(document).ready(function(){initNavTree('icore_8h_source.html','');});
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> showOptionsDialog(<span class="keyword">const</span> QString &amp;group = QString(),</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                   <span class="keyword">const</span> QString &amp;page = QString(), QWidget *parent = <span class="keyword">nullptr</span>) = 0;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> showWarningWithOptions(<span class="keyword">const</span> QString &amp;title, <span class="keyword">const</span> QString &amp;text,</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                        <span class="keyword">const</span> QString &amp;details = QString(),</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                        <span class="keyword">const</span> QString &amp;settingsCategory = QString(),</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                        <span class="keyword">const</span> QString &amp;settingsId = QString(),</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                        QWidget *parent = <span class="keyword">nullptr</span>) = 0;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_core_1_1_action_manager.html">ActionManager</a> *actionManager() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_core_1_1_unique_i_d_manager.html">UniqueIDManager</a> *uniqueIDManager() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_core_1_1_mode_manager.html">ModeManager</a> *modeManager() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_core_1_1_connection_manager.html">ConnectionManager</a> *connectionManager() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_core_1_1_global_messaging.html">GlobalMessaging</a> *globalMessaging() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_core_1_1_board_manager.html">BoardManager</a> *boardManager() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_core_1_1_u_a_v_gadget_instance_manager.html">UAVGadgetInstanceManager</a> *uavGadgetInstanceManager() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">virtual</span> QSettings *settings(QSettings::Scope scope = QSettings::UserScope) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> readMainSettings(QSettings *qs, <span class="keywordtype">bool</span> workspaceDiffOnly = <span class="keyword">false</span>) = 0;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> saveMainSettings(QSettings *qs) = 0;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> readSettings(<a class="code" href="class_core_1_1_i_configurable_plugin.html">IConfigurablePlugin</a> *plugin, QSettings *qs = <span class="keyword">nullptr</span>) = 0;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> saveSettings(<a class="code" href="class_core_1_1_i_configurable_plugin.html">IConfigurablePlugin</a> *plugin, QSettings *qs = <span class="keyword">nullptr</span>) = 0;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> deleteSettings() = 0;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">virtual</span> QString resourcePath() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">virtual</span> QMainWindow *mainWindow() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">// adds and removes additional active contexts, this context is appended to the</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">// currently active contexts. call updateContext after changing</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_core_1_1_i_context.html">IContext</a> *currentContextObject() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> addAdditionalContext(<span class="keywordtype">int</span> context) = 0;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> removeAdditionalContext(<span class="keywordtype">int</span> context) = 0;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> hasContext(<span class="keywordtype">int</span> context) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> addContextObject(<a class="code" href="class_core_1_1_i_context.html">IContext</a> *context) = 0;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> removeContextObject(<a class="code" href="class_core_1_1_i_context.html">IContext</a> *context) = 0;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> updateContext() = 0;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> openFiles(<span class="keyword">const</span> QStringList &amp;fileNames) = 0;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;signals:</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">void</span> coreAboutToOpen();</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">void</span> coreOpened();</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> saveSettingsRequested();</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> optionsDialogRequested();</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">void</span> coreAboutToClose();</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">void</span> contextAboutToChange(<a class="code" href="class_core_1_1_i_context.html">Core::IContext</a> *context);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">void</span> contextChanged(<a class="code" href="class_core_1_1_i_context.html">Core::IContext</a> *context);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;};</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;} <span class="comment">// namespace Core</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif // ICORE_H</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_core_1_1_action_manager.html">ActionManager</a> *actionManager() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_core_1_1_unique_i_d_manager.html">UniqueIDManager</a> *uniqueIDManager() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_core_1_1_mode_manager.html">ModeManager</a> *modeManager() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_core_1_1_connection_manager.html">ConnectionManager</a> *connectionManager() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_core_1_1_global_messaging.html">GlobalMessaging</a> *globalMessaging() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_core_1_1_board_manager.html">BoardManager</a> *boardManager() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_core_1_1_u_a_v_gadget_instance_manager.html">UAVGadgetInstanceManager</a> *uavGadgetInstanceManager() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">virtual</span> QSettings *settings(QSettings::Scope scope = QSettings::UserScope) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> readMainSettings(QSettings *qs, <span class="keywordtype">bool</span> workspaceDiffOnly = <span class="keyword">false</span>) = 0;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> saveMainSettings(QSettings *qs) = 0;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> readSettings(<a class="code" href="class_core_1_1_i_configurable_plugin.html">IConfigurablePlugin</a> *plugin, QSettings *qs = <span class="keyword">nullptr</span>) = 0;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> saveSettings(<a class="code" href="class_core_1_1_i_configurable_plugin.html">IConfigurablePlugin</a> *plugin, QSettings *qs = <span class="keyword">nullptr</span>) = 0;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> deleteSettings() = 0;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">virtual</span> QString resourcePath() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">virtual</span> QMainWindow *mainWindow() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">// adds and removes additional active contexts, this context is appended to the</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">// currently active contexts. call updateContext after changing</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_core_1_1_i_context.html">IContext</a> *currentContextObject() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> addAdditionalContext(<span class="keywordtype">int</span> context) = 0;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> removeAdditionalContext(<span class="keywordtype">int</span> context) = 0;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> hasContext(<span class="keywordtype">int</span> context) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> addContextObject(<a class="code" href="class_core_1_1_i_context.html">IContext</a> *context) = 0;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> removeContextObject(<a class="code" href="class_core_1_1_i_context.html">IContext</a> *context) = 0;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> updateContext() = 0;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> openFiles(<span class="keyword">const</span> QStringList &amp;fileNames) = 0;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;signals:</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> coreAboutToOpen();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> coreOpened();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> saveSettingsRequested();</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">void</span> optionsDialogRequested();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> coreAboutToClose();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> contextAboutToChange(<a class="code" href="class_core_1_1_i_context.html">Core::IContext</a> *context);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">void</span> contextChanged(<a class="code" href="class_core_1_1_i_context.html">Core::IContext</a> *context);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;};</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;} <span class="comment">// namespace Core</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#endif // ICORE_H</span></div>
 <div class="ttc" id="class_core_1_1_i_core_html"><div class="ttname"><a href="class_core_1_1_i_core.html">Core::ICore</a></div><div class="ttdoc">The ICore class allows access to the different part that make up the basic functionality of the GCS...</div><div class="ttdef"><b>Definition:</b> <a href="icore_8h_source.html#l00058">icore.h:58</a></div></div>
 <div class="ttc" id="class_core_1_1_i_context_html"><div class="ttname"><a href="class_core_1_1_i_context.html">Core::IContext</a></div><div class="ttdef"><b>Definition:</b> <a href="icontext_8h_source.html#l00040">icontext.h:40</a></div></div>
 <div class="ttc" id="class_core_1_1_board_manager_html"><div class="ttname"><a href="class_core_1_1_board_manager.html">Core::BoardManager</a></div><div class="ttdef"><b>Definition:</b> <a href="boardmanager_8h_source.html#l00037">boardmanager.h:37</a></div></div>

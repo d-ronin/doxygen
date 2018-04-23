@@ -30,7 +30,6 @@ var class_core_1_1_i_core =
     [ "saveSettingsRequested", "group___core_plugin.html#ga5deecf671e1390e1489d696dd89f112d", null ],
     [ "settings", "group___core_plugin.html#gaa7af8fc52c8c8453fe27ab7105a594d2", null ],
     [ "showOptionsDialog", "group___core_plugin.html#gab291719bef5bdab9ebd053c03e0d325b", null ],
-    [ "showWarningWithOptions", "group___core_plugin.html#gab0a8a36ab9e6fbb82d1ea6c17b5435c5", null ],
     [ "uavGadgetInstanceManager", "group___core_plugin.html#ga6aeba1dab852cf7c211cc2405f124ee7", null ],
     [ "uniqueIDManager", "group___core_plugin.html#ga4485869beb58de37e2e2e1a5fe0db6eb", null ],
     [ "updateContext", "group___core_plugin.html#ga6c04b622e19d7eb2e2227f450414cbd1", null ]

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">5035a2e</span>
+   &#160;<span id="projectnumber">0548c47</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -474,7 +474,7 @@ $(document).ready(function(){initNavTree('setupwizard_8cpp_source.html','');});
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;</div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    QMessageBox prompt(QMessageBox::Question, tr(<span class="stringliteral">&quot;Setup Wizard Cancelled&quot;</span>),</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                       tr(<span class="stringliteral">&quot;Would you like to prevent the setup wizard from automatically opening&quot;</span></div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                       <span class="stringliteral">&quot; for the remainder of this session?&quot;</span>), QMessageBox::Yes | QMessageBox::No);</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                       <span class="stringliteral">&quot; for the remainder of this session?&quot;</span>), QMessageBox::Yes | QMessageBox::No, <span class="keyword">this</span>);</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <span class="keywordflow">if</span> (prompt.exec() == QMessageBox::No)</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;</div>

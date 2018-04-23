@@ -1,11 +1,5 @@
 var NAVTREEINDEX50 =
 {
-"sizelatlng_8cpp.html#ga40db61334553eb3b32aee299116e616a":[6,0,0,0,0,0,4,1,17,1],
-"sizelatlng_8cpp.html#gaa65f8008332c3773a009a9d307330a5d":[6,0,0,0,0,0,4,1,17,0],
-"sizelatlng_8cpp.html#gab6ce9f24cd5044e4c558c513bdb96efc":[6,0,0,0,0,0,4,1,17,2],
-"sizelatlng_8cpp.html#gad24bfed7e42c2af0ee0f764c6cc34611":[6,0,0,0,0,0,4,1,17,3],
-"sizelatlng_8cpp_source.html":[6,0,0,0,0,0,4,1,17],
-"sizelatlng_8h.html":[6,0,0,0,0,0,4,1,18],
 "sizelatlng_8h_source.html":[6,0,0,0,0,0,4,1,18],
 "smartsavebutton_8cpp.html":[6,0,0,0,0,1,37,12],
 "smartsavebutton_8cpp_source.html":[6,0,0,0,0,1,37,12],
@@ -249,5 +243,11 @@ var NAVTREEINDEX50 =
 "systemhealthplugin_8cpp_source.html":[6,0,0,0,0,1,32,10],
 "systemhealthplugin_8h.html":[6,0,0,0,0,1,32,11],
 "systemhealthplugin_8h_source.html":[6,0,0,0,0,1,32,11],
-"taulabsplugin_8cpp.html":[6,0,0,0,0,1,7,4]
+"taulabsplugin_8cpp.html":[6,0,0,0,0,1,7,4],
+"taulabsplugin_8cpp_source.html":[6,0,0,0,0,1,7,4],
+"taulabsplugin_8h.html":[6,0,0,0,0,1,7,5],
+"taulabsplugin_8h_source.html":[6,0,0,0,0,1,7,5],
+"taulink_8cpp.html":[6,0,0,0,0,1,7,6],
+"taulink_8cpp_source.html":[6,0,0,0,0,1,7,6],
+"taulink_8h.html":[6,0,0,0,0,1,7,7]
 };

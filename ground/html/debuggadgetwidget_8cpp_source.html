@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">5035a2e</span>
+   &#160;<span id="projectnumber">0548c47</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -159,10 +159,10 @@ $(document).ready(function(){initNavTree('debuggadgetwidget_8cpp_source.html',''
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">void</span> DebugGadgetWidget::saveLog()</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    QString fileName = QFileDialog::getSaveFileName(</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">nullptr</span>, tr(<span class="stringliteral">&quot;Save log File As&quot;</span>),</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        QString(<span class="stringliteral">&quot;gcs-debug-log-%0.html&quot;</span>)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keyword">this</span>, tr(<span class="stringliteral">&quot;Save log File As&quot;</span>),</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            QString(<span class="stringliteral">&quot;gcs-debug-log-%0.html&quot;</span>)</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            .arg(QDateTime::currentDateTime().toString(<span class="stringliteral">&quot;yyyyMMdd-hhmmss&quot;</span>)),</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        tr(<span class="stringliteral">&quot;HTML (*.html)&quot;</span>));</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            tr(<span class="stringliteral">&quot;HTML (*.html)&quot;</span>));</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">if</span> (fileName.isEmpty())</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('debuggadgetwidget_8cpp_source.html',''
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        &amp;&amp; (<a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>.write(m_config-&gt;plainTextEdit-&gt;toHtml().toLatin1()) != -1)) {</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>.close();</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        QMessageBox::critical(<span class="keyword">nullptr</span>, tr(<span class="stringliteral">&quot;Log Save&quot;</span>), tr(<span class="stringliteral">&quot;Unable to save log: &quot;</span>) + fileName,</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        QMessageBox::critical(<span class="keyword">this</span>, tr(<span class="stringliteral">&quot;Log Save&quot;</span>), tr(<span class="stringliteral">&quot;Unable to save log: &quot;</span>) + fileName,</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                              QMessageBox::Ok);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>

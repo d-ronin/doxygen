@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">5035a2e</span>
+   &#160;<span id="projectnumber">0548c47</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('savepage_8cpp_source.html','');});
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">void</span> SavePage::writeToController()</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="group___setup_wizard.html#gabcd1c897e235b0da46ca5f032229b4c1">getWizard</a>()-&gt;getConnectionManager()-&gt;isConnected()) {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        QMessageBox msgBox;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        QMessageBox msgBox(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        msgBox.setText(tr(<span class="stringliteral">&quot;An OpenPilot controller must be connected to your computer to save the &quot;</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                          <span class="stringliteral">&quot;configuration.\nPlease connect your OpenPilot controller to your &quot;</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                          <span class="stringliteral">&quot;computer and try again.&quot;</span>));</div>

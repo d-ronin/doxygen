@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">5035a2e</span>
+   &#160;<span id="projectnumber">0548c47</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -685,7 +685,7 @@ $(document).ready(function(){initNavTree('uploadergadgetwidget_8cpp_source.html'
 <div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;</div>
 <div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;<span class="keywordtype">bool</span> UploaderGadgetWidget::askIfShouldContinue()</div>
 <div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;{</div>
-<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;    QMessageBox msgBox;</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;    QMessageBox msgBox(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;    msgBox.setText(tr(<span class="stringliteral">&quot;Proceed without saving a configuration backup?&quot;</span>));</div>
 <div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;    msgBox.setInformativeText(tr(<span class="stringliteral">&quot;It is strongly encouraged that you save a backup of the &quot;</span></div>
 <div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;                                 <span class="stringliteral">&quot;configuration before proceeding with upgrade.&quot;</span>));</div>
@@ -873,7 +873,7 @@ $(document).ready(function(){initNavTree('uploadergadgetwidget_8cpp_source.html'
 <div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;    setUploaderStatus(<a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690acb69c2963ad1d6ea453e46e48b68ab40">uploader::DISCONNECTED</a>);</div>
 <div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;</div>
 <div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;    <span class="comment">/* Pop up a proper error dialog */</span></div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;    QMessageBox msgBox;</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;    QMessageBox msgBox(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;</div>
 <div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;    msgBox.setIcon(QMessageBox::Critical);</div>
 <div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;    msgBox.setText(tr(<span class="stringliteral">&quot;Automatic upgrade failed.&quot;</span>));</div>
@@ -1293,7 +1293,7 @@ $(document).ready(function(){initNavTree('uploadergadgetwidget_8cpp_source.html'
 <div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;</div>
 <div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160;    <span class="comment">/* make sure there&#39;s a setting partition */</span></div>
 <div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;    <span class="keywordflow">if</span> (!haveSettingsPart()) {</div>
-<div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;        QMessageBox msgBox;</div>
+<div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;        QMessageBox msgBox(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l01259"></a><span class="lineno"> 1259</span>&#160;</div>
 <div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;        msgBox.setText(tr(<span class="stringliteral">&quot;No settings partition accessible; can&#39;t export.&quot;</span>));</div>
 <div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;        msgBox.setInformativeText(tr(<span class="stringliteral">&quot;Please upgrade your bootloader.&quot;</span>));</div>
@@ -1306,7 +1306,7 @@ $(document).ready(function(){initNavTree('uploadergadgetwidget_8cpp_source.html'
 <div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;    }</div>
 <div class="line"><a name="l01269"></a><span class="lineno"> 1269</span>&#160;</div>
 <div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160;    <span class="comment">/* get confirmation from user that using the cloud service is OK */</span></div>
-<div class="line"><a name="l01271"></a><span class="lineno"> 1271</span>&#160;    QMessageBox msgBox;</div>
+<div class="line"><a name="l01271"></a><span class="lineno"> 1271</span>&#160;    QMessageBox msgBox(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l01272"></a><span class="lineno"> 1272</span>&#160;    msgBox.setText(tr(<span class="stringliteral">&quot;Do you wish to export the settings partition as an XML settings file?&quot;</span>));</div>
 <div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160;    msgBox.setInformativeText(tr(<span class="stringliteral">&quot;This will send the raw configuration information to a dRonin &quot;</span></div>
 <div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;                                 <span class="stringliteral">&quot;cloud service for translation.&quot;</span>));</div>
@@ -1401,7 +1401,7 @@ $(document).ready(function(){initNavTree('uploadergadgetwidget_8cpp_source.html'
 <div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;                        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;                    }</div>
 <div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;                    QMessageBox msgBox;</div>
+<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;                    QMessageBox msgBox(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;                    msgBox.setText(tr(<span class="stringliteral">&quot;There appears to be no valid firmware on your device..&quot;</span>));</div>
 <div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;                    msgBox.setInformativeText(tr(<span class="stringliteral">&quot;Do you want to install firmware?&quot;</span>));</div>
 <div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;                    msgBox.setStandardButtons(QMessageBox::Yes | QMessageBox::No);</div>

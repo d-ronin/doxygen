@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">5035a2e</span>
+   &#160;<span id="projectnumber">0548c47</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -268,475 +268,472 @@ $(document).ready(function(){initNavTree('configoutputwidget_8cpp_source.html','
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordflow">if</span> (state &amp;&amp; ((systemAlarms.Alarm[SystemAlarms::ALARM_ACTUATOR] == SystemAlarms::ALARM_ERROR)</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                  || (systemAlarms.Alarm[SystemAlarms::ALARM_ACTUATOR]</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                      == SystemAlarms::ALARM_CRITICAL))) {</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        QMessageBox mbox;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        mbox.setText(</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            QString(tr(<span class="stringliteral">&quot;The actuator module is in an error state.  This can also occur because &quot;</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                       <span class="stringliteral">&quot;there are no inputs.  Please fix these before testing outputs.&quot;</span>)));</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        mbox.setStandardButtons(QMessageBox::Ok);</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        mbox.exec();</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        (<a class="code" href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a>) QMessageBox::critical(<span class="keyword">this</span>, tr(<span class="stringliteral">&quot;Actuator error&quot;</span>),</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            tr(<span class="stringliteral">&quot;The actuator module is in an error state. &quot;</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                <span class="stringliteral">&quot;Please fix these before testing outputs.&quot;</span>));</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="comment">// Unfortunately must cache this since callback will reoccur</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        accInitialData = ActuatorCommand::GetInstance(<a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>())-&gt;getMetadata();</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="comment">// Unfortunately must cache this since callback will reoccur</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        accInitialData = ActuatorCommand::GetInstance(<a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>())-&gt;getMetadata();</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        m_config-&gt;channelOutTest-&gt;setChecked(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    }</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="comment">// Confirm this is definitely what they want</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordflow">if</span> (state) {</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        QMessageBox mbox;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        mbox.setText(QString(tr(<span class="stringliteral">&quot;This option will start your motors by the amount selected on the &quot;</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                                <span class="stringliteral">&quot;sliders regardless of transmitter.  It is recommended to remove &quot;</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                                <span class="stringliteral">&quot;any blades from motors.  Are you sure you want to do this?&quot;</span>)));</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        mbox.setStandardButtons(QMessageBox::Yes | QMessageBox::No);</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="keywordtype">int</span> retval = mbox.exec();</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keywordflow">if</span> (retval != QMessageBox::Yes) {</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            state = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            m_config-&gt;channelOutTest-&gt;setChecked(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        }</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    }</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    ActuatorCommand *obj = ActuatorCommand::GetInstance(<a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>());</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    UAVObject::Metadata mdata = obj-&gt;getMetadata();</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordflow">if</span> (state) {</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        accInitialData = mdata;</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        <a class="code" href="group___u_a_v_objects_plugin.html#gaa660f23e03de07c425e5162e2dc42c4f">UAVObject::SetFlightAccess</a>(mdata, <a class="code" href="group___u_a_v_objects_plugin.html#gga80357a2f38fa4be23200de86614c3d77a97e59f527995175cc60e103001470e49">UAVObject::ACCESS_READONLY</a>);</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <a class="code" href="group___u_a_v_objects_plugin.html#gaa9fa161b9a5607e4ee1086b72f1b70e5">UAVObject::SetFlightTelemetryUpdateMode</a>(mdata, <a class="code" href="group___u_a_v_objects_plugin.html#gga08c0580992fcd51c2b44734e2d24cac6a118268aa016a1f371149d6180bd9a366">UAVObject::UPDATEMODE_ONCHANGE</a>);</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <a class="code" href="group___u_a_v_objects_plugin.html#ga190e264f603dd8ade6b6f9e84debfb4c">UAVObject::SetGcsTelemetryAcked</a>(mdata, <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <a class="code" href="group___u_a_v_objects_plugin.html#ga8fdb0f35b52c8dea0a512fd411d2346e">UAVObject::SetGcsTelemetryUpdateMode</a>(mdata, <a class="code" href="group___u_a_v_objects_plugin.html#gga08c0580992fcd51c2b44734e2d24cac6a118268aa016a1f371149d6180bd9a366">UAVObject::UPDATEMODE_ONCHANGE</a>);</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        mdata.gcsTelemetryUpdatePeriod = 100;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        mdata = accInitialData; <span class="comment">// Restore metadata</span></div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    }</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    obj-&gt;setMetadata(mdata);</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    obj-&gt;updated();</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;}</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<a class="code" href="class_output_channel_form.html">OutputChannelForm</a> *ConfigOutputWidget::getOutputChannelForm(<span class="keyword">const</span> <span class="keywordtype">int</span> index)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;OutputChannelForm *&gt;</a> outputChannelForms = findChildren&lt;OutputChannelForm *&gt;();</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordflow">foreach</span> (<a class="code" href="class_output_channel_form.html">OutputChannelForm</a> *outputChannelForm, outputChannelForms) {</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="keywordflow">if</span> (outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga04c058165995634381c105cad76f4209">index</a>() == index)</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            <span class="keywordflow">return</span> outputChannelForm;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    }</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="comment">// no OutputChannelForm found with given index</span></div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;}</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="keywordtype">void</span> ConfigOutputWidget::assignOutputChannels(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj)</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;{</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    Q_UNUSED(obj);</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="comment">// Get UAVO</span></div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    ActuatorSettings *actuatorSettings = ActuatorSettings::GetInstance(<a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>());</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    ActuatorSettings::DataFields actuatorSettingsData = actuatorSettings-&gt;getData();</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        m_config-&gt;channelOutTest-&gt;setChecked(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    }</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="comment">// Confirm this is definitely what they want</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordflow">if</span> (state) {</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keywordtype">int</span> retval = QMessageBox::warning(<span class="keyword">this</span>, tr(<span class="stringliteral">&quot;Actuator test&quot;</span>),</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                tr(<span class="stringliteral">&quot;This option will start your motors by the amount selected on the &quot;</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                    <span class="stringliteral">&quot;sliders regardless of transmitter.  It is recommended to remove &quot;</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                    <span class="stringliteral">&quot;any blades from motors.  Are you sure you want to do this?&quot;</span>),</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                QMessageBox::Yes | QMessageBox::No);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keywordflow">if</span> (retval != QMessageBox::Yes) {</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            state = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            m_config-&gt;channelOutTest-&gt;setChecked(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        }</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    }</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    ActuatorCommand *obj = ActuatorCommand::GetInstance(<a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>());</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    UAVObject::Metadata mdata = obj-&gt;getMetadata();</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordflow">if</span> (state) {</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        accInitialData = mdata;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <a class="code" href="group___u_a_v_objects_plugin.html#gaa660f23e03de07c425e5162e2dc42c4f">UAVObject::SetFlightAccess</a>(mdata, <a class="code" href="group___u_a_v_objects_plugin.html#gga80357a2f38fa4be23200de86614c3d77a97e59f527995175cc60e103001470e49">UAVObject::ACCESS_READONLY</a>);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <a class="code" href="group___u_a_v_objects_plugin.html#gaa9fa161b9a5607e4ee1086b72f1b70e5">UAVObject::SetFlightTelemetryUpdateMode</a>(mdata, <a class="code" href="group___u_a_v_objects_plugin.html#gga08c0580992fcd51c2b44734e2d24cac6a118268aa016a1f371149d6180bd9a366">UAVObject::UPDATEMODE_ONCHANGE</a>);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <a class="code" href="group___u_a_v_objects_plugin.html#ga190e264f603dd8ade6b6f9e84debfb4c">UAVObject::SetGcsTelemetryAcked</a>(mdata, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        <a class="code" href="group___u_a_v_objects_plugin.html#ga8fdb0f35b52c8dea0a512fd411d2346e">UAVObject::SetGcsTelemetryUpdateMode</a>(mdata, <a class="code" href="group___u_a_v_objects_plugin.html#gga08c0580992fcd51c2b44734e2d24cac6a118268aa016a1f371149d6180bd9a366">UAVObject::UPDATEMODE_ONCHANGE</a>);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        mdata.gcsTelemetryUpdatePeriod = 100;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        mdata = accInitialData; <span class="comment">// Restore metadata</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    }</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    obj-&gt;setMetadata(mdata);</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    obj-&gt;updated();</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;}</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<a class="code" href="class_output_channel_form.html">OutputChannelForm</a> *ConfigOutputWidget::getOutputChannelForm(<span class="keyword">const</span> <span class="keywordtype">int</span> index)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;OutputChannelForm *&gt;</a> outputChannelForms = findChildren&lt;OutputChannelForm *&gt;();</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keywordflow">foreach</span> (<a class="code" href="class_output_channel_form.html">OutputChannelForm</a> *outputChannelForm, outputChannelForms) {</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keywordflow">if</span> (outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga04c058165995634381c105cad76f4209">index</a>() == index)</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            <span class="keywordflow">return</span> outputChannelForm;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    }</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="comment">// no OutputChannelForm found with given index</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;}</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="keywordtype">void</span> ConfigOutputWidget::assignOutputChannels(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj)</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;{</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    Q_UNUSED(obj);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="comment">// Get UAVO</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    ActuatorSettings *actuatorSettings = ActuatorSettings::GetInstance(<a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>());</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    ActuatorSettings::DataFields actuatorSettingsData = actuatorSettings-&gt;getData();</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="comment">// Get channel descriptions</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    QStringList ChannelDesc = <a class="code" href="group___config_plugin.html#ga65301666bc0f14e94e8f718af4e6cc08">ConfigVehicleTypeWidget::getChannelDescriptions</a>();</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="comment">// Get channel descriptions</span></div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    QStringList ChannelDesc = <a class="code" href="group___config_plugin.html#ga65301666bc0f14e94e8f718af4e6cc08">ConfigVehicleTypeWidget::getChannelDescriptions</a>();</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="comment">// Find all output forms in the tab, and set the text and min/max values</span></div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;OutputChannelForm *&gt;</a> outputChannelForms = findChildren&lt;OutputChannelForm *&gt;();</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keywordflow">foreach</span> (<a class="code" href="class_output_channel_form.html">OutputChannelForm</a> *outputChannelForm, outputChannelForms) {</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#gacdf981958669fa47fe697e39fa529a16">setAssignment</a>(ChannelDesc[outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga04c058165995634381c105cad76f4209">index</a>()]);</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <span class="comment">// init min,max,neutral</span></div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        quint32 minValue = actuatorSettingsData.ChannelMin[outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga04c058165995634381c105cad76f4209">index</a>()];</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        quint32 maxValue = actuatorSettingsData.ChannelMax[outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga04c058165995634381c105cad76f4209">index</a>()];</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga4c5a273b2e501a0ba78fa8f0dfdd9463">setMinmax</a>(minValue, maxValue);</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        quint32 neutral = actuatorSettingsData.ChannelNeutral[outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga04c058165995634381c105cad76f4209">index</a>()];</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga46c4da3a30cc25c1178b9f9a125c8660">setNeutral</a>(neutral);</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    }</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="comment">// Find all output forms in the tab, and set the text and min/max values</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;OutputChannelForm *&gt;</a> outputChannelForms = findChildren&lt;OutputChannelForm *&gt;();</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordflow">foreach</span> (<a class="code" href="class_output_channel_form.html">OutputChannelForm</a> *outputChannelForm, outputChannelForms) {</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#gacdf981958669fa47fe697e39fa529a16">setAssignment</a>(ChannelDesc[outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga04c058165995634381c105cad76f4209">index</a>()]);</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <span class="comment">// init min,max,neutral</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        quint32 minValue = actuatorSettingsData.ChannelMin[outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga04c058165995634381c105cad76f4209">index</a>()];</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        quint32 maxValue = actuatorSettingsData.ChannelMax[outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga04c058165995634381c105cad76f4209">index</a>()];</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga4c5a273b2e501a0ba78fa8f0dfdd9463">setMinmax</a>(minValue, maxValue);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        quint32 neutral = actuatorSettingsData.ChannelNeutral[outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga04c058165995634381c105cad76f4209">index</a>()];</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga46c4da3a30cc25c1178b9f9a125c8660">setNeutral</a>(neutral);</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    }</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    refreshWidgetRanges();</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;}</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    refreshWidgetRanges();</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;}</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="keywordtype">void</span> ConfigOutputWidget::sendChannelTest(<span class="keywordtype">int</span> index, <span class="keywordtype">int</span> value)</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;{</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordflow">if</span> (!m_config-&gt;channelOutTest-&gt;isChecked())</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="keywordtype">void</span> ConfigOutputWidget::sendChannelTest(<span class="keywordtype">int</span> index, <span class="keywordtype">int</span> value)</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;{</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keywordflow">if</span> (!m_config-&gt;channelOutTest-&gt;isChecked())</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordflow">if</span> (index &lt; 0 || (<span class="keywordtype">unsigned</span>)index &gt;= ActuatorCommand::CHANNEL_NUMELEM)</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="keywordflow">if</span> (index &lt; 0 || (<span class="keywordtype">unsigned</span>)index &gt;= ActuatorCommand::CHANNEL_NUMELEM)</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    ActuatorCommand *actuatorCommand = ActuatorCommand::GetInstance(<a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>());</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    Q_ASSERT(actuatorCommand);</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    ActuatorCommand::DataFields actuatorCommandFields = actuatorCommand-&gt;getData();</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    actuatorCommandFields.Channel[index] = value;</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    actuatorCommand-&gt;setData(actuatorCommandFields);</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;}</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
-<div class="line"><a name="l00283"></a><span class="lineno"><a class="line" href="group___config_plugin.html#ga1d96277e7fa36802dd699badb261f199">  283</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___config_plugin.html#ga1d96277e7fa36802dd699badb261f199">showOutputChannelSelectWindow</a>(<span class="keywordtype">bool</span> (&amp;selectedChannels)[ActuatorCommand::CHANNEL_NUMELEM])</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;{</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <span class="comment">// Get channel descriptions</span></div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    QStringList ChannelDesc = <a class="code" href="group___config_plugin.html#ga65301666bc0f14e94e8f718af4e6cc08">ConfigVehicleTypeWidget::getChannelDescriptions</a>();</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="comment">// Build up dialog</span></div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    QDialog dialog;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    QVBoxLayout layout;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    QCheckBox *checkBoxes[ActuatorCommand::CHANNEL_NUMELEM];</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    QLabel infoLabel(<span class="stringliteral">&quot;Select output channels to calibrate: &quot;</span>);</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    layout.addWidget(&amp;infoLabel);</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = 0; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt; ActuatorCommand::CHANNEL_NUMELEM; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>++) {</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        checkBoxes[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] = <span class="keyword">new</span> QCheckBox();</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        checkBoxes[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]-&gt;setText(QString(<span class="stringliteral">&quot;Channel &quot;</span>) + QString::number(<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> + 1) + QString(<span class="stringliteral">&quot;  (&quot;</span>)</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                               + ChannelDesc[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] + QString(<span class="stringliteral">&quot;)&quot;</span>));</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        checkBoxes[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]-&gt;setChecked(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        layout.addWidget(checkBoxes[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]);</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    }</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    QHBoxLayout horizontalLayout;</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    QPushButton buttonOk(<span class="stringliteral">&quot;Ok&quot;</span>);</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    QPushButton buttonCancel(<span class="stringliteral">&quot;Cancel&quot;</span>);</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    horizontalLayout.addWidget(&amp;buttonOk);</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    horizontalLayout.addWidget(&amp;buttonCancel);</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    layout.addLayout(&amp;horizontalLayout);</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="comment">// Connect buttons with dialog slots</span></div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    dialog.connect(&amp;buttonOk, &amp;QAbstractButton::clicked, &amp;dialog, &amp;QDialog::accept);</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    dialog.connect(&amp;buttonCancel, &amp;QAbstractButton::clicked, &amp;dialog, &amp;QDialog::reject);</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="comment">// Show dialog</span></div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    dialog.setLayout(&amp;layout);</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="keywordtype">int</span> retCode = dialog.exec();</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="keywordflow">if</span> (retCode == dialog.Accepted) {</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = 0; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt; ActuatorCommand::CHANNEL_NUMELEM; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>++)</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;            selectedChannels[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] = checkBoxes[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]-&gt;isChecked();</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    } <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;}</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="keywordtype">void</span> ConfigOutputWidget::startESCCalibration()</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;{</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="keywordtype">bool</span> channelsToCalibrate[ActuatorCommand::CHANNEL_NUMELEM];</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="group___config_plugin.html#ga1d96277e7fa36802dd699badb261f199">showOutputChannelSelectWindow</a>(channelsToCalibrate))</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    QMessageBox mbox;</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    mbox.setText(QString(tr(<span class="stringliteral">&quot;Starting ESC calibration.&lt;br/&gt;&lt;b&gt;Please remove all propellers and &quot;</span></div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                            <span class="stringliteral">&quot;disconnect battery from ESCs.&lt;/b&gt;&quot;</span>)));</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    mbox.setStandardButtons(QMessageBox::Ok | QMessageBox::Cancel);</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    mbox.setDefaultButton(QMessageBox::Cancel);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    ActuatorCommand *actuatorCommand = ActuatorCommand::GetInstance(<a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>());</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    Q_ASSERT(actuatorCommand);</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    ActuatorCommand::DataFields actuatorCommandFields = actuatorCommand-&gt;getData();</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    actuatorCommandFields.Channel[index] = value;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    actuatorCommand-&gt;setData(actuatorCommandFields);</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;}</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
+<div class="line"><a name="l00280"></a><span class="lineno"><a class="line" href="group___config_plugin.html#ga1d96277e7fa36802dd699badb261f199">  280</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___config_plugin.html#ga1d96277e7fa36802dd699badb261f199">showOutputChannelSelectWindow</a>(<span class="keywordtype">bool</span> (&amp;selectedChannels)[ActuatorCommand::CHANNEL_NUMELEM])</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;{</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="comment">// Get channel descriptions</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    QStringList ChannelDesc = <a class="code" href="group___config_plugin.html#ga65301666bc0f14e94e8f718af4e6cc08">ConfigVehicleTypeWidget::getChannelDescriptions</a>();</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <span class="comment">// Build up dialog</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    QDialog dialog;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    QVBoxLayout layout;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    QCheckBox *checkBoxes[ActuatorCommand::CHANNEL_NUMELEM];</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    QLabel infoLabel(<span class="stringliteral">&quot;Select output channels to calibrate: &quot;</span>);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    layout.addWidget(&amp;infoLabel);</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = 0; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt; ActuatorCommand::CHANNEL_NUMELEM; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>++) {</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        checkBoxes[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] = <span class="keyword">new</span> QCheckBox();</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        checkBoxes[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]-&gt;setText(QString(<span class="stringliteral">&quot;Channel &quot;</span>) + QString::number(<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> + 1) + QString(<span class="stringliteral">&quot;  (&quot;</span>)</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                               + ChannelDesc[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] + QString(<span class="stringliteral">&quot;)&quot;</span>));</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        checkBoxes[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]-&gt;setChecked(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        layout.addWidget(checkBoxes[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]);</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    }</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    QHBoxLayout horizontalLayout;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    QPushButton buttonOk(<span class="stringliteral">&quot;Ok&quot;</span>);</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    QPushButton buttonCancel(<span class="stringliteral">&quot;Cancel&quot;</span>);</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    horizontalLayout.addWidget(&amp;buttonOk);</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    horizontalLayout.addWidget(&amp;buttonCancel);</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    layout.addLayout(&amp;horizontalLayout);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="comment">// Connect buttons with dialog slots</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    dialog.connect(&amp;buttonOk, &amp;QAbstractButton::clicked, &amp;dialog, &amp;QDialog::accept);</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    dialog.connect(&amp;buttonCancel, &amp;QAbstractButton::clicked, &amp;dialog, &amp;QDialog::reject);</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="comment">// Show dialog</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    dialog.setLayout(&amp;layout);</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="keywordtype">int</span> retCode = dialog.exec();</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keywordflow">if</span> (retCode == dialog.Accepted) {</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = 0; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt; ActuatorCommand::CHANNEL_NUMELEM; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>++)</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;            selectedChannels[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] = checkBoxes[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]-&gt;isChecked();</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    } <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;}</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="keywordtype">void</span> ConfigOutputWidget::startESCCalibration()</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;{</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="keywordtype">bool</span> channelsToCalibrate[ActuatorCommand::CHANNEL_NUMELEM];</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="group___config_plugin.html#ga1d96277e7fa36802dd699badb261f199">showOutputChannelSelectWindow</a>(channelsToCalibrate))</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    QMessageBox mbox(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    mbox.setText(QString(tr(<span class="stringliteral">&quot;Starting ESC calibration.&lt;br/&gt;&lt;b&gt;Please remove all propellers and &quot;</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                            <span class="stringliteral">&quot;disconnect battery from ESCs.&lt;/b&gt;&quot;</span>)));</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    mbox.setStandardButtons(QMessageBox::Ok | QMessageBox::Cancel);</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    mbox.setDefaultButton(QMessageBox::Cancel);</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="keywordflow">if</span> (mbox.exec() != QMessageBox::Ok)</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="keywordflow">if</span> (mbox.exec() != QMessageBox::Ok)</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="comment">// Get access to actuator command (for setting actual value)</span></div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    ActuatorCommand *actuatorCommand = ActuatorCommand::GetInstance(<a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>());</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    Q_ASSERT(actuatorCommand);</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    ActuatorCommand::DataFields actuatorCommandFields = actuatorCommand-&gt;getData();</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    UAVObject::Metadata mdata = actuatorCommand-&gt;getMetadata();</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="comment">// Get access to actuator settings (for min / max values)</span></div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    ActuatorSettings *actuatorSettings = ActuatorSettings::GetInstance(<a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>());</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    Q_ASSERT(actuatorSettings);</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    ActuatorSettings::DataFields actuatorSettingsData = actuatorSettings-&gt;getData();</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="comment">// Get access to actuator command (for setting actual value)</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    ActuatorCommand *actuatorCommand = ActuatorCommand::GetInstance(<a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>());</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    Q_ASSERT(actuatorCommand);</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    ActuatorCommand::DataFields actuatorCommandFields = actuatorCommand-&gt;getData();</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    UAVObject::Metadata mdata = actuatorCommand-&gt;getMetadata();</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="comment">// Get access to actuator settings (for min / max values)</span></div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    ActuatorSettings *actuatorSettings = ActuatorSettings::GetInstance(<a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>());</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    Q_ASSERT(actuatorSettings);</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    ActuatorSettings::DataFields actuatorSettingsData = actuatorSettings-&gt;getData();</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="comment">// Save previous metadata</span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    accInitialData = mdata;</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <span class="comment">// Save previous metadata</span></div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    accInitialData = mdata;</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="comment">// Change settings for period of calibration</span></div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <a class="code" href="group___u_a_v_objects_plugin.html#gaa660f23e03de07c425e5162e2dc42c4f">UAVObject::SetFlightAccess</a>(mdata, <a class="code" href="group___u_a_v_objects_plugin.html#gga80357a2f38fa4be23200de86614c3d77a97e59f527995175cc60e103001470e49">UAVObject::ACCESS_READONLY</a>);</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <a class="code" href="group___u_a_v_objects_plugin.html#gaa9fa161b9a5607e4ee1086b72f1b70e5">UAVObject::SetFlightTelemetryUpdateMode</a>(mdata, <a class="code" href="group___u_a_v_objects_plugin.html#gga08c0580992fcd51c2b44734e2d24cac6a118268aa016a1f371149d6180bd9a366">UAVObject::UPDATEMODE_ONCHANGE</a>);</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <a class="code" href="group___u_a_v_objects_plugin.html#ga190e264f603dd8ade6b6f9e84debfb4c">UAVObject::SetGcsTelemetryAcked</a>(mdata, <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <a class="code" href="group___u_a_v_objects_plugin.html#ga8fdb0f35b52c8dea0a512fd411d2346e">UAVObject::SetGcsTelemetryUpdateMode</a>(mdata, <a class="code" href="group___u_a_v_objects_plugin.html#gga08c0580992fcd51c2b44734e2d24cac6a118268aa016a1f371149d6180bd9a366">UAVObject::UPDATEMODE_ONCHANGE</a>);</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    mdata.gcsTelemetryUpdatePeriod = 100;</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    actuatorCommand-&gt;setMetadata(mdata);</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    actuatorCommand-&gt;updated();</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    mbox.setText(QString(tr(<span class="stringliteral">&quot;Please wait...&quot;</span>)));</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <span class="comment">// Set output for motors to nil to disarm</span></div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <span class="comment">// Should not be necessary; battery is supposed to be disconnected, etc.</span></div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="comment">// But this makes it moderately safer if the user does not obey.</span></div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = 0; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt; ActuatorCommand::CHANNEL_NUMELEM; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>++) {</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        <span class="comment">// Check if the output channel was selected</span></div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        <span class="keywordflow">if</span> (!channelsToCalibrate[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>])</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <span class="comment">// Change settings for period of calibration</span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <a class="code" href="group___u_a_v_objects_plugin.html#gaa660f23e03de07c425e5162e2dc42c4f">UAVObject::SetFlightAccess</a>(mdata, <a class="code" href="group___u_a_v_objects_plugin.html#gga80357a2f38fa4be23200de86614c3d77a97e59f527995175cc60e103001470e49">UAVObject::ACCESS_READONLY</a>);</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    <a class="code" href="group___u_a_v_objects_plugin.html#gaa9fa161b9a5607e4ee1086b72f1b70e5">UAVObject::SetFlightTelemetryUpdateMode</a>(mdata, <a class="code" href="group___u_a_v_objects_plugin.html#gga08c0580992fcd51c2b44734e2d24cac6a118268aa016a1f371149d6180bd9a366">UAVObject::UPDATEMODE_ONCHANGE</a>);</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <a class="code" href="group___u_a_v_objects_plugin.html#ga190e264f603dd8ade6b6f9e84debfb4c">UAVObject::SetGcsTelemetryAcked</a>(mdata, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <a class="code" href="group___u_a_v_objects_plugin.html#ga8fdb0f35b52c8dea0a512fd411d2346e">UAVObject::SetGcsTelemetryUpdateMode</a>(mdata, <a class="code" href="group___u_a_v_objects_plugin.html#gga08c0580992fcd51c2b44734e2d24cac6a118268aa016a1f371149d6180bd9a366">UAVObject::UPDATEMODE_ONCHANGE</a>);</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    mdata.gcsTelemetryUpdatePeriod = 100;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    actuatorCommand-&gt;setMetadata(mdata);</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    actuatorCommand-&gt;updated();</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    mbox.setText(QString(tr(<span class="stringliteral">&quot;Please wait...&quot;</span>)));</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="comment">// Set output for motors to nil to disarm</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    <span class="comment">// Should not be necessary; battery is supposed to be disconnected, etc.</span></div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    <span class="comment">// But this makes it moderately safer if the user does not obey.</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = 0; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt; ActuatorCommand::CHANNEL_NUMELEM; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>++) {</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        <span class="comment">// Check if the output channel was selected</span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        <span class="keywordflow">if</span> (!channelsToCalibrate[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>])</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        actuatorCommandFields.Channel[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] = 0;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    }</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        actuatorCommandFields.Channel[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] = 0;</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    }</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    actuatorCommand-&gt;setData(actuatorCommandFields);</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    QEventLoop loop;</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    QTimer timeout;</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    timeout.setSingleShot(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    connect(&amp;timeout, &amp;QTimer::timeout, &amp;loop, &amp;QEventLoop::quit);</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    timeout.start(1250); <span class="comment">// 1.25 seconds</span></div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    loop.exec();</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <span class="comment">// Increase output for all motors</span></div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = 0; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt; ActuatorCommand::CHANNEL_NUMELEM; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>++) {</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        <span class="comment">// Check if the output channel was selected</span></div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        <span class="keywordflow">if</span> (!channelsToCalibrate[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>])</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    actuatorCommand-&gt;setData(actuatorCommandFields);</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    QEventLoop loop;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    QTimer timeout;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    timeout.setSingleShot(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    connect(&amp;timeout, &amp;QTimer::timeout, &amp;loop, &amp;QEventLoop::quit);</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    timeout.start(1250); <span class="comment">// 1.25 seconds</span></div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    loop.exec();</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <span class="comment">// Increase output for all motors</span></div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = 0; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt; ActuatorCommand::CHANNEL_NUMELEM; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>++) {</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        <span class="comment">// Check if the output channel was selected</span></div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        <span class="keywordflow">if</span> (!channelsToCalibrate[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>])</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        actuatorCommandFields.Channel[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] = actuatorSettingsData.ChannelMax[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>];</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    }</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        actuatorCommandFields.Channel[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] = actuatorSettingsData.ChannelMax[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>];</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    }</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    actuatorCommand-&gt;setData(actuatorCommandFields);</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    mbox.setText(QString(tr(<span class="stringliteral">&quot;Motors outputs were increased to maximum. &quot;</span></div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;                            <span class="stringliteral">&quot;Reconnect the battery and wait for notification from ESCs that they &quot;</span></div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;                            <span class="stringliteral">&quot;recognized high throttle position.&lt;br/&gt;&quot;</span></div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                            <span class="stringliteral">&quot;&lt;b&gt;Immediately after that proceed to next step.&lt;/b&gt;&quot;</span>)));</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    <span class="keywordflow">if</span> (mbox.exec() == QMessageBox::Ok) {</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        <span class="comment">// Decrease output for all motors</span></div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = 0; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt; ActuatorCommand::CHANNEL_NUMELEM; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>++) {</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;            <span class="comment">// Check if the output channel was selected</span></div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;            <span class="keywordflow">if</span> (!channelsToCalibrate[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>])</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;            <span class="comment">// calibrate the minimum of the range</span></div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;            <span class="comment">// to be a little off what we send at idle.  Blheli takes the value</span></div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;            <span class="comment">// we give verbatim as the minimum, and small amounts of jitter</span></div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;            <span class="comment">// can cause the motor to tick over.</span></div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;            <span class="keywordtype">double</span> range = actuatorSettingsData.ChannelMax[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] - actuatorSettingsData.ChannelMin[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>];</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;            actuatorCommandFields.Channel[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] = actuatorSettingsData.ChannelMin[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;                + std::copysign(std::min(5.0, std::abs(range) / 40.0 + 0.5), range);</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;        }</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;        actuatorCommand-&gt;setData(actuatorCommandFields);</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;        mbox.setStandardButtons(QMessageBox::Ok);</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        mbox.setDefaultButton(QMessageBox::Ok);</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;        mbox.setText(QString(tr(<span class="stringliteral">&quot;Motors outputs were decreased to minimum.&lt;br/&gt;Wait for &quot;</span></div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;                                <span class="stringliteral">&quot;notification from ESCs that calibration is finished.&quot;</span>)));</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        mbox.exec();</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    }</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    <span class="comment">// Restore metadata</span></div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    actuatorCommand-&gt;setMetadata(accInitialData);</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    actuatorCommand-&gt;updated();</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;}</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<span class="comment">/********************************</span></div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;<span class="comment">  *  Output settings</span></div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<span class="comment">  *******************************/</span></div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;<span class="keywordtype">void</span> ConfigOutputWidget::refreshWidgetsValues(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj)</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;{</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    Q_UNUSED(obj);</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    <span class="comment">// Get Actuator Settings</span></div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;    ActuatorSettings *actuatorSettings = ActuatorSettings::GetInstance(<a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>());</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    Q_ASSERT(actuatorSettings);</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    ActuatorSettings::DataFields actuatorSettingsData = actuatorSettings-&gt;getData();</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    actuatorCommand-&gt;setData(actuatorCommandFields);</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    mbox.setText(QString(tr(<span class="stringliteral">&quot;Motors outputs were increased to maximum. &quot;</span></div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;                            <span class="stringliteral">&quot;Reconnect the battery and wait for notification from ESCs that they &quot;</span></div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;                            <span class="stringliteral">&quot;recognized high throttle position.&lt;br/&gt;&quot;</span></div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;                            <span class="stringliteral">&quot;&lt;b&gt;Immediately after that proceed to next step.&lt;/b&gt;&quot;</span>)));</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="keywordflow">if</span> (mbox.exec() == QMessageBox::Ok) {</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        <span class="comment">// Decrease output for all motors</span></div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = 0; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt; ActuatorCommand::CHANNEL_NUMELEM; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>++) {</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;            <span class="comment">// Check if the output channel was selected</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;            <span class="keywordflow">if</span> (!channelsToCalibrate[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>])</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;            <span class="comment">// calibrate the minimum of the range</span></div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;            <span class="comment">// to be a little off what we send at idle.  Blheli takes the value</span></div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;            <span class="comment">// we give verbatim as the minimum, and small amounts of jitter</span></div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;            <span class="comment">// can cause the motor to tick over.</span></div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;            <span class="keywordtype">double</span> range = actuatorSettingsData.ChannelMax[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] - actuatorSettingsData.ChannelMin[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>];</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;            actuatorCommandFields.Channel[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] = actuatorSettingsData.ChannelMin[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;                + std::copysign(std::min(5.0, std::abs(range) / 40.0 + 0.5), range);</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;        }</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        actuatorCommand-&gt;setData(actuatorCommandFields);</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;        mbox.setStandardButtons(QMessageBox::Ok);</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;        mbox.setDefaultButton(QMessageBox::Ok);</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;        mbox.setText(QString(tr(<span class="stringliteral">&quot;Motors outputs were decreased to minimum.&lt;br/&gt;Wait for &quot;</span></div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;                                <span class="stringliteral">&quot;notification from ESCs that calibration is finished.&quot;</span>)));</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        mbox.exec();</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    }</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    <span class="comment">// Restore metadata</span></div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    actuatorCommand-&gt;setMetadata(accInitialData);</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    actuatorCommand-&gt;updated();</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;}</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;<span class="comment">/********************************</span></div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;<span class="comment">  *  Output settings</span></div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;<span class="comment">  *******************************/</span></div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;<span class="keywordtype">void</span> ConfigOutputWidget::refreshWidgetsValues(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj)</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;{</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    Q_UNUSED(obj);</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    <span class="comment">// Get Actuator Settings</span></div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    ActuatorSettings *actuatorSettings = ActuatorSettings::GetInstance(<a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>());</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    Q_ASSERT(actuatorSettings);</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    ActuatorSettings::DataFields actuatorSettingsData = actuatorSettings-&gt;getData();</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    <span class="comment">// Fill output forms</span></div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    assignOutputChannels(actuatorSettings);</div>
 <div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;    <span class="comment">// Fill output forms</span></div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    assignOutputChannels(actuatorSettings);</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    <span class="comment">// Get the SpinWhileArmed setting</span></div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    m_config-&gt;spinningArmed-&gt;setChecked(actuatorSettingsData.MotorsSpinWhileArmed</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;                                        == ActuatorSettings::MOTORSSPINWHILEARMED_TRUE);</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    <span class="comment">// Get Output rates for all channel banks</span></div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    Q_ASSERT(pm);</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    <a class="code" href="class_u_a_v_object_util_manager.html">UAVObjectUtilManager</a> *<a class="code" href="group___u_a_v_object_widget_utils.html#ga4578f848dc694e8ac27688a491212e72">utilMngr</a> = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_util_manager.html">UAVObjectUtilManager</a>&gt;();</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    <span class="keywordflow">if</span> (utilMngr) {</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;        <a class="code" href="class_core_1_1_i_board_type.html">Core::IBoardType</a> *board = utilMngr-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gac3a1293716fa3eb310ed257ade7f6722">getBoardType</a>();</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;        <span class="keywordflow">if</span> (board != NULL) {</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;            QStringList banks = board-&gt;<a class="code" href="group___core_plugin.html#gad0bc906965e0aff34de8fb8efe21c378">queryChannelBanks</a>();</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;            <span class="comment">// First reset &amp; disable all channel fields/outputs, then repopulate (because</span></div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;            <span class="comment">// we might be for instance connecting various board types one after another)</span></div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 6; i++) {</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;                lblList.at(i)-&gt;setText(<span class="stringliteral">&quot;-&quot;</span>);</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;                rateList.at(i)-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;            }</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;            <span class="comment">// Now repopulate based on board capabilities:</span></div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; banks.length(); i++) {</div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;                lblList.at(i)-&gt;setText(banks.at(i));</div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;                QComboBox *ccmb = rateList.at(i);</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;                ccmb-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;</div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;                QString setting = timerFreqToString(actuatorSettingsData.TimerUpdateFreq[i]);</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;                <span class="keywordflow">if</span> (ccmb-&gt;findText(setting) == -1) {</div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;                    ccmb-&gt;addItem(setting);</div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;                }</div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;                ccmb-&gt;setCurrentIndex(ccmb-&gt;findText(setting));</div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;            }</div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;        }</div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;    }</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;    <span class="comment">// Get the SpinWhileArmed setting</span></div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    m_config-&gt;spinningArmed-&gt;setChecked(actuatorSettingsData.MotorsSpinWhileArmed</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;                                        == ActuatorSettings::MOTORSSPINWHILEARMED_TRUE);</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    <span class="comment">// Get Output rates for all channel banks</span></div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    Q_ASSERT(pm);</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    <a class="code" href="class_u_a_v_object_util_manager.html">UAVObjectUtilManager</a> *<a class="code" href="group___u_a_v_object_widget_utils.html#ga4578f848dc694e8ac27688a491212e72">utilMngr</a> = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_util_manager.html">UAVObjectUtilManager</a>&gt;();</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;    <span class="keywordflow">if</span> (utilMngr) {</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        <a class="code" href="class_core_1_1_i_board_type.html">Core::IBoardType</a> *board = utilMngr-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gac3a1293716fa3eb310ed257ade7f6722">getBoardType</a>();</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;        <span class="keywordflow">if</span> (board != NULL) {</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;            QStringList banks = board-&gt;<a class="code" href="group___core_plugin.html#gad0bc906965e0aff34de8fb8efe21c378">queryChannelBanks</a>();</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;            <span class="comment">// First reset &amp; disable all channel fields/outputs, then repopulate (because</span></div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;            <span class="comment">// we might be for instance connecting various board types one after another)</span></div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 6; i++) {</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;                lblList.at(i)-&gt;setText(<span class="stringliteral">&quot;-&quot;</span>);</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;                rateList.at(i)-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;            }</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;            <span class="comment">// Now repopulate based on board capabilities:</span></div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; banks.length(); i++) {</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;                lblList.at(i)-&gt;setText(banks.at(i));</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;                QComboBox *ccmb = rateList.at(i);</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;                ccmb-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;                QString setting = timerFreqToString(actuatorSettingsData.TimerUpdateFreq[i]);</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;                <span class="keywordflow">if</span> (ccmb-&gt;findText(setting) == -1) {</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;                    ccmb-&gt;addItem(setting);</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;                }</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;                ccmb-&gt;setCurrentIndex(ccmb-&gt;findText(setting));</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;            }</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;        }</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;    }</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;    m_config-&gt;motorCurveFit-&gt;setValue(actuatorSettingsData.MotorInputOutputCurveFit);</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;    m_config-&gt;motorPowerGain-&gt;setValue(actuatorSettingsData.MotorInputOutputGain * 100);</div>
 <div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;</div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;    m_config-&gt;motorCurveFit-&gt;setValue(actuatorSettingsData.MotorInputOutputCurveFit);</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    m_config-&gt;motorPowerGain-&gt;setValue(actuatorSettingsData.MotorInputOutputGain * 100);</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    <span class="comment">// Get Channel ranges:</span></div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;OutputChannelForm *&gt;</a> outputChannelForms = findChildren&lt;OutputChannelForm *&gt;();</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    <span class="keywordflow">foreach</span> (<a class="code" href="class_output_channel_form.html">OutputChannelForm</a> *outputChannelForm, outputChannelForms) {</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;        quint32 minValue = actuatorSettingsData.ChannelMin[outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga04c058165995634381c105cad76f4209">index</a>()];</div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;        quint32 maxValue = actuatorSettingsData.ChannelMax[outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga04c058165995634381c105cad76f4209">index</a>()];</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;        outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga4c5a273b2e501a0ba78fa8f0dfdd9463">setMinmax</a>(minValue, maxValue);</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;        quint32 neutral = actuatorSettingsData.ChannelNeutral[outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga04c058165995634381c105cad76f4209">index</a>()];</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;        outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga46c4da3a30cc25c1178b9f9a125c8660">setNeutral</a>(neutral);</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    }</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;    <span class="comment">// Get Channel ranges:</span></div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;OutputChannelForm *&gt;</a> outputChannelForms = findChildren&lt;OutputChannelForm *&gt;();</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    <span class="keywordflow">foreach</span> (<a class="code" href="class_output_channel_form.html">OutputChannelForm</a> *outputChannelForm, outputChannelForms) {</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        quint32 minValue = actuatorSettingsData.ChannelMin[outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga04c058165995634381c105cad76f4209">index</a>()];</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;        quint32 maxValue = actuatorSettingsData.ChannelMax[outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga04c058165995634381c105cad76f4209">index</a>()];</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;        outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga4c5a273b2e501a0ba78fa8f0dfdd9463">setMinmax</a>(minValue, maxValue);</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;        quint32 neutral = actuatorSettingsData.ChannelNeutral[outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga04c058165995634381c105cad76f4209">index</a>()];</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;        outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga46c4da3a30cc25c1178b9f9a125c8660">setNeutral</a>(neutral);</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    }</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    refreshWidgetRanges();</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;}</div>
 <div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;    refreshWidgetRanges();</div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;}</div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;<span class="keywordtype">void</span> ConfigOutputWidget::refreshWidgetRanges()</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;{</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;OutputChannelForm *&gt;</a> outputChannelForms = findChildren&lt;OutputChannelForm *&gt;();</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    Q_ASSERT(pm);</div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    <a class="code" href="class_u_a_v_object_util_manager.html">UAVObjectUtilManager</a> *utilMngr = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_util_manager.html">UAVObjectUtilManager</a>&gt;();</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    <span class="keywordflow">if</span> (utilMngr) {</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;        <a class="code" href="class_core_1_1_i_board_type.html">Core::IBoardType</a> *board = utilMngr-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gac3a1293716fa3eb310ed257ade7f6722">getBoardType</a>();</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;        <span class="keywordflow">if</span> (board != NULL) {</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;            QVector&lt;QVector&lt;qint32&gt;&gt; banks = board-&gt;<a class="code" href="group___core_plugin.html#gaf466b4ca5b1f597edffe7fae2b17c37d">getChannelBanks</a>();</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;<span class="keywordtype">void</span> ConfigOutputWidget::refreshWidgetRanges()</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;{</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;OutputChannelForm *&gt;</a> outputChannelForms = findChildren&lt;OutputChannelForm *&gt;();</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    Q_ASSERT(pm);</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    <a class="code" href="class_u_a_v_object_util_manager.html">UAVObjectUtilManager</a> *utilMngr = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_util_manager.html">UAVObjectUtilManager</a>&gt;();</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    <span class="keywordflow">if</span> (utilMngr) {</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;        <a class="code" href="class_core_1_1_i_board_type.html">Core::IBoardType</a> *board = utilMngr-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gac3a1293716fa3eb310ed257ade7f6722">getBoardType</a>();</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;        <span class="keywordflow">if</span> (board != NULL) {</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;            QVector&lt;QVector&lt;qint32&gt;&gt; banks = board-&gt;<a class="code" href="group___core_plugin.html#gaf466b4ca5b1f597edffe7fae2b17c37d">getChannelBanks</a>();</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; banks.size(); i++) {</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;                QVector&lt;int&gt; bank = banks[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>];</div>
 <div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;</div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; banks.size(); i++) {</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;                QVector&lt;int&gt; bank = banks[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>];</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;</div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;                <span class="comment">// Pull out the parameters relating to this bank, and</span></div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;                <span class="comment">// calculate the maximum value.</span></div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;                <span class="comment">//</span></div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;                QComboBox *ccmb = rateList.at(i);</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;                quint32 timerFreq = timerStringToFreq(ccmb-&gt;currentText());</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;</div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;                <span class="comment">// First saturate at the timer period and UAVO maximum value.</span></div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;                <span class="keywordtype">double</span> maxPulseWidth, timerPeriodUs = UINT16_MAX;</div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;                <span class="keywordtype">int</span> minPulseWidth = 0;</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;                <span class="keywordtype">bool</span> digital = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;                <span class="keywordflow">switch</span> (timerFreq) {</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;                <span class="keywordflow">case</span> RATE_SYNCPWM:</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;                    <span class="comment">// only the timer period provides bounding</span></div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;                    maxPulseWidth = timerPeriodUs;</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;                <span class="keywordflow">case</span> RATE_DSHOT300:</div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;                <span class="keywordflow">case</span> RATE_DSHOT600:</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;                <span class="keywordflow">case</span> RATE_DSHOT1200:</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;                    <span class="comment">// 1-47 reserved for commands</span></div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;                    minPulseWidth = 48;</div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;                    <span class="comment">// 11-bit value</span></div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;                    maxPulseWidth = 2047;</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;                    <span class="comment">// don&#39;t allow min/max to be changed</span></div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;                    digital = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;                <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;                    maxPulseWidth = 1000000 / timerFreq;</div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;</div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;                    <span class="comment">// Should never happen, but here in case we ever have a</span></div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;                    <span class="comment">// &lt; 16Hz PWM mode.</span></div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;                    <span class="keywordflow">if</span> (maxPulseWidth &gt; timerPeriodUs)</div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;                        maxPulseWidth = timerPeriodUs;</div>
-<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;                }</div>
-<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;</div>
-<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;                <span class="comment">// For each of the channels...</span></div>
-<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;                <span class="keywordflow">for</span> (<span class="keyword">auto</span> channel : bank) {</div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;                    <span class="comment">// Find its form line and set the limit.</span></div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;                    <span class="keywordflow">for</span> (<span class="keyword">auto</span> outputChannelForm : outputChannelForms) {</div>
-<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;                        <span class="comment">// Don&#39;t like the bogus index adjustments</span></div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;                        <span class="keywordflow">if</span> (outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga04c058165995634381c105cad76f4209">index</a>() != (channel - 1))</div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;                            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;                        outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga32fadbb58da35d4088500bd070584309">updateChannelLimits</a>(</div>
-<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;                            minPulseWidth, static_cast&lt;int&gt;(maxPulseWidth), digital);</div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;                    }</div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;                }</div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;            }</div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;        }</div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;    }</div>
-<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;}</div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;<span class="keywordtype">void</span> ConfigOutputWidget::updateObjectsFromWidgets()</div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;{</div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;    emit <a class="code" href="group___u_a_v_object_widget_utils.html#gae43eee3bcf829dcfc91b17c25bc5db95">updateObjectsFromWidgetsRequested</a>();</div>
-<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;</div>
-<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;    ActuatorSettings *actuatorSettings = ActuatorSettings::GetInstance(<a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>());</div>
-<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;    Q_ASSERT(actuatorSettings);</div>
-<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;    <span class="keywordflow">if</span> (actuatorSettings) {</div>
-<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;        ActuatorSettings::DataFields actuatorSettingsData = actuatorSettings-&gt;getData();</div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;        <a class="code" href="class_q_list.html">QList&lt;OutputChannelForm *&gt;</a> outputChannelForms = findChildren&lt;OutputChannelForm *&gt;();</div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;</div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;        <span class="keywordflow">foreach</span> (<a class="code" href="class_output_channel_form.html">OutputChannelForm</a> *outputChannelForm, outputChannelForms) {</div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;            actuatorSettingsData.ChannelMax[outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga04c058165995634381c105cad76f4209">index</a>()] = outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#gac5e9e5be40f804ee632232a3e980ee0d">max</a>();</div>
-<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;            actuatorSettingsData.ChannelMin[outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga04c058165995634381c105cad76f4209">index</a>()] = outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga2086e4a8bc1572b98114b0272313ed2a">min</a>();</div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;            actuatorSettingsData.ChannelNeutral[outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga04c058165995634381c105cad76f4209">index</a>()] =</div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;                outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga7ec2288bf27bf15dfb962c5e965d008e">neutral</a>();</div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;        }</div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;</div>
-<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;        <span class="comment">// Set update rates</span></div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;        actuatorSettingsData.TimerUpdateFreq[0] =</div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;            timerStringToFreq(m_config-&gt;cb_outputRate1-&gt;currentText());</div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;        actuatorSettingsData.TimerUpdateFreq[1] =</div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;            timerStringToFreq(m_config-&gt;cb_outputRate2-&gt;currentText());</div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;        actuatorSettingsData.TimerUpdateFreq[2] =</div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;            timerStringToFreq(m_config-&gt;cb_outputRate3-&gt;currentText());</div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;        actuatorSettingsData.TimerUpdateFreq[3] =</div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;            timerStringToFreq(m_config-&gt;cb_outputRate4-&gt;currentText());</div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;        actuatorSettingsData.TimerUpdateFreq[4] =</div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;            timerStringToFreq(m_config-&gt;cb_outputRate5-&gt;currentText());</div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;        actuatorSettingsData.TimerUpdateFreq[5] =</div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;            timerStringToFreq(m_config-&gt;cb_outputRate6-&gt;currentText());</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;                <span class="comment">// Pull out the parameters relating to this bank, and</span></div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;                <span class="comment">// calculate the maximum value.</span></div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;                <span class="comment">//</span></div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;                QComboBox *ccmb = rateList.at(i);</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;                quint32 timerFreq = timerStringToFreq(ccmb-&gt;currentText());</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;                <span class="comment">// First saturate at the timer period and UAVO maximum value.</span></div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;                <span class="keywordtype">double</span> maxPulseWidth, timerPeriodUs = UINT16_MAX;</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;                <span class="keywordtype">int</span> minPulseWidth = 0;</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;                <span class="keywordtype">bool</span> digital = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;                <span class="keywordflow">switch</span> (timerFreq) {</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;                <span class="keywordflow">case</span> RATE_SYNCPWM:</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;                    <span class="comment">// only the timer period provides bounding</span></div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;                    maxPulseWidth = timerPeriodUs;</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;                <span class="keywordflow">case</span> RATE_DSHOT300:</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;                <span class="keywordflow">case</span> RATE_DSHOT600:</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;                <span class="keywordflow">case</span> RATE_DSHOT1200:</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;                    <span class="comment">// 1-47 reserved for commands</span></div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;                    minPulseWidth = 48;</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;                    <span class="comment">// 11-bit value</span></div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;                    maxPulseWidth = 2047;</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;                    <span class="comment">// don&#39;t allow min/max to be changed</span></div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;                    digital = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;                <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;                    maxPulseWidth = 1000000 / timerFreq;</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;                    <span class="comment">// Should never happen, but here in case we ever have a</span></div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;                    <span class="comment">// &lt; 16Hz PWM mode.</span></div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;                    <span class="keywordflow">if</span> (maxPulseWidth &gt; timerPeriodUs)</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;                        maxPulseWidth = timerPeriodUs;</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;                }</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;                <span class="comment">// For each of the channels...</span></div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;                <span class="keywordflow">for</span> (<span class="keyword">auto</span> channel : bank) {</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;                    <span class="comment">// Find its form line and set the limit.</span></div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;                    <span class="keywordflow">for</span> (<span class="keyword">auto</span> outputChannelForm : outputChannelForms) {</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;                        <span class="comment">// Don&#39;t like the bogus index adjustments</span></div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;                        <span class="keywordflow">if</span> (outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga04c058165995634381c105cad76f4209">index</a>() != (channel - 1))</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;                            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;                        outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga32fadbb58da35d4088500bd070584309">updateChannelLimits</a>(</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;                            minPulseWidth, static_cast&lt;int&gt;(maxPulseWidth), digital);</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;                    }</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;                }</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;            }</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;        }</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;    }</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;}</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;<span class="keywordtype">void</span> ConfigOutputWidget::updateObjectsFromWidgets()</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;{</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;    emit <a class="code" href="group___u_a_v_object_widget_utils.html#gae43eee3bcf829dcfc91b17c25bc5db95">updateObjectsFromWidgetsRequested</a>();</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;    ActuatorSettings *actuatorSettings = ActuatorSettings::GetInstance(<a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>());</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;    Q_ASSERT(actuatorSettings);</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;    <span class="keywordflow">if</span> (actuatorSettings) {</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;        ActuatorSettings::DataFields actuatorSettingsData = actuatorSettings-&gt;getData();</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;        <a class="code" href="class_q_list.html">QList&lt;OutputChannelForm *&gt;</a> outputChannelForms = findChildren&lt;OutputChannelForm *&gt;();</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;        <span class="keywordflow">foreach</span> (<a class="code" href="class_output_channel_form.html">OutputChannelForm</a> *outputChannelForm, outputChannelForms) {</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;            actuatorSettingsData.ChannelMax[outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga04c058165995634381c105cad76f4209">index</a>()] = outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#gac5e9e5be40f804ee632232a3e980ee0d">max</a>();</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;            actuatorSettingsData.ChannelMin[outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga04c058165995634381c105cad76f4209">index</a>()] = outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga2086e4a8bc1572b98114b0272313ed2a">min</a>();</div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;            actuatorSettingsData.ChannelNeutral[outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga04c058165995634381c105cad76f4209">index</a>()] =</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;                outputChannelForm-&gt;<a class="code" href="group___config_plugin.html#ga7ec2288bf27bf15dfb962c5e965d008e">neutral</a>();</div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;        }</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;        <span class="comment">// Set update rates</span></div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;        actuatorSettingsData.TimerUpdateFreq[0] =</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;            timerStringToFreq(m_config-&gt;cb_outputRate1-&gt;currentText());</div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;        actuatorSettingsData.TimerUpdateFreq[1] =</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;            timerStringToFreq(m_config-&gt;cb_outputRate2-&gt;currentText());</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;        actuatorSettingsData.TimerUpdateFreq[2] =</div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;            timerStringToFreq(m_config-&gt;cb_outputRate3-&gt;currentText());</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;        actuatorSettingsData.TimerUpdateFreq[3] =</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;            timerStringToFreq(m_config-&gt;cb_outputRate4-&gt;currentText());</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;        actuatorSettingsData.TimerUpdateFreq[4] =</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;            timerStringToFreq(m_config-&gt;cb_outputRate5-&gt;currentText());</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;        actuatorSettingsData.TimerUpdateFreq[5] =</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;            timerStringToFreq(m_config-&gt;cb_outputRate6-&gt;currentText());</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;        actuatorSettingsData.MotorInputOutputCurveFit = m_config-&gt;motorCurveFit-&gt;value();</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;        actuatorSettingsData.MotorInputOutputGain = m_config-&gt;motorPowerGain-&gt;value() * 0.01;</div>
 <div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;</div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;        actuatorSettingsData.MotorInputOutputCurveFit = m_config-&gt;motorCurveFit-&gt;value();</div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;        actuatorSettingsData.MotorInputOutputGain = m_config-&gt;motorPowerGain-&gt;value() * 0.01;</div>
-<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;</div>
-<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;        <span class="keywordflow">if</span> (m_config-&gt;spinningArmed-&gt;isChecked() == <span class="keyword">true</span>)</div>
-<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;            actuatorSettingsData.MotorsSpinWhileArmed = ActuatorSettings::MOTORSSPINWHILEARMED_TRUE;</div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;            actuatorSettingsData.MotorsSpinWhileArmed =</div>
-<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;                ActuatorSettings::MOTORSSPINWHILEARMED_FALSE;</div>
-<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;</div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;        <span class="comment">// Apply settings</span></div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;        actuatorSettings-&gt;setData(actuatorSettingsData);</div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;    }</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;        <span class="keywordflow">if</span> (m_config-&gt;spinningArmed-&gt;isChecked() == <span class="keyword">true</span>)</div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;            actuatorSettingsData.MotorsSpinWhileArmed = ActuatorSettings::MOTORSSPINWHILEARMED_TRUE;</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;            actuatorSettingsData.MotorsSpinWhileArmed =</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;                ActuatorSettings::MOTORSSPINWHILEARMED_FALSE;</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;        <span class="comment">// Apply settings</span></div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;        actuatorSettings-&gt;setData(actuatorSettingsData);</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;    }</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;</div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;    refreshWidgetRanges();</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;}</div>
 <div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;</div>
-<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;    refreshWidgetRanges();</div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;}</div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;</div>
-<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;QString ConfigOutputWidget::timerFreqToString(quint32 freq)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QMap&lt;quint32, QString&gt; mapping{</div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;        { RATE_SYNCPWM, tr(<span class="stringliteral">&quot;SyncPWM&quot;</span>) },</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;        { RATE_DSHOT300, tr(<span class="stringliteral">&quot;Dshot300&quot;</span>) },</div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;        { RATE_DSHOT600, tr(<span class="stringliteral">&quot;Dshot600&quot;</span>) },</div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;        { RATE_DSHOT1200, tr(<span class="stringliteral">&quot;Dshot1200&quot;</span>) },</div>
-<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;    };</div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;    <span class="keywordflow">return</span> mapping.value(freq, QString::number(freq));</div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;}</div>
-<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;</div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;quint32 ConfigOutputWidget::timerStringToFreq(QString str)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QMap&lt;QString, quint32&gt; mapping{</div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;        { tr(<span class="stringliteral">&quot;SyncPWM&quot;</span>), RATE_SYNCPWM },</div>
-<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;        { tr(<span class="stringliteral">&quot;Dshot300&quot;</span>), RATE_DSHOT300 },</div>
-<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;        { tr(<span class="stringliteral">&quot;Dshot600&quot;</span>), RATE_DSHOT600 },</div>
-<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;        { tr(<span class="stringliteral">&quot;Dshot1200&quot;</span>), RATE_DSHOT1200 },</div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;    };</div>
-<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;    <span class="keywordflow">return</span> mapping.value(str, str.toUInt());</div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;}</div>
-<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;</div>
-<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;<span class="keywordtype">void</span> ConfigOutputWidget::tabSwitchingAway()</div>
-<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;{</div>
-<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;    stopTests();</div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;}</div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;</div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;<span class="keywordtype">void</span> ConfigOutputWidget::stopTests()</div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;{</div>
-<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;    <span class="keywordflow">if</span> (m_config-&gt;channelOutTest-&gt;isChecked()) {</div>
-<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;        qDebug() &lt;&lt; <span class="stringliteral">&quot;Output testing stopped by signal of incompatible mode&quot;</span>;</div>
-<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;    }</div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;QString ConfigOutputWidget::timerFreqToString(quint32 freq)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QMap&lt;quint32, QString&gt; mapping{</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;        { RATE_SYNCPWM, tr(<span class="stringliteral">&quot;SyncPWM&quot;</span>) },</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;        { RATE_DSHOT300, tr(<span class="stringliteral">&quot;Dshot300&quot;</span>) },</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;        { RATE_DSHOT600, tr(<span class="stringliteral">&quot;Dshot600&quot;</span>) },</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;        { RATE_DSHOT1200, tr(<span class="stringliteral">&quot;Dshot1200&quot;</span>) },</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;    };</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;    <span class="keywordflow">return</span> mapping.value(freq, QString::number(freq));</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;}</div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;quint32 ConfigOutputWidget::timerStringToFreq(QString str)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QMap&lt;QString, quint32&gt; mapping{</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;        { tr(<span class="stringliteral">&quot;SyncPWM&quot;</span>), RATE_SYNCPWM },</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;        { tr(<span class="stringliteral">&quot;Dshot300&quot;</span>), RATE_DSHOT300 },</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;        { tr(<span class="stringliteral">&quot;Dshot600&quot;</span>), RATE_DSHOT600 },</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;        { tr(<span class="stringliteral">&quot;Dshot1200&quot;</span>), RATE_DSHOT1200 },</div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;    };</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;    <span class="keywordflow">return</span> mapping.value(str, str.toUInt());</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;}</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;<span class="keywordtype">void</span> ConfigOutputWidget::tabSwitchingAway()</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;{</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;    stopTests();</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;}</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;</div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;<span class="keywordtype">void</span> ConfigOutputWidget::stopTests()</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;{</div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;    <span class="keywordflow">if</span> (m_config-&gt;channelOutTest-&gt;isChecked()) {</div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;        qDebug() &lt;&lt; <span class="stringliteral">&quot;Output testing stopped by signal of incompatible mode&quot;</span>;</div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;    }</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;    m_config-&gt;channelOutTest-&gt;setChecked(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;}</div>
 <div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;</div>
-<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;    m_config-&gt;channelOutTest-&gt;setChecked(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;}</div>
-<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;</div>
-<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;<span class="keywordtype">void</span> ConfigOutputWidget::do_SetDirty()</div>
-<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;{</div>
-<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#gae75127fbfffe10458defc31a6a18c0f8">setDirty</a>(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;}</div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;<span class="keywordtype">void</span> ConfigOutputWidget::do_SetDirty()</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;{</div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#gae75127fbfffe10458defc31a6a18c0f8">setDirty</a>(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;}</div>
 <div class="ttc" id="group___u_a_v_object_widget_utils_html_ga945551d9d4d280fe2cd14bc2646d8fbf"><div class="ttname"><a href="group___u_a_v_object_widget_utils.html#ga945551d9d4d280fe2cd14bc2646d8fbf">ConfigTaskWidget::autoLoadWidgets</a></div><div class="ttdeci">void autoLoadWidgets()</div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8cpp_source.html#l00715">configtaskwidget.cpp:715</a></div></div>
 <div class="ttc" id="group___u_a_v_object_widget_utils_html_gae75127fbfffe10458defc31a6a18c0f8"><div class="ttname"><a href="group___u_a_v_object_widget_utils.html#gae75127fbfffe10458defc31a6a18c0f8">ConfigTaskWidget::setDirty</a></div><div class="ttdeci">void setDirty(bool value)</div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8cpp_source.html#l00542">configtaskwidget.cpp:542</a></div></div>
 <div class="ttc" id="group___u_a_v_object_widget_utils_html_ga4578f848dc694e8ac27688a491212e72"><div class="ttname"><a href="group___u_a_v_object_widget_utils.html#ga4578f848dc694e8ac27688a491212e72">ConfigTaskWidget::utilMngr</a></div><div class="ttdeci">UAVObjectUtilManager * utilMngr</div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8h_source.html#l00332">configtaskwidget.h:332</a></div></div>
@@ -776,7 +773,7 @@ $(document).ready(function(){initNavTree('configoutputwidget_8cpp_source.html','
 <div class="ttc" id="group___config_plugin_html_ga32fadbb58da35d4088500bd070584309"><div class="ttname"><a href="group___config_plugin.html#ga32fadbb58da35d4088500bd070584309">OutputChannelForm::updateChannelLimits</a></div><div class="ttdeci">void updateChannelLimits(int minPulse, int maxPulse, bool digitalProtocol=false)</div><div class="ttdef"><b>Definition:</b> <a href="outputchannelform_8cpp_source.html#l00370">outputchannelform.cpp:370</a></div></div>
 <div class="ttc" id="imode_8h_html"><div class="ttname"><a href="imode_8h.html">imode.h</a></div></div>
 <div class="ttc" id="configvehicletypewidget_8h_html"><div class="ttname"><a href="configvehicletypewidget_8h.html">configvehicletypewidget.h</a></div></div>
-<div class="ttc" id="group___config_plugin_html_ga1d96277e7fa36802dd699badb261f199"><div class="ttname"><a href="group___config_plugin.html#ga1d96277e7fa36802dd699badb261f199">showOutputChannelSelectWindow</a></div><div class="ttdeci">bool showOutputChannelSelectWindow(bool(&amp;selectedChannels)[ActuatorCommand::CHANNEL_NUMELEM])</div><div class="ttdef"><b>Definition:</b> <a href="configoutputwidget_8cpp_source.html#l00283">configoutputwidget.cpp:283</a></div></div>
+<div class="ttc" id="group___config_plugin_html_ga1d96277e7fa36802dd699badb261f199"><div class="ttname"><a href="group___config_plugin.html#ga1d96277e7fa36802dd699badb261f199">showOutputChannelSelectWindow</a></div><div class="ttdeci">bool showOutputChannelSelectWindow(bool(&amp;selectedChannels)[ActuatorCommand::CHANNEL_NUMELEM])</div><div class="ttdef"><b>Definition:</b> <a href="configoutputwidget_8cpp_source.html#l00280">configoutputwidget.cpp:280</a></div></div>
 <div class="ttc" id="uavsettingsimportexportmanager_8h_html"><div class="ttname"><a href="uavsettingsimportexportmanager_8h.html">uavsettingsimportexportmanager.h</a></div></div>
 <div class="ttc" id="group___u_a_v_object_widget_utils_html_ga82f371b1291826ec74341dddfe827c83"><div class="ttname"><a href="group___u_a_v_object_widget_utils.html#ga82f371b1291826ec74341dddfe827c83">ConfigTaskWidget::addUAVObject</a></div><div class="ttdeci">void addUAVObject(QString objectName, QList&lt; int &gt; *reloadGroups=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8cpp_source.html#l00087">configtaskwidget.cpp:87</a></div></div>
 <div class="ttc" id="class_u_a_v_object_manager_html"><div class="ttname"><a href="class_u_a_v_object_manager.html">UAVObjectManager</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8h_source.html#l00046">uavobjectmanager.h:46</a></div></div>
@@ -784,6 +781,7 @@ $(document).ready(function(){initNavTree('configoutputwidget_8cpp_source.html','
 <div class="ttc" id="class_u_a_v_object_html"><div class="ttname"><a href="class_u_a_v_object.html">UAVObject</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8h_source.html#l00065">uavobject.h:65</a></div></div>
 <div class="ttc" id="group___config_plugin_html_ga7ec2288bf27bf15dfb962c5e965d008e"><div class="ttname"><a href="group___config_plugin.html#ga7ec2288bf27bf15dfb962c5e965d008e">OutputChannelForm::neutral</a></div><div class="ttdeci">int neutral() const </div><div class="ttdef"><b>Definition:</b> <a href="outputchannelform_8h_source.html#l00097">outputchannelform.h:97</a></div></div>
 <div class="ttc" id="group___u_a_v_talk_plugin_html_ga61e671949cc2403327617d9c9a372a76"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga61e671949cc2403327617d9c9a372a76">TelemetryManager::disconnected</a></div><div class="ttdeci">void disconnected()</div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_ga444cf2ff3f0ecbe028adce838d373f5c"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a></div><div class="ttdeci">void(NAME)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjecttemplate_8cpp_source.html#l00088">uavobjecttemplate.cpp:88</a></div></div>
 <div class="ttc" id="group___u_a_v_object_widget_utils_html_gaad59e4e96d1e4a59067aa44828ddaa3f"><div class="ttname"><a href="group___u_a_v_object_widget_utils.html#gaad59e4e96d1e4a59067aa44828ddaa3f">ConfigTaskWidget::enableControls</a></div><div class="ttdeci">virtual void enableControls(bool enable)</div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8cpp_source.html#l00448">configtaskwidget.cpp:448</a></div></div>
 <div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList</a></div><div class="ttdef"><b>Definition:</b> <a href="icore_8h_source.html#l00039">icore.h:39</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gga08c0580992fcd51c2b44734e2d24cac6a118268aa016a1f371149d6180bd9a366"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gga08c0580992fcd51c2b44734e2d24cac6a118268aa016a1f371149d6180bd9a366">UAVObject::UPDATEMODE_ONCHANGE</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8h_source.html#l00076">uavobject.h:76</a></div></div>

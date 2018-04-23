@@ -37,7 +37,6 @@ var class_core_1_1_internal_1_1_main_window =
     [ "settings", "group___core_plugin.html#ga14fadbb1735f8dddb54ae61aee869a40", null ],
     [ "showOptionsDialog", "group___core_plugin.html#ga95a6b4415fd471c43823a5c18e58d5d6", null ],
     [ "showSplash", "group___core_plugin.html#gae4ce05588c5f079988b3fd1c6257e329", null ],
-    [ "showWarningWithOptions", "group___core_plugin.html#ga44304fc53dbc13ee49b30c747bd2a166", null ],
     [ "shutdown", "group___core_plugin.html#ga1fcbdef10ebfdec100d2d0078abb5afa", null ],
     [ "splashMessages", "group___core_plugin.html#ga350b11b63b05d92bfd77b029c1171221", null ],
     [ "statusBar", "group___core_plugin.html#gad0b6f29ad56dcf30aca0db939eb985a0", null ],

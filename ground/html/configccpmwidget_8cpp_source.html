@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">5035a2e</span>
+   &#160;<span id="projectnumber">0548c47</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -1104,559 +1104,555 @@ $(document).ready(function(){initNavTree('configccpmwidget_8cpp_source.html','')
 <div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;</div>
 <div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;<span class="keywordtype">void</span> ConfigCcpmWidget::SwashLvlStartButtonPressed()</div>
 <div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;{</div>
-<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;    QMessageBox msgBox;</div>
-<div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>;</div>
-<div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;    msgBox.setText(<span class="stringliteral">&quot;&lt;h1&gt;Swashplate Leveling Routine&lt;/h1&gt;&quot;</span>);</div>
-<div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160;    msgBox.setInformativeText(</div>
-<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;        <span class="stringliteral">&quot;&lt;b&gt;You are about to start the Swashplate levelling routine.&lt;/b&gt;&lt;p&gt;This process will start &quot;</span></div>
-<div class="line"><a name="l01020"></a><span class="lineno"> 1020</span>&#160;        <span class="stringliteral">&quot;by downloading the current configuration from the GCS to the OP hardware and will adjust &quot;</span></div>
-<div class="line"><a name="l01021"></a><span class="lineno"> 1021</span>&#160;        <span class="stringliteral">&quot;your configuration at various stages.&lt;p&gt;The final state of your system should match the &quot;</span></div>
-<div class="line"><a name="l01022"></a><span class="lineno"> 1022</span>&#160;        <span class="stringliteral">&quot;current configuration in the GCS config gadget.&lt;p&gt;Please ensure all ccpm settings in the &quot;</span></div>
-<div class="line"><a name="l01023"></a><span class="lineno"> 1023</span>&#160;        <span class="stringliteral">&quot;GCS are correct before continuing.&lt;p&gt;If this process is interrupted, then the state of &quot;</span></div>
-<div class="line"><a name="l01024"></a><span class="lineno"> 1024</span>&#160;        <span class="stringliteral">&quot;your OP board may not match the GCS configuration.&lt;p&gt;&lt;i&gt;After completing this process, &quot;</span></div>
-<div class="line"><a name="l01025"></a><span class="lineno"> 1025</span>&#160;        <span class="stringliteral">&quot;please check all settings before attempting to fly.&lt;/i&gt;&lt;p&gt;&lt;font color=red&gt;&lt;b&gt;Please &quot;</span></div>
-<div class="line"><a name="l01026"></a><span class="lineno"> 1026</span>&#160;        <span class="stringliteral">&quot;disconnect your motor to ensure it will not spin up.&lt;/b&gt;&lt;/font&gt;&lt;p&gt;&lt;hr&gt;&lt;i&gt;Do you wish to &quot;</span></div>
-<div class="line"><a name="l01027"></a><span class="lineno"> 1027</span>&#160;        <span class="stringliteral">&quot;proceed?&lt;/i&gt;&quot;</span>);</div>
-<div class="line"><a name="l01028"></a><span class="lineno"> 1028</span>&#160;    msgBox.setStandardButtons(QMessageBox::Yes | QMessageBox::Cancel);</div>
-<div class="line"><a name="l01029"></a><span class="lineno"> 1029</span>&#160;    msgBox.setDefaultButton(QMessageBox::Cancel);</div>
-<div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160;    msgBox.setIcon(QMessageBox::Information);</div>
-<div class="line"><a name="l01031"></a><span class="lineno"> 1031</span>&#160;    <span class="keywordtype">int</span> ret = msgBox.exec();</div>
-<div class="line"><a name="l01032"></a><span class="lineno"> 1032</span>&#160;</div>
-<div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;    <a class="code" href="class_u_a_v_object_field.html">UAVObjectField</a> *MinField;</div>
-<div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160;    <a class="code" href="class_u_a_v_object_field.html">UAVObjectField</a> *NeutralField;</div>
-<div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160;    <a class="code" href="class_u_a_v_object_field.html">UAVObjectField</a> *MaxField;</div>
-<div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;    <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *obj;</div>
-<div class="line"><a name="l01037"></a><span class="lineno"> 1037</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm;</div>
-<div class="line"><a name="l01038"></a><span class="lineno"> 1038</span>&#160;    <a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *objManager;</div>
-<div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;</div>
-<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;    <span class="keywordflow">switch</span> (ret) {</div>
-<div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;    <span class="keywordflow">case</span> QMessageBox::Yes:</div>
-<div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;        <span class="comment">// Yes was clicked</span></div>
-<div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;        SwashLvlState = 0;</div>
-<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;        <span class="comment">// remove Flight control of ActuatorCommand</span></div>
-<div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;        enableSwashplateLevellingControl(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;</div>
-<div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;        m_ccpm-&gt;SwashLvlStartButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;        m_ccpm-&gt;SwashLvlNextButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;        m_ccpm-&gt;SwashLvlCancelButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;        m_ccpm-&gt;SwashLvlFinishButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;        <span class="comment">// clear status check boxes</span></div>
-<div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;        m_ccpm-&gt;SwashLvlStepList-&gt;item(0)-&gt;setCheckState(Qt::Unchecked);</div>
-<div class="line"><a name="l01053"></a><span class="lineno"> 1053</span>&#160;        m_ccpm-&gt;SwashLvlStepList-&gt;item(1)-&gt;setCheckState(Qt::Unchecked);</div>
-<div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;        m_ccpm-&gt;SwashLvlStepList-&gt;item(2)-&gt;setCheckState(Qt::Unchecked);</div>
-<div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160;        m_ccpm-&gt;SwashLvlStepList-&gt;item(3)-&gt;setCheckState(Qt::Unchecked);</div>
+<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;    QMessageBox msgBox(QMessageBox::Information, tr(<span class="stringliteral">&quot;Swashplate Leveling Routine&quot;</span>),</div>
+<div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;        tr(<span class="stringliteral">&quot;&lt;b&gt;You are about to start the Swashplate levelling routine.&lt;/b&gt;&lt;p&gt;This process will start &quot;</span></div>
+<div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;        <span class="stringliteral">&quot;by downloading the current configuration from the GCS to the OP hardware and will adjust &quot;</span></div>
+<div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160;        <span class="stringliteral">&quot;your configuration at various stages.&lt;p&gt;The final state of your system should match the &quot;</span></div>
+<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;        <span class="stringliteral">&quot;current configuration in the GCS config gadget.&lt;p&gt;Please ensure all ccpm settings in the &quot;</span></div>
+<div class="line"><a name="l01020"></a><span class="lineno"> 1020</span>&#160;        <span class="stringliteral">&quot;GCS are correct before continuing.&lt;p&gt;If this process is interrupted, then the state of &quot;</span></div>
+<div class="line"><a name="l01021"></a><span class="lineno"> 1021</span>&#160;        <span class="stringliteral">&quot;your OP board may not match the GCS configuration.&lt;p&gt;&lt;i&gt;After completing this process, &quot;</span></div>
+<div class="line"><a name="l01022"></a><span class="lineno"> 1022</span>&#160;        <span class="stringliteral">&quot;please check all settings before attempting to fly.&lt;/i&gt;&lt;p&gt;&lt;font color=red&gt;&lt;b&gt;Please &quot;</span></div>
+<div class="line"><a name="l01023"></a><span class="lineno"> 1023</span>&#160;        <span class="stringliteral">&quot;disconnect your motor to ensure it will not spin up.&lt;/b&gt;&lt;/font&gt;&lt;p&gt;&lt;hr&gt;&lt;i&gt;Do you wish to &quot;</span></div>
+<div class="line"><a name="l01024"></a><span class="lineno"> 1024</span>&#160;        <span class="stringliteral">&quot;proceed?&lt;/i&gt;&quot;</span>), QMessageBox::Yes | QMessageBox::Cancel, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l01025"></a><span class="lineno"> 1025</span>&#160;</div>
+<div class="line"><a name="l01026"></a><span class="lineno"> 1026</span>&#160;    msgBox.setDefaultButton(QMessageBox::Cancel);</div>
+<div class="line"><a name="l01027"></a><span class="lineno"> 1027</span>&#160;    <span class="keywordtype">int</span> ret = msgBox.exec();</div>
+<div class="line"><a name="l01028"></a><span class="lineno"> 1028</span>&#160;</div>
+<div class="line"><a name="l01029"></a><span class="lineno"> 1029</span>&#160;    <a class="code" href="class_u_a_v_object_field.html">UAVObjectField</a> *MinField;</div>
+<div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160;    <a class="code" href="class_u_a_v_object_field.html">UAVObjectField</a> *NeutralField;</div>
+<div class="line"><a name="l01031"></a><span class="lineno"> 1031</span>&#160;    <a class="code" href="class_u_a_v_object_field.html">UAVObjectField</a> *MaxField;</div>
+<div class="line"><a name="l01032"></a><span class="lineno"> 1032</span>&#160;    <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *obj;</div>
+<div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm;</div>
+<div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160;    <a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *objManager;</div>
+<div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160;</div>
+<div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;    <span class="keywordflow">switch</span> (ret) {</div>
+<div class="line"><a name="l01037"></a><span class="lineno"> 1037</span>&#160;    <span class="keywordflow">case</span> QMessageBox::Yes:</div>
+<div class="line"><a name="l01038"></a><span class="lineno"> 1038</span>&#160;        <span class="comment">// Yes was clicked</span></div>
+<div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;        SwashLvlState = 0;</div>
+<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;        <span class="comment">// remove Flight control of ActuatorCommand</span></div>
+<div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;        enableSwashplateLevellingControl(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;</div>
+<div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;        m_ccpm-&gt;SwashLvlStartButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;        m_ccpm-&gt;SwashLvlNextButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;        m_ccpm-&gt;SwashLvlCancelButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;        m_ccpm-&gt;SwashLvlFinishButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;        <span class="comment">// clear status check boxes</span></div>
+<div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;        m_ccpm-&gt;SwashLvlStepList-&gt;item(0)-&gt;setCheckState(Qt::Unchecked);</div>
+<div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;        m_ccpm-&gt;SwashLvlStepList-&gt;item(1)-&gt;setCheckState(Qt::Unchecked);</div>
+<div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;        m_ccpm-&gt;SwashLvlStepList-&gt;item(2)-&gt;setCheckState(Qt::Unchecked);</div>
+<div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;        m_ccpm-&gt;SwashLvlStepList-&gt;item(3)-&gt;setCheckState(Qt::Unchecked);</div>
+<div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;</div>
+<div class="line"><a name="l01053"></a><span class="lineno"> 1053</span>&#160;        <span class="comment">// download the current settings to the OP hw</span></div>
+<div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;        <span class="comment">// sendccpmUpdate();</span></div>
+<div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160;        <a class="code" href="group___config_plugin.html#gabc1d25c95203b38337f954ed47387039">setMixer</a>();</div>
 <div class="line"><a name="l01056"></a><span class="lineno"> 1056</span>&#160;</div>
-<div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;        <span class="comment">// download the current settings to the OP hw</span></div>
-<div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;        <span class="comment">// sendccpmUpdate();</span></div>
-<div class="line"><a name="l01059"></a><span class="lineno"> 1059</span>&#160;        <a class="code" href="group___config_plugin.html#gabc1d25c95203b38337f954ed47387039">setMixer</a>();</div>
-<div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160;</div>
-<div class="line"><a name="l01061"></a><span class="lineno"> 1061</span>&#160;        <span class="comment">// change control mode to gcs control / disarmed</span></div>
-<div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160;        <span class="comment">// set throttle to 0</span></div>
+<div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;        <span class="comment">// change control mode to gcs control / disarmed</span></div>
+<div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;        <span class="comment">// set throttle to 0</span></div>
+<div class="line"><a name="l01059"></a><span class="lineno"> 1059</span>&#160;</div>
+<div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160;        <span class="comment">// save off the old ActuatorSettings for the swashplate servos</span></div>
+<div class="line"><a name="l01061"></a><span class="lineno"> 1061</span>&#160;        pm = ExtensionSystem::PluginManager::instance();</div>
+<div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160;        objManager = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a>&gt;();</div>
 <div class="line"><a name="l01063"></a><span class="lineno"> 1063</span>&#160;</div>
-<div class="line"><a name="l01064"></a><span class="lineno"> 1064</span>&#160;        <span class="comment">// save off the old ActuatorSettings for the swashplate servos</span></div>
-<div class="line"><a name="l01065"></a><span class="lineno"> 1065</span>&#160;        pm = ExtensionSystem::PluginManager::instance();</div>
-<div class="line"><a name="l01066"></a><span class="lineno"> 1066</span>&#160;        objManager = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a>&gt;();</div>
-<div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;</div>
-<div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160;        <span class="comment">// Get the channel assignements:</span></div>
-<div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;        obj = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *<span class="keyword">&gt;</span>(objManager-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gada44cdbfa55a281b78d41abcc6834dc0">getObject</a>(QString(<span class="stringliteral">&quot;ActuatorSettings&quot;</span>)));</div>
-<div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;        Q_ASSERT(obj);</div>
-<div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;        <span class="comment">// obj-&gt;requestUpdate();</span></div>
-<div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;        MinField = obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gab3f0c931f4e8c85e68fd84421c445f5c">getField</a>(QString(<span class="stringliteral">&quot;ChannelMin&quot;</span>));</div>
-<div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;        NeutralField = obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gab3f0c931f4e8c85e68fd84421c445f5c">getField</a>(QString(<span class="stringliteral">&quot;ChannelNeutral&quot;</span>));</div>
-<div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;        MaxField = obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gab3f0c931f4e8c85e68fd84421c445f5c">getField</a>(QString(<span class="stringliteral">&quot;ChannelMax&quot;</span>));</div>
-<div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;</div>
-<div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;        <span class="comment">// channel assignments</span></div>
-<div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;        oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga86e55bfb2e22af5cf453931b3990d504">ServoChannels</a>[0] = m_ccpm-&gt;ccpmServoWChannel-&gt;currentIndex();</div>
-<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;        oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga86e55bfb2e22af5cf453931b3990d504">ServoChannels</a>[1] = m_ccpm-&gt;ccpmServoXChannel-&gt;currentIndex();</div>
-<div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;        oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga86e55bfb2e22af5cf453931b3990d504">ServoChannels</a>[2] = m_ccpm-&gt;ccpmServoYChannel-&gt;currentIndex();</div>
-<div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;        oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga86e55bfb2e22af5cf453931b3990d504">ServoChannels</a>[3] = m_ccpm-&gt;ccpmServoZChannel-&gt;currentIndex();</div>
-<div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;</div>
-<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;        <span class="comment">// if servos are used</span></div>
-<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;        oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga9fda1ee21effccd7fcbad04816734eac">Used</a>[0] = (m_ccpm-&gt;ccpmServoWChannel-&gt;currentIndex() &gt; 0);</div>
-<div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;        oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga9fda1ee21effccd7fcbad04816734eac">Used</a>[1] = (m_ccpm-&gt;ccpmServoXChannel-&gt;currentIndex() &gt; 0);</div>
-<div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;        oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga9fda1ee21effccd7fcbad04816734eac">Used</a>[2] = (m_ccpm-&gt;ccpmServoYChannel-&gt;currentIndex() &gt; 0);</div>
-<div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;        oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga9fda1ee21effccd7fcbad04816734eac">Used</a>[3] = (m_ccpm-&gt;ccpmServoZChannel-&gt;currentIndex() &gt; 0);</div>
-<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;</div>
-<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;        <span class="comment">// all the channel spinboxes have &quot;None&quot; as index zero; thus, all channels will be off by 1</span></div>
-<div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;        <span class="keywordflow">for</span> (uint8_t i = 0; i &lt; CCPM_MAX_SWASH_SERVOS; ++<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>) {</div>
-<div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;            <span class="comment">// if a channel is selected, shift its value into the correct range [0,N-1] instead of</span></div>
-<div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;            <span class="comment">// [1,N]</span></div>
-<div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;            <span class="keywordflow">if</span> (oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga86e55bfb2e22af5cf453931b3990d504">ServoChannels</a>[i] &gt; 0)</div>
-<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;                oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga86e55bfb2e22af5cf453931b3990d504">ServoChannels</a>[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]--;</div>
-<div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;        }</div>
-<div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;</div>
-<div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160;        <span class="comment">// min,neutral,max values for the servos</span></div>
-<div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;        <span class="keywordflow">for</span> (i = 0; i &lt; CCPM_MAX_SWASH_SERVOS; i++) {</div>
-<div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;            oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga68b64812e9062f2c280eebb8ad8961c4">Min</a>[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] =</div>
-<div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160;                MinField-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga903b7cd5251e0a0b157cbc1a26d90429">getValue</a>(oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga86e55bfb2e22af5cf453931b3990d504">ServoChannels</a>[i]).toInt();</div>
-<div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;            oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#gad228ac505087eafb0d00d4aab3b3e76d">Neutral</a>[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] =</div>
-<div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;                NeutralField-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga903b7cd5251e0a0b157cbc1a26d90429">getValue</a>(oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga86e55bfb2e22af5cf453931b3990d504">ServoChannels</a>[i]).toInt();</div>
-<div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;            oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga30259c7dfef707f2d0999fed8adaf6b1">Max</a>[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] =</div>
-<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;                MaxField-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga903b7cd5251e0a0b157cbc1a26d90429">getValue</a>(oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga86e55bfb2e22af5cf453931b3990d504">ServoChannels</a>[i]).toInt();</div>
-<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;        }</div>
+<div class="line"><a name="l01064"></a><span class="lineno"> 1064</span>&#160;        <span class="comment">// Get the channel assignements:</span></div>
+<div class="line"><a name="l01065"></a><span class="lineno"> 1065</span>&#160;        obj = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *<span class="keyword">&gt;</span>(objManager-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gada44cdbfa55a281b78d41abcc6834dc0">getObject</a>(QString(<span class="stringliteral">&quot;ActuatorSettings&quot;</span>)));</div>
+<div class="line"><a name="l01066"></a><span class="lineno"> 1066</span>&#160;        Q_ASSERT(obj);</div>
+<div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;        <span class="comment">// obj-&gt;requestUpdate();</span></div>
+<div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160;        MinField = obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gab3f0c931f4e8c85e68fd84421c445f5c">getField</a>(QString(<span class="stringliteral">&quot;ChannelMin&quot;</span>));</div>
+<div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;        NeutralField = obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gab3f0c931f4e8c85e68fd84421c445f5c">getField</a>(QString(<span class="stringliteral">&quot;ChannelNeutral&quot;</span>));</div>
+<div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;        MaxField = obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gab3f0c931f4e8c85e68fd84421c445f5c">getField</a>(QString(<span class="stringliteral">&quot;ChannelMax&quot;</span>));</div>
+<div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;</div>
+<div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;        <span class="comment">// channel assignments</span></div>
+<div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;        oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga86e55bfb2e22af5cf453931b3990d504">ServoChannels</a>[0] = m_ccpm-&gt;ccpmServoWChannel-&gt;currentIndex();</div>
+<div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;        oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga86e55bfb2e22af5cf453931b3990d504">ServoChannels</a>[1] = m_ccpm-&gt;ccpmServoXChannel-&gt;currentIndex();</div>
+<div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;        oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga86e55bfb2e22af5cf453931b3990d504">ServoChannels</a>[2] = m_ccpm-&gt;ccpmServoYChannel-&gt;currentIndex();</div>
+<div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;        oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga86e55bfb2e22af5cf453931b3990d504">ServoChannels</a>[3] = m_ccpm-&gt;ccpmServoZChannel-&gt;currentIndex();</div>
+<div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;</div>
+<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;        <span class="comment">// if servos are used</span></div>
+<div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;        oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga9fda1ee21effccd7fcbad04816734eac">Used</a>[0] = (m_ccpm-&gt;ccpmServoWChannel-&gt;currentIndex() &gt; 0);</div>
+<div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;        oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga9fda1ee21effccd7fcbad04816734eac">Used</a>[1] = (m_ccpm-&gt;ccpmServoXChannel-&gt;currentIndex() &gt; 0);</div>
+<div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;        oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga9fda1ee21effccd7fcbad04816734eac">Used</a>[2] = (m_ccpm-&gt;ccpmServoYChannel-&gt;currentIndex() &gt; 0);</div>
+<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;        oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga9fda1ee21effccd7fcbad04816734eac">Used</a>[3] = (m_ccpm-&gt;ccpmServoZChannel-&gt;currentIndex() &gt; 0);</div>
+<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;</div>
+<div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;        <span class="comment">// all the channel spinboxes have &quot;None&quot; as index zero; thus, all channels will be off by 1</span></div>
+<div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;        <span class="keywordflow">for</span> (uint8_t i = 0; i &lt; CCPM_MAX_SWASH_SERVOS; ++<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>) {</div>
+<div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;            <span class="comment">// if a channel is selected, shift its value into the correct range [0,N-1] instead of</span></div>
+<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;            <span class="comment">// [1,N]</span></div>
+<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;            <span class="keywordflow">if</span> (oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga86e55bfb2e22af5cf453931b3990d504">ServoChannels</a>[i] &gt; 0)</div>
+<div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;                oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga86e55bfb2e22af5cf453931b3990d504">ServoChannels</a>[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]--;</div>
+<div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;        }</div>
+<div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;</div>
+<div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;        <span class="comment">// min,neutral,max values for the servos</span></div>
+<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;        <span class="keywordflow">for</span> (uint8_t i = 0; i &lt; CCPM_MAX_SWASH_SERVOS; i++) {</div>
+<div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;            oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga68b64812e9062f2c280eebb8ad8961c4">Min</a>[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] =</div>
+<div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;                MinField-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga903b7cd5251e0a0b157cbc1a26d90429">getValue</a>(oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga86e55bfb2e22af5cf453931b3990d504">ServoChannels</a>[i]).toInt();</div>
+<div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160;            oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#gad228ac505087eafb0d00d4aab3b3e76d">Neutral</a>[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] =</div>
+<div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;                NeutralField-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga903b7cd5251e0a0b157cbc1a26d90429">getValue</a>(oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga86e55bfb2e22af5cf453931b3990d504">ServoChannels</a>[i]).toInt();</div>
+<div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;            oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga30259c7dfef707f2d0999fed8adaf6b1">Max</a>[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] =</div>
+<div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160;                MaxField-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga903b7cd5251e0a0b157cbc1a26d90429">getValue</a>(oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga86e55bfb2e22af5cf453931b3990d504">ServoChannels</a>[i]).toInt();</div>
+<div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;        }</div>
+<div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;</div>
+<div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;        <span class="comment">// copy to new Actuator settings.</span></div>
+<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;        memcpy((<span class="keywordtype">void</span> *)&amp;newSwashLvlConfiguration, (<span class="keywordtype">void</span> *)&amp;oldSwashLvlConfiguration,</div>
+<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;               <span class="keyword">sizeof</span>(<a class="code" href="struct_swashplate_servo_settings_struct.html">SwashplateServoSettingsStruct</a>));</div>
 <div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;</div>
-<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;        <span class="comment">// copy to new Actuator settings.</span></div>
-<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;        memcpy((<span class="keywordtype">void</span> *)&amp;newSwashLvlConfiguration, (<span class="keywordtype">void</span> *)&amp;oldSwashLvlConfiguration,</div>
-<div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;               <span class="keyword">sizeof</span>(<a class="code" href="struct_swashplate_servo_settings_struct.html">SwashplateServoSettingsStruct</a>));</div>
-<div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;</div>
-<div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160;        <span class="comment">// goto the first step</span></div>
-<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;        SwashLvlNextButtonPressed();</div>
-<div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;    <span class="keywordflow">case</span> QMessageBox::Cancel:</div>
-<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;        <span class="comment">// Cancel was clicked</span></div>
-<div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;        SwashLvlState = 0;</div>
-<div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;        <span class="comment">// restore Flight control of ActuatorCommand</span></div>
-<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;        enableSwashplateLevellingControl(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;</div>
-<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;        m_ccpm-&gt;SwashLvlStartButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;        m_ccpm-&gt;SwashLvlNextButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;        m_ccpm-&gt;SwashLvlCancelButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;        m_ccpm-&gt;SwashLvlFinishButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l01125"></a><span class="lineno"> 1125</span>&#160;        <span class="comment">// should never be reached</span></div>
-<div class="line"><a name="l01126"></a><span class="lineno"> 1126</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01127"></a><span class="lineno"> 1127</span>&#160;    }</div>
-<div class="line"><a name="l01128"></a><span class="lineno"> 1128</span>&#160;}</div>
-<div class="line"><a name="l01129"></a><span class="lineno"> 1129</span>&#160;<span class="keywordtype">void</span> ConfigCcpmWidget::SwashLvlNextButtonPressed()</div>
-<div class="line"><a name="l01130"></a><span class="lineno"> 1130</span>&#160;{</div>
-<div class="line"><a name="l01131"></a><span class="lineno"> 1131</span>&#160;    <span class="comment">// ShowDisclaimer(2);</span></div>
-<div class="line"><a name="l01132"></a><span class="lineno"> 1132</span>&#160;    SwashLvlState++;</div>
-<div class="line"><a name="l01133"></a><span class="lineno"> 1133</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>;</div>
-<div class="line"><a name="l01134"></a><span class="lineno"> 1134</span>&#160;</div>
-<div class="line"><a name="l01135"></a><span class="lineno"> 1135</span>&#160;    <span class="keywordflow">switch</span> (SwashLvlState) {</div>
-<div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160;    <span class="keywordflow">case</span> 0:</div>
-<div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01138"></a><span class="lineno"> 1138</span>&#160;    <span class="keywordflow">case</span> 1: <span class="comment">// Neutral levelling</span></div>
-<div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;        m_ccpm-&gt;SwashLvlStepList-&gt;setCurrentRow(0);</div>
-<div class="line"><a name="l01140"></a><span class="lineno"> 1140</span>&#160;        <span class="comment">// set spin boxes and swashplate servos to Neutral values</span></div>
-<div class="line"><a name="l01141"></a><span class="lineno"> 1141</span>&#160;        setSwashplateLevel(50);</div>
-<div class="line"><a name="l01142"></a><span class="lineno"> 1142</span>&#160;        <span class="comment">// disable position slider</span></div>
-<div class="line"><a name="l01143"></a><span class="lineno"> 1143</span>&#160;        m_ccpm-&gt;SwashLvlPositionSlider-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01144"></a><span class="lineno"> 1144</span>&#160;        m_ccpm-&gt;SwashLvlPositionSpinBox-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01145"></a><span class="lineno"> 1145</span>&#160;        <span class="comment">// set position slider to 50%</span></div>
-<div class="line"><a name="l01146"></a><span class="lineno"> 1146</span>&#160;        m_ccpm-&gt;SwashLvlPositionSlider-&gt;setValue(50);</div>
-<div class="line"><a name="l01147"></a><span class="lineno"> 1147</span>&#160;        m_ccpm-&gt;SwashLvlPositionSpinBox-&gt;setValue(50);</div>
-<div class="line"><a name="l01148"></a><span class="lineno"> 1148</span>&#160;        <span class="comment">// connect spinbox signals to slots and ebnable them</span></div>
-<div class="line"><a name="l01149"></a><span class="lineno"> 1149</span>&#160;        <span class="keywordflow">for</span> (i = 0; i &lt; CCPM_MAX_SWASH_SERVOS; i++) {</div>
-<div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;            connect(SwashLvlSpinBoxes[i], SIGNAL(valueChanged(<span class="keywordtype">int</span>)), <span class="keyword">this</span>,</div>
-<div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;                    SLOT(SwashLvlSpinBoxChanged(<span class="keywordtype">int</span>)));</div>
-<div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160;            SwashLvlSpinBoxes[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l01153"></a><span class="lineno"> 1153</span>&#160;        }</div>
-<div class="line"><a name="l01154"></a><span class="lineno"> 1154</span>&#160;        <span class="comment">// issue user instructions</span></div>
-<div class="line"><a name="l01155"></a><span class="lineno"> 1155</span>&#160;        m_ccpm-&gt;SwashLvlStepInstruction-&gt;setHtml(</div>
-<div class="line"><a name="l01156"></a><span class="lineno"> 1156</span>&#160;            <span class="stringliteral">&quot;&lt;h2&gt;Neutral levelling&lt;/h2&gt;&lt;p&gt;Using adjustment of:&lt;ul&gt;&lt;li&gt;servo horns&lt;li&gt;link lengths &quot;</span></div>
-<div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160;            <span class="stringliteral">&quot;and&lt;li&gt;Neutral timing spinboxes to the right&lt;/ul&gt;&lt;br&gt;ensure that the swashplate is in &quot;</span></div>
-<div class="line"><a name="l01158"></a><span class="lineno"> 1158</span>&#160;            <span class="stringliteral">&quot;the center of desired travel range and is level.&quot;</span>);</div>
-<div class="line"><a name="l01159"></a><span class="lineno"> 1159</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01160"></a><span class="lineno"> 1160</span>&#160;    <span class="keywordflow">case</span> 2: <span class="comment">// Max levelling</span></div>
-<div class="line"><a name="l01161"></a><span class="lineno"> 1161</span>&#160;        <span class="comment">// check Neutral status as complete</span></div>
-<div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160;        m_ccpm-&gt;SwashLvlStepList-&gt;item(0)-&gt;setCheckState(Qt::Checked);</div>
-<div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160;        m_ccpm-&gt;SwashLvlStepList-&gt;setCurrentRow(1);</div>
-<div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;        <span class="comment">// set spin boxes and swashplate servos to Max values</span></div>
-<div class="line"><a name="l01165"></a><span class="lineno"> 1165</span>&#160;        setSwashplateLevel(100);</div>
-<div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160;        <span class="comment">// set position slider to 100%</span></div>
-<div class="line"><a name="l01167"></a><span class="lineno"> 1167</span>&#160;        m_ccpm-&gt;SwashLvlPositionSlider-&gt;setValue(100);</div>
-<div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160;        m_ccpm-&gt;SwashLvlPositionSpinBox-&gt;setValue(100);</div>
-<div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160;        <span class="comment">// issue user instructions</span></div>
-<div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;        m_ccpm-&gt;SwashLvlStepInstruction-&gt;setText(<span class="stringliteral">&quot;&lt;h2&gt;Max levelling&lt;/h2&gt;&lt;p&gt;Using adjustment &quot;</span></div>
-<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;                                                 <span class="stringliteral">&quot;of:&lt;ul&gt;&lt;li&gt;Max timing spinboxes to the right &quot;</span></div>
-<div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160;                                                 <span class="stringliteral">&quot;ONLY&lt;/ul&gt;&lt;br&gt;ensure that the swashplate is at &quot;</span></div>
-<div class="line"><a name="l01173"></a><span class="lineno"> 1173</span>&#160;                                                 <span class="stringliteral">&quot;the top of desired travel range and is level.&quot;</span>);</div>
-<div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01175"></a><span class="lineno"> 1175</span>&#160;    <span class="keywordflow">case</span> 3: <span class="comment">// Min levelling</span></div>
-<div class="line"><a name="l01176"></a><span class="lineno"> 1176</span>&#160;        <span class="comment">// check Max status as complete</span></div>
-<div class="line"><a name="l01177"></a><span class="lineno"> 1177</span>&#160;        m_ccpm-&gt;SwashLvlStepList-&gt;item(1)-&gt;setCheckState(Qt::Checked);</div>
-<div class="line"><a name="l01178"></a><span class="lineno"> 1178</span>&#160;        m_ccpm-&gt;SwashLvlStepList-&gt;setCurrentRow(2);</div>
-<div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;        <span class="comment">// set spin boxes and swashplate servos to Min values</span></div>
-<div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;        setSwashplateLevel(0);</div>
-<div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;        <span class="comment">// set position slider to 0%</span></div>
-<div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;        m_ccpm-&gt;SwashLvlPositionSlider-&gt;setValue(0);</div>
-<div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;        m_ccpm-&gt;SwashLvlPositionSpinBox-&gt;setValue(0);</div>
-<div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;        <span class="comment">// issue user instructions</span></div>
-<div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;        m_ccpm-&gt;SwashLvlStepInstruction-&gt;setText(</div>
-<div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;            <span class="stringliteral">&quot;&lt;h2&gt;Min levelling&lt;/h2&gt;&lt;p&gt;Using adjustment of:&lt;ul&gt;&lt;li&gt;Min timing spinboxes to the &quot;</span></div>
-<div class="line"><a name="l01187"></a><span class="lineno"> 1187</span>&#160;            <span class="stringliteral">&quot;right ONLY&lt;/ul&gt;&lt;br&gt;ensure that the swashplate is at the bottom of desired travel &quot;</span></div>
-<div class="line"><a name="l01188"></a><span class="lineno"> 1188</span>&#160;            <span class="stringliteral">&quot;range and is level.&quot;</span>);</div>
-<div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;    <span class="keywordflow">case</span> 4: <span class="comment">// levelling verification</span></div>
-<div class="line"><a name="l01191"></a><span class="lineno"> 1191</span>&#160;        <span class="comment">// check Min status as complete</span></div>
-<div class="line"><a name="l01192"></a><span class="lineno"> 1192</span>&#160;        m_ccpm-&gt;SwashLvlStepList-&gt;item(2)-&gt;setCheckState(Qt::Checked);</div>
-<div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;        m_ccpm-&gt;SwashLvlStepList-&gt;setCurrentRow(3);</div>
-<div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160;        <span class="comment">// enable position slider</span></div>
-<div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;        m_ccpm-&gt;SwashLvlPositionSlider-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l01196"></a><span class="lineno"> 1196</span>&#160;        m_ccpm-&gt;SwashLvlPositionSpinBox-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l01197"></a><span class="lineno"> 1197</span>&#160;        <span class="comment">// make heli respond to slider movement</span></div>
-<div class="line"><a name="l01198"></a><span class="lineno"> 1198</span>&#160;        connect(m_ccpm-&gt;SwashLvlPositionSlider, SIGNAL(valueChanged(<span class="keywordtype">int</span>)), <span class="keyword">this</span>,</div>
-<div class="line"><a name="l01199"></a><span class="lineno"> 1199</span>&#160;                SLOT(setSwashplateLevel(<span class="keywordtype">int</span>)));</div>
-<div class="line"><a name="l01200"></a><span class="lineno"> 1200</span>&#160;        <span class="comment">// disable spin boxes</span></div>
-<div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160;        <span class="keywordflow">for</span> (i = 0; i &lt; CCPM_MAX_SWASH_SERVOS; i++) {</div>
-<div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;            SwashLvlSpinBoxes[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;        }</div>
-<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;</div>
-<div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;        <span class="comment">// issue user instructions</span></div>
-<div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;        m_ccpm-&gt;SwashLvlStepInstruction-&gt;setText(<span class="stringliteral">&quot;&lt;h2&gt;levelling verification&lt;/h2&gt;&lt;p&gt;Adjust the &quot;</span></div>
-<div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;                                                 <span class="stringliteral">&quot;slider to the right over it&#39;s full range and &quot;</span></div>
-<div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;                                                 <span class="stringliteral">&quot;observe the swashplate motion. It should remain &quot;</span></div>
-<div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;                                                 <span class="stringliteral">&quot;level over the entire range of travel.&quot;</span>);</div>
-<div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;    <span class="keywordflow">case</span> 5: <span class="comment">// levelling complete</span></div>
-<div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;        <span class="comment">// check verify status as complete</span></div>
-<div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160;        m_ccpm-&gt;SwashLvlStepList-&gt;item(3)-&gt;setCheckState(Qt::Checked);</div>
-<div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;        <span class="comment">// issue user instructions</span></div>
-<div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;        m_ccpm-&gt;SwashLvlStepInstruction-&gt;setText(</div>
-<div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;            <span class="stringliteral">&quot;&lt;h2&gt;levelling complete&lt;/h2&gt;&lt;p&gt;Press the Finish button to save these settings to the &quot;</span></div>
-<div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160;            <span class="stringliteral">&quot;SD card&lt;p&gt;Press the cancel button to return to the pre-levelling settings&quot;</span>);</div>
-<div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;        <span class="comment">// disable position slider</span></div>
-<div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160;        m_ccpm-&gt;SwashLvlPositionSlider-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;        m_ccpm-&gt;SwashLvlPositionSpinBox-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;        <span class="comment">// disconnect levelling slots from signals</span></div>
-<div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;        disconnect(m_ccpm-&gt;SwashLvlPositionSlider, SIGNAL(valueChanged(<span class="keywordtype">int</span>)), <span class="keyword">this</span>,</div>
-<div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;                   SLOT(setSwashplateLevel(<span class="keywordtype">int</span>)));</div>
-<div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;        <span class="keywordflow">for</span> (i = 0; i &lt; CCPM_MAX_SWASH_SERVOS; i++) {</div>
-<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;            disconnect(SwashLvlSpinBoxes[i], SIGNAL(valueChanged(<span class="keywordtype">int</span>)), <span class="keyword">this</span>,</div>
-<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;                       SLOT(SwashLvlSpinBoxChanged(<span class="keywordtype">int</span>)));</div>
-<div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;        }</div>
-<div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;</div>
-<div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;        m_ccpm-&gt;SwashLvlStartButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;        m_ccpm-&gt;SwashLvlNextButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;        m_ccpm-&gt;SwashLvlCancelButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;        m_ccpm-&gt;SwashLvlFinishButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;</div>
-<div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;        <span class="comment">// restore collective/cyclic setting</span></div>
-<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;        <span class="comment">// restore pitch curve</span></div>
-<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;        <span class="comment">// clear spin boxes</span></div>
-<div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;        <span class="comment">// change control mode to gcs control (OFF) / disarmed</span></div>
-<div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;        <span class="comment">// issue user confirmation</span></div>
-<div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;    }</div>
-<div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;}</div>
-<div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;<span class="keywordtype">void</span> ConfigCcpmWidget::SwashLvlCancelButtonPressed()</div>
-<div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;{</div>
-<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>;</div>
-<div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160;    SwashLvlState = 0;</div>
+<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;        <span class="comment">// goto the first step</span></div>
+<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;        SwashLvlNextButtonPressed();</div>
+<div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;    <span class="keywordflow">case</span> QMessageBox::Cancel:</div>
+<div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160;        <span class="comment">// Cancel was clicked</span></div>
+<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;        SwashLvlState = 0;</div>
+<div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;        <span class="comment">// restore Flight control of ActuatorCommand</span></div>
+<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;        enableSwashplateLevellingControl(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;</div>
+<div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;        m_ccpm-&gt;SwashLvlStartButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;        m_ccpm-&gt;SwashLvlNextButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;        m_ccpm-&gt;SwashLvlCancelButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;        m_ccpm-&gt;SwashLvlFinishButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;        <span class="comment">// should never be reached</span></div>
+<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;    }</div>
+<div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;}</div>
+<div class="line"><a name="l01125"></a><span class="lineno"> 1125</span>&#160;<span class="keywordtype">void</span> ConfigCcpmWidget::SwashLvlNextButtonPressed()</div>
+<div class="line"><a name="l01126"></a><span class="lineno"> 1126</span>&#160;{</div>
+<div class="line"><a name="l01127"></a><span class="lineno"> 1127</span>&#160;    <span class="comment">// ShowDisclaimer(2);</span></div>
+<div class="line"><a name="l01128"></a><span class="lineno"> 1128</span>&#160;    SwashLvlState++;</div>
+<div class="line"><a name="l01129"></a><span class="lineno"> 1129</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>;</div>
+<div class="line"><a name="l01130"></a><span class="lineno"> 1130</span>&#160;</div>
+<div class="line"><a name="l01131"></a><span class="lineno"> 1131</span>&#160;    <span class="keywordflow">switch</span> (SwashLvlState) {</div>
+<div class="line"><a name="l01132"></a><span class="lineno"> 1132</span>&#160;    <span class="keywordflow">case</span> 0:</div>
+<div class="line"><a name="l01133"></a><span class="lineno"> 1133</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01134"></a><span class="lineno"> 1134</span>&#160;    <span class="keywordflow">case</span> 1: <span class="comment">// Neutral levelling</span></div>
+<div class="line"><a name="l01135"></a><span class="lineno"> 1135</span>&#160;        m_ccpm-&gt;SwashLvlStepList-&gt;setCurrentRow(0);</div>
+<div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160;        <span class="comment">// set spin boxes and swashplate servos to Neutral values</span></div>
+<div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;        setSwashplateLevel(50);</div>
+<div class="line"><a name="l01138"></a><span class="lineno"> 1138</span>&#160;        <span class="comment">// disable position slider</span></div>
+<div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;        m_ccpm-&gt;SwashLvlPositionSlider-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01140"></a><span class="lineno"> 1140</span>&#160;        m_ccpm-&gt;SwashLvlPositionSpinBox-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01141"></a><span class="lineno"> 1141</span>&#160;        <span class="comment">// set position slider to 50%</span></div>
+<div class="line"><a name="l01142"></a><span class="lineno"> 1142</span>&#160;        m_ccpm-&gt;SwashLvlPositionSlider-&gt;setValue(50);</div>
+<div class="line"><a name="l01143"></a><span class="lineno"> 1143</span>&#160;        m_ccpm-&gt;SwashLvlPositionSpinBox-&gt;setValue(50);</div>
+<div class="line"><a name="l01144"></a><span class="lineno"> 1144</span>&#160;        <span class="comment">// connect spinbox signals to slots and ebnable them</span></div>
+<div class="line"><a name="l01145"></a><span class="lineno"> 1145</span>&#160;        <span class="keywordflow">for</span> (i = 0; i &lt; CCPM_MAX_SWASH_SERVOS; i++) {</div>
+<div class="line"><a name="l01146"></a><span class="lineno"> 1146</span>&#160;            connect(SwashLvlSpinBoxes[i], SIGNAL(valueChanged(<span class="keywordtype">int</span>)), <span class="keyword">this</span>,</div>
+<div class="line"><a name="l01147"></a><span class="lineno"> 1147</span>&#160;                    SLOT(SwashLvlSpinBoxChanged(<span class="keywordtype">int</span>)));</div>
+<div class="line"><a name="l01148"></a><span class="lineno"> 1148</span>&#160;            SwashLvlSpinBoxes[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l01149"></a><span class="lineno"> 1149</span>&#160;        }</div>
+<div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;        <span class="comment">// issue user instructions</span></div>
+<div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;        m_ccpm-&gt;SwashLvlStepInstruction-&gt;setHtml(</div>
+<div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160;            <span class="stringliteral">&quot;&lt;h2&gt;Neutral levelling&lt;/h2&gt;&lt;p&gt;Using adjustment of:&lt;ul&gt;&lt;li&gt;servo horns&lt;li&gt;link lengths &quot;</span></div>
+<div class="line"><a name="l01153"></a><span class="lineno"> 1153</span>&#160;            <span class="stringliteral">&quot;and&lt;li&gt;Neutral timing spinboxes to the right&lt;/ul&gt;&lt;br&gt;ensure that the swashplate is in &quot;</span></div>
+<div class="line"><a name="l01154"></a><span class="lineno"> 1154</span>&#160;            <span class="stringliteral">&quot;the center of desired travel range and is level.&quot;</span>);</div>
+<div class="line"><a name="l01155"></a><span class="lineno"> 1155</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01156"></a><span class="lineno"> 1156</span>&#160;    <span class="keywordflow">case</span> 2: <span class="comment">// Max levelling</span></div>
+<div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160;        <span class="comment">// check Neutral status as complete</span></div>
+<div class="line"><a name="l01158"></a><span class="lineno"> 1158</span>&#160;        m_ccpm-&gt;SwashLvlStepList-&gt;item(0)-&gt;setCheckState(Qt::Checked);</div>
+<div class="line"><a name="l01159"></a><span class="lineno"> 1159</span>&#160;        m_ccpm-&gt;SwashLvlStepList-&gt;setCurrentRow(1);</div>
+<div class="line"><a name="l01160"></a><span class="lineno"> 1160</span>&#160;        <span class="comment">// set spin boxes and swashplate servos to Max values</span></div>
+<div class="line"><a name="l01161"></a><span class="lineno"> 1161</span>&#160;        setSwashplateLevel(100);</div>
+<div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160;        <span class="comment">// set position slider to 100%</span></div>
+<div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160;        m_ccpm-&gt;SwashLvlPositionSlider-&gt;setValue(100);</div>
+<div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;        m_ccpm-&gt;SwashLvlPositionSpinBox-&gt;setValue(100);</div>
+<div class="line"><a name="l01165"></a><span class="lineno"> 1165</span>&#160;        <span class="comment">// issue user instructions</span></div>
+<div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160;        m_ccpm-&gt;SwashLvlStepInstruction-&gt;setText(<span class="stringliteral">&quot;&lt;h2&gt;Max levelling&lt;/h2&gt;&lt;p&gt;Using adjustment &quot;</span></div>
+<div class="line"><a name="l01167"></a><span class="lineno"> 1167</span>&#160;                                                 <span class="stringliteral">&quot;of:&lt;ul&gt;&lt;li&gt;Max timing spinboxes to the right &quot;</span></div>
+<div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160;                                                 <span class="stringliteral">&quot;ONLY&lt;/ul&gt;&lt;br&gt;ensure that the swashplate is at &quot;</span></div>
+<div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160;                                                 <span class="stringliteral">&quot;the top of desired travel range and is level.&quot;</span>);</div>
+<div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;    <span class="keywordflow">case</span> 3: <span class="comment">// Min levelling</span></div>
+<div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160;        <span class="comment">// check Max status as complete</span></div>
+<div class="line"><a name="l01173"></a><span class="lineno"> 1173</span>&#160;        m_ccpm-&gt;SwashLvlStepList-&gt;item(1)-&gt;setCheckState(Qt::Checked);</div>
+<div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160;        m_ccpm-&gt;SwashLvlStepList-&gt;setCurrentRow(2);</div>
+<div class="line"><a name="l01175"></a><span class="lineno"> 1175</span>&#160;        <span class="comment">// set spin boxes and swashplate servos to Min values</span></div>
+<div class="line"><a name="l01176"></a><span class="lineno"> 1176</span>&#160;        setSwashplateLevel(0);</div>
+<div class="line"><a name="l01177"></a><span class="lineno"> 1177</span>&#160;        <span class="comment">// set position slider to 0%</span></div>
+<div class="line"><a name="l01178"></a><span class="lineno"> 1178</span>&#160;        m_ccpm-&gt;SwashLvlPositionSlider-&gt;setValue(0);</div>
+<div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;        m_ccpm-&gt;SwashLvlPositionSpinBox-&gt;setValue(0);</div>
+<div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;        <span class="comment">// issue user instructions</span></div>
+<div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;        m_ccpm-&gt;SwashLvlStepInstruction-&gt;setText(</div>
+<div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;            <span class="stringliteral">&quot;&lt;h2&gt;Min levelling&lt;/h2&gt;&lt;p&gt;Using adjustment of:&lt;ul&gt;&lt;li&gt;Min timing spinboxes to the &quot;</span></div>
+<div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;            <span class="stringliteral">&quot;right ONLY&lt;/ul&gt;&lt;br&gt;ensure that the swashplate is at the bottom of desired travel &quot;</span></div>
+<div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;            <span class="stringliteral">&quot;range and is level.&quot;</span>);</div>
+<div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;    <span class="keywordflow">case</span> 4: <span class="comment">// levelling verification</span></div>
+<div class="line"><a name="l01187"></a><span class="lineno"> 1187</span>&#160;        <span class="comment">// check Min status as complete</span></div>
+<div class="line"><a name="l01188"></a><span class="lineno"> 1188</span>&#160;        m_ccpm-&gt;SwashLvlStepList-&gt;item(2)-&gt;setCheckState(Qt::Checked);</div>
+<div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;        m_ccpm-&gt;SwashLvlStepList-&gt;setCurrentRow(3);</div>
+<div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;        <span class="comment">// enable position slider</span></div>
+<div class="line"><a name="l01191"></a><span class="lineno"> 1191</span>&#160;        m_ccpm-&gt;SwashLvlPositionSlider-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l01192"></a><span class="lineno"> 1192</span>&#160;        m_ccpm-&gt;SwashLvlPositionSpinBox-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;        <span class="comment">// make heli respond to slider movement</span></div>
+<div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160;        connect(m_ccpm-&gt;SwashLvlPositionSlider, SIGNAL(valueChanged(<span class="keywordtype">int</span>)), <span class="keyword">this</span>,</div>
+<div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;                SLOT(setSwashplateLevel(<span class="keywordtype">int</span>)));</div>
+<div class="line"><a name="l01196"></a><span class="lineno"> 1196</span>&#160;        <span class="comment">// disable spin boxes</span></div>
+<div class="line"><a name="l01197"></a><span class="lineno"> 1197</span>&#160;        <span class="keywordflow">for</span> (i = 0; i &lt; CCPM_MAX_SWASH_SERVOS; i++) {</div>
+<div class="line"><a name="l01198"></a><span class="lineno"> 1198</span>&#160;            SwashLvlSpinBoxes[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01199"></a><span class="lineno"> 1199</span>&#160;        }</div>
+<div class="line"><a name="l01200"></a><span class="lineno"> 1200</span>&#160;</div>
+<div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160;        <span class="comment">// issue user instructions</span></div>
+<div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;        m_ccpm-&gt;SwashLvlStepInstruction-&gt;setText(<span class="stringliteral">&quot;&lt;h2&gt;levelling verification&lt;/h2&gt;&lt;p&gt;Adjust the &quot;</span></div>
+<div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;                                                 <span class="stringliteral">&quot;slider to the right over it&#39;s full range and &quot;</span></div>
+<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;                                                 <span class="stringliteral">&quot;observe the swashplate motion. It should remain &quot;</span></div>
+<div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;                                                 <span class="stringliteral">&quot;level over the entire range of travel.&quot;</span>);</div>
+<div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;    <span class="keywordflow">case</span> 5: <span class="comment">// levelling complete</span></div>
+<div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;        <span class="comment">// check verify status as complete</span></div>
+<div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;        m_ccpm-&gt;SwashLvlStepList-&gt;item(3)-&gt;setCheckState(Qt::Checked);</div>
+<div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160;        <span class="comment">// issue user instructions</span></div>
+<div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;        m_ccpm-&gt;SwashLvlStepInstruction-&gt;setText(</div>
+<div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;            <span class="stringliteral">&quot;&lt;h2&gt;levelling complete&lt;/h2&gt;&lt;p&gt;Press the Finish button to save these settings to the &quot;</span></div>
+<div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160;            <span class="stringliteral">&quot;SD card&lt;p&gt;Press the cancel button to return to the pre-levelling settings&quot;</span>);</div>
+<div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;        <span class="comment">// disable position slider</span></div>
+<div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;        m_ccpm-&gt;SwashLvlPositionSlider-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;        m_ccpm-&gt;SwashLvlPositionSpinBox-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160;        <span class="comment">// disconnect levelling slots from signals</span></div>
+<div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;        disconnect(m_ccpm-&gt;SwashLvlPositionSlider, SIGNAL(valueChanged(<span class="keywordtype">int</span>)), <span class="keyword">this</span>,</div>
+<div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160;                   SLOT(setSwashplateLevel(<span class="keywordtype">int</span>)));</div>
+<div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;        <span class="keywordflow">for</span> (i = 0; i &lt; CCPM_MAX_SWASH_SERVOS; i++) {</div>
+<div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;            disconnect(SwashLvlSpinBoxes[i], SIGNAL(valueChanged(<span class="keywordtype">int</span>)), <span class="keyword">this</span>,</div>
+<div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;                       SLOT(SwashLvlSpinBoxChanged(<span class="keywordtype">int</span>)));</div>
+<div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;        }</div>
+<div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;</div>
+<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;        m_ccpm-&gt;SwashLvlStartButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;        m_ccpm-&gt;SwashLvlNextButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;        m_ccpm-&gt;SwashLvlCancelButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;        m_ccpm-&gt;SwashLvlFinishButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;</div>
+<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;        <span class="comment">// restore collective/cyclic setting</span></div>
+<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;        <span class="comment">// restore pitch curve</span></div>
+<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;        <span class="comment">// clear spin boxes</span></div>
+<div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;        <span class="comment">// change control mode to gcs control (OFF) / disarmed</span></div>
+<div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;        <span class="comment">// issue user confirmation</span></div>
+<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;    }</div>
+<div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;}</div>
+<div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;<span class="keywordtype">void</span> ConfigCcpmWidget::SwashLvlCancelButtonPressed()</div>
+<div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;{</div>
+<div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>;</div>
+<div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;    SwashLvlState = 0;</div>
+<div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;</div>
+<div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;    <a class="code" href="class_u_a_v_object_field.html">UAVObjectField</a> *MinField;</div>
+<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;    <a class="code" href="class_u_a_v_object_field.html">UAVObjectField</a> *NeutralField;</div>
+<div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160;    <a class="code" href="class_u_a_v_object_field.html">UAVObjectField</a> *MaxField;</div>
 <div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;</div>
-<div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;    <a class="code" href="class_u_a_v_object_field.html">UAVObjectField</a> *MinField;</div>
-<div class="line"><a name="l01249"></a><span class="lineno"> 1249</span>&#160;    <a class="code" href="class_u_a_v_object_field.html">UAVObjectField</a> *NeutralField;</div>
-<div class="line"><a name="l01250"></a><span class="lineno"> 1250</span>&#160;    <a class="code" href="class_u_a_v_object_field.html">UAVObjectField</a> *MaxField;</div>
-<div class="line"><a name="l01251"></a><span class="lineno"> 1251</span>&#160;</div>
-<div class="line"><a name="l01252"></a><span class="lineno"> 1252</span>&#160;    m_ccpm-&gt;SwashLvlStartButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l01253"></a><span class="lineno"> 1253</span>&#160;    m_ccpm-&gt;SwashLvlNextButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160;    m_ccpm-&gt;SwashLvlCancelButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;    m_ccpm-&gt;SwashLvlFinishButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160;</div>
-<div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;    m_ccpm-&gt;SwashLvlStepList-&gt;item(0)-&gt;setCheckState(Qt::Unchecked);</div>
-<div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;    m_ccpm-&gt;SwashLvlStepList-&gt;item(1)-&gt;setCheckState(Qt::Unchecked);</div>
-<div class="line"><a name="l01259"></a><span class="lineno"> 1259</span>&#160;    m_ccpm-&gt;SwashLvlStepList-&gt;item(2)-&gt;setCheckState(Qt::Unchecked);</div>
-<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;    m_ccpm-&gt;SwashLvlStepList-&gt;item(3)-&gt;setCheckState(Qt::Unchecked);</div>
-<div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;</div>
-<div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;    <span class="comment">// restore old Actuator Settings</span></div>
-<div class="line"><a name="l01263"></a><span class="lineno"> 1263</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
-<div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;    <a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *objManager = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a>&gt;();</div>
-<div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;    <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *obj =</div>
-<div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;        <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *<span class="keyword">&gt;</span>(objManager-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gada44cdbfa55a281b78d41abcc6834dc0">getObject</a>(QString(<span class="stringliteral">&quot;ActuatorSettings&quot;</span>)));</div>
-<div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;    Q_ASSERT(obj);</div>
-<div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;    <span class="comment">// update settings to match our changes.</span></div>
-<div class="line"><a name="l01269"></a><span class="lineno"> 1269</span>&#160;    MinField = obj-&gt;getField(QString(<span class="stringliteral">&quot;ChannelMin&quot;</span>));</div>
-<div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160;    NeutralField = obj-&gt;getField(QString(<span class="stringliteral">&quot;ChannelNeutral&quot;</span>));</div>
-<div class="line"><a name="l01271"></a><span class="lineno"> 1271</span>&#160;    MaxField = obj-&gt;getField(QString(<span class="stringliteral">&quot;ChannelMax&quot;</span>));</div>
-<div class="line"><a name="l01272"></a><span class="lineno"> 1272</span>&#160;</div>
-<div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160;    <span class="comment">// min,neutral,max values for the servos</span></div>
-<div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; CCPM_MAX_SWASH_SERVOS; i++) {</div>
-<div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160;        MinField-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga62f050fbd8d3405415707e07251cba98">setValue</a>(oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga68b64812e9062f2c280eebb8ad8961c4">Min</a>[i],</div>
+<div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;    m_ccpm-&gt;SwashLvlStartButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l01249"></a><span class="lineno"> 1249</span>&#160;    m_ccpm-&gt;SwashLvlNextButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01250"></a><span class="lineno"> 1250</span>&#160;    m_ccpm-&gt;SwashLvlCancelButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01251"></a><span class="lineno"> 1251</span>&#160;    m_ccpm-&gt;SwashLvlFinishButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01252"></a><span class="lineno"> 1252</span>&#160;</div>
+<div class="line"><a name="l01253"></a><span class="lineno"> 1253</span>&#160;    m_ccpm-&gt;SwashLvlStepList-&gt;item(0)-&gt;setCheckState(Qt::Unchecked);</div>
+<div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160;    m_ccpm-&gt;SwashLvlStepList-&gt;item(1)-&gt;setCheckState(Qt::Unchecked);</div>
+<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;    m_ccpm-&gt;SwashLvlStepList-&gt;item(2)-&gt;setCheckState(Qt::Unchecked);</div>
+<div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160;    m_ccpm-&gt;SwashLvlStepList-&gt;item(3)-&gt;setCheckState(Qt::Unchecked);</div>
+<div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;</div>
+<div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;    <span class="comment">// restore old Actuator Settings</span></div>
+<div class="line"><a name="l01259"></a><span class="lineno"> 1259</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
+<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;    <a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *objManager = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a>&gt;();</div>
+<div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;    <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *obj =</div>
+<div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;        <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *<span class="keyword">&gt;</span>(objManager-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gada44cdbfa55a281b78d41abcc6834dc0">getObject</a>(QString(<span class="stringliteral">&quot;ActuatorSettings&quot;</span>)));</div>
+<div class="line"><a name="l01263"></a><span class="lineno"> 1263</span>&#160;    Q_ASSERT(obj);</div>
+<div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;    <span class="comment">// update settings to match our changes.</span></div>
+<div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;    MinField = obj-&gt;getField(QString(<span class="stringliteral">&quot;ChannelMin&quot;</span>));</div>
+<div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;    NeutralField = obj-&gt;getField(QString(<span class="stringliteral">&quot;ChannelNeutral&quot;</span>));</div>
+<div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;    MaxField = obj-&gt;getField(QString(<span class="stringliteral">&quot;ChannelMax&quot;</span>));</div>
+<div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;</div>
+<div class="line"><a name="l01269"></a><span class="lineno"> 1269</span>&#160;    <span class="comment">// min,neutral,max values for the servos</span></div>
+<div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; CCPM_MAX_SWASH_SERVOS; i++) {</div>
+<div class="line"><a name="l01271"></a><span class="lineno"> 1271</span>&#160;        MinField-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga62f050fbd8d3405415707e07251cba98">setValue</a>(oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga68b64812e9062f2c280eebb8ad8961c4">Min</a>[i],</div>
+<div class="line"><a name="l01272"></a><span class="lineno"> 1272</span>&#160;                           oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga86e55bfb2e22af5cf453931b3990d504">ServoChannels</a>[i]);</div>
+<div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160;        NeutralField-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga62f050fbd8d3405415707e07251cba98">setValue</a>(oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#gad228ac505087eafb0d00d4aab3b3e76d">Neutral</a>[i],</div>
+<div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;                               oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga86e55bfb2e22af5cf453931b3990d504">ServoChannels</a>[i]);</div>
+<div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160;        MaxField-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga62f050fbd8d3405415707e07251cba98">setValue</a>(oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga30259c7dfef707f2d0999fed8adaf6b1">Max</a>[i],</div>
 <div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;                           oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga86e55bfb2e22af5cf453931b3990d504">ServoChannels</a>[i]);</div>
-<div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;        NeutralField-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga62f050fbd8d3405415707e07251cba98">setValue</a>(oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#gad228ac505087eafb0d00d4aab3b3e76d">Neutral</a>[i],</div>
-<div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;                               oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga86e55bfb2e22af5cf453931b3990d504">ServoChannels</a>[i]);</div>
-<div class="line"><a name="l01279"></a><span class="lineno"> 1279</span>&#160;        MaxField-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga62f050fbd8d3405415707e07251cba98">setValue</a>(oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga30259c7dfef707f2d0999fed8adaf6b1">Max</a>[i],</div>
-<div class="line"><a name="l01280"></a><span class="lineno"> 1280</span>&#160;                           oldSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga86e55bfb2e22af5cf453931b3990d504">ServoChannels</a>[i]);</div>
-<div class="line"><a name="l01281"></a><span class="lineno"> 1281</span>&#160;    }</div>
-<div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160;</div>
-<div class="line"><a name="l01283"></a><span class="lineno"> 1283</span>&#160;    obj-&gt;updated();</div>
-<div class="line"><a name="l01284"></a><span class="lineno"> 1284</span>&#160;</div>
-<div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;    <span class="comment">// restore Flight control of ActuatorCommand</span></div>
-<div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;    enableSwashplateLevellingControl(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;    }</div>
+<div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;</div>
+<div class="line"><a name="l01279"></a><span class="lineno"> 1279</span>&#160;    obj-&gt;updated();</div>
+<div class="line"><a name="l01280"></a><span class="lineno"> 1280</span>&#160;</div>
+<div class="line"><a name="l01281"></a><span class="lineno"> 1281</span>&#160;    <span class="comment">// restore Flight control of ActuatorCommand</span></div>
+<div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160;    enableSwashplateLevellingControl(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01283"></a><span class="lineno"> 1283</span>&#160;</div>
+<div class="line"><a name="l01284"></a><span class="lineno"> 1284</span>&#160;    m_ccpm-&gt;SwashLvlStepInstruction-&gt;setText(</div>
+<div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;        <span class="stringliteral">&quot;&lt;h2&gt;Levelling Cancelled&lt;/h2&gt;&lt;p&gt;Previous settings have been restored.&quot;</span>);</div>
+<div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;}</div>
 <div class="line"><a name="l01287"></a><span class="lineno"> 1287</span>&#160;</div>
-<div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160;    m_ccpm-&gt;SwashLvlStepInstruction-&gt;setText(</div>
-<div class="line"><a name="l01289"></a><span class="lineno"> 1289</span>&#160;        <span class="stringliteral">&quot;&lt;h2&gt;Levelling Cancelled&lt;/h2&gt;&lt;p&gt;Previous settings have been restored.&quot;</span>);</div>
-<div class="line"><a name="l01290"></a><span class="lineno"> 1290</span>&#160;}</div>
+<div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160;<span class="keywordtype">void</span> ConfigCcpmWidget::SwashLvlFinishButtonPressed()</div>
+<div class="line"><a name="l01289"></a><span class="lineno"> 1289</span>&#160;{</div>
+<div class="line"><a name="l01290"></a><span class="lineno"> 1290</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>;</div>
 <div class="line"><a name="l01291"></a><span class="lineno"> 1291</span>&#160;</div>
-<div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160;<span class="keywordtype">void</span> ConfigCcpmWidget::SwashLvlFinishButtonPressed()</div>
-<div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;{</div>
-<div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>;</div>
+<div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160;    <a class="code" href="class_u_a_v_object_field.html">UAVObjectField</a> *MinField;</div>
+<div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;    <a class="code" href="class_u_a_v_object_field.html">UAVObjectField</a> *NeutralField;</div>
+<div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160;    <a class="code" href="class_u_a_v_object_field.html">UAVObjectField</a> *MaxField;</div>
 <div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;</div>
-<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;    <a class="code" href="class_u_a_v_object_field.html">UAVObjectField</a> *MinField;</div>
-<div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;    <a class="code" href="class_u_a_v_object_field.html">UAVObjectField</a> *NeutralField;</div>
-<div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160;    <a class="code" href="class_u_a_v_object_field.html">UAVObjectField</a> *MaxField;</div>
-<div class="line"><a name="l01299"></a><span class="lineno"> 1299</span>&#160;</div>
-<div class="line"><a name="l01300"></a><span class="lineno"> 1300</span>&#160;    m_ccpm-&gt;SwashLvlStartButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;    m_ccpm-&gt;SwashLvlNextButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;    m_ccpm-&gt;SwashLvlCancelButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160;    m_ccpm-&gt;SwashLvlFinishButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;</div>
-<div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;    <span class="comment">// save new Actuator Settings to memory and SD card</span></div>
-<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
-<div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;    <a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *objManager = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a>&gt;();</div>
-<div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;    <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *obj =</div>
-<div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;        <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *<span class="keyword">&gt;</span>(objManager-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gada44cdbfa55a281b78d41abcc6834dc0">getObject</a>(QString(<span class="stringliteral">&quot;ActuatorSettings&quot;</span>)));</div>
-<div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;    Q_ASSERT(obj);</div>
-<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;    <span class="comment">// update settings to match our changes.</span></div>
-<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;    MinField = obj-&gt;getField(QString(<span class="stringliteral">&quot;ChannelMin&quot;</span>));</div>
-<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;    NeutralField = obj-&gt;getField(QString(<span class="stringliteral">&quot;ChannelNeutral&quot;</span>));</div>
-<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;    MaxField = obj-&gt;getField(QString(<span class="stringliteral">&quot;ChannelMax&quot;</span>));</div>
-<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;</div>
-<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;    <span class="comment">// min,neutral,max values for the servos</span></div>
-<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; CCPM_MAX_SWASH_SERVOS; i++) {</div>
-<div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;        MinField-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga62f050fbd8d3405415707e07251cba98">setValue</a>(newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga68b64812e9062f2c280eebb8ad8961c4">Min</a>[i],</div>
+<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;    m_ccpm-&gt;SwashLvlStartButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;    m_ccpm-&gt;SwashLvlNextButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160;    m_ccpm-&gt;SwashLvlCancelButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01299"></a><span class="lineno"> 1299</span>&#160;    m_ccpm-&gt;SwashLvlFinishButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01300"></a><span class="lineno"> 1300</span>&#160;</div>
+<div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;    <span class="comment">// save new Actuator Settings to memory and SD card</span></div>
+<div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
+<div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160;    <a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *objManager = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a>&gt;();</div>
+<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;    <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *obj =</div>
+<div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;        <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *<span class="keyword">&gt;</span>(objManager-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gada44cdbfa55a281b78d41abcc6834dc0">getObject</a>(QString(<span class="stringliteral">&quot;ActuatorSettings&quot;</span>)));</div>
+<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;    Q_ASSERT(obj);</div>
+<div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;    <span class="comment">// update settings to match our changes.</span></div>
+<div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;    MinField = obj-&gt;getField(QString(<span class="stringliteral">&quot;ChannelMin&quot;</span>));</div>
+<div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;    NeutralField = obj-&gt;getField(QString(<span class="stringliteral">&quot;ChannelNeutral&quot;</span>));</div>
+<div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;    MaxField = obj-&gt;getField(QString(<span class="stringliteral">&quot;ChannelMax&quot;</span>));</div>
+<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;</div>
+<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;    <span class="comment">// min,neutral,max values for the servos</span></div>
+<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; CCPM_MAX_SWASH_SERVOS; i++) {</div>
+<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;        MinField-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga62f050fbd8d3405415707e07251cba98">setValue</a>(newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga68b64812e9062f2c280eebb8ad8961c4">Min</a>[i],</div>
+<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;                           newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga86e55bfb2e22af5cf453931b3990d504">ServoChannels</a>[i]);</div>
+<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;        NeutralField-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga62f050fbd8d3405415707e07251cba98">setValue</a>(newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#gad228ac505087eafb0d00d4aab3b3e76d">Neutral</a>[i],</div>
+<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;                               newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga86e55bfb2e22af5cf453931b3990d504">ServoChannels</a>[i]);</div>
+<div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;        MaxField-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga62f050fbd8d3405415707e07251cba98">setValue</a>(newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga30259c7dfef707f2d0999fed8adaf6b1">Max</a>[i],</div>
 <div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;                           newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga86e55bfb2e22af5cf453931b3990d504">ServoChannels</a>[i]);</div>
-<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;        NeutralField-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga62f050fbd8d3405415707e07251cba98">setValue</a>(newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#gad228ac505087eafb0d00d4aab3b3e76d">Neutral</a>[i],</div>
-<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;                               newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga86e55bfb2e22af5cf453931b3990d504">ServoChannels</a>[i]);</div>
-<div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;        MaxField-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga62f050fbd8d3405415707e07251cba98">setValue</a>(newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga30259c7dfef707f2d0999fed8adaf6b1">Max</a>[i],</div>
-<div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;                           newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga86e55bfb2e22af5cf453931b3990d504">ServoChannels</a>[i]);</div>
-<div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;    }</div>
-<div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;</div>
-<div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160;    obj-&gt;updated();</div>
-<div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga48cc77073a67c1e1945a0625f27d1519">saveObjectToSD</a>(obj);</div>
-<div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;</div>
-<div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;    <span class="comment">// restore Flight control of ActuatorCommand</span></div>
-<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;    enableSwashplateLevellingControl(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;</div>
-<div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;    m_ccpm-&gt;SwashLvlStepInstruction-&gt;setText(</div>
-<div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160;        <span class="stringliteral">&quot;&lt;h2&gt;Levelling Completed&lt;/h2&gt;&lt;p&gt;New settings have been saved to the SD card&quot;</span>);</div>
+<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;    }</div>
+<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;</div>
+<div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;    obj-&gt;updated();</div>
+<div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga48cc77073a67c1e1945a0625f27d1519">saveObjectToSD</a>(obj);</div>
+<div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;</div>
+<div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;    <span class="comment">// restore Flight control of ActuatorCommand</span></div>
+<div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160;    enableSwashplateLevellingControl(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;</div>
+<div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;    m_ccpm-&gt;SwashLvlStepInstruction-&gt;setText(</div>
+<div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;        <span class="stringliteral">&quot;&lt;h2&gt;Levelling Completed&lt;/h2&gt;&lt;p&gt;New settings have been saved to the SD card&quot;</span>);</div>
+<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;</div>
+<div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;    ShowDisclaimer(0);</div>
+<div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;    <span class="comment">// ShowDisclaimer(2);</span></div>
+<div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160;}</div>
 <div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;</div>
-<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;    ShowDisclaimer(0);</div>
-<div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;    <span class="comment">// ShowDisclaimer(2);</span></div>
-<div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;}</div>
-<div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;</div>
-<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;<span class="keywordtype">int</span> ConfigCcpmWidget::ShowDisclaimer(<span class="keywordtype">int</span> messageID)</div>
-<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;{</div>
-<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;    QMessageBox msgBox;</div>
-<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;    msgBox.setText(<span class="stringliteral">&quot;&lt;font color=red&gt;&lt;h1&gt;Warning!!!&lt;/h2&gt;&lt;/font&gt;&quot;</span>);</div>
-<div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;    <span class="keywordtype">int</span> ret;</div>
-<div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;    <span class="keywordflow">switch</span> (messageID) {</div>
-<div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;    <span class="keywordflow">case</span> 0:</div>
-<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;        <span class="comment">// Basic disclaimer</span></div>
-<div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;        msgBox.setInformativeText(<span class="stringliteral">&quot;&lt;h2&gt;This code has many configurations.&lt;/h2&gt;&lt;p&gt;Please double &quot;</span></div>
-<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;                                  <span class="stringliteral">&quot;check all settings before attempting flight!&quot;</span>);</div>
-<div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;        msgBox.setStandardButtons(QMessageBox::Ok);</div>
-<div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;        msgBox.setDefaultButton(QMessageBox::Ok);</div>
-<div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;        msgBox.setIcon(QMessageBox::Information);</div>
-<div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160;        ret = msgBox.exec();</div>
-<div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160;    <span class="keywordflow">case</span> 1:</div>
-<div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160;        <span class="comment">// Not Tested disclaimer</span></div>
-<div class="line"><a name="l01357"></a><span class="lineno"> 1357</span>&#160;        msgBox.setInformativeText(<span class="stringliteral">&quot;&lt;h2&gt;The CCPM mixer code needs more testing!&lt;/h2&gt;&lt;p&gt;&lt;font &quot;</span></div>
-<div class="line"><a name="l01358"></a><span class="lineno"> 1358</span>&#160;                                  <span class="stringliteral">&quot;color=red&gt;Use it at your own risk!&lt;/font&gt;&lt;p&gt;Do you wish to &quot;</span></div>
-<div class="line"><a name="l01359"></a><span class="lineno"> 1359</span>&#160;                                  <span class="stringliteral">&quot;continue?&quot;</span>);</div>
-<div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160;        msgBox.setStandardButtons(QMessageBox::Yes | QMessageBox::Cancel);</div>
-<div class="line"><a name="l01361"></a><span class="lineno"> 1361</span>&#160;        msgBox.setDefaultButton(QMessageBox::Cancel);</div>
-<div class="line"><a name="l01362"></a><span class="lineno"> 1362</span>&#160;        msgBox.setIcon(QMessageBox::Warning);</div>
-<div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;        ret = msgBox.exec();</div>
-<div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160;        <span class="keywordflow">switch</span> (ret) {</div>
-<div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160;        <span class="keywordflow">case</span> QMessageBox::Cancel:</div>
-<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;            <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;        <span class="keywordflow">case</span> QMessageBox::Yes:</div>
-<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;            <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;        }</div>
-<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;    <span class="keywordflow">case</span> 2:</div>
-<div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;        <span class="comment">// DO NOT use</span></div>
-<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;        msgBox.setInformativeText(<span class="stringliteral">&quot;&lt;h2&gt;The CCPM swashplate levelling code is NOT &quot;</span></div>
-<div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;                                  <span class="stringliteral">&quot;complete!&lt;/h2&gt;&lt;p&gt;&lt;font color=red&gt;DO NOT use it for &quot;</span></div>
-<div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;                                  <span class="stringliteral">&quot;flight!&lt;/font&gt;&quot;</span>);</div>
-<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;        msgBox.setStandardButtons(QMessageBox::Ok);</div>
-<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;        msgBox.setDefaultButton(QMessageBox::Ok);</div>
-<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;        msgBox.setIcon(QMessageBox::Critical);</div>
-<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;        ret = msgBox.exec();</div>
-<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;        <span class="comment">// should never be reached</span></div>
-<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;    }</div>
-<div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;    <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;}</div>
-<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;</div>
-<div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;<span class="keywordtype">void</span> ConfigCcpmWidget::enableSwashplateLevellingControl(<span class="keywordtype">bool</span> state)</div>
-<div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;{</div>
-<div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
-<div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;    <a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *objManager = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a>&gt;();</div>
-<div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;</div>
-<div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;    <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *obj =</div>
-<div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;        <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *<span class="keyword">&gt;</span>(objManager-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gada44cdbfa55a281b78d41abcc6834dc0">getObject</a>(QString(<span class="stringliteral">&quot;ActuatorCommand&quot;</span>)));</div>
-<div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160;    UAVObject::Metadata mdata = obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga8c0434ba77ed0cfbcc2306bdc6b0248c">getMetadata</a>();</div>
-<div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;    <span class="keywordflow">if</span> (state) {</div>
-<div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;        SwashLvlaccInitialData = mdata;</div>
-<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;        <a class="code" href="group___u_a_v_objects_plugin.html#gaa660f23e03de07c425e5162e2dc42c4f">UAVObject::SetFlightAccess</a>(mdata, <a class="code" href="group___u_a_v_objects_plugin.html#gga80357a2f38fa4be23200de86614c3d77a97e59f527995175cc60e103001470e49">UAVObject::ACCESS_READONLY</a>);</div>
-<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;        <a class="code" href="group___u_a_v_objects_plugin.html#gaa9fa161b9a5607e4ee1086b72f1b70e5">UAVObject::SetFlightTelemetryUpdateMode</a>(mdata, <a class="code" href="group___u_a_v_objects_plugin.html#gga08c0580992fcd51c2b44734e2d24cac6a118268aa016a1f371149d6180bd9a366">UAVObject::UPDATEMODE_ONCHANGE</a>);</div>
-<div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;        <a class="code" href="group___u_a_v_objects_plugin.html#ga190e264f603dd8ade6b6f9e84debfb4c">UAVObject::SetGcsTelemetryAcked</a>(mdata, <span class="keyword">false</span>);</div>
-<div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;        <a class="code" href="group___u_a_v_objects_plugin.html#ga8fdb0f35b52c8dea0a512fd411d2346e">UAVObject::SetGcsTelemetryUpdateMode</a>(mdata, <a class="code" href="group___u_a_v_objects_plugin.html#gga08c0580992fcd51c2b44734e2d24cac6a118268aa016a1f371149d6180bd9a366">UAVObject::UPDATEMODE_ONCHANGE</a>);</div>
-<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;        mdata.gcsTelemetryUpdatePeriod = 100;</div>
-<div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;        SwashLvlConfigurationInProgress = 1;</div>
-<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;        m_ccpm-&gt;TabObject-&gt;setTabEnabled(0, 0);</div>
-<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;        m_ccpm-&gt;TabObject-&gt;setTabEnabled(2, 0);</div>
-<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;        m_ccpm-&gt;TabObject-&gt;setTabEnabled(3, 0);</div>
-<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;        m_ccpm-&gt;ccpmType-&gt;setEnabled(0);</div>
-<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;        mdata = SwashLvlaccInitialData; <span class="comment">// Restore metadata</span></div>
-<div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;        SwashLvlConfigurationInProgress = 0;</div>
-<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;</div>
-<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;        m_ccpm-&gt;TabObject-&gt;setTabEnabled(0, 1);</div>
-<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;        m_ccpm-&gt;TabObject-&gt;setTabEnabled(2, 1);</div>
-<div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;        m_ccpm-&gt;TabObject-&gt;setTabEnabled(3, 1);</div>
-<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;        m_ccpm-&gt;ccpmType-&gt;setEnabled(1);</div>
-<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;    }</div>
-<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;    obj-&gt;setMetadata(mdata);</div>
-<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;}</div>
-<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;</div>
-<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;<span class="keywordtype">void</span> ConfigCcpmWidget::setSwashplateLevel(<span class="keywordtype">int</span> percent)</div>
-<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;{</div>
-<div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;    <span class="keywordflow">if</span> (percent &lt; 0)</div>
+<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;<span class="keywordtype">int</span> ConfigCcpmWidget::ShowDisclaimer(<span class="keywordtype">int</span> messageID)</div>
+<div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;{</div>
+<div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;    QMessageBox msgBox;</div>
+<div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;    msgBox.setText(<span class="stringliteral">&quot;&lt;font color=red&gt;&lt;h1&gt;Warning!!!&lt;/h2&gt;&lt;/font&gt;&quot;</span>);</div>
+<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;    <span class="keywordtype">int</span> ret;</div>
+<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;    <span class="keywordflow">switch</span> (messageID) {</div>
+<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;    <span class="keywordflow">case</span> 0:</div>
+<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;        <span class="comment">// Basic disclaimer</span></div>
+<div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;        msgBox.setInformativeText(<span class="stringliteral">&quot;&lt;h2&gt;This code has many configurations.&lt;/h2&gt;&lt;p&gt;Please double &quot;</span></div>
+<div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;                                  <span class="stringliteral">&quot;check all settings before attempting flight!&quot;</span>);</div>
+<div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;        msgBox.setStandardButtons(QMessageBox::Ok);</div>
+<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;        msgBox.setDefaultButton(QMessageBox::Ok);</div>
+<div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;        msgBox.setIcon(QMessageBox::Information);</div>
+<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;        ret = msgBox.exec();</div>
+<div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;    <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160;        <span class="comment">// Not Tested disclaimer</span></div>
+<div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;        msgBox.setInformativeText(<span class="stringliteral">&quot;&lt;h2&gt;The CCPM mixer code needs more testing!&lt;/h2&gt;&lt;p&gt;&lt;font &quot;</span></div>
+<div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160;                                  <span class="stringliteral">&quot;color=red&gt;Use it at your own risk!&lt;/font&gt;&lt;p&gt;Do you wish to &quot;</span></div>
+<div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160;                                  <span class="stringliteral">&quot;continue?&quot;</span>);</div>
+<div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160;        msgBox.setStandardButtons(QMessageBox::Yes | QMessageBox::Cancel);</div>
+<div class="line"><a name="l01357"></a><span class="lineno"> 1357</span>&#160;        msgBox.setDefaultButton(QMessageBox::Cancel);</div>
+<div class="line"><a name="l01358"></a><span class="lineno"> 1358</span>&#160;        msgBox.setIcon(QMessageBox::Warning);</div>
+<div class="line"><a name="l01359"></a><span class="lineno"> 1359</span>&#160;        ret = msgBox.exec();</div>
+<div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160;        <span class="keywordflow">switch</span> (ret) {</div>
+<div class="line"><a name="l01361"></a><span class="lineno"> 1361</span>&#160;        <span class="keywordflow">case</span> QMessageBox::Cancel:</div>
+<div class="line"><a name="l01362"></a><span class="lineno"> 1362</span>&#160;            <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;        <span class="keywordflow">case</span> QMessageBox::Yes:</div>
+<div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160;        }</div>
+<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;    <span class="keywordflow">case</span> 2:</div>
+<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;        <span class="comment">// DO NOT use</span></div>
+<div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;        msgBox.setInformativeText(<span class="stringliteral">&quot;&lt;h2&gt;The CCPM swashplate levelling code is NOT &quot;</span></div>
+<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;                                  <span class="stringliteral">&quot;complete!&lt;/h2&gt;&lt;p&gt;&lt;font color=red&gt;DO NOT use it for &quot;</span></div>
+<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;                                  <span class="stringliteral">&quot;flight!&lt;/font&gt;&quot;</span>);</div>
+<div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;        msgBox.setStandardButtons(QMessageBox::Ok);</div>
+<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;        msgBox.setDefaultButton(QMessageBox::Ok);</div>
+<div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;        msgBox.setIcon(QMessageBox::Critical);</div>
+<div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;        ret = msgBox.exec();</div>
+<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;        <span class="comment">// should never be reached</span></div>
+<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;    }</div>
+<div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;    <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;}</div>
+<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;</div>
+<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;<span class="keywordtype">void</span> ConfigCcpmWidget::enableSwashplateLevellingControl(<span class="keywordtype">bool</span> state)</div>
+<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;{</div>
+<div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
+<div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;    <a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *objManager = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a>&gt;();</div>
+<div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;</div>
+<div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;    <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *obj =</div>
+<div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160;        <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *<span class="keyword">&gt;</span>(objManager-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gada44cdbfa55a281b78d41abcc6834dc0">getObject</a>(QString(<span class="stringliteral">&quot;ActuatorCommand&quot;</span>)));</div>
+<div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;    UAVObject::Metadata mdata = obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga8c0434ba77ed0cfbcc2306bdc6b0248c">getMetadata</a>();</div>
+<div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;    <span class="keywordflow">if</span> (state) {</div>
+<div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;        SwashLvlaccInitialData = mdata;</div>
+<div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;        <a class="code" href="group___u_a_v_objects_plugin.html#gaa660f23e03de07c425e5162e2dc42c4f">UAVObject::SetFlightAccess</a>(mdata, <a class="code" href="group___u_a_v_objects_plugin.html#gga80357a2f38fa4be23200de86614c3d77a97e59f527995175cc60e103001470e49">UAVObject::ACCESS_READONLY</a>);</div>
+<div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160;        <a class="code" href="group___u_a_v_objects_plugin.html#gaa9fa161b9a5607e4ee1086b72f1b70e5">UAVObject::SetFlightTelemetryUpdateMode</a>(mdata, <a class="code" href="group___u_a_v_objects_plugin.html#gga08c0580992fcd51c2b44734e2d24cac6a118268aa016a1f371149d6180bd9a366">UAVObject::UPDATEMODE_ONCHANGE</a>);</div>
+<div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;        <a class="code" href="group___u_a_v_objects_plugin.html#ga190e264f603dd8ade6b6f9e84debfb4c">UAVObject::SetGcsTelemetryAcked</a>(mdata, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;        <a class="code" href="group___u_a_v_objects_plugin.html#ga8fdb0f35b52c8dea0a512fd411d2346e">UAVObject::SetGcsTelemetryUpdateMode</a>(mdata, <a class="code" href="group___u_a_v_objects_plugin.html#gga08c0580992fcd51c2b44734e2d24cac6a118268aa016a1f371149d6180bd9a366">UAVObject::UPDATEMODE_ONCHANGE</a>);</div>
+<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;        mdata.gcsTelemetryUpdatePeriod = 100;</div>
+<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;        SwashLvlConfigurationInProgress = 1;</div>
+<div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;        m_ccpm-&gt;TabObject-&gt;setTabEnabled(0, 0);</div>
+<div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;        m_ccpm-&gt;TabObject-&gt;setTabEnabled(2, 0);</div>
+<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;        m_ccpm-&gt;TabObject-&gt;setTabEnabled(3, 0);</div>
+<div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;        m_ccpm-&gt;ccpmType-&gt;setEnabled(0);</div>
+<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;        mdata = SwashLvlaccInitialData; <span class="comment">// Restore metadata</span></div>
+<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;        SwashLvlConfigurationInProgress = 0;</div>
+<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;</div>
+<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;        m_ccpm-&gt;TabObject-&gt;setTabEnabled(0, 1);</div>
+<div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;        m_ccpm-&gt;TabObject-&gt;setTabEnabled(2, 1);</div>
+<div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;        m_ccpm-&gt;TabObject-&gt;setTabEnabled(3, 1);</div>
+<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;        m_ccpm-&gt;ccpmType-&gt;setEnabled(1);</div>
+<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;    }</div>
+<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;    obj-&gt;setMetadata(mdata);</div>
+<div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;}</div>
+<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;</div>
+<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;<span class="keywordtype">void</span> ConfigCcpmWidget::setSwashplateLevel(<span class="keywordtype">int</span> percent)</div>
+<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;{</div>
+<div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;    <span class="keywordflow">if</span> (percent &lt; 0)</div>
+<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;        <span class="keywordflow">return</span>; <span class="comment">// -1;</span></div>
+<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;    <span class="keywordflow">if</span> (percent &gt; 100)</div>
+<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;        <span class="keywordflow">return</span>; <span class="comment">// -1;</span></div>
+<div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;    <span class="keywordflow">if</span> (SwashLvlConfigurationInProgress != 1)</div>
 <div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160;        <span class="keywordflow">return</span>; <span class="comment">// -1;</span></div>
-<div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;    <span class="keywordflow">if</span> (percent &gt; 100)</div>
-<div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160;        <span class="keywordflow">return</span>; <span class="comment">// -1;</span></div>
-<div class="line"><a name="l01436"></a><span class="lineno"> 1436</span>&#160;    <span class="keywordflow">if</span> (SwashLvlConfigurationInProgress != 1)</div>
-<div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;        <span class="keywordflow">return</span>; <span class="comment">// -1;</span></div>
-<div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>;</div>
-<div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;    <span class="keywordtype">double</span> value = 0;</div>
-<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;    <span class="keywordtype">double</span> level = ((double)percent / 50.00) - 1.00;</div>
-<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;</div>
-<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;    SwashLvlServoInterlock = 1;</div>
-<div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;</div>
-<div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;    ActuatorCommand *actuatorCommand = ActuatorCommand::GetInstance(<a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>());</div>
-<div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;    ActuatorCommand::DataFields actuatorCommandData = actuatorCommand-&gt;getData();</div>
-<div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160;</div>
-<div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; CCPM_MAX_SWASH_SERVOS; i++) {</div>
-<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;        <span class="comment">// don&#39;t do anything for unused channels (set to &quot;None&quot;)</span></div>
-<div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160;        <span class="keywordflow">if</span> (newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga9fda1ee21effccd7fcbad04816734eac">Used</a>[i] == 0)</div>
-<div class="line"><a name="l01450"></a><span class="lineno"> 1450</span>&#160;            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l01451"></a><span class="lineno"> 1451</span>&#160;</div>
-<div class="line"><a name="l01452"></a><span class="lineno"> 1452</span>&#160;        <span class="keywordflow">if</span> (level == 0)</div>
-<div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;            value = newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#gad228ac505087eafb0d00d4aab3b3e76d">Neutral</a>[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>];</div>
-<div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (level &gt; 0)</div>
-<div class="line"><a name="l01455"></a><span class="lineno"> 1455</span>&#160;            value = (newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga30259c7dfef707f2d0999fed8adaf6b1">Max</a>[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] - newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#gad228ac505087eafb0d00d4aab3b3e76d">Neutral</a>[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]) * level</div>
-<div class="line"><a name="l01456"></a><span class="lineno"> 1456</span>&#160;                + newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#gad228ac505087eafb0d00d4aab3b3e76d">Neutral</a>[i];</div>
-<div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;        <span class="keywordflow">else</span> if (level &lt; 0)</div>
-<div class="line"><a name="l01458"></a><span class="lineno"> 1458</span>&#160;            value = (newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#gad228ac505087eafb0d00d4aab3b3e76d">Neutral</a>[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] - newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga68b64812e9062f2c280eebb8ad8961c4">Min</a>[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]) * level</div>
-<div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160;                + newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#gad228ac505087eafb0d00d4aab3b3e76d">Neutral</a>[i];</div>
+<div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>;</div>
+<div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160;    <span class="keywordtype">double</span> value = 0;</div>
+<div class="line"><a name="l01436"></a><span class="lineno"> 1436</span>&#160;    <span class="keywordtype">double</span> level = ((double)percent / 50.00) - 1.00;</div>
+<div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;</div>
+<div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;    SwashLvlServoInterlock = 1;</div>
+<div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;</div>
+<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;    ActuatorCommand *actuatorCommand = ActuatorCommand::GetInstance(<a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>());</div>
+<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;    ActuatorCommand::DataFields actuatorCommandData = actuatorCommand-&gt;getData();</div>
+<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;</div>
+<div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; CCPM_MAX_SWASH_SERVOS; i++) {</div>
+<div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;        <span class="comment">// don&#39;t do anything for unused channels (set to &quot;None&quot;)</span></div>
+<div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;        <span class="keywordflow">if</span> (newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga9fda1ee21effccd7fcbad04816734eac">Used</a>[i] == 0)</div>
+<div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;</div>
+<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;        <span class="keywordflow">if</span> (level == 0)</div>
+<div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160;            value = newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#gad228ac505087eafb0d00d4aab3b3e76d">Neutral</a>[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>];</div>
+<div class="line"><a name="l01450"></a><span class="lineno"> 1450</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (level &gt; 0)</div>
+<div class="line"><a name="l01451"></a><span class="lineno"> 1451</span>&#160;            value = (newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga30259c7dfef707f2d0999fed8adaf6b1">Max</a>[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] - newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#gad228ac505087eafb0d00d4aab3b3e76d">Neutral</a>[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]) * level</div>
+<div class="line"><a name="l01452"></a><span class="lineno"> 1452</span>&#160;                + newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#gad228ac505087eafb0d00d4aab3b3e76d">Neutral</a>[i];</div>
+<div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;        <span class="keywordflow">else</span> if (level &lt; 0)</div>
+<div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;            value = (newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#gad228ac505087eafb0d00d4aab3b3e76d">Neutral</a>[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] - newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga68b64812e9062f2c280eebb8ad8961c4">Min</a>[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]) * level</div>
+<div class="line"><a name="l01455"></a><span class="lineno"> 1455</span>&#160;                + newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#gad228ac505087eafb0d00d4aab3b3e76d">Neutral</a>[i];</div>
+<div class="line"><a name="l01456"></a><span class="lineno"> 1456</span>&#160;</div>
+<div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;        actuatorCommandData.Channel[newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga86e55bfb2e22af5cf453931b3990d504">ServoChannels</a>[i]] = value;</div>
+<div class="line"><a name="l01458"></a><span class="lineno"> 1458</span>&#160;        SwashLvlSpinBoxes[i]-&gt;setValue(value);</div>
+<div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160;    }</div>
 <div class="line"><a name="l01460"></a><span class="lineno"> 1460</span>&#160;</div>
-<div class="line"><a name="l01461"></a><span class="lineno"> 1461</span>&#160;        actuatorCommandData.Channel[newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga86e55bfb2e22af5cf453931b3990d504">ServoChannels</a>[i]] = value;</div>
-<div class="line"><a name="l01462"></a><span class="lineno"> 1462</span>&#160;        SwashLvlSpinBoxes[i]-&gt;setValue(value);</div>
-<div class="line"><a name="l01463"></a><span class="lineno"> 1463</span>&#160;    }</div>
-<div class="line"><a name="l01464"></a><span class="lineno"> 1464</span>&#160;</div>
-<div class="line"><a name="l01465"></a><span class="lineno"> 1465</span>&#160;    actuatorCommand-&gt;setData(actuatorCommandData);</div>
-<div class="line"><a name="l01466"></a><span class="lineno"> 1466</span>&#160;    actuatorCommand-&gt;updated();</div>
-<div class="line"><a name="l01467"></a><span class="lineno"> 1467</span>&#160;</div>
-<div class="line"><a name="l01468"></a><span class="lineno"> 1468</span>&#160;    SwashLvlServoInterlock = 0;</div>
-<div class="line"><a name="l01469"></a><span class="lineno"> 1469</span>&#160;</div>
-<div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l01471"></a><span class="lineno"> 1471</span>&#160;}</div>
-<div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160;</div>
-<div class="line"><a name="l01473"></a><span class="lineno"> 1473</span>&#160;<span class="keywordtype">void</span> ConfigCcpmWidget::SwashLvlSpinBoxChanged(<span class="keywordtype">int</span> value)</div>
-<div class="line"><a name="l01474"></a><span class="lineno"> 1474</span>&#160;{</div>
-<div class="line"><a name="l01475"></a><span class="lineno"> 1475</span>&#160;    Q_UNUSED(value);</div>
-<div class="line"><a name="l01476"></a><span class="lineno"> 1476</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>;</div>
-<div class="line"><a name="l01477"></a><span class="lineno"> 1477</span>&#160;    <span class="keywordflow">if</span> (SwashLvlServoInterlock == 1)</div>
-<div class="line"><a name="l01478"></a><span class="lineno"> 1478</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l01479"></a><span class="lineno"> 1479</span>&#160;</div>
-<div class="line"><a name="l01480"></a><span class="lineno"> 1480</span>&#160;    ActuatorCommand *actuatorCommand = ActuatorCommand::GetInstance(<a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>());</div>
-<div class="line"><a name="l01481"></a><span class="lineno"> 1481</span>&#160;    ActuatorCommand::DataFields actuatorCommandData = actuatorCommand-&gt;getData();</div>
-<div class="line"><a name="l01482"></a><span class="lineno"> 1482</span>&#160;</div>
-<div class="line"><a name="l01483"></a><span class="lineno"> 1483</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; CCPM_MAX_SWASH_SERVOS; i++) {</div>
-<div class="line"><a name="l01484"></a><span class="lineno"> 1484</span>&#160;        <span class="comment">// don&#39;t do anything for unused channels (set to &quot;None&quot;)</span></div>
-<div class="line"><a name="l01485"></a><span class="lineno"> 1485</span>&#160;        <span class="keywordflow">if</span> (newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga9fda1ee21effccd7fcbad04816734eac">Used</a>[i] == 0)</div>
-<div class="line"><a name="l01486"></a><span class="lineno"> 1486</span>&#160;            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l01487"></a><span class="lineno"> 1487</span>&#160;</div>
-<div class="line"><a name="l01488"></a><span class="lineno"> 1488</span>&#160;        value = SwashLvlSpinBoxes[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]-&gt;value();</div>
-<div class="line"><a name="l01489"></a><span class="lineno"> 1489</span>&#160;</div>
-<div class="line"><a name="l01490"></a><span class="lineno"> 1490</span>&#160;        <span class="keywordflow">switch</span> (SwashLvlState) {</div>
-<div class="line"><a name="l01491"></a><span class="lineno"> 1491</span>&#160;        <span class="keywordflow">case</span> 1: <span class="comment">// Neutral levelling</span></div>
-<div class="line"><a name="l01492"></a><span class="lineno"> 1492</span>&#160;            newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#gad228ac505087eafb0d00d4aab3b3e76d">Neutral</a>[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] = value;</div>
-<div class="line"><a name="l01493"></a><span class="lineno"> 1493</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01494"></a><span class="lineno"> 1494</span>&#160;        <span class="keywordflow">case</span> 2: <span class="comment">// Max levelling</span></div>
-<div class="line"><a name="l01495"></a><span class="lineno"> 1495</span>&#160;            newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga30259c7dfef707f2d0999fed8adaf6b1">Max</a>[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] = value;</div>
-<div class="line"><a name="l01496"></a><span class="lineno"> 1496</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01497"></a><span class="lineno"> 1497</span>&#160;        <span class="keywordflow">case</span> 3: <span class="comment">// Min levelling</span></div>
-<div class="line"><a name="l01498"></a><span class="lineno"> 1498</span>&#160;            newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga68b64812e9062f2c280eebb8ad8961c4">Min</a>[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] = value;</div>
+<div class="line"><a name="l01461"></a><span class="lineno"> 1461</span>&#160;    actuatorCommand-&gt;setData(actuatorCommandData);</div>
+<div class="line"><a name="l01462"></a><span class="lineno"> 1462</span>&#160;    actuatorCommand-&gt;updated();</div>
+<div class="line"><a name="l01463"></a><span class="lineno"> 1463</span>&#160;</div>
+<div class="line"><a name="l01464"></a><span class="lineno"> 1464</span>&#160;    SwashLvlServoInterlock = 0;</div>
+<div class="line"><a name="l01465"></a><span class="lineno"> 1465</span>&#160;</div>
+<div class="line"><a name="l01466"></a><span class="lineno"> 1466</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l01467"></a><span class="lineno"> 1467</span>&#160;}</div>
+<div class="line"><a name="l01468"></a><span class="lineno"> 1468</span>&#160;</div>
+<div class="line"><a name="l01469"></a><span class="lineno"> 1469</span>&#160;<span class="keywordtype">void</span> ConfigCcpmWidget::SwashLvlSpinBoxChanged(<span class="keywordtype">int</span> value)</div>
+<div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;{</div>
+<div class="line"><a name="l01471"></a><span class="lineno"> 1471</span>&#160;    Q_UNUSED(value);</div>
+<div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>;</div>
+<div class="line"><a name="l01473"></a><span class="lineno"> 1473</span>&#160;    <span class="keywordflow">if</span> (SwashLvlServoInterlock == 1)</div>
+<div class="line"><a name="l01474"></a><span class="lineno"> 1474</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l01475"></a><span class="lineno"> 1475</span>&#160;</div>
+<div class="line"><a name="l01476"></a><span class="lineno"> 1476</span>&#160;    ActuatorCommand *actuatorCommand = ActuatorCommand::GetInstance(<a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>());</div>
+<div class="line"><a name="l01477"></a><span class="lineno"> 1477</span>&#160;    ActuatorCommand::DataFields actuatorCommandData = actuatorCommand-&gt;getData();</div>
+<div class="line"><a name="l01478"></a><span class="lineno"> 1478</span>&#160;</div>
+<div class="line"><a name="l01479"></a><span class="lineno"> 1479</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; CCPM_MAX_SWASH_SERVOS; i++) {</div>
+<div class="line"><a name="l01480"></a><span class="lineno"> 1480</span>&#160;        <span class="comment">// don&#39;t do anything for unused channels (set to &quot;None&quot;)</span></div>
+<div class="line"><a name="l01481"></a><span class="lineno"> 1481</span>&#160;        <span class="keywordflow">if</span> (newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga9fda1ee21effccd7fcbad04816734eac">Used</a>[i] == 0)</div>
+<div class="line"><a name="l01482"></a><span class="lineno"> 1482</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l01483"></a><span class="lineno"> 1483</span>&#160;</div>
+<div class="line"><a name="l01484"></a><span class="lineno"> 1484</span>&#160;        value = SwashLvlSpinBoxes[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]-&gt;value();</div>
+<div class="line"><a name="l01485"></a><span class="lineno"> 1485</span>&#160;</div>
+<div class="line"><a name="l01486"></a><span class="lineno"> 1486</span>&#160;        <span class="keywordflow">switch</span> (SwashLvlState) {</div>
+<div class="line"><a name="l01487"></a><span class="lineno"> 1487</span>&#160;        <span class="keywordflow">case</span> 1: <span class="comment">// Neutral levelling</span></div>
+<div class="line"><a name="l01488"></a><span class="lineno"> 1488</span>&#160;            newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#gad228ac505087eafb0d00d4aab3b3e76d">Neutral</a>[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] = value;</div>
+<div class="line"><a name="l01489"></a><span class="lineno"> 1489</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01490"></a><span class="lineno"> 1490</span>&#160;        <span class="keywordflow">case</span> 2: <span class="comment">// Max levelling</span></div>
+<div class="line"><a name="l01491"></a><span class="lineno"> 1491</span>&#160;            newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga30259c7dfef707f2d0999fed8adaf6b1">Max</a>[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] = value;</div>
+<div class="line"><a name="l01492"></a><span class="lineno"> 1492</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01493"></a><span class="lineno"> 1493</span>&#160;        <span class="keywordflow">case</span> 3: <span class="comment">// Min levelling</span></div>
+<div class="line"><a name="l01494"></a><span class="lineno"> 1494</span>&#160;            newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga68b64812e9062f2c280eebb8ad8961c4">Min</a>[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] = value;</div>
+<div class="line"><a name="l01495"></a><span class="lineno"> 1495</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01496"></a><span class="lineno"> 1496</span>&#160;        <span class="keywordflow">case</span> 4: <span class="comment">// levelling verification</span></div>
+<div class="line"><a name="l01497"></a><span class="lineno"> 1497</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01498"></a><span class="lineno"> 1498</span>&#160;        <span class="keywordflow">case</span> 5: <span class="comment">// levelling complete</span></div>
 <div class="line"><a name="l01499"></a><span class="lineno"> 1499</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01500"></a><span class="lineno"> 1500</span>&#160;        <span class="keywordflow">case</span> 4: <span class="comment">// levelling verification</span></div>
+<div class="line"><a name="l01500"></a><span class="lineno"> 1500</span>&#160;        <span class="keywordflow">default</span>:</div>
 <div class="line"><a name="l01501"></a><span class="lineno"> 1501</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01502"></a><span class="lineno"> 1502</span>&#160;        <span class="keywordflow">case</span> 5: <span class="comment">// levelling complete</span></div>
-<div class="line"><a name="l01503"></a><span class="lineno"> 1503</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01504"></a><span class="lineno"> 1504</span>&#160;        <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l01505"></a><span class="lineno"> 1505</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01506"></a><span class="lineno"> 1506</span>&#160;        }</div>
-<div class="line"><a name="l01507"></a><span class="lineno"> 1507</span>&#160;</div>
-<div class="line"><a name="l01508"></a><span class="lineno"> 1508</span>&#160;        actuatorCommandData.Channel[newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga86e55bfb2e22af5cf453931b3990d504">ServoChannels</a>[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]] = value;</div>
-<div class="line"><a name="l01509"></a><span class="lineno"> 1509</span>&#160;    }</div>
-<div class="line"><a name="l01510"></a><span class="lineno"> 1510</span>&#160;</div>
-<div class="line"><a name="l01511"></a><span class="lineno"> 1511</span>&#160;    actuatorCommand-&gt;setData(actuatorCommandData);</div>
-<div class="line"><a name="l01512"></a><span class="lineno"> 1512</span>&#160;    actuatorCommand-&gt;updated();</div>
-<div class="line"><a name="l01513"></a><span class="lineno"> 1513</span>&#160;</div>
-<div class="line"><a name="l01514"></a><span class="lineno"> 1514</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l01515"></a><span class="lineno"> 1515</span>&#160;}</div>
-<div class="line"><a name="l01516"></a><span class="lineno"> 1516</span>&#160;</div>
-<div class="line"><a name="l01521"></a><span class="lineno"> 1521</span>&#160;<span class="keywordtype">bool</span> ConfigCcpmWidget::throwConfigError(SystemSettings::AirframeTypeOptions airframeType)</div>
-<div class="line"><a name="l01522"></a><span class="lineno"> 1522</span>&#160;{</div>
-<div class="line"><a name="l01523"></a><span class="lineno"> 1523</span>&#160;    Q_UNUSED(airframeType);</div>
-<div class="line"><a name="l01524"></a><span class="lineno"> 1524</span>&#160;</div>
-<div class="line"><a name="l01525"></a><span class="lineno"> 1525</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="uavobjecttemplate_8m.html#a8760c7f0db08dc03416f4c8c3fc08f02">error</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l01526"></a><span class="lineno"> 1526</span>&#160;</div>
-<div class="line"><a name="l01527"></a><span class="lineno"> 1527</span>&#160;    <span class="keywordflow">if</span> ((m_ccpm-&gt;ccpmServoWChannel-&gt;currentIndex() == 0)</div>
-<div class="line"><a name="l01528"></a><span class="lineno"> 1528</span>&#160;        &amp;&amp; (m_ccpm-&gt;ccpmServoWChannel-&gt;isEnabled())) {</div>
-<div class="line"><a name="l01529"></a><span class="lineno"> 1529</span>&#160;        m_ccpm-&gt;ccpmServoWLabel-&gt;setText(<span class="stringliteral">&quot;&lt;font color=red&gt;&quot;</span> + m_ccpm-&gt;ccpmServoWLabel-&gt;text()</div>
-<div class="line"><a name="l01530"></a><span class="lineno"> 1530</span>&#160;                                         + <span class="stringliteral">&quot;&lt;/font&gt;&quot;</span>);</div>
-<div class="line"><a name="l01531"></a><span class="lineno"> 1531</span>&#160;        error = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l01532"></a><span class="lineno"> 1532</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01533"></a><span class="lineno"> 1533</span>&#160;        m_ccpm-&gt;ccpmServoWLabel-&gt;setText(QTextEdit(m_ccpm-&gt;ccpmServoWLabel-&gt;text()).toPlainText());</div>
-<div class="line"><a name="l01534"></a><span class="lineno"> 1534</span>&#160;    }</div>
-<div class="line"><a name="l01535"></a><span class="lineno"> 1535</span>&#160;</div>
-<div class="line"><a name="l01536"></a><span class="lineno"> 1536</span>&#160;    <span class="keywordflow">if</span> ((m_ccpm-&gt;ccpmServoXChannel-&gt;currentIndex() == 0)</div>
-<div class="line"><a name="l01537"></a><span class="lineno"> 1537</span>&#160;        &amp;&amp; (m_ccpm-&gt;ccpmServoXChannel-&gt;isEnabled())) {</div>
-<div class="line"><a name="l01538"></a><span class="lineno"> 1538</span>&#160;        m_ccpm-&gt;ccpmServoXLabel-&gt;setText(<span class="stringliteral">&quot;&lt;font color=red&gt;&quot;</span> + m_ccpm-&gt;ccpmServoXLabel-&gt;text()</div>
-<div class="line"><a name="l01539"></a><span class="lineno"> 1539</span>&#160;                                         + <span class="stringliteral">&quot;&lt;/font&gt;&quot;</span>);</div>
-<div class="line"><a name="l01540"></a><span class="lineno"> 1540</span>&#160;        error = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l01541"></a><span class="lineno"> 1541</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01542"></a><span class="lineno"> 1542</span>&#160;        m_ccpm-&gt;ccpmServoXLabel-&gt;setText(QTextEdit(m_ccpm-&gt;ccpmServoXLabel-&gt;text()).toPlainText());</div>
-<div class="line"><a name="l01543"></a><span class="lineno"> 1543</span>&#160;    }</div>
-<div class="line"><a name="l01544"></a><span class="lineno"> 1544</span>&#160;</div>
-<div class="line"><a name="l01545"></a><span class="lineno"> 1545</span>&#160;    <span class="keywordflow">if</span> ((m_ccpm-&gt;ccpmServoYChannel-&gt;currentIndex() == 0)</div>
-<div class="line"><a name="l01546"></a><span class="lineno"> 1546</span>&#160;        &amp;&amp; (m_ccpm-&gt;ccpmServoYChannel-&gt;isEnabled())) {</div>
-<div class="line"><a name="l01547"></a><span class="lineno"> 1547</span>&#160;        m_ccpm-&gt;ccpmServoYLabel-&gt;setText(<span class="stringliteral">&quot;&lt;font color=red&gt;&quot;</span> + m_ccpm-&gt;ccpmServoYLabel-&gt;text()</div>
-<div class="line"><a name="l01548"></a><span class="lineno"> 1548</span>&#160;                                         + <span class="stringliteral">&quot;&lt;/font&gt;&quot;</span>);</div>
-<div class="line"><a name="l01549"></a><span class="lineno"> 1549</span>&#160;        error = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l01550"></a><span class="lineno"> 1550</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01551"></a><span class="lineno"> 1551</span>&#160;        m_ccpm-&gt;ccpmServoYLabel-&gt;setText(QTextEdit(m_ccpm-&gt;ccpmServoYLabel-&gt;text()).toPlainText());</div>
-<div class="line"><a name="l01552"></a><span class="lineno"> 1552</span>&#160;    }</div>
-<div class="line"><a name="l01553"></a><span class="lineno"> 1553</span>&#160;</div>
-<div class="line"><a name="l01554"></a><span class="lineno"> 1554</span>&#160;    <span class="keywordflow">if</span> ((m_ccpm-&gt;ccpmServoZChannel-&gt;currentIndex() == 0)</div>
-<div class="line"><a name="l01555"></a><span class="lineno"> 1555</span>&#160;        &amp;&amp; (m_ccpm-&gt;ccpmServoZChannel-&gt;isEnabled())) {</div>
-<div class="line"><a name="l01556"></a><span class="lineno"> 1556</span>&#160;        m_ccpm-&gt;ccpmServoZLabel-&gt;setText(<span class="stringliteral">&quot;&lt;font color=red&gt;&quot;</span> + m_ccpm-&gt;ccpmServoZLabel-&gt;text()</div>
-<div class="line"><a name="l01557"></a><span class="lineno"> 1557</span>&#160;                                         + <span class="stringliteral">&quot;&lt;/font&gt;&quot;</span>);</div>
-<div class="line"><a name="l01558"></a><span class="lineno"> 1558</span>&#160;        error = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l01559"></a><span class="lineno"> 1559</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01560"></a><span class="lineno"> 1560</span>&#160;        m_ccpm-&gt;ccpmServoZLabel-&gt;setText(QTextEdit(m_ccpm-&gt;ccpmServoZLabel-&gt;text()).toPlainText());</div>
-<div class="line"><a name="l01561"></a><span class="lineno"> 1561</span>&#160;    }</div>
-<div class="line"><a name="l01562"></a><span class="lineno"> 1562</span>&#160;</div>
-<div class="line"><a name="l01563"></a><span class="lineno"> 1563</span>&#160;    <span class="keywordflow">if</span> ((m_ccpm-&gt;ccpmEngineChannel-&gt;currentIndex() == 0)</div>
-<div class="line"><a name="l01564"></a><span class="lineno"> 1564</span>&#160;        &amp;&amp; (m_ccpm-&gt;ccpmEngineChannel-&gt;isEnabled())) {</div>
-<div class="line"><a name="l01565"></a><span class="lineno"> 1565</span>&#160;        m_ccpm-&gt;ccpmEngineLabel-&gt;setText(<span class="stringliteral">&quot;&lt;font color=red&gt;&quot;</span> + m_ccpm-&gt;ccpmEngineLabel-&gt;text()</div>
-<div class="line"><a name="l01566"></a><span class="lineno"> 1566</span>&#160;                                         + <span class="stringliteral">&quot;&lt;/font&gt;&quot;</span>);</div>
-<div class="line"><a name="l01567"></a><span class="lineno"> 1567</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01568"></a><span class="lineno"> 1568</span>&#160;        m_ccpm-&gt;ccpmEngineLabel-&gt;setText(QTextEdit(m_ccpm-&gt;ccpmEngineLabel-&gt;text()).toPlainText());</div>
-<div class="line"><a name="l01569"></a><span class="lineno"> 1569</span>&#160;    }</div>
-<div class="line"><a name="l01570"></a><span class="lineno"> 1570</span>&#160;</div>
-<div class="line"><a name="l01571"></a><span class="lineno"> 1571</span>&#160;    <span class="keywordflow">if</span> ((m_ccpm-&gt;ccpmTailChannel-&gt;currentIndex() == 0) &amp;&amp; (m_ccpm-&gt;ccpmTailChannel-&gt;isEnabled())) {</div>
-<div class="line"><a name="l01572"></a><span class="lineno"> 1572</span>&#160;        m_ccpm-&gt;ccpmTailLabel-&gt;setText(<span class="stringliteral">&quot;&lt;font color=red&gt;&quot;</span> + m_ccpm-&gt;ccpmTailLabel-&gt;text()</div>
-<div class="line"><a name="l01573"></a><span class="lineno"> 1573</span>&#160;                                       + <span class="stringliteral">&quot;&lt;/font&gt;&quot;</span>);</div>
-<div class="line"><a name="l01574"></a><span class="lineno"> 1574</span>&#160;        error = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l01575"></a><span class="lineno"> 1575</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01576"></a><span class="lineno"> 1576</span>&#160;        m_ccpm-&gt;ccpmTailLabel-&gt;setText(QTextEdit(m_ccpm-&gt;ccpmTailLabel-&gt;text()).toPlainText());</div>
-<div class="line"><a name="l01577"></a><span class="lineno"> 1577</span>&#160;    }</div>
-<div class="line"><a name="l01578"></a><span class="lineno"> 1578</span>&#160;</div>
-<div class="line"><a name="l01579"></a><span class="lineno"> 1579</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="uavobjecttemplate_8m.html#a8760c7f0db08dc03416f4c8c3fc08f02">error</a>;</div>
-<div class="line"><a name="l01580"></a><span class="lineno"> 1580</span>&#160;}</div>
+<div class="line"><a name="l01502"></a><span class="lineno"> 1502</span>&#160;        }</div>
+<div class="line"><a name="l01503"></a><span class="lineno"> 1503</span>&#160;</div>
+<div class="line"><a name="l01504"></a><span class="lineno"> 1504</span>&#160;        actuatorCommandData.Channel[newSwashLvlConfiguration.<a class="code" href="group___config_plugin.html#ga86e55bfb2e22af5cf453931b3990d504">ServoChannels</a>[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]] = value;</div>
+<div class="line"><a name="l01505"></a><span class="lineno"> 1505</span>&#160;    }</div>
+<div class="line"><a name="l01506"></a><span class="lineno"> 1506</span>&#160;</div>
+<div class="line"><a name="l01507"></a><span class="lineno"> 1507</span>&#160;    actuatorCommand-&gt;setData(actuatorCommandData);</div>
+<div class="line"><a name="l01508"></a><span class="lineno"> 1508</span>&#160;    actuatorCommand-&gt;updated();</div>
+<div class="line"><a name="l01509"></a><span class="lineno"> 1509</span>&#160;</div>
+<div class="line"><a name="l01510"></a><span class="lineno"> 1510</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l01511"></a><span class="lineno"> 1511</span>&#160;}</div>
+<div class="line"><a name="l01512"></a><span class="lineno"> 1512</span>&#160;</div>
+<div class="line"><a name="l01517"></a><span class="lineno"> 1517</span>&#160;<span class="keywordtype">bool</span> ConfigCcpmWidget::throwConfigError(SystemSettings::AirframeTypeOptions airframeType)</div>
+<div class="line"><a name="l01518"></a><span class="lineno"> 1518</span>&#160;{</div>
+<div class="line"><a name="l01519"></a><span class="lineno"> 1519</span>&#160;    Q_UNUSED(airframeType);</div>
+<div class="line"><a name="l01520"></a><span class="lineno"> 1520</span>&#160;</div>
+<div class="line"><a name="l01521"></a><span class="lineno"> 1521</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="uavobjecttemplate_8m.html#a8760c7f0db08dc03416f4c8c3fc08f02">error</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01522"></a><span class="lineno"> 1522</span>&#160;</div>
+<div class="line"><a name="l01523"></a><span class="lineno"> 1523</span>&#160;    <span class="keywordflow">if</span> ((m_ccpm-&gt;ccpmServoWChannel-&gt;currentIndex() == 0)</div>
+<div class="line"><a name="l01524"></a><span class="lineno"> 1524</span>&#160;        &amp;&amp; (m_ccpm-&gt;ccpmServoWChannel-&gt;isEnabled())) {</div>
+<div class="line"><a name="l01525"></a><span class="lineno"> 1525</span>&#160;        m_ccpm-&gt;ccpmServoWLabel-&gt;setText(<span class="stringliteral">&quot;&lt;font color=red&gt;&quot;</span> + m_ccpm-&gt;ccpmServoWLabel-&gt;text()</div>
+<div class="line"><a name="l01526"></a><span class="lineno"> 1526</span>&#160;                                         + <span class="stringliteral">&quot;&lt;/font&gt;&quot;</span>);</div>
+<div class="line"><a name="l01527"></a><span class="lineno"> 1527</span>&#160;        error = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01528"></a><span class="lineno"> 1528</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01529"></a><span class="lineno"> 1529</span>&#160;        m_ccpm-&gt;ccpmServoWLabel-&gt;setText(QTextEdit(m_ccpm-&gt;ccpmServoWLabel-&gt;text()).toPlainText());</div>
+<div class="line"><a name="l01530"></a><span class="lineno"> 1530</span>&#160;    }</div>
+<div class="line"><a name="l01531"></a><span class="lineno"> 1531</span>&#160;</div>
+<div class="line"><a name="l01532"></a><span class="lineno"> 1532</span>&#160;    <span class="keywordflow">if</span> ((m_ccpm-&gt;ccpmServoXChannel-&gt;currentIndex() == 0)</div>
+<div class="line"><a name="l01533"></a><span class="lineno"> 1533</span>&#160;        &amp;&amp; (m_ccpm-&gt;ccpmServoXChannel-&gt;isEnabled())) {</div>
+<div class="line"><a name="l01534"></a><span class="lineno"> 1534</span>&#160;        m_ccpm-&gt;ccpmServoXLabel-&gt;setText(<span class="stringliteral">&quot;&lt;font color=red&gt;&quot;</span> + m_ccpm-&gt;ccpmServoXLabel-&gt;text()</div>
+<div class="line"><a name="l01535"></a><span class="lineno"> 1535</span>&#160;                                         + <span class="stringliteral">&quot;&lt;/font&gt;&quot;</span>);</div>
+<div class="line"><a name="l01536"></a><span class="lineno"> 1536</span>&#160;        error = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01537"></a><span class="lineno"> 1537</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01538"></a><span class="lineno"> 1538</span>&#160;        m_ccpm-&gt;ccpmServoXLabel-&gt;setText(QTextEdit(m_ccpm-&gt;ccpmServoXLabel-&gt;text()).toPlainText());</div>
+<div class="line"><a name="l01539"></a><span class="lineno"> 1539</span>&#160;    }</div>
+<div class="line"><a name="l01540"></a><span class="lineno"> 1540</span>&#160;</div>
+<div class="line"><a name="l01541"></a><span class="lineno"> 1541</span>&#160;    <span class="keywordflow">if</span> ((m_ccpm-&gt;ccpmServoYChannel-&gt;currentIndex() == 0)</div>
+<div class="line"><a name="l01542"></a><span class="lineno"> 1542</span>&#160;        &amp;&amp; (m_ccpm-&gt;ccpmServoYChannel-&gt;isEnabled())) {</div>
+<div class="line"><a name="l01543"></a><span class="lineno"> 1543</span>&#160;        m_ccpm-&gt;ccpmServoYLabel-&gt;setText(<span class="stringliteral">&quot;&lt;font color=red&gt;&quot;</span> + m_ccpm-&gt;ccpmServoYLabel-&gt;text()</div>
+<div class="line"><a name="l01544"></a><span class="lineno"> 1544</span>&#160;                                         + <span class="stringliteral">&quot;&lt;/font&gt;&quot;</span>);</div>
+<div class="line"><a name="l01545"></a><span class="lineno"> 1545</span>&#160;        error = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01546"></a><span class="lineno"> 1546</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01547"></a><span class="lineno"> 1547</span>&#160;        m_ccpm-&gt;ccpmServoYLabel-&gt;setText(QTextEdit(m_ccpm-&gt;ccpmServoYLabel-&gt;text()).toPlainText());</div>
+<div class="line"><a name="l01548"></a><span class="lineno"> 1548</span>&#160;    }</div>
+<div class="line"><a name="l01549"></a><span class="lineno"> 1549</span>&#160;</div>
+<div class="line"><a name="l01550"></a><span class="lineno"> 1550</span>&#160;    <span class="keywordflow">if</span> ((m_ccpm-&gt;ccpmServoZChannel-&gt;currentIndex() == 0)</div>
+<div class="line"><a name="l01551"></a><span class="lineno"> 1551</span>&#160;        &amp;&amp; (m_ccpm-&gt;ccpmServoZChannel-&gt;isEnabled())) {</div>
+<div class="line"><a name="l01552"></a><span class="lineno"> 1552</span>&#160;        m_ccpm-&gt;ccpmServoZLabel-&gt;setText(<span class="stringliteral">&quot;&lt;font color=red&gt;&quot;</span> + m_ccpm-&gt;ccpmServoZLabel-&gt;text()</div>
+<div class="line"><a name="l01553"></a><span class="lineno"> 1553</span>&#160;                                         + <span class="stringliteral">&quot;&lt;/font&gt;&quot;</span>);</div>
+<div class="line"><a name="l01554"></a><span class="lineno"> 1554</span>&#160;        error = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01555"></a><span class="lineno"> 1555</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01556"></a><span class="lineno"> 1556</span>&#160;        m_ccpm-&gt;ccpmServoZLabel-&gt;setText(QTextEdit(m_ccpm-&gt;ccpmServoZLabel-&gt;text()).toPlainText());</div>
+<div class="line"><a name="l01557"></a><span class="lineno"> 1557</span>&#160;    }</div>
+<div class="line"><a name="l01558"></a><span class="lineno"> 1558</span>&#160;</div>
+<div class="line"><a name="l01559"></a><span class="lineno"> 1559</span>&#160;    <span class="keywordflow">if</span> ((m_ccpm-&gt;ccpmEngineChannel-&gt;currentIndex() == 0)</div>
+<div class="line"><a name="l01560"></a><span class="lineno"> 1560</span>&#160;        &amp;&amp; (m_ccpm-&gt;ccpmEngineChannel-&gt;isEnabled())) {</div>
+<div class="line"><a name="l01561"></a><span class="lineno"> 1561</span>&#160;        m_ccpm-&gt;ccpmEngineLabel-&gt;setText(<span class="stringliteral">&quot;&lt;font color=red&gt;&quot;</span> + m_ccpm-&gt;ccpmEngineLabel-&gt;text()</div>
+<div class="line"><a name="l01562"></a><span class="lineno"> 1562</span>&#160;                                         + <span class="stringliteral">&quot;&lt;/font&gt;&quot;</span>);</div>
+<div class="line"><a name="l01563"></a><span class="lineno"> 1563</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01564"></a><span class="lineno"> 1564</span>&#160;        m_ccpm-&gt;ccpmEngineLabel-&gt;setText(QTextEdit(m_ccpm-&gt;ccpmEngineLabel-&gt;text()).toPlainText());</div>
+<div class="line"><a name="l01565"></a><span class="lineno"> 1565</span>&#160;    }</div>
+<div class="line"><a name="l01566"></a><span class="lineno"> 1566</span>&#160;</div>
+<div class="line"><a name="l01567"></a><span class="lineno"> 1567</span>&#160;    <span class="keywordflow">if</span> ((m_ccpm-&gt;ccpmTailChannel-&gt;currentIndex() == 0) &amp;&amp; (m_ccpm-&gt;ccpmTailChannel-&gt;isEnabled())) {</div>
+<div class="line"><a name="l01568"></a><span class="lineno"> 1568</span>&#160;        m_ccpm-&gt;ccpmTailLabel-&gt;setText(<span class="stringliteral">&quot;&lt;font color=red&gt;&quot;</span> + m_ccpm-&gt;ccpmTailLabel-&gt;text()</div>
+<div class="line"><a name="l01569"></a><span class="lineno"> 1569</span>&#160;                                       + <span class="stringliteral">&quot;&lt;/font&gt;&quot;</span>);</div>
+<div class="line"><a name="l01570"></a><span class="lineno"> 1570</span>&#160;        error = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01571"></a><span class="lineno"> 1571</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01572"></a><span class="lineno"> 1572</span>&#160;        m_ccpm-&gt;ccpmTailLabel-&gt;setText(QTextEdit(m_ccpm-&gt;ccpmTailLabel-&gt;text()).toPlainText());</div>
+<div class="line"><a name="l01573"></a><span class="lineno"> 1573</span>&#160;    }</div>
+<div class="line"><a name="l01574"></a><span class="lineno"> 1574</span>&#160;</div>
+<div class="line"><a name="l01575"></a><span class="lineno"> 1575</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="uavobjecttemplate_8m.html#a8760c7f0db08dc03416f4c8c3fc08f02">error</a>;</div>
+<div class="line"><a name="l01576"></a><span class="lineno"> 1576</span>&#160;}</div>
 <div class="ttc" id="group___config_plugin_html_ga1f721670521eb23a5d733b5c34096a21"><div class="ttname"><a href="group___config_plugin.html#ga1f721670521eb23a5d733b5c34096a21">VehicleConfig::VehicleConfig</a></div><div class="ttdeci">VehicleConfig(QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="vehicleconfig_8cpp_source.html#l00041">vehicleconfig.cpp:41</a></div></div>
 <div class="ttc" id="group___config_plugin_html_ga30259c7dfef707f2d0999fed8adaf6b1"><div class="ttname"><a href="group___config_plugin.html#ga30259c7dfef707f2d0999fed8adaf6b1">SwashplateServoSettingsStruct::Max</a></div><div class="ttdeci">int Max[CCPM_MAX_SWASH_SERVOS]</div><div class="ttdef"><b>Definition:</b> <a href="configccpmwidget_8h_source.html#l00049">configccpmwidget.h:49</a></div></div>
 <div class="ttc" id="group___config_plugin_html_ga9fda1ee21effccd7fcbad04816734eac"><div class="ttname"><a href="group___config_plugin.html#ga9fda1ee21effccd7fcbad04816734eac">SwashplateServoSettingsStruct::Used</a></div><div class="ttdeci">int Used[CCPM_MAX_SWASH_SERVOS]</div><div class="ttdef"><b>Definition:</b> <a href="configccpmwidget_8h_source.html#l00048">configccpmwidget.h:48</a></div></div>
