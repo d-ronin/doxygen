@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">0548c47</span>
+   &#160;<span id="projectnumber">88a7ac4</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -166,9 +166,9 @@ $(document).ready(function(){initNavTree('styleanimator_8cpp_source.html','');})
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">const</span> uchar *back_data = <a class="code" href="group___core_plugin.html#gafa890764761bd5b4427837a59aa5074c">m_primaryImage</a>.bits();</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keyword">const</span> uchar *front_data = <a class="code" href="group___core_plugin.html#ga75f12d898f20a6f11f71abe32ba0798d">m_secondaryImage</a>.bits();</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> sy = 0; sy &lt; sh; sy++) {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            quint32 *mixed = (quint32 *)mixed_data;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keyword">const</span> quint32 *back = (<span class="keyword">const</span> quint32 *)back_data;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keyword">const</span> quint32 *front = (<span class="keyword">const</span> quint32 *)front_data;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            quint32 *mixed = <span class="keyword">reinterpret_cast&lt;</span>quint32 *<span class="keyword">&gt;</span>(mixed_data);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keyword">const</span> quint32 *back = <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>quint32 *<span class="keyword">&gt;</span>(back_data);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keyword">const</span> quint32 *front = <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>quint32 *<span class="keyword">&gt;</span>(front_data);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> sx = 0; sx &lt; sw; sx++) {</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                quint32 bp = back[sx];</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                quint32 fp = front[sx];</div>

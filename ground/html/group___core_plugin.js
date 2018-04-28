@@ -266,8 +266,7 @@ var group___core_plugin =
       [ "m_devList", "group___core_plugin.html#ga59dba38b0aaf7818a55f5324e04cbfb4", null ],
       [ "m_ioDev", "group___core_plugin.html#gae83fe34fd2dab9f0c6459abbfcd6be27", null ],
       [ "m_lastManualConnect", "group___core_plugin.html#gabf8a17eac51091845f93178d10dcd98d", null ],
-      [ "m_monitorWidget", "group___core_plugin.html#ga1c7867a16d4a6ee88c874f5e39e0dae8", null ],
-      [ "msgFailedToConnect", "group___core_plugin.html#ga315efc766a92cbdeda0bb82080e142d0", null ]
+      [ "m_monitorWidget", "group___core_plugin.html#ga1c7867a16d4a6ee88c874f5e39e0dae8", null ]
     ] ],
     [ "CoreImpl", "class_core_1_1_internal_1_1_core_impl.html", [
       [ "CoreImpl", "group___core_plugin.html#ga61de81df9e02a1a837a850de7d57a95c", null ],
@@ -2049,7 +2048,6 @@ var group___core_plugin =
     [ "minorNr", "group___core_plugin.html#gad622c08143c80bf70a137d813062c911", null ],
     [ "MODE_UAVGADGET", "group___core_plugin.html#ga9eb4e86719a191bbbe45b8b88bd5b952", null ],
     [ "MODE_WELCOME", "group___core_plugin.html#ga1b8ce8070e58b69888be921bbb6b03ce", null ],
-    [ "msgFailedToConnect", "group___core_plugin.html#ga315efc766a92cbdeda0bb82080e142d0", null ],
     [ "NEW", "group___core_plugin.html#ga9dd395d533e9222eaf46cbd786386c6d", null ],
     [ "NODE_NUMELEM", "group___core_plugin.html#ga9fb2babad70f7d5d248f4dfe51cda6d5", null ],
     [ "OPEN", "group___core_plugin.html#ga9c2bccd3a88aafefdd2327622cb47a73", null ],

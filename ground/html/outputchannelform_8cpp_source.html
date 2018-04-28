@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">0548c47</span>
+   &#160;<span id="projectnumber">88a7ac4</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -381,7 +381,7 @@ $(document).ready(function(){initNavTree('outputchannelform_8cpp_source.html',''
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;{</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keywordtype">int</span> in_value = value;</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    QSlider *ob = (QSlider *)QObject::sender();</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    QSlider *ob = <span class="keyword">dynamic_cast&lt;</span>QSlider *<span class="keyword">&gt;</span>(QObject::sender());</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keywordflow">if</span> (!ob)</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
@@ -465,7 +465,7 @@ $(document).ready(function(){initNavTree('outputchannelform_8cpp_source.html',''
 <div class="ttc" id="group___config_plugin_html_ga46c4da3a30cc25c1178b9f9a125c8660"><div class="ttname"><a href="group___config_plugin.html#ga46c4da3a30cc25c1178b9f9a125c8660">OutputChannelForm::setNeutral</a></div><div class="ttdeci">void setNeutral(int value)</div><div class="ttdef"><b>Definition:</b> <a href="outputchannelform_8cpp_source.html#l00201">outputchannelform.cpp:201</a></div></div>
 <div class="ttc" id="group___config_plugin_html_ga04c058165995634381c105cad76f4209"><div class="ttname"><a href="group___config_plugin.html#ga04c058165995634381c105cad76f4209">OutputChannelForm::index</a></div><div class="ttdeci">int index() const </div><div class="ttdef"><b>Definition:</b> <a href="outputchannelform_8h_source.html#l00082">outputchannelform.h:82</a></div></div>
 <div class="ttc" id="configoutputwidget_8h_html"><div class="ttname"><a href="configoutputwidget_8h.html">configoutputwidget.h</a></div></div>
-<div class="ttc" id="group___u_a_v_object_widget_utils_html_ga516ee05a73ac3c7c9e6132b0d7294b4a"><div class="ttname"><a href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">ConfigTaskWidget::getObjectManager</a></div><div class="ttdeci">UAVObjectManager * getObjectManager()</div><div class="ttdoc">ConfigTaskWidget::getObjectManager Utility function to get a pointer to the object manager...</div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8cpp_source.html#l00254">configtaskwidget.cpp:254</a></div></div>
+<div class="ttc" id="group___u_a_v_object_widget_utils_html_ga516ee05a73ac3c7c9e6132b0d7294b4a"><div class="ttname"><a href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">ConfigTaskWidget::getObjectManager</a></div><div class="ttdeci">UAVObjectManager * getObjectManager()</div><div class="ttdoc">ConfigTaskWidget::getObjectManager Utility function to get a pointer to the object manager...</div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8cpp_source.html#l00255">configtaskwidget.cpp:255</a></div></div>
 <div class="ttc" id="group___config_plugin_html_gaa777808eac827fbf95642188024fc667"><div class="ttname"><a href="group___config_plugin.html#gaa777808eac827fbf95642188024fc667">OutputChannelForm::formChanged</a></div><div class="ttdeci">void formChanged()</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

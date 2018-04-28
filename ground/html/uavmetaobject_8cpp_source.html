@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">0548c47</span>
+   &#160;<span id="projectnumber">88a7ac4</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -156,62 +156,63 @@ $(document).ready(function(){initNavTree('uavmetaobject_8cpp_source.html','');})
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                     1, QStringList(), <a class="code" href="class_q_list.html">QList&lt;int&gt;</a>()));</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// Initialize parent</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="group___u_a_v_objects_plugin.html#ga1ed2d21fdcea1cc31ebc6c669ba49720">UAVObject::initialize</a>(0);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="group___u_a_v_objects_plugin.html#ga7aa3a71a68a9190731f720ad0eb1c772">UAVObject::initializeFields</a>(fields, (quint8 *)&amp;parentMetadata, <span class="keyword">sizeof</span>(Metadata));</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// Setup metadata of parent</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    parentMetadata = parent-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga565410bc4fc71be87c359024f6cc8f3c">getDefaultMetadata</a>();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="group___u_a_v_objects_plugin.html#gabfdc167657f1b0eae61e412313785e7b">   72</a></span>&#160;<a class="code" href="class_u_a_v_object.html">UAVObject</a> *<a class="code" href="group___u_a_v_objects_plugin.html#gabfdc167657f1b0eae61e412313785e7b">UAVMetaObject::getParentObject</a>()</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">return</span> parent;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="group___u_a_v_objects_plugin.html#ga714e256632f9fbd0aba5c6a9aaae422a">   81</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___u_a_v_objects_plugin.html#ga714e256632f9fbd0aba5c6a9aaae422a">UAVMetaObject::setMetadata</a>(<span class="keyword">const</span> Metadata &amp;mdata)</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    Q_UNUSED(mdata);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span>; <span class="comment">// can not update metaobject&#39;s metadata</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="group___u_a_v_objects_plugin.html#ga3830028095cc0fceed15e72baae231d9">   90</a></span>&#160;UAVObject::Metadata <a class="code" href="group___u_a_v_objects_plugin.html#ga3830028095cc0fceed15e72baae231d9">UAVMetaObject::getMetadata</a>()</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> ownMetadata;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="group___u_a_v_objects_plugin.html#ga151811823619af6a7231118c8e64f843">   98</a></span>&#160;UAVObject::Metadata <a class="code" href="group___u_a_v_objects_plugin.html#ga151811823619af6a7231118c8e64f843">UAVMetaObject::getDefaultMetadata</a>()</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">return</span> ownMetadata;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="group___u_a_v_objects_plugin.html#ga442400ff0a37c73b50d6e5ad9533ace4">  106</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___u_a_v_objects_plugin.html#ga442400ff0a37c73b50d6e5ad9533ace4">UAVMetaObject::setData</a>(<span class="keyword">const</span> Metadata &amp;mdata)</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    parentMetadata = mdata;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    emit <a class="code" href="group___u_a_v_objects_plugin.html#ga568cdde04946e82d60a3707fefdd2572">objectUpdatedAuto</a>(<span class="keyword">this</span>); <span class="comment">// trigger object updated event</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    emit <a class="code" href="group___u_a_v_objects_plugin.html#ga9aac3ae5395f63249cd821e0e5be5bf2">objectUpdated</a>(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="group___u_a_v_objects_plugin.html#gaa60fd952fa89a624b43ba3dcf4a7c953">  116</a></span>&#160;UAVObject::Metadata <a class="code" href="group___u_a_v_objects_plugin.html#gaa60fd952fa89a624b43ba3dcf4a7c953">UAVMetaObject::getData</a>()</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;{</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">return</span> parentMetadata;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="group___u_a_v_objects_plugin.html#ga7aa3a71a68a9190731f720ad0eb1c772">UAVObject::initializeFields</a>(fields, reinterpret_cast&lt;quint8 *&gt;(&amp;parentMetadata),</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                <span class="keyword">sizeof</span>(Metadata));</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// Setup metadata of parent</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    parentMetadata = parent-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga565410bc4fc71be87c359024f6cc8f3c">getDefaultMetadata</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="group___u_a_v_objects_plugin.html#gabfdc167657f1b0eae61e412313785e7b">   73</a></span>&#160;<a class="code" href="class_u_a_v_object.html">UAVObject</a> *<a class="code" href="group___u_a_v_objects_plugin.html#gabfdc167657f1b0eae61e412313785e7b">UAVMetaObject::getParentObject</a>()</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">return</span> parent;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="group___u_a_v_objects_plugin.html#ga714e256632f9fbd0aba5c6a9aaae422a">   82</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___u_a_v_objects_plugin.html#ga714e256632f9fbd0aba5c6a9aaae422a">UAVMetaObject::setMetadata</a>(<span class="keyword">const</span> Metadata &amp;mdata)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    Q_UNUSED(mdata);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">return</span>; <span class="comment">// can not update metaobject&#39;s metadata</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="group___u_a_v_objects_plugin.html#ga3830028095cc0fceed15e72baae231d9">   91</a></span>&#160;UAVObject::Metadata <a class="code" href="group___u_a_v_objects_plugin.html#ga3830028095cc0fceed15e72baae231d9">UAVMetaObject::getMetadata</a>()</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;{</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">return</span> ownMetadata;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="group___u_a_v_objects_plugin.html#ga151811823619af6a7231118c8e64f843">   99</a></span>&#160;UAVObject::Metadata <a class="code" href="group___u_a_v_objects_plugin.html#ga151811823619af6a7231118c8e64f843">UAVMetaObject::getDefaultMetadata</a>()</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;{</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">return</span> ownMetadata;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="group___u_a_v_objects_plugin.html#ga442400ff0a37c73b50d6e5ad9533ace4">  107</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___u_a_v_objects_plugin.html#ga442400ff0a37c73b50d6e5ad9533ace4">UAVMetaObject::setData</a>(<span class="keyword">const</span> Metadata &amp;mdata)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;{</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    parentMetadata = mdata;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    emit <a class="code" href="group___u_a_v_objects_plugin.html#ga568cdde04946e82d60a3707fefdd2572">objectUpdatedAuto</a>(<span class="keyword">this</span>); <span class="comment">// trigger object updated event</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    emit <a class="code" href="group___u_a_v_objects_plugin.html#ga9aac3ae5395f63249cd821e0e5be5bf2">objectUpdated</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="group___u_a_v_objects_plugin.html#gaa60fd952fa89a624b43ba3dcf4a7c953">  117</a></span>&#160;UAVObject::Metadata <a class="code" href="group___u_a_v_objects_plugin.html#gaa60fd952fa89a624b43ba3dcf4a7c953">UAVMetaObject::getData</a>()</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;{</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">return</span> parentMetadata;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga7aa3a71a68a9190731f720ad0eb1c772"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga7aa3a71a68a9190731f720ad0eb1c772">UAVObject::initializeFields</a></div><div class="ttdeci">void initializeFields(QList&lt; UAVObjectField * &gt; &amp;fields, quint8 *data, quint32 numBytes)</div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8cpp_source.html#l00082">uavobject.cpp:82</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga565410bc4fc71be87c359024f6cc8f3c"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga565410bc4fc71be87c359024f6cc8f3c">UAVObject::getDefaultMetadata</a></div><div class="ttdeci">virtual Metadata getDefaultMetadata()=0</div></div>
 <div class="ttc" id="uavobjectfield_8h_html"><div class="ttname"><a href="uavobjectfield_8h.html">uavobjectfield.h</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga568cdde04946e82d60a3707fefdd2572"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga568cdde04946e82d60a3707fefdd2572">UAVObject::objectUpdatedAuto</a></div><div class="ttdeci">void objectUpdatedAuto(UAVObject *obj)</div><div class="ttdoc">objectUpdatedAuto: triggered on &quot;setData&quot; only (Object data updated by changing the data structure) ...</div></div>
-<div class="ttc" id="group___u_a_v_objects_plugin_html_gabfdc167657f1b0eae61e412313785e7b"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gabfdc167657f1b0eae61e412313785e7b">UAVMetaObject::getParentObject</a></div><div class="ttdeci">UAVObject * getParentObject()</div><div class="ttdef"><b>Definition:</b> <a href="uavmetaobject_8cpp_source.html#l00072">uavmetaobject.cpp:72</a></div></div>
-<div class="ttc" id="group___u_a_v_objects_plugin_html_ga442400ff0a37c73b50d6e5ad9533ace4"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga442400ff0a37c73b50d6e5ad9533ace4">UAVMetaObject::setData</a></div><div class="ttdeci">void setData(const Metadata &amp;mdata)</div><div class="ttdef"><b>Definition:</b> <a href="uavmetaobject_8cpp_source.html#l00106">uavmetaobject.cpp:106</a></div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_gabfdc167657f1b0eae61e412313785e7b"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gabfdc167657f1b0eae61e412313785e7b">UAVMetaObject::getParentObject</a></div><div class="ttdeci">UAVObject * getParentObject()</div><div class="ttdef"><b>Definition:</b> <a href="uavmetaobject_8cpp_source.html#l00073">uavmetaobject.cpp:73</a></div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_ga442400ff0a37c73b50d6e5ad9533ace4"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga442400ff0a37c73b50d6e5ad9533ace4">UAVMetaObject::setData</a></div><div class="ttdeci">void setData(const Metadata &amp;mdata)</div><div class="ttdef"><b>Definition:</b> <a href="uavmetaobject_8cpp_source.html#l00107">uavmetaobject.cpp:107</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gae371ab30c21cdd286b387aa402c4789d"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gae371ab30c21cdd286b387aa402c4789d">UAVObject::fields</a></div><div class="ttdeci">QList&lt; UAVObjectField * &gt; fields</div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8h_source.html#l00253">uavobject.h:253</a></div></div>
-<div class="ttc" id="group___u_a_v_objects_plugin_html_ga3830028095cc0fceed15e72baae231d9"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga3830028095cc0fceed15e72baae231d9">UAVMetaObject::getMetadata</a></div><div class="ttdeci">Metadata getMetadata()</div><div class="ttdef"><b>Definition:</b> <a href="uavmetaobject_8cpp_source.html#l00090">uavmetaobject.cpp:90</a></div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_ga3830028095cc0fceed15e72baae231d9"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga3830028095cc0fceed15e72baae231d9">UAVMetaObject::getMetadata</a></div><div class="ttdeci">Metadata getMetadata()</div><div class="ttdef"><b>Definition:</b> <a href="uavmetaobject_8cpp_source.html#l00091">uavmetaobject.cpp:91</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga9aac3ae5395f63249cd821e0e5be5bf2"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga9aac3ae5395f63249cd821e0e5be5bf2">UAVObject::objectUpdated</a></div><div class="ttdeci">void objectUpdated(UAVObject *obj)</div><div class="ttdoc">Signal sent whenever any field of the object is updated. </div></div>
-<div class="ttc" id="group___u_a_v_objects_plugin_html_ga151811823619af6a7231118c8e64f843"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga151811823619af6a7231118c8e64f843">UAVMetaObject::getDefaultMetadata</a></div><div class="ttdeci">Metadata getDefaultMetadata()</div><div class="ttdef"><b>Definition:</b> <a href="uavmetaobject_8cpp_source.html#l00098">uavmetaobject.cpp:98</a></div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_ga151811823619af6a7231118c8e64f843"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga151811823619af6a7231118c8e64f843">UAVMetaObject::getDefaultMetadata</a></div><div class="ttdeci">Metadata getDefaultMetadata()</div><div class="ttdef"><b>Definition:</b> <a href="uavmetaobject_8cpp_source.html#l00099">uavmetaobject.cpp:99</a></div></div>
 <div class="ttc" id="class_u_a_v_object_field_html"><div class="ttname"><a href="class_u_a_v_object_field.html">UAVObjectField</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobjectfield_8h_source.html#l00040">uavobjectfield.h:40</a></div></div>
 <div class="ttc" id="class_u_a_v_object_html"><div class="ttname"><a href="class_u_a_v_object.html">UAVObject</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8h_source.html#l00065">uavobject.h:65</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga1ed2d21fdcea1cc31ebc6c669ba49720"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga1ed2d21fdcea1cc31ebc6c669ba49720">UAVObject::initialize</a></div><div class="ttdeci">void initialize(quint32 instID)</div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8cpp_source.html#l00071">uavobject.cpp:71</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga82e8ae42383522ae0507b881d11abba5"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga82e8ae42383522ae0507b881d11abba5">UAVMetaObject::UAVMetaObject</a></div><div class="ttdeci">UAVMetaObject(quint32 objID, const QString &amp;name, UAVObject *parent)</div><div class="ttdef"><b>Definition:</b> <a href="uavmetaobject_8cpp_source.html#l00041">uavmetaobject.cpp:41</a></div></div>
 <div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList&lt; UAVObjectField * &gt;</a></div></div>
-<div class="ttc" id="group___u_a_v_objects_plugin_html_ga714e256632f9fbd0aba5c6a9aaae422a"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga714e256632f9fbd0aba5c6a9aaae422a">UAVMetaObject::setMetadata</a></div><div class="ttdeci">void setMetadata(const Metadata &amp;mdata)</div><div class="ttdef"><b>Definition:</b> <a href="uavmetaobject_8cpp_source.html#l00081">uavmetaobject.cpp:81</a></div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_ga714e256632f9fbd0aba5c6a9aaae422a"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga714e256632f9fbd0aba5c6a9aaae422a">UAVMetaObject::setMetadata</a></div><div class="ttdeci">void setMetadata(const Metadata &amp;mdata)</div><div class="ttdef"><b>Definition:</b> <a href="uavmetaobject_8cpp_source.html#l00082">uavmetaobject.cpp:82</a></div></div>
 <div class="ttc" id="class_u_a_v_object_field_html_a74498368bc91f3ed74beacb096744cf3ac2f59f65ccf56a9b5ab9537f243d8ebb"><div class="ttname"><a href="class_u_a_v_object_field.html#a74498368bc91f3ed74beacb096744cf3ac2f59f65ccf56a9b5ab9537f243d8ebb">UAVObjectField::UINT16</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobjectfield_8h_source.html#l00050">uavobjectfield.h:50</a></div></div>
 <div class="ttc" id="class_u_a_v_object_field_html_a74498368bc91f3ed74beacb096744cf3a1a5788021526d853b18af9b5fd11f46d"><div class="ttname"><a href="class_u_a_v_object_field.html#a74498368bc91f3ed74beacb096744cf3a1a5788021526d853b18af9b5fd11f46d">UAVObjectField::BITFIELD</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobjectfield_8h_source.html#l00054">uavobjectfield.h:54</a></div></div>
-<div class="ttc" id="group___u_a_v_objects_plugin_html_gaa60fd952fa89a624b43ba3dcf4a7c953"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gaa60fd952fa89a624b43ba3dcf4a7c953">UAVMetaObject::getData</a></div><div class="ttdeci">Metadata getData()</div><div class="ttdef"><b>Definition:</b> <a href="uavmetaobject_8cpp_source.html#l00116">uavmetaobject.cpp:116</a></div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_gaa60fd952fa89a624b43ba3dcf4a7c953"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gaa60fd952fa89a624b43ba3dcf4a7c953">UAVMetaObject::getData</a></div><div class="ttdeci">Metadata getData()</div><div class="ttdef"><b>Definition:</b> <a href="uavmetaobject_8cpp_source.html#l00117">uavmetaobject.cpp:117</a></div></div>
 <div class="ttc" id="uavmetaobject_8h_html"><div class="ttname"><a href="uavmetaobject_8h.html">uavmetaobject.h</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga0e0e6753710634f75bf5f27e0c3e073a"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga0e0e6753710634f75bf5f27e0c3e073a">UAVObject::MetadataInitialize</a></div><div class="ttdeci">static void MetadataInitialize(Metadata &amp;meta)</div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8cpp_source.html#l00360">uavobject.cpp:360</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

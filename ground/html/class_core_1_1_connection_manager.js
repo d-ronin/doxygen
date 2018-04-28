@@ -31,6 +31,5 @@ var class_core_1_1_connection_manager =
     [ "m_devList", "group___core_plugin.html#ga59dba38b0aaf7818a55f5324e04cbfb4", null ],
     [ "m_ioDev", "group___core_plugin.html#gae83fe34fd2dab9f0c6459abbfcd6be27", null ],
     [ "m_lastManualConnect", "group___core_plugin.html#gabf8a17eac51091845f93178d10dcd98d", null ],
-    [ "m_monitorWidget", "group___core_plugin.html#ga1c7867a16d4a6ee88c874f5e39e0dae8", null ],
-    [ "msgFailedToConnect", "group___core_plugin.html#ga315efc766a92cbdeda0bb82080e142d0", null ]
+    [ "m_monitorWidget", "group___core_plugin.html#ga1c7867a16d4a6ee88c874f5e39e0dae8", null ]
 ];

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">0548c47</span>
+   &#160;<span id="projectnumber">88a7ac4</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -188,27 +188,27 @@ Public Member Functions</h2></td></tr>
 <p>When the config is created from a {QSettings} instance, an <a class="el" href="class_core_1_1_u_a_v_config_info.html" title="The Config Info is a helper-class to handle version changes in GCS configuration files. ">UAVConfigInfo</a> object is passed to the factory-method. With the version-data it can decide whether the presented config-data is compatible to the current implementation. It may migrate old data to the current format or abort the import.</p>
 <p>When the config is written to the {QSettings} instance, an <a class="el" href="class_core_1_1_u_a_v_config_info.html" title="The Config Info is a helper-class to handle version changes in GCS configuration files. ">UAVConfigInfo</a> object is passed to the writer-function. The version of the config-format should be written to the <a class="el" href="class_core_1_1_u_a_v_config_info.html" title="The Config Info is a helper-class to handle version changes in GCS configuration files. ">UAVConfigInfo</a> object. This version will be passed to factory-method when creating the config-object from this configuration.</p>
 <p>Typically a plugin can handle version-changes like this: </p>
-<div class="fragment"><div class="line">MyGadgetConfiguration::MyGadgetConfiguration(QString classId, QSettings* qSettings, <a class="code" href="group___core_plugin.html#gab19fa6bbe3be0f1ab8c4c544fa845572">UAVConfigInfo</a> *configInfo, QObject *parent) :</div>
-<div class="line">    IUAVGadgetConfiguration(classId, parent)</div>
-<div class="line">{</div>
-<div class="line">    <span class="keywordflow">if</span> ( ! qSettings )</div>
-<div class="line">        <span class="keywordflow">return</span>;</div>
+<div class="fragment"><div class="line"> MyGadgetConfiguration::MyGadgetConfiguration(QString classId, QSettings* qSettings,</div>
+<div class="line"><a class="code" href="group___core_plugin.html#gab19fa6bbe3be0f1ab8c4c544fa845572">UAVConfigInfo</a> *configInfo, QObject *parent) : IUAVGadgetConfiguration(classId, parent)</div>
+<div class="line"> {</div>
+<div class="line">     <span class="keywordflow">if</span> ( ! qSettings )</div>
+<div class="line">         <span class="keywordflow">return</span>;</div>
 <div class="line"></div>
-<div class="line">    <span class="keywordflow">if</span> ( configInfo-&gt;version() == UAVConfigVersion() )</div>
-<div class="line">        configInfo-&gt;setVersion(<span class="stringliteral">&quot;1.0.0&quot;</span>);</div>
+<div class="line">     <span class="keywordflow">if</span> ( configInfo-&gt;version() == UAVConfigVersion() )</div>
+<div class="line">         configInfo-&gt;setVersion(<span class="stringliteral">&quot;1.0.0&quot;</span>);</div>
 <div class="line"></div>
-<div class="line">    <span class="keywordflow">if</span> ( !configInfo-&gt;standardVersionHandlingOK(CURRENT_VERSION))</div>
-<div class="line">        <span class="keywordflow">return</span>;</div>
+<div class="line">     <span class="keywordflow">if</span> ( !configInfo-&gt;standardVersionHandlingOK(CURRENT_VERSION))</div>
+<div class="line">         <span class="keywordflow">return</span>;</div>
 <div class="line"></div>
-<div class="line">    ... read the config ...</div>
-<div class="line">}</div>
+<div class="line">     ... read the config ...</div>
+<div class="line"> }</div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">void</span> MyGadgetConfiguration::saveConfig(QSettings* qSettings, <a class="code" href="class_core_1_1_u_a_v_config_info.html">Core::UAVConfigInfo</a> *configInfo)<span class="keyword"> const </span>{</div>
+<div class="line"> <span class="keywordtype">void</span> MyGadgetConfiguration::saveConfig(QSettings* qSettings, <a class="code" href="class_core_1_1_u_a_v_config_info.html">Core::UAVConfigInfo</a> *configInfo)<span class="keyword"> const </span>{</div>
 <div class="line"></div>
-<div class="line">    configInfo-&gt;<a class="code" href="group___core_plugin.html#ga3ea89d37d0ba1f4c972006e6b761c922">setVersion</a>(CURRENT_VERSION);</div>
+<div class="line">     configInfo-&gt;<a class="code" href="group___core_plugin.html#ga3ea89d37d0ba1f4c972006e6b761c922">setVersion</a>(CURRENT_VERSION);</div>
 <div class="line"></div>
-<div class="line">    ... write the config ...</div>
-<div class="line">}</div>
+<div class="line">     ... write the config ...</div>
+<div class="line"> }</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="uavconfiginfo_8h_source.html#l00053">53</a> of file <a class="el" href="uavconfiginfo_8h_source.html">uavconfiginfo.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>

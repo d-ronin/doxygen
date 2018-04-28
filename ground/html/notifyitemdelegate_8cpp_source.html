@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">0548c47</span>
+   &#160;<span id="projectnumber">88a7ac4</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -249,7 +249,7 @@ $(document).ready(function(){initNavTree('notifyitemdelegate_8cpp_source.html','
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    QComboBox *combo = qobject_cast&lt;QComboBox *&gt;(sender());</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    QTableWidget *table = <span class="keyword">new</span> QTableWidget;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    table = (QTableWidget *)(combo-&gt;parent());</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    table = <span class="keyword">dynamic_cast&lt;</span>QTableWidget *<span class="keyword">&gt;</span>(combo-&gt;parent());</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <a class="code" href="group___notify_plugin.html#gaa12b557f54e20bfddabd963a0eccbaac">qNotifyDebug</a>() &lt;&lt; table-&gt;columnCount();</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <a class="code" href="group___notify_plugin.html#gaa12b557f54e20bfddabd963a0eccbaac">qNotifyDebug</a>() &lt;&lt; table-&gt;rowCount();</div>

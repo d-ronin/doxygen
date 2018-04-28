@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">0548c47</span>
+   &#160;<span id="projectnumber">88a7ac4</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('uavobjecttemplate_8cpp_source.html',''
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;UAVObjectField*&gt;</a> fields;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;$(FIELDSINIT)</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// Initialize object</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    initializeFields(fields, (quint8*)&amp;<a class="code" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>, NUMBYTES);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    initializeFields(fields, reinterpret_cast &lt;quint8 *&gt; (&amp;<a class="code" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>), NUMBYTES);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// Set the default field values</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    setDefaultFieldValues();</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// Set the object description</span></div>

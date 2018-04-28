@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">0548c47</span>
+   &#160;<span id="projectnumber">88a7ac4</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -283,21 +283,21 @@ $(document).ready(function(){initNavTree('kmlexport_8cpp_source.html','');});
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keywordflow">if</span> (QFileInfo(outputFileName).suffix().toLower() == <span class="stringliteral">&quot;kmz&quot;</span>) {</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="keywordflow">if</span> (!kmlengine::KmzFile::WriteKmz(outputFileName.toStdString().c_str(), kml_data)) {</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            qDebug() &lt;&lt; <span class="stringliteral">&quot;KMZ write failed: &quot;</span> &lt;&lt; outputFileName;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            QMessageBox::critical(<a class="code" href="group___core_plugin.html#ga71099762904aac0b404fcd1f93bdc83e">Core::ICore::instance</a>()-&gt;mainWindow(),</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                    <span class="stringliteral">&quot;KMZ write failed&quot;</span>, <span class="stringliteral">&quot;Failed to write KMZ file.&quot;</span>);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            QMessageBox::critical(<a class="code" href="group___core_plugin.html#ga71099762904aac0b404fcd1f93bdc83e">Core::ICore::instance</a>()-&gt;mainWindow(), <span class="stringliteral">&quot;KMZ write failed&quot;</span>,</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                                  <span class="stringliteral">&quot;Failed to write KMZ file.&quot;</span>);</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        }</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (QFileInfo(outputFileName).suffix().toLower() == <span class="stringliteral">&quot;kml&quot;</span>) {</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keywordflow">if</span> (!kmlbase::File::WriteStringToFile(kml_data, outputFileName.toStdString())) {</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            qDebug() &lt;&lt; <span class="stringliteral">&quot;KML write failed: &quot;</span> &lt;&lt; outputFileName;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            QMessageBox::critical(<a class="code" href="group___core_plugin.html#ga71099762904aac0b404fcd1f93bdc83e">Core::ICore::instance</a>()-&gt;mainWindow(),</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                    <span class="stringliteral">&quot;KML write failed&quot;</span>, <span class="stringliteral">&quot;Failed to write KML file.&quot;</span>);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            QMessageBox::critical(<a class="code" href="group___core_plugin.html#ga71099762904aac0b404fcd1f93bdc83e">Core::ICore::instance</a>()-&gt;mainWindow(), <span class="stringliteral">&quot;KML write failed&quot;</span>,</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                                  <span class="stringliteral">&quot;Failed to write KML file.&quot;</span>);</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        }</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        qDebug() &lt;&lt; <span class="stringliteral">&quot;Write failed. Invalid file name:&quot;</span> &lt;&lt; outputFileName;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        QMessageBox::critical(<a class="code" href="group___core_plugin.html#ga71099762904aac0b404fcd1f93bdc83e">Core::ICore::instance</a>()-&gt;mainWindow(),</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                <span class="stringliteral">&quot;Write failed&quot;</span>, <span class="stringliteral">&quot;Failed to write file. Invalid filename&quot;</span>);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        QMessageBox::critical(<a class="code" href="group___core_plugin.html#ga71099762904aac0b404fcd1f93bdc83e">Core::ICore::instance</a>()-&gt;mainWindow(), <span class="stringliteral">&quot;Write failed&quot;</span>,</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                              <span class="stringliteral">&quot;Failed to write file. Invalid filename&quot;</span>);</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    }</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
@@ -362,7 +362,7 @@ $(document).ready(function(){initNavTree('kmlexport_8cpp_source.html','');});
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        msgBox.setText(<span class="stringliteral">&quot;Corrupted file.&quot;</span>);</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        msgBox.setInformativeText(<span class="stringliteral">&quot;GCS cannot find the separation byte. GCS will attempt to export &quot;</span></div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                                  <span class="stringliteral">&quot;the file.&quot;</span>); <span class="comment">//&lt;--TODO: add hyperlink to webpage with better</span></div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                                                <span class="comment">//description.</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                                                <span class="comment">// description.</span></div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        msgBox.exec();</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="comment">// Since we could not find the file separator, we need to return to the beginning of the</span></div>
@@ -388,8 +388,8 @@ $(document).ready(function(){initNavTree('kmlexport_8cpp_source.html','');});
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        timestampPos.append(<a class="code" href="group___kml_export_plugin.html#ga465cd591372c473372a6d12904c997f6">logFile</a>.pos());</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        <span class="comment">// Read timestamp and logfile packet size</span></div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <a class="code" href="group___kml_export_plugin.html#ga465cd591372c473372a6d12904c997f6">logFile</a>.read((<span class="keywordtype">char</span> *)&amp;lastTimeStamp, <span class="keyword">sizeof</span>(lastTimeStamp));</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        <a class="code" href="group___kml_export_plugin.html#ga465cd591372c473372a6d12904c997f6">logFile</a>.read((<span class="keywordtype">char</span> *)&amp;dataSize, <span class="keyword">sizeof</span>(dataSize));</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <a class="code" href="group___kml_export_plugin.html#ga465cd591372c473372a6d12904c997f6">logFile</a>.read(reinterpret_cast&lt;char *&gt;(&amp;lastTimeStamp), <span class="keyword">sizeof</span>(lastTimeStamp));</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        <a class="code" href="group___kml_export_plugin.html#ga465cd591372c473372a6d12904c997f6">logFile</a>.read(reinterpret_cast&lt;char *&gt;(&amp;dataSize), <span class="keyword">sizeof</span>(dataSize));</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        <span class="comment">// Check if dataSize sync bytes are correct.</span></div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <span class="comment">// TODO: LIKELY AS NOT, THIS WILL FAIL TO RESYNC BECAUSE THERE IS TOO LITTLE INFORMATION IN</span></div>
@@ -412,7 +412,7 @@ $(document).ready(function(){initNavTree('kmlexport_8cpp_source.html','');});
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;            msgBox.setText(<span class="stringliteral">&quot;Corrupted file.&quot;</span>);</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;            msgBox.setInformativeText(<span class="stringliteral">&quot;Timestamps are not sequential. Playback may have unexpected &quot;</span></div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;                                      <span class="stringliteral">&quot;behavior&quot;</span>); <span class="comment">//&lt;--TODO: add hyperlink to webpage with better</span></div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                                                   <span class="comment">//description.</span></div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                                                   <span class="comment">// description.</span></div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;            msgBox.exec();</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;            qDebug() &lt;&lt; <span class="stringliteral">&quot;Timestamp: &quot;</span> &lt;&lt; timestampBuffer.last() &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; lastTimeStamp;</div>
@@ -458,13 +458,13 @@ $(document).ready(function(){initNavTree('kmlexport_8cpp_source.html','');});
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        }</div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        <span class="comment">// Read timestamp and logfile packet size</span></div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <a class="code" href="group___kml_export_plugin.html#ga465cd591372c473372a6d12904c997f6">logFile</a>.read((<span class="keywordtype">char</span> *)&amp;timeStamp, <span class="keyword">sizeof</span>(timeStamp));</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        <a class="code" href="group___kml_export_plugin.html#ga465cd591372c473372a6d12904c997f6">logFile</a>.read((<span class="keywordtype">char</span> *)&amp;packetSize, <span class="keyword">sizeof</span>(packetSize));</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <a class="code" href="group___kml_export_plugin.html#ga465cd591372c473372a6d12904c997f6">logFile</a>.read(reinterpret_cast&lt;char *&gt;(&amp;timeStamp), <span class="keyword">sizeof</span>(timeStamp));</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        <a class="code" href="group___kml_export_plugin.html#ga465cd591372c473372a6d12904c997f6">logFile</a>.read(reinterpret_cast&lt;char *&gt;(&amp;packetSize), <span class="keyword">sizeof</span>(packetSize));</div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        <span class="keywordflow">if</span> (packetSize &lt; 1 || packetSize &gt; (1024 * 1024)) {</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;            qDebug() &lt;&lt; <span class="stringliteral">&quot;Error: Logfile corrupted! Unlikely packet size: &quot;</span> &lt;&lt; packetSize &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            QMessageBox::critical(<a class="code" href="group___core_plugin.html#ga71099762904aac0b404fcd1f93bdc83e">Core::ICore::instance</a>()-&gt;mainWindow(),</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                <span class="stringliteral">&quot;Corrupted file&quot;</span>,</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            QMessageBox::critical(</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                <a class="code" href="group___core_plugin.html#ga71099762904aac0b404fcd1f93bdc83e">Core::ICore::instance</a>()-&gt;mainWindow(), <span class="stringliteral">&quot;Corrupted file&quot;</span>,</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                <span class="stringliteral">&quot;Incorrect packet size. Stopping export. Data up to this point will be saved.&quot;</span>);</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;            <span class="keywordflow">break</span>;</div>

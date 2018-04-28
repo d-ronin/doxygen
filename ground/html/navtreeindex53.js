@@ -1,7 +1,5 @@
 var NAVTREEINDEX53 =
 {
-"winutils_8h.html#a8a09ecaa3bd4054c9ec43e90ec1a355eaf8a1858cecec3b9a5a936eedcb5a1e8a":[6,0,0,0,0,0,5,32,0,0],
-"winutils_8h.html#a95863cc1ee8f125ee968be3e44da744e":[6,0,0,0,0,0,5,32,2],
 "winutils_8h_source.html":[6,0,0,0,0,0,5,32],
 "workspacesettings_8cpp.html":[6,0,0,0,0,1,9,71],
 "workspacesettings_8cpp_source.html":[6,0,0,0,0,1,9,71],

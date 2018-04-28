@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">0548c47</span>
+   &#160;<span id="projectnumber">88a7ac4</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -128,33 +128,33 @@ $(document).ready(function(){initNavTree('logginggadgetfactory_8cpp_source.html'
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="logginggadgetfactory_8h.html">logginggadgetfactory.h</a>&quot;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="logginggadgetwidget_8h.html">logginggadgetwidget.h</a>&quot;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="logginggadget_8h.html">logginggadget.h</a>&quot;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="iuavgadget_8h.html">coreplugin/iuavgadget.h</a>&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#ga1e3e843b8f04ef019c3a374910efebb8">   31</a></span>&#160;<a class="code" href="group___g_c_s_control_gadget_plugin.html#ga1e3e843b8f04ef019c3a374910efebb8">LoggingGadgetFactory::LoggingGadgetFactory</a>(QObject *parent)</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    : IUAVGadgetFactory(QString(<span class="stringliteral">&quot;LoggingGadget&quot;</span>), tr(<span class="stringliteral">&quot;Logging&quot;</span>), parent)</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    loggingPlugin = (<a class="code" href="class_logging_plugin.html">LoggingPlugin</a> *)parent;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#ga6ddd468f9f7b722281dc55df5d991dc1">   37</a></span>&#160;<a class="code" href="group___g_c_s_control_gadget_plugin.html#ga6ddd468f9f7b722281dc55df5d991dc1">LoggingGadgetFactory::~LoggingGadgetFactory</a>()</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#ga95ee0680e9c323e77341bef36195bdf5">   41</a></span>&#160;IUAVGadget *<a class="code" href="group___g_c_s_control_gadget_plugin.html#ga95ee0680e9c323e77341bef36195bdf5">LoggingGadgetFactory::createGadget</a>(QWidget *parent)</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_logging_gadget_widget.html">LoggingGadgetWidget</a> *gadgetWidget = <span class="keyword">new</span> <a class="code" href="class_logging_gadget_widget.html">LoggingGadgetWidget</a>(parent);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    gadgetWidget-&gt;<a class="code" href="group___g_c_s_control_gadget_plugin.html#ga9ff08b035e0189200c2f5d2e2b234dac">setPlugin</a>(loggingPlugin);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_logging_gadget.html">LoggingGadget</a>(QString(<span class="stringliteral">&quot;LoggingGadget&quot;</span>), gadgetWidget, parent);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="loggingplugin_8h.html">loggingplugin.h</a>&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="iuavgadget_8h.html">coreplugin/iuavgadget.h</a>&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#ga1e3e843b8f04ef019c3a374910efebb8">   32</a></span>&#160;<a class="code" href="group___g_c_s_control_gadget_plugin.html#ga1e3e843b8f04ef019c3a374910efebb8">LoggingGadgetFactory::LoggingGadgetFactory</a>(QObject *parent)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    : IUAVGadgetFactory(QString(<span class="stringliteral">&quot;LoggingGadget&quot;</span>), tr(<span class="stringliteral">&quot;Logging&quot;</span>), parent)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    loggingPlugin = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_logging_plugin.html">LoggingPlugin</a> *<span class="keyword">&gt;</span>(parent);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#ga6ddd468f9f7b722281dc55df5d991dc1">   38</a></span>&#160;<a class="code" href="group___g_c_s_control_gadget_plugin.html#ga6ddd468f9f7b722281dc55df5d991dc1">LoggingGadgetFactory::~LoggingGadgetFactory</a>() {}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#ga95ee0680e9c323e77341bef36195bdf5">   40</a></span>&#160;IUAVGadget *<a class="code" href="group___g_c_s_control_gadget_plugin.html#ga95ee0680e9c323e77341bef36195bdf5">LoggingGadgetFactory::createGadget</a>(QWidget *parent)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_logging_gadget_widget.html">LoggingGadgetWidget</a> *gadgetWidget = <span class="keyword">new</span> <a class="code" href="class_logging_gadget_widget.html">LoggingGadgetWidget</a>(parent);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    gadgetWidget-&gt;<a class="code" href="group___g_c_s_control_gadget_plugin.html#ga9ff08b035e0189200c2f5d2e2b234dac">setPlugin</a>(loggingPlugin);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_logging_gadget.html">LoggingGadget</a>(QString(<span class="stringliteral">&quot;LoggingGadget&quot;</span>), gadgetWidget, parent);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
 <div class="ttc" id="logginggadgetwidget_8h_html"><div class="ttname"><a href="logginggadgetwidget_8h.html">logginggadgetwidget.h</a></div></div>
 <div class="ttc" id="class_logging_plugin_html"><div class="ttname"><a href="class_logging_plugin.html">LoggingPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="loggingplugin_8h_source.html#l00108">loggingplugin.h:108</a></div></div>
-<div class="ttc" id="group___g_c_s_control_gadget_plugin_html_ga95ee0680e9c323e77341bef36195bdf5"><div class="ttname"><a href="group___g_c_s_control_gadget_plugin.html#ga95ee0680e9c323e77341bef36195bdf5">LoggingGadgetFactory::createGadget</a></div><div class="ttdeci">IUAVGadget * createGadget(QWidget *parent)</div><div class="ttdef"><b>Definition:</b> <a href="logginggadgetfactory_8cpp_source.html#l00041">logginggadgetfactory.cpp:41</a></div></div>
+<div class="ttc" id="group___g_c_s_control_gadget_plugin_html_ga95ee0680e9c323e77341bef36195bdf5"><div class="ttname"><a href="group___g_c_s_control_gadget_plugin.html#ga95ee0680e9c323e77341bef36195bdf5">LoggingGadgetFactory::createGadget</a></div><div class="ttdeci">IUAVGadget * createGadget(QWidget *parent)</div><div class="ttdef"><b>Definition:</b> <a href="logginggadgetfactory_8cpp_source.html#l00040">logginggadgetfactory.cpp:40</a></div></div>
 <div class="ttc" id="logginggadgetfactory_8h_html"><div class="ttname"><a href="logginggadgetfactory_8h.html">logginggadgetfactory.h</a></div></div>
-<div class="ttc" id="group___g_c_s_control_gadget_plugin_html_ga6ddd468f9f7b722281dc55df5d991dc1"><div class="ttname"><a href="group___g_c_s_control_gadget_plugin.html#ga6ddd468f9f7b722281dc55df5d991dc1">LoggingGadgetFactory::~LoggingGadgetFactory</a></div><div class="ttdeci">~LoggingGadgetFactory()</div><div class="ttdef"><b>Definition:</b> <a href="logginggadgetfactory_8cpp_source.html#l00037">logginggadgetfactory.cpp:37</a></div></div>
-<div class="ttc" id="group___g_c_s_control_gadget_plugin_html_ga1e3e843b8f04ef019c3a374910efebb8"><div class="ttname"><a href="group___g_c_s_control_gadget_plugin.html#ga1e3e843b8f04ef019c3a374910efebb8">LoggingGadgetFactory::LoggingGadgetFactory</a></div><div class="ttdeci">LoggingGadgetFactory(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="logginggadgetfactory_8cpp_source.html#l00031">logginggadgetfactory.cpp:31</a></div></div>
+<div class="ttc" id="group___g_c_s_control_gadget_plugin_html_ga6ddd468f9f7b722281dc55df5d991dc1"><div class="ttname"><a href="group___g_c_s_control_gadget_plugin.html#ga6ddd468f9f7b722281dc55df5d991dc1">LoggingGadgetFactory::~LoggingGadgetFactory</a></div><div class="ttdeci">~LoggingGadgetFactory()</div><div class="ttdef"><b>Definition:</b> <a href="logginggadgetfactory_8cpp_source.html#l00038">logginggadgetfactory.cpp:38</a></div></div>
+<div class="ttc" id="group___g_c_s_control_gadget_plugin_html_ga1e3e843b8f04ef019c3a374910efebb8"><div class="ttname"><a href="group___g_c_s_control_gadget_plugin.html#ga1e3e843b8f04ef019c3a374910efebb8">LoggingGadgetFactory::LoggingGadgetFactory</a></div><div class="ttdeci">LoggingGadgetFactory(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="logginggadgetfactory_8cpp_source.html#l00032">logginggadgetfactory.cpp:32</a></div></div>
 <div class="ttc" id="group___g_c_s_control_gadget_plugin_html_ga9ff08b035e0189200c2f5d2e2b234dac"><div class="ttname"><a href="group___g_c_s_control_gadget_plugin.html#ga9ff08b035e0189200c2f5d2e2b234dac">LoggingGadgetWidget::setPlugin</a></div><div class="ttdeci">void setPlugin(LoggingPlugin *p)</div><div class="ttdef"><b>Definition:</b> <a href="logginggadgetwidget_8cpp_source.html#l00052">logginggadgetwidget.cpp:52</a></div></div>
 <div class="ttc" id="class_logging_gadget_widget_html"><div class="ttname"><a href="class_logging_gadget_widget.html">LoggingGadgetWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="logginggadgetwidget_8h_source.html#l00038">logginggadgetwidget.h:38</a></div></div>
 <div class="ttc" id="class_logging_gadget_html"><div class="ttname"><a href="class_logging_gadget.html">LoggingGadget</a></div><div class="ttdef"><b>Definition:</b> <a href="logginggadget_8h_source.html#l00041">logginggadget.h:41</a></div></div>
+<div class="ttc" id="loggingplugin_8h_html"><div class="ttname"><a href="loggingplugin_8h.html">loggingplugin.h</a></div></div>
 <div class="ttc" id="iuavgadget_8h_html"><div class="ttname"><a href="iuavgadget_8h.html">iuavgadget.h</a></div></div>
 <div class="ttc" id="logginggadget_8h_html"><div class="ttname"><a href="logginggadget_8h.html">logginggadget.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

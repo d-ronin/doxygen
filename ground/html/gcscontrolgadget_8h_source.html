@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">0548c47</span>
+   &#160;<span id="projectnumber">88a7ac4</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('gcscontrolgadget_8h_source.html','');}
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    ~<a class="code" href="class_g_c_s_control_gadget.html">GCSControlGadget</a>();</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#gaebdfdbcaa43f61addf35752163d359d7">   60</a></span>&#160;    <a class="code" href="class_q_list.html">QList&lt;int&gt;</a> <a class="code" href="group___g_c_s_control_gadget_plugin.html#gaebdfdbcaa43f61addf35752163d359d7">context</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_context; }</div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#ga36c99e15ded265f21ddeb3b0ef9a344f">   61</a></span>&#160;    QWidget *<a class="code" href="group___g_c_s_control_gadget_plugin.html#ga36c99e15ded265f21ddeb3b0ef9a344f">widget</a>() { <span class="keywordflow">return</span> (QWidget *)m_widget; }</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#ga36c99e15ded265f21ddeb3b0ef9a344f">   61</a></span>&#160;    QWidget *<a class="code" href="group___g_c_s_control_gadget_plugin.html#ga36c99e15ded265f21ddeb3b0ef9a344f">widget</a>() { <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span>QWidget *<span class="keyword">&gt;</span>(m_widget); }</div>
 <div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#ga5be6c84c2994367f7f86e3553cf68b19">   62</a></span>&#160;    QString <a class="code" href="group___g_c_s_control_gadget_plugin.html#ga5be6c84c2994367f7f86e3553cf68b19">contextHelpId</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> QString(); }</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> loadConfiguration(<a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a> *config);</div>
@@ -172,37 +172,37 @@ $(document).ready(function(){initNavTree('gcscontrolgadget_8h_source.html','');}
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">double</span> constrain(<span class="keywordtype">double</span> value);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> setGcsReceiver(<span class="keywordtype">double</span> leftX, <span class="keywordtype">double</span> leftY, <span class="keywordtype">double</span> rightX,</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordtype">double</span> rightY, <span class="keywordtype">double</span> arming);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    QTime joystickTime;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="class_g_c_s_control_gadget_widget.html">GCSControlGadgetWidget</a> *m_widget;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;int&gt;</a> m_context;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    UAVObject::Metadata mccInitialData;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">// The channel mappings to the joystick</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">int</span> rollChannel;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">int</span> pitchChannel;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">int</span> yawChannel;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">int</span> throttleChannel;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">int</span> controlsMode;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">bool</span> gcsReceiverMode;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">bool</span> enableSending;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="structbutton_settings_struct.html">buttonSettingsStruct</a> buttonSettings[8];</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">double</span> bound(<span class="keywordtype">double</span> input);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">double</span> wrap(<span class="keywordtype">double</span> input);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">bool</span> channelReverse[8];</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;signals:</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> sticksChangedRemotely(<span class="keywordtype">double</span> leftX, <span class="keywordtype">double</span> leftY, <span class="keywordtype">double</span> rightX, <span class="keywordtype">double</span> rightY);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">protected</span> slots:</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> manualControlCommandUpdated(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> sticksChangedLocally(<span class="keywordtype">double</span> leftX, <span class="keywordtype">double</span> leftY, <span class="keywordtype">double</span> rightX, <span class="keywordtype">double</span> rightY, <span class="keywordtype">double</span> arming);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> setGcsReceiver(<span class="keywordtype">double</span> leftX, <span class="keywordtype">double</span> leftY, <span class="keywordtype">double</span> rightX, <span class="keywordtype">double</span> rightY, <span class="keywordtype">double</span> arming);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    QTime joystickTime;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="class_g_c_s_control_gadget_widget.html">GCSControlGadgetWidget</a> *m_widget;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;int&gt;</a> m_context;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    UAVObject::Metadata mccInitialData;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">// The channel mappings to the joystick</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">int</span> rollChannel;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">int</span> pitchChannel;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">int</span> yawChannel;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">int</span> throttleChannel;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">int</span> controlsMode;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">bool</span> gcsReceiverMode;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">bool</span> enableSending;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="structbutton_settings_struct.html">buttonSettingsStruct</a> buttonSettings[8];</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">double</span> bound(<span class="keywordtype">double</span> input);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">double</span> wrap(<span class="keywordtype">double</span> input);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">bool</span> channelReverse[8];</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;signals:</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> sticksChangedRemotely(<span class="keywordtype">double</span> leftX, <span class="keywordtype">double</span> leftY, <span class="keywordtype">double</span> rightX, <span class="keywordtype">double</span> rightY);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">protected</span> slots:</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">void</span> manualControlCommandUpdated(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> sticksChangedLocally(<span class="keywordtype">double</span> leftX, <span class="keywordtype">double</span> leftY, <span class="keywordtype">double</span> rightX, <span class="keywordtype">double</span> rightY,</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                              <span class="keywordtype">double</span> arming);</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">void</span> flightModeChanged(ManualControlSettings::FlightModePositionOptions mode);</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> enableControl(<span class="keywordtype">bool</span> enable);</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>

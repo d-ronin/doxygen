@@ -1,18 +1,16 @@
 var NAVTREEINDEX48 =
 {
-"namespaceprojections.html":[5,0,11],
-"namespaceprojections.html":[4,0,11],
 "namespaces.html":[4,0],
-"namespacestd.html":[5,0,12],
 "namespacestd.html":[4,0,12],
-"namespacetl__dfu.html":[4,0,13],
+"namespacestd.html":[5,0,12],
 "namespacetl__dfu.html":[5,0,13],
-"namespaceuavobject.html":[5,0,14],
+"namespacetl__dfu.html":[4,0,13],
 "namespaceuavobject.html":[4,0,14],
-"namespaceuavobjecttemplate.html":[4,0,15],
+"namespaceuavobject.html":[5,0,14],
 "namespaceuavobjecttemplate.html":[5,0,15],
-"namespaceuploader.html":[4,0,17],
+"namespaceuavobjecttemplate.html":[4,0,15],
 "namespaceuploader.html":[5,0,17],
+"namespaceuploader.html":[4,0,17],
 "notificationitem_8cpp.html":[6,0,0,0,0,1,22,0],
 "notificationitem_8cpp.html#ga16f7f909377f59dda529965c201a37a8":[6,0,0,0,0,1,22,0,1],
 "notificationitem_8cpp.html#ga52304989291ca82805ab0749694bfbce":[6,0,0,0,0,1,22,0,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX48 =
 "pluginspec_8cpp.html#ab82b4a18040b81e0149b936d5fc14159":[6,0,0,0,0,0,1,14,0],
 "pluginspec_8cpp_source.html":[6,0,0,0,0,0,1,14],
 "pluginspec_8h.html":[6,0,0,0,0,0,1,15],
-"pluginspec_8h_source.html":[6,0,0,0,0,0,1,15]
+"pluginspec_8h_source.html":[6,0,0,0,0,0,1,15],
+"pluginspec__p_8h.html":[6,0,0,0,0,0,1,16],
+"pluginspec__p_8h_source.html":[6,0,0,0,0,0,1,16]
 };

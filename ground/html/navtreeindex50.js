@@ -1,7 +1,5 @@
 var NAVTREEINDEX50 =
 {
-"sizelatlng_8h_source.html":[6,0,0,0,0,0,4,1,18],
-"smartsavebutton_8cpp.html":[6,0,0,0,0,1,37,12],
 "smartsavebutton_8cpp_source.html":[6,0,0,0,0,1,37,12],
 "smartsavebutton_8h.html":[6,0,0,0,0,1,37,13],
 "smartsavebutton_8h_source.html":[6,0,0,0,0,1,37,13],
@@ -249,5 +247,7 @@ var NAVTREEINDEX50 =
 "taulabsplugin_8h_source.html":[6,0,0,0,0,1,7,5],
 "taulink_8cpp.html":[6,0,0,0,0,1,7,6],
 "taulink_8cpp_source.html":[6,0,0,0,0,1,7,6],
-"taulink_8h.html":[6,0,0,0,0,1,7,7]
+"taulink_8h.html":[6,0,0,0,0,1,7,7],
+"taulink_8h_source.html":[6,0,0,0,0,1,7,7],
+"telemetry_8cpp.html":[6,0,0,0,0,1,39,0]
 };
