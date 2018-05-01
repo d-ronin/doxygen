@@ -1,6 +1,7 @@
 var struct_u_a_v_talk_stats =
 [
     [ "rxBytes", "struct_u_a_v_talk_stats.html#af98fb7a9d72619f9ad84628b20ffcbdf", null ],
+    [ "rxCRC", "struct_u_a_v_talk_stats.html#a0722419d2039ebe56539e48fac18ebb5", null ],
     [ "rxErrors", "struct_u_a_v_talk_stats.html#a0496877af8f1ce9110b2b42a58956e10", null ],
     [ "rxObjectBytes", "struct_u_a_v_talk_stats.html#a5adb8d84e7dfe9f3aa1a03a6c057f2fd", null ],
     [ "rxObjects", "struct_u_a_v_talk_stats.html#abe87f216fd1bb8fdb474a61d467d7b41", null ],

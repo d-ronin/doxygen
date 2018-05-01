@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">88a7ac4</span>
+   &#160;<span id="projectnumber">fe56bb4</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -260,9 +260,9 @@ $(document).ready(function(){initNavTree('pipxtreme_2fw_2pios__board_8c_source.h
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor"></span>        <span class="keyword">const</span> <span class="keyword">struct </span>pios_openlrs_cfg *openlrs_cfg = PIOS_BOARD_HW_DEFS_GetOpenLRSCfg(bdinfo-&gt;<a class="code" href="structpios__board__info.html#a7c5ba691095b534927e3f0b6cc7202d6">board_rev</a>);</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        PIOS_HAL_ConfigureRFM22B(pios_spi_rfm22b_id,</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                        bdinfo-&gt;<a class="code" href="structpios__board__info.html#a5aff4607db694a6885c0ce5361afa9bb">board_type</a>,</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                        bdinfo-&gt;<a class="code" href="structpios__board__info.html#a7c5ba691095b534927e3f0b6cc7202d6">board_rev</a>,</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                        hwTauLink.RfBand, openlrs_cfg, &amp;openlrs_handle);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                        bdinfo-&gt;<a class="code" href="structpios__board__info.html#a5aff4607db694a6885c0ce5361afa9bb">board_type</a>, bdinfo-&gt;<a class="code" href="structpios__board__info.html#a7c5ba691095b534927e3f0b6cc7202d6">board_rev</a>,</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                        hwTauLink.RfBand, hwTauLink.MaxRfPower,</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                        openlrs_cfg, &amp;openlrs_handle);</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keywordflow">if</span> (bdinfo-&gt;<a class="code" href="structpios__board__info.html#a7c5ba691095b534927e3f0b6cc7202d6">board_rev</a> == <a class="code" href="group___pip_x.html#ga4a59a79c24481761e5103d5ec54b497c">TAULINK_VERSION_MODULE</a>) {</div>

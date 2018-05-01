@@ -20,6 +20,7 @@ var searchData=
   ['nerrors',['NErrors',['../berlekamp_8c.html#a0d8487e9f148d13ed395d1362dd459b6',1,'berlekamp.c']]],
   ['nested_5fctr',['nested_ctr',['../group___p_i_o_s___i_r_q.html#ga158274a5376909848bbb08608a147327',1,'pios_irq.c']]],
   ['new_5fuavo_5finstance_5fcb_5ft',['new_uavo_instance_cb_t',['../uavobjectmanager_8h.html#a58db83831e3408beebc011830d0046d7',1,'uavobjectmanager.h']]],
+  ['newreceiverdata',['NewReceiverData',['../group___radio_com_bridge_module.html#ga832ecedd65820ba8cc8c0e76e6a84fe7',1,'radiocombridge.c']]],
   ['newuavobjinstancecb',['newUavObjInstanceCB',['../group___u_a_v_object_handling.html#ga08b75f95ad3a984b1348a37432145c68',1,'uavobjectmanager.c']]],
   ['next',['next',['../struct_periodic_object_list_struct.html#a53ed6bc407c59100bcfddb3a49ccb88f',1,'PeriodicObjectListStruct::next()'],['../struct_object_event_entry.html#af10cb19d61193416975d2cb2c78bf620',1,'ObjectEventEntry::next()'],['../struct_u_a_v_o_data.html#a69aa4b26e0e8727f2e9a418f42d056a0',1,'UAVOData::next()'],['../struct_u_a_v_o_multi_inst.html#a571693c984fd7e8e845fe57fca2d21d9',1,'UAVOMultiInst::next()'],['../uavobjectmanager_8c.html#a0463912be4bb882cee5d3d70c664b698',1,'next():&#160;uavobjectmanager.c']]],
   ['next_5fevent',['next_event',['../struct_u_a_v_o_base.html#aa0d6ea1fcd5ae56953e8dd7f244dd988',1,'UAVOBase::next_event()'],['../uavobjectmanager_8c.html#a198dfe31641d68ac23d11a5f98b07ac1',1,'next_event():&#160;uavobjectmanager.c']]],

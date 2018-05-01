@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['a',['A',['../structrtkf__state.html#a1102fcc1c986b891ff2cbd8e0cfea00a',1,'rtkf_state::A()'],['../structlqr__state.html#a59aebad73e32212fc5450c632bbcf60e',1,'lqr_state::A()'],['../struct_w_m_mtype___ellipsoid.html#a9bcd028638f788a140352852646f5bf8',1,'WMMtype_Ellipsoid::a()']]],
+  ['a',['a',['../struct_w_m_mtype___ellipsoid.html#a9bcd028638f788a140352852646f5bf8',1,'WMMtype_Ellipsoid::a()'],['../structrtkf__state.html#a1102fcc1c986b891ff2cbd8e0cfea00a',1,'rtkf_state::A()'],['../structlqr__state.html#a59aebad73e32212fc5450c632bbcf60e',1,'lqr_state::A()']]],
   ['a1',['a1',['../group___flight_math.html#ga113ae77a5e37c0a78b1b3c1c4457db22',1,'lpfilter_biquad']]],
   ['a2',['a2',['../group___flight_math.html#ga49fb8824c4ef1a6445cbcdb32666c872',1,'lpfilter_biquad']]],
   ['acc_5frange',['acc_range',['../group___p_i_o_s___b_m_i160.html#ga1389307be8c175c2dd6a6f7bf93fbaa2',1,'pios_bmi160_cfg']]],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">88a7ac4</span>
+   &#160;<span id="projectnumber">fe56bb4</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -753,25 +753,28 @@ $(document).ready(function(){initNavTree('uavobjectutilmanager_8cpp_source.html'
 <div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;    <span class="keywordflow">if</span> (!actuatorSettings)</div>
 <div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>; <span class="comment">// this might seem odd, but matches the API description</span></div>
 <div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;</div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;    <span class="keyword">auto</span> minField = actuatorSettings-&gt;getField(<span class="stringliteral">&quot;ChannelMin&quot;</span>);</div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;    <span class="keyword">auto</span> maxField = actuatorSettings-&gt;getField(<span class="stringliteral">&quot;ChannelMax&quot;</span>);</div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;    <span class="keywordflow">if</span> (!minField || !maxField)</div>
-<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;</div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = 0; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt; maxField-&gt;getNumElements(); <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>++) {</div>
-<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;        <span class="keywordflow">if</span> (maxField-&gt;getValue(<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>).toInt() &gt; 0)</div>
-<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;    }</div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;</div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = 0; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt; minField-&gt;getNumElements(); <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>++) {</div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;        <span class="keywordflow">if</span> (minField-&gt;getValue(<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>).toInt() &gt; 0)</div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;    }</div>
-<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;</div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;}</div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;    <span class="keywordflow">if</span> (!actuatorSettings-&gt;getIsPresentOnHardware())</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>; <span class="comment">// Maybe pipx, maybe mismatched fw ver...</span></div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;</div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;    <span class="keyword">auto</span> minField = actuatorSettings-&gt;getField(<span class="stringliteral">&quot;ChannelMin&quot;</span>);</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;    <span class="keyword">auto</span> maxField = actuatorSettings-&gt;getField(<span class="stringliteral">&quot;ChannelMax&quot;</span>);</div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;    <span class="keywordflow">if</span> (!minField || !maxField)</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = 0; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt; maxField-&gt;getNumElements(); <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>++) {</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;        <span class="keywordflow">if</span> (maxField-&gt;getValue(<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>).toInt() &gt; 0)</div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;    }</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = 0; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt; minField-&gt;getNumElements(); <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>++) {</div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;        <span class="keywordflow">if</span> (minField-&gt;getValue(<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>).toInt() &gt; 0)</div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;    }</div>
 <div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;</div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;<span class="comment">// ******************************</span></div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;}</div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;<span class="comment">// ******************************</span></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga565410bc4fc71be87c359024f6cc8f3c"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga565410bc4fc71be87c359024f6cc8f3c">UAVObject::getDefaultMetadata</a></div><div class="ttdeci">virtual Metadata getDefaultMetadata()=0</div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga3f0971e47d6ebe87f97939435cd03da3"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga3f0971e47d6ebe87f97939435cd03da3">UAVObjectUtilManager::metadataSetEnum</a></div><div class="ttdeci">metadataSetEnum</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectutilmanager_8h_source.html#l00057">uavobjectutilmanager.h:57</a></div></div>
 <div class="ttc" id="group___u_a_v_object_util_plugin_html_ga2a96c0269c09447e493055692fd68ad5"><div class="ttname"><a href="group___u_a_v_object_util_plugin.html#ga2a96c0269c09447e493055692fd68ad5">deviceDescriptorStruct::boardType</a></div><div class="ttdeci">quint8 boardType</div><div class="ttdef"><b>Definition:</b> <a href="devicedescriptorstruct_8h_source.html#l00044">devicedescriptorstruct.h:44</a></div></div>

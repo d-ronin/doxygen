@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['a',['A',['../structrtkf__state.html#a1102fcc1c986b891ff2cbd8e0cfea00a',1,'rtkf_state::A()'],['../structlqr__state.html#a59aebad73e32212fc5450c632bbcf60e',1,'lqr_state::A()'],['../struct_w_m_mtype___ellipsoid.html#a9bcd028638f788a140352852646f5bf8',1,'WMMtype_Ellipsoid::a()']]],
+  ['a',['a',['../struct_w_m_mtype___ellipsoid.html#a9bcd028638f788a140352852646f5bf8',1,'WMMtype_Ellipsoid::a()'],['../structrtkf__state.html#a1102fcc1c986b891ff2cbd8e0cfea00a',1,'rtkf_state::A()'],['../structlqr__state.html#a59aebad73e32212fc5450c632bbcf60e',1,'lqr_state::A()']]],
   ['a00',['A00',['../group___flight_math.html#ga29ab8f304572bfb421e3f7666da0fe4d',1,'lqg.c']]],
   ['a01',['A01',['../group___flight_math.html#ga105b3dbbda7ff665ef1369a7ea42f29d',1,'lqg.c']]],
   ['a02',['A02',['../group___flight_math.html#ga5663784dabb95a65df02aa05f514f61a',1,'lqg.c']]],

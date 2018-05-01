@@ -49,6 +49,7 @@ var group___telemetry_module =
     [ "gcsTelemetryStatsUpdated", "group___telemetry_module.html#gafe9341b34dfb706c0f819455fd6445bb", null ],
     [ "getComPort", "group___telemetry_module.html#ga079a96905407622d10643ce69c08b288", null ],
     [ "processObjEvent", "group___telemetry_module.html#ga80d2f2dcdc75092a1c98f34e3804e963", null ],
+    [ "processUsbActivity", "group___telemetry_module.html#ga63a7a7609325b2e485b176d5bc736066", null ],
     [ "registerObject", "group___telemetry_module.html#gac8fe36b488a0dd9ccc22fd51dcad52a2", null ],
     [ "registerObjectShim", "group___telemetry_module.html#ga84d3762937b74035949fec9da7a6c4cf", null ],
     [ "reqCallback", "group___telemetry_module.html#ga6726f16909707a822e9ba3ab6b0613d2", null ],

@@ -11,7 +11,6 @@ var searchData=
   ['send_5fdata_5fnonblock',['send_data_nonblock',['../group___logging.html#gae3c295832a93bcea6397dda7ca48a6d1',1,'logging.c']]],
   ['send_5fmessage',['send_message',['../group___u_a_v_o_mavlink_bridge.html#gac4c1dc0eaee28f2612a6dc46296b3df9',1,'UAVOMavlinkBridge.c']]],
   ['send_5freboot',['send_reboot',['../classpx__uploader_1_1uploader.html#a8131f182cbab5edbeb6edfe6f6993334',1,'px_uploader::uploader']]],
-  ['sendbuf',['sendBuf',['../group___u_a_v_talk.html#ga0d6eae6da855dfa4726ef1e117954f3b',1,'uavtalk.c']]],
   ['senddata',['sendData',['../group___common_f1.html#gaa1fa853082b4ce777706ba08c91fb0b8',1,'op_dfu.c']]],
   ['sendevent',['sendEvent',['../group___u_a_v_object_handling.html#gaf470f037f3153c45788d69a16f2111d5',1,'uavobjectmanager.c']]],
   ['sendnack',['sendNack',['../group___u_a_v_talk.html#ga796d9e606d3d44333f0adab89d997e4e',1,'uavtalk.c']]],

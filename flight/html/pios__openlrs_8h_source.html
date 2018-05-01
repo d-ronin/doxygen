@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">88a7ac4</span>
+   &#160;<span id="projectnumber">fe56bb4</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -156,19 +156,20 @@ $(document).ready(function(){initNavTree('pios__openlrs_8h_source.html','');});
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;int32_t PIOS_OpenLRS_Init(pios_openlrs_t *openlrs_id, <a class="code" href="structpios__spi__dev.html">pios_spi_t</a> spi_id,</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                uint32_t slave_num, <span class="keyword">const</span> <span class="keyword">struct</span> pios_openlrs_cfg *<a class="code" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                HwSharedRfBandOptions rf_band);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;int32_t PIOS_OpenLRS_Start(pios_openlrs_t openlrs_id);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">void</span> PIOS_OpenLRS_RegisterRcvr(pios_openlrs_t openlrs_id,</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                uintptr_t rfm22b_rcvr_id);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;uint8_t PIOS_OpenLRS_RSSI_Get(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">bool</span> PIOS_OpenLRS_EXT_Int(pios_openlrs_t openlrs_id);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* PIOS_OPENLRS_H */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                HwSharedRfBandOptions rf_band,</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                HwSharedMaxRfPowerOptions rf_power);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;int32_t PIOS_OpenLRS_Start(pios_openlrs_t openlrs_id);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">void</span> PIOS_OpenLRS_RegisterRcvr(pios_openlrs_t openlrs_id,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                uintptr_t rfm22b_rcvr_id);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;uint8_t PIOS_OpenLRS_RSSI_Get(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">bool</span> PIOS_OpenLRS_EXT_Int(pios_openlrs_t openlrs_id);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* PIOS_OPENLRS_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="structpios__spi__dev_html"><div class="ttname"><a href="structpios__spi__dev.html">pios_spi_dev</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__spi__priv_8h_source.html#l00038">pios_spi_priv.h:38</a></div></div>
 <div class="ttc" id="structstm32__gpio_html"><div class="ttname"><a href="structstm32__gpio.html">stm32_gpio</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__stm32_8h_source.html#l00059">pios_stm32.h:59</a></div></div>
 <div class="ttc" id="structpios__exti__cfg_html"><div class="ttname"><a href="structpios__exti__cfg.html">pios_exti_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__exti_8h_source.html#l00037">pios_exti.h:37</a></div></div>

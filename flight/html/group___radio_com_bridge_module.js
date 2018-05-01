@@ -1,6 +1,5 @@
 var group___radio_com_bridge_module =
 [
-    [ "RadioComBridge.c", "_radio_com_bridge_8c.html", null ],
     [ "RadioComBridgeData", "struct_radio_com_bridge_data.html", [
       [ "have_port", "group___radio_com_bridge_module.html#ga39b751c88b8bfe6d3c2270e517d98541", null ],
       [ "radioRxTaskHandle", "group___radio_com_bridge_module.html#gafbe49bdb4a85ec4a694d3672f5b9b117", null ],
@@ -8,13 +7,17 @@ var group___radio_com_bridge_module =
       [ "telemetryRxTaskHandle", "group___radio_com_bridge_module.html#ga4643f009ab86f8fea8f4bcd8f9229822", null ],
       [ "telemUAVTalkCon", "group___radio_com_bridge_module.html#ga60670d5e037c981c2e1c5ba1cf9dd5b3", null ]
     ] ],
+    [ "COMSTATS_INJECT", "group___radio_com_bridge_module.html#ga6ef27c8065621b29a830ea21f2bd85bc", null ],
     [ "MAX_PORT_DELAY", "group___radio_com_bridge_module.html#ga749b492e33b73201cbe671f79d85f4db", null ],
     [ "MAX_RETRIES", "group___radio_com_bridge_module.html#gaecf13b8dc783db2202ca5c34fe117fc3", null ],
     [ "MetaObjectId", "group___radio_com_bridge_module.html#ga7a09b8c51a6b38f7fcd498d4b6ec9a88", null ],
     [ "RETRY_TIMEOUT_MS", "group___radio_com_bridge_module.html#gac18e85b738a2394b23bf27717911cc7a", null ],
     [ "STACK_SIZE_BYTES", "group___radio_com_bridge_module.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725", null ],
     [ "TASK_PRIORITY", "group___radio_com_bridge_module.html#ga82dd0a9ae27bdb2c3cdd33bb7804861c", null ],
+    [ "USB_ACTIVITY_TIMEOUT_MS", "group___radio_com_bridge_module.html#ga2b77885d3b4992f77992bf84113980d6", null ],
+    [ "getComPort", "group___radio_com_bridge_module.html#ga079a96905407622d10643ce69c08b288", null ],
     [ "MODULE_INITCALL", "group___radio_com_bridge_module.html#gac3af1d46c7b58e81ee6fe55f7310226c", null ],
+    [ "NewReceiverData", "group___radio_com_bridge_module.html#ga832ecedd65820ba8cc8c0e76e6a84fe7", null ],
     [ "ProcessLocalStream", "group___radio_com_bridge_module.html#ga6e31ec2031463aea22999edf10b995d7", null ],
     [ "ProcessRadioStream", "group___radio_com_bridge_module.html#gade4bbfe7bfd08af2a781379ed60292f6", null ],
     [ "RadioComBridgeInitialize", "group___radio_com_bridge_module.html#ga87a6834d60ae889d7c6cc4db49f26ad9", null ],
@@ -25,6 +28,7 @@ var group___radio_com_bridge_module =
     [ "telemetryRxTask", "group___radio_com_bridge_module.html#ga9da5e87898e909e36976b43920385fb7", null ],
     [ "telemetryRxTask", "group___radio_com_bridge_module.html#gafb33ab57963e1e0b7eb46993f92a29c9", null ],
     [ "UAVTalkSendHandler", "group___radio_com_bridge_module.html#ga12be66ede9092606ec2c60f4af952a0d", null ],
+    [ "updateRadioComBridgeStats", "group___radio_com_bridge_module.html#gadc6b3a8165145940130d13b02d373c6e", null ],
     [ "data", "group___radio_com_bridge_module.html#ga818f231e9e554ad12dfd25cd17467e78", null ],
     [ "have_port", "group___radio_com_bridge_module.html#ga39b751c88b8bfe6d3c2270e517d98541", null ],
     [ "radioRxTaskHandle", "group___radio_com_bridge_module.html#gafbe49bdb4a85ec4a694d3672f5b9b117", null ],

@@ -1,10 +1,10 @@
 var searchData=
 [
   ['r2quaternion',['R2Quaternion',['../group___flight_math.html#gad6008216daaf402435c742d0290f9a30',1,'coordinate_conversions.c']]],
-  ['radiocombridgeinitialize',['RadioComBridgeInitialize',['../group___radio_com_bridge_module.html#ga87a6834d60ae889d7c6cc4db49f26ad9',1,'RadioComBridge.c']]],
-  ['radiocombridgestart',['RadioComBridgeStart',['../group___radio_com_bridge_module.html#gaa9d3cb78d299687fe6f3f6a6199ce6de',1,'RadioComBridge.c']]],
-  ['radiorxtask',['radioRxTask',['../group___radio_com_bridge_module.html#ga090eaef2ee9c8105a8f1dce84feed15a',1,'radioRxTask(void *parameters):&#160;RadioComBridge.c'],['../group___radio_com_bridge_module.html#gaab3b568cf50c03bf5713bfea6e366b8e',1,'radioRxTask(__attribute__((unused)) void *parameters):&#160;RadioComBridge.c']]],
-  ['radiosendhandler',['RadioSendHandler',['../group___radio_com_bridge_module.html#gad43a7e1ba17479c92c9247622df20c29',1,'RadioComBridge.c']]],
+  ['radiocombridgeinitialize',['RadioComBridgeInitialize',['../group___radio_com_bridge_module.html#ga87a6834d60ae889d7c6cc4db49f26ad9',1,'radiocombridge.c']]],
+  ['radiocombridgestart',['RadioComBridgeStart',['../group___radio_com_bridge_module.html#gaa9d3cb78d299687fe6f3f6a6199ce6de',1,'radiocombridge.c']]],
+  ['radiorxtask',['radioRxTask',['../group___radio_com_bridge_module.html#ga090eaef2ee9c8105a8f1dce84feed15a',1,'radioRxTask(void *parameters):&#160;radiocombridge.c'],['../group___radio_com_bridge_module.html#gaab3b568cf50c03bf5713bfea6e366b8e',1,'radioRxTask(__attribute__((unused)) void *parameters):&#160;radiocombridge.c']]],
+  ['radiosendhandler',['RadioSendHandler',['../group___radio_com_bridge_module.html#gad43a7e1ba17479c92c9247622df20c29',1,'radiocombridge.c']]],
   ['randomize_5faddseed',['randomize_addseed',['../group___flight_math.html#ga48118c67bee43bd4b0d89ab8eeca7103',1,'misc_math.c']]],
   ['randomize_5fint',['randomize_int',['../group___flight_math.html#gac0bf3a76acd6dcffaa2ace73d95bb304',1,'misc_math.c']]],
   ['randomize_5fint32',['randomize_int32',['../group___flight_math.html#ga98cd2bfd709fb0eeea6fa2388d026ee6',1,'misc_math.c']]],

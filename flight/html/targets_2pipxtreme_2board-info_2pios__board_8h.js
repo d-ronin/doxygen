@@ -32,7 +32,6 @@ var targets_2pipxtreme_2board_info_2pios__board_8h =
     [ "PIOS_COM_FRSKY_SPORT", "targets_2pipxtreme_2board-info_2pios__board_8h.html#gacd240b3acb49442511a220647c7d2e4f", null ],
     [ "PIOS_COM_RADIOBRIDGE", "targets_2pipxtreme_2board-info_2pios__board_8h.html#gaf6884fac61f1d40d5e8ce2b4f62ced05", null ],
     [ "PIOS_COM_TELEM_USB", "targets_2pipxtreme_2board-info_2pios__board_8h.html#ga56a8269d844919f3d657754bcdb33ecf", null ],
-    [ "PIOS_COM_TELEMETRY", "targets_2pipxtreme_2board-info_2pios__board_8h.html#ga90f3d4dc6bd056e049c23be962747064", null ],
     [ "PIOS_COM_VCP", "targets_2pipxtreme_2board-info_2pios__board_8h.html#gaffe7c0cd799a61d0dbaed25e9496c4bb", null ],
     [ "PIOS_FLASH_EEPROM_ADDR", "targets_2pipxtreme_2board-info_2pios__board_8h.html#ga076309d2727bbeb39e1c2626a0682024", null ],
     [ "PIOS_FLASH_EEPROM_LEN", "targets_2pipxtreme_2board-info_2pios__board_8h.html#gaa932bf6d91ada69030e040ad529637ee", null ],

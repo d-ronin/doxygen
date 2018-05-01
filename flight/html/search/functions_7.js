@@ -31,7 +31,7 @@ var searchData=
   ['get_5fups_5fparameters',['Get_UPS_Parameters',['../ups_8c.html#a046a0e091104962feee45a9e6589d2fc',1,'Get_UPS_Parameters(double *a, double *f):&#160;ups.c'],['../ups_8h.html#a046a0e091104962feee45a9e6589d2fc',1,'Get_UPS_Parameters(double *a, double *f):&#160;ups.c']]],
   ['get_5fusart_5frcvr_5fcfg',['get_usart_rcvr_cfg',['../group___sparky2.html#gaa363a58e3ee9c224103a8bf63b844d67',1,'board_hw_defs.c']]],
   ['get_5futm_5fparameters',['Get_UTM_Parameters',['../utm_8c.html#af500460dd3dc5b9af465135cdd40fe59',1,'Get_UTM_Parameters(double *a, double *f, int *override):&#160;utm.c'],['../utm_8h.html#af500460dd3dc5b9af465135cdd40fe59',1,'Get_UTM_Parameters(double *a, double *f, int *override):&#160;utm.c']]],
-  ['getcomport',['getComPort',['../group___telemetry_module.html#ga079a96905407622d10643ce69c08b288',1,'telemetry.c']]],
+  ['getcomport',['getComPort',['../group___radio_com_bridge_module.html#ga079a96905407622d10643ce69c08b288',1,'getComPort():&#160;radiocombridge.c'],['../group___telemetry_module.html#ga079a96905407622d10643ce69c08b288',1,'getComPort():&#160;telemetry.c']]],
   ['geteventmask',['getEventMask',['../group___u_a_v_object_handling.html#ga4d5c4b56acbb2e636aa006ac36d943e5',1,'getEventMask(UAVObjHandle obj_handle, struct pios_queue *queue):&#160;uavobjectmanager.c'],['../group___u_a_v_object_handling.html#ga4d5c4b56acbb2e636aa006ac36d943e5',1,'getEventMask(UAVObjHandle obj_handle, struct pios_queue *queue):&#160;uavobjectmanager.c']]],
   ['getinstance',['getInstance',['../group___u_a_v_object_handling.html#gaff1de6fe5a8d1db05c736c110f96a932',1,'uavobjectmanager.c']]],
   ['getned',['getNED',['../group___attitude_module.html#gaa56401136ce036bf887c06f80ea67c09',1,'attitude.c']]],

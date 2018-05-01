@@ -23,7 +23,6 @@ var uavtalk_8h =
     [ "UAVTalkProcessInputStream", "uavtalk_8h.html#gacb10dc33f197c92673c2138c6ed11ab0", null ],
     [ "UAVTalkProcessInputStreamQuiet", "uavtalk_8h.html#ga174ffb688889f75507fc022eaf33d52e", null ],
     [ "UAVTalkReceiveObject", "uavtalk_8h.html#gacf4b4d60a3186b655c6bde6f9ee69b56", null ],
-    [ "UAVTalkRelayInputStream", "uavtalk_8h.html#ga11bfbe431f2e79f43a4321b942dc94c8", null ],
     [ "UAVTalkRelayPacket", "uavtalk_8h.html#ga4b6fda53a32a7c37c5c695ebfa7e864e", null ],
     [ "UAVTalkSendNack", "uavtalk_8h.html#ga4da94d692e247e8c79baabc88f852e15", null ],
     [ "UAVTalkSendObject", "uavtalk_8h.html#gaf0029ef4e286bd483bb24d3aff89c371", null ],

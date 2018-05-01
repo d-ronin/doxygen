@@ -83,6 +83,7 @@ var searchData=
   ['rxbuffer',['rxBuffer',['../struct_u_a_v_talk_connection_data.html#a183fa5adb153369530ac1ff53c4f3f8f',1,'UAVTalkConnectionData']]],
   ['rxbytes',['rxBytes',['../struct_u_a_v_talk_stats.html#af98fb7a9d72619f9ad84628b20ffcbdf',1,'UAVTalkStats']]],
   ['rxcount',['rxCount',['../struct_u_a_v_talk_input_processor.html#a478ba62595ad5977cbc9c0897e11ee10',1,'UAVTalkInputProcessor']]],
+  ['rxcrc',['rxCRC',['../struct_u_a_v_talk_stats.html#a0722419d2039ebe56539e48fac18ebb5',1,'UAVTalkStats']]],
   ['rxerrors',['rxErrors',['../struct_u_a_v_talk_stats.html#a0496877af8f1ce9110b2b42a58956e10',1,'UAVTalkStats']]],
   ['rxobjectbytes',['rxObjectBytes',['../struct_u_a_v_talk_stats.html#a5adb8d84e7dfe9f3aa1a03a6c057f2fd',1,'UAVTalkStats']]],
   ['rxobjects',['rxObjects',['../struct_u_a_v_talk_stats.html#abe87f216fd1bb8fdb474a61d467d7b41',1,'UAVTalkStats']]],

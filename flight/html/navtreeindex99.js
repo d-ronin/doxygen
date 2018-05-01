@@ -1,5 +1,15 @@
 var NAVTREEINDEX99 =
 {
+"structmsp__set__misc.html#a37555c685db60a4b4b0af4b8c7e5d9e8":[2,1,2,23,4],
+"structmsp__set__misc.html#a4166f147f944dfe8fcc394792061e1ed":[2,1,2,23,2],
+"structmsp__set__misc.html#a4f1215ffa0b32cc4b2c707e9cbe6954d":[2,1,2,23,5],
+"structmsp__set__misc.html#a6892df66bedd99553abb5e6e0e473fc9":[2,1,2,23,9],
+"structmsp__set__misc.html#a69b455dcac03260007f33ddbe8b789d7":[2,1,2,23,3],
+"structmsp__set__misc.html#a76085607fbbac6c83c18c6dd1cbfe569":[2,1,2,23,11],
+"structmsp__set__misc.html#a777483f102218ef424c3e4d3aee66b22":[2,1,2,23,0],
+"structmsp__set__misc.html#aa5228043a0b65e1b624553f6b4d53553":[2,1,2,23,7],
+"structmsp__set__misc.html#aa95de497f608d23085729438cc65526d":[2,1,2,23,6],
+"structmsp__set__misc.html#ab9c2d2806b7c539d8c9decf633c2bfe8":[2,1,2,23,8],
 "structmsp__set__misc.html#ac0f754f233eec76fb70f6906d1f0a45b":[2,1,2,23,10],
 "structmsp__set__misc.html#ad70b116e73d1a117bc27516992d9ff1c":[2,1,2,23,1],
 "structmsp__set__motor.html":[2,1,2,6],
@@ -239,15 +249,5 @@ var NAVTREEINDEX99 =
 "structpios__mpu__cfg.html#abf2358ba0ef34f017eff9021f198075f":[2,0,24,0,0],
 "structpios__ms5611__cfg.html":[2,0,27,5],
 "structpios__ms5611__cfg.html#a07e19545d4961ed113e3413ad0c4965c":[2,0,27,5,0],
-"structpios__ms5611__cfg.html#a9e5737bd6a7bb20da4ac013fb0726845":[2,0,27,5,1],
-"structpios__ms5611__cfg.html#ad9d5a4c47ece6925883d165c2ec35098":[2,0,27,5,2],
-"structpios__mutex.html":[2,0,28,0],
-"structpios__mutex.html#ab3bba20733c356cab33de69e28e605c9":[2,0,28,0,0],
-"structpios__ppm__cfg.html":[2,0,56,3],
-"structpios__ppm__cfg.html#a2b60f6cdabad556a4de0d2617cfe3309":[2,0,56,3,1],
-"structpios__ppm__cfg.html#acecc33ca315a3edeb437b6073c1ec1b5":[2,0,56,3,2],
-"structpios__ppm__cfg.html#af794b04692c8fdb2e06b8a58601c99ce":[2,0,56,3,0],
-"structpios__pwm__cfg.html":[2,0,58,3],
-"structpios__pwm__cfg.html#a7f64d325db8aca0d737d94648b079b36":[2,0,58,3,2],
-"structpios__pwm__cfg.html#acf9d41bfa9ce5ee489fcb27a98605e5c":[2,0,58,3,1]
+"structpios__ms5611__cfg.html#a9e5737bd6a7bb20da4ac013fb0726845":[2,0,27,5,1]
 };
