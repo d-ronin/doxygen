@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">fe56bb4</span>
+   &#160;<span id="projectnumber">4630f6f</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -391,8 +391,8 @@ $(document).ready(function(){initNavTree('pios__crossfire_8c_source.html','');})
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <span class="keywordflow">if</span> (++dev-&gt;rx_timer &gt; 1)</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                PIOS_Crossfire_ResetBuffer(dev);</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <span class="comment">// Failsafe after 50ms.</span></div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <span class="keywordflow">if</span> (++dev-&gt;failsafe_timer &gt; 32)</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <span class="comment">// Failsafe after 250ms.</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <span class="keywordflow">if</span> (++dev-&gt;failsafe_timer &gt; 156)</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                PIOS_Crossfire_SetAllChannels(dev, <a class="code" href="group___p_i_o_s___r_c_v_r.html#ggab3256a57f692c2f2784d914ad5a5895da2aa8c41419029589d123f942ceb9a0ed">PIOS_RCVR_TIMEOUT</a>);</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;}</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
