@@ -516,8 +516,6 @@ var searchData=
   ['poweroff',['PowerOff',['../pios__usb__hid__pwr_8h.html#a134c0b1d19e0473277c77e89364ae98a',1,'PowerOff(void):&#160;pios_usb_hid_pwr.c'],['../_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html#a7b4c2044bf2be52b9f636d4ccffeccd2',1,'PowerOff():&#160;pios_usb_hid_pwr.c'],['../_s_t_m32_f30x_2pios__usb__hid__pwr_8c.html#a7b4c2044bf2be52b9f636d4ccffeccd2',1,'PowerOff():&#160;pios_usb_hid_pwr.c']]],
   ['poweron',['PowerOn',['../pios__usb__hid__pwr_8h.html#a23cb7957e66d04c1411f2151b19c6c5c',1,'PowerOn(void):&#160;pios_usb_hid_pwr.c'],['../_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html#a23cb7957e66d04c1411f2151b19c6c5c',1,'PowerOn(void):&#160;pios_usb_hid_pwr.c'],['../_s_t_m32_f30x_2pios__usb__hid__pwr_8c.html#a23cb7957e66d04c1411f2151b19c6c5c',1,'PowerOn(void):&#160;pios_usb_hid_pwr.c']]],
   ['print',['print',['../group___p_i_o_s.html#ga3e674fecee68caf4578c95e85ba38253',1,'printf-stdarg.c']]],
-  ['print_5fparity',['print_parity',['../rs_8c.html#af1d5ad8eec1a2c678b86613c54aea50e',1,'rs.c']]],
-  ['print_5fsyndrome',['print_syndrome',['../rs_8c.html#aa384f9a066adf385c9375141085cf90e',1,'rs.c']]],
   ['printchar',['printchar',['../group___p_i_o_s.html#ga2958479a2b17cb4eafc47e8f584d0f97',1,'printf-stdarg.c']]],
   ['printf',['printf',['../group___p_i_o_s.html#ga98631211a4a8aee62f572375d5b637be',1,'printf-stdarg.c']]],
   ['printfwversion',['printFWVersion',['../group___on_screen_display.html#gaaf04bb0ba5cff3bbeded50bb1f4dd50b',1,'onscreendisplay.c']]],

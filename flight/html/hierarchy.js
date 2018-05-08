@@ -231,7 +231,6 @@ var hierarchy =
         [ "RneFromLLATest", "class_rne_from_l_l_a_test.html", null ]
       ] ],
       [ "DsmTest", "class_dsm_test.html", null ],
-      [ "EncodeDecode", "class_encode_decode.html", null ],
       [ "LogfsTestRaw", "class_logfs_test_raw.html", [
         [ "LogfsTestCooked", "class_logfs_test_cooked.html", null ],
         [ "LogfsTestCookedMultiPart", "class_logfs_test_cooked_multi_part.html", null ]

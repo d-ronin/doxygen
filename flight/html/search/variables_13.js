@@ -100,7 +100,6 @@ var searchData=
   ['sweep_5fsteps1',['sweep_steps1',['../group___common_f1.html#ga594b91aa3e135c58969dc298b8acdeb3',1,'main.c']]],
   ['sweep_5fsteps2',['sweep_steps2',['../group___common_f1.html#gac9cf28c40cee906b9405cb32f16b1fa2',1,'main.c']]],
   ['swversion',['swVersion',['../struct_u_b_x___m_o_n___v_e_r.html#a016f8eff90607f0a54a2537d6660bd92',1,'UBX_MON_VER']]],
-  ['synbytes',['synBytes',['../ecc_8h.html#a5dd915356908211565387e01d4a9cd8d',1,'synBytes():&#160;rs.c'],['../rs_8c.html#a5dd915356908211565387e01d4a9cd8d',1,'synBytes():&#160;rs.c']]],
   ['sync',['sync',['../structuavtalk__min__header.html#a1f264cf34649646db13e6ce6dbf93ef8',1,'uavtalk_min_header::sync()'],['../structuavtalk__max__header.html#a345956ffa399c59404b4e1523001759a',1,'uavtalk_max_header::sync()']]],
   ['sync_5fdshot_5f1200',['SYNC_DSHOT_1200',['../group___p_i_o_s___s_e_r_v_o.html#ga111eee63a72c9eb868af0b90d31aa096',1,'pios_servo.c']]],
   ['sync_5fdshot_5f300',['SYNC_DSHOT_300',['../group___p_i_o_s___s_e_r_v_o.html#gabe391884eff2554ceef1d80735c56e3a',1,'pios_servo.c']]],

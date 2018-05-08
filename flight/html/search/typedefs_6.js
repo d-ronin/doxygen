@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['initcall_5ft',['initcall_t',['../group___p_i_o_s___i_n_i_t_c_a_l_l.html#ga4f58a033b271ad632c4583977de7e3c0',1,'initcall_t():&#160;pios_initcall.h'],['../group___p_i_o_s___i_n_i_t_c_a_l_l.html#ga4f58a033b271ad632c4583977de7e3c0',1,'initcall_t():&#160;pios_initcall.h']]],
-  ['instancehandle',['InstanceHandle',['../group___u_a_v_object_handling.html#gabd5387dedf4d32f408b532b19fcdc1da',1,'uavobjectmanager.c']]],
-  ['iomem_5ft',['ioMem_t',['../serial__4way__impl_8h.html#ac5a858b366c39b2097cc1be489bfb20f',1,'serial_4way_impl.h']]]
+  ['latitude_5fband',['Latitude_Band',['../mgrs_8c.html#a9037b1d95fb085a4733f0368e6ad34ec',1,'mgrs.c']]],
+  ['lis3mdl_5fdev_5ft',['lis3mdl_dev_t',['../group___p_i_o_s___l_i_s3_m_d_l.html#gaf7b001a56dd17c7ba4d41beb1f4b4a36',1,'pios_lis3mdl.h']]],
+  ['lpfilter_5fstate_5ft',['lpfilter_state_t',['../group___flight_math.html#ga3562b89ca3d1c3b285bbb5662380ec03',1,'lpfilter.h']]],
+  ['lqg_5ft',['lqg_t',['../group___flight_math.html#gabddd39dfffa3ddf892e56c4957abe71e',1,'lqg.h']]],
+  ['lqr_5ft',['lqr_t',['../group___flight_math.html#ga24ec3d5cf383d82d4735d6efb729556e',1,'lqg.h']]]
 ];

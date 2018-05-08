@@ -96,7 +96,6 @@ var searchData=
   ['adc_5fuse_5fmutual_5fexclusion',['ADC_USE_MUTUAL_EXCLUSION',['../group___h_a_l___c_o_n_f.html#gac0893cb47e338c2dabad34b974a0a88d',1,'halconf.h']]],
   ['adc_5fuse_5fwait',['ADC_USE_WAIT',['../group___h_a_l___c_o_n_f.html#ga39e892a4090185fbdda9bb105bc03b4f',1,'halconf.h']]],
   ['add_5fone_5fadc',['ADD_ONE_ADC',['../group___pip_x.html#ga71450413220212a746f2b6fb1d42c393',1,'pios_board.h']]],
-  ['add_5fpolys',['add_polys',['../berlekamp_8c.html#af5ea13e698651189b3705cb2b1e7d2cf',1,'add_polys(int dst[], int src[]):&#160;berlekamp.c'],['../ecc_8h.html#af5ea13e698651189b3705cb2b1e7d2cf',1,'add_polys(int dst[], int src[]):&#160;berlekamp.c']]],
   ['addackpending',['addAckPending',['../group___telemetry_module.html#gac9daba3ec53ac8875ed5bdda681b44ba',1,'telemetry.c']]],
   ['addr',['addr',['../structpios__i2c__txn.html#a22a5ef8fef7182f36899d8410be0dc27',1,'pios_i2c_txn']]],
   ['addressed',['ADDRESSED',['../pios__usb__hid__pwr_8h.html#a26f487b1eb7b2d6b83b0d08414c542bbab95ac3eaffb7e9680bf1b3d2ac36c60b',1,'pios_usb_hid_pwr.h']]],

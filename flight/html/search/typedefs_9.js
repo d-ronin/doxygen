@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['new_5fuavo_5finstance_5fcb_5ft',['new_uavo_instance_cb_t',['../uavobjectmanager_8h.html#a58db83831e3408beebc011830d0046d7',1,'uavobjectmanager.h']]]
+  ['omnip_5fdev_5ft',['omnip_dev_t',['../group___p_i_o_s___o_m_n_i_p.html#ga67900e82f01e6898a3b0890213007a77',1,'pios_omnip.h']]]
 ];

@@ -1,7 +1,6 @@
 var searchData=
 [
   ['ellipse',['ellipse',['../group___on_screen_display.html#gad7ea00fa059e0f9ec514b43f176db91c',1,'osd_utils.c']]],
-  ['encode_5fdata',['encode_data',['../ecc_8h.html#a33cac00a5b8d040514e163b6d4f97b90',1,'encode_data(unsigned char msg[], int nbytes, unsigned char dst[]):&#160;rs.c'],['../rs_8c.html#a33cac00a5b8d040514e163b6d4f97b90',1,'encode_data(unsigned char msg[], int nbytes, unsigned char dst[]):&#160;rs.c']]],
   ['encode_5ffont',['encode_font',['../namespaceencode__fonts.html#aa4b57a9fca0cbe587a97ff068ec8e25c',1,'encode_fonts']]],
   ['encode_5fimage',['encode_image',['../namespaceencode__images.html#accbd5dd8cf671a68c8fc7a55eb599310',1,'encode_images']]],
   ['enter_5flowpowermode',['Enter_LowPowerMode',['../_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html#a7720eb7ac1ea6af8e9e76b2eb6f12d65',1,'Enter_LowPowerMode(void):&#160;pios_usb_hid_pwr.c'],['../_s_t_m32_f30x_2pios__usb__hid__pwr_8c.html#a7720eb7ac1ea6af8e9e76b2eb6f12d65',1,'Enter_LowPowerMode(void):&#160;pios_usb_hid_pwr.c']]],

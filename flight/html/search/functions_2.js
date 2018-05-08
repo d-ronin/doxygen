@@ -44,6 +44,5 @@ var searchData=
   ['bound',['bound',['../group___stabilization_module.html#gaab9d01a7a2b4071bdc27db79eb145f5d',1,'virtualflybar.c']]],
   ['bound_5fmin_5fmax',['bound_min_max',['../group___flight_math.html#gae7fa5c4383337339fe17371cd78d7264',1,'misc_math.c']]],
   ['bound_5fsym',['bound_sym',['../group___flight_math.html#gab53f96ff60025bfea084300f2cec575e',1,'misc_math.c']]],
-  ['break_5fmgrs_5fstring',['Break_MGRS_String',['../mgrs_8c.html#aae5441c22ed0ae42706ac311d78cfc50',1,'mgrs.c']]],
-  ['build_5fcodeword',['build_codeword',['../rs_8c.html#ad72c3418b7254c2efbff890fc97fc32f',1,'rs.c']]]
+  ['break_5fmgrs_5fstring',['Break_MGRS_String',['../mgrs_8c.html#aae5441c22ed0ae42706ac311d78cfc50',1,'mgrs.c']]]
 ];

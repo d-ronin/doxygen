@@ -36,8 +36,6 @@ var searchData=
   ['getinstance',['getInstance',['../group___u_a_v_object_handling.html#gaff1de6fe5a8d1db05c736c110f96a932',1,'uavobjectmanager.c']]],
   ['getned',['getNED',['../group___attitude_module.html#gaa56401136ce036bf887c06f80ea67c09',1,'attitude.c']]],
   ['gimbal_5fcan_5fmessage',['gimbal_can_message',['../group___camera_stab.html#ga075b1f2ced744297ada10806df37e83c',1,'camerastab.c']]],
-  ['ginv',['ginv',['../ecc_8h.html#aea2f56d785c0dfc8af1f9bc2c78294f4',1,'ginv(int elt):&#160;galois.c'],['../galois_8c.html#aea2f56d785c0dfc8af1f9bc2c78294f4',1,'ginv(int elt):&#160;galois.c']]],
-  ['gmult',['gmult',['../ecc_8h.html#a67e5fdd13f145fe895d82b04bc7bffc3',1,'gmult(int a, int b):&#160;galois.c'],['../galois_8c.html#a67e5fdd13f145fe895d82b04bc7bffc3',1,'gmult(int a, int b):&#160;galois.c']]],
   ['go_5fdetect_5fbreak_5fto_5fbl',['go_detect_break_to_bl',['../group___common.html#ga23a1189440e47725f99e88dd9f191e2f',1,'main.c']]],
   ['go_5fdfu_5fidle',['go_dfu_idle',['../group___common.html#ga7a4099a65aa350ea23ac565ca6b6fb93',1,'main.c']]],
   ['go_5fdfu_5foperation_5ffailed',['go_dfu_operation_failed',['../group___common.html#ga0c6d40772200a382946f82ef170a8a6a',1,'main.c']]],

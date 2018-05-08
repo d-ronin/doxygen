@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">4630f6f</span>
+   &#160;<span id="projectnumber">77a4471</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('pipxtreme_2fw_2pios__board_8c_source.h
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="pios_8h.html">pios.h</a>&gt;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;openpilot.h&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="openpilot_8h.html">openpilot.h</a>&gt;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;board_hw_defs.c&gt;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;manualcontrolsettings.h&gt;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;modulesettings.h&gt;</span></div>
@@ -426,6 +426,7 @@ $(document).ready(function(){initNavTree('pipxtreme_2fw_2pios__board_8c_source.h
 <div class="ttc" id="group___p_i_o_s___c_o_m_html_ga9caa4742456fa958de6f07962d4893c0"><div class="ttname"><a href="group___p_i_o_s___c_o_m.html#ga9caa4742456fa958de6f07962d4893c0">PIOS_COM_Init</a></div><div class="ttdeci">int32_t PIOS_COM_Init(uintptr_t *com_id, const struct pios_com_driver *driver, uintptr_t lower_id, uint16_t rx_buffer_len, uint16_t tx_buffer_len)</div></div>
 <div class="ttc" id="group___p_i_o_s___f_l_a_s_h_html_gaf59606f01edaa6e33039ea87a5dd4e52"><div class="ttname"><a href="group___p_i_o_s___f_l_a_s_h.html#gaf59606f01edaa6e33039ea87a5dd4e52">PIOS_FLASH_register_partition_table</a></div><div class="ttdeci">void PIOS_FLASH_register_partition_table(const struct pios_flash_partition partition_table[], uint8_t num_partitions)</div></div>
 <div class="ttc" id="group___p_i_o_s___p_p_m_html_ga9a361b816f4a65086de0fbd10f3687ce"><div class="ttname"><a href="group___p_i_o_s___p_p_m.html#ga9a361b816f4a65086de0fbd10f3687ce">PIOS_PPM_Init</a></div><div class="ttdeci">int32_t PIOS_PPM_Init(uintptr_t *ppm_id, const struct pios_ppm_cfg *cfg)</div></div>
+<div class="ttc" id="openpilot_8h_html"><div class="ttname"><a href="openpilot_8h.html">openpilot.h</a></div><div class="ttdoc">Includes PiOS and core architecture components. </div></div>
 <div class="ttc" id="structpios__board__info_html_a5aff4607db694a6885c0ce5361afa9bb"><div class="ttname"><a href="structpios__board__info.html#a5aff4607db694a6885c0ce5361afa9bb">pios_board_info::board_type</a></div><div class="ttdeci">uint8_t board_type</div><div class="ttdef"><b>Definition:</b> <a href="pios__board__info_8h_source.html#l00010">pios_board_info.h:10</a></div></div>
 <div class="ttc" id="group___p_i_o_s___u_s_b_html_gadef7295623a029e8d2384dd88f034d16"><div class="ttname"><a href="group___p_i_o_s___u_s_b.html#gadef7295623a029e8d2384dd88f034d16">PIOS_USB_Init</a></div><div class="ttdeci">int32_t PIOS_USB_Init(uintptr_t *usb_id, const struct pios_usb_cfg *cfg)</div></div>
 <div class="ttc" id="group___p_i_o_s___w_d_g_html_ga1ffcba6811cce798c0a6bc014a691dc7"><div class="ttname"><a href="group___p_i_o_s___w_d_g.html#ga1ffcba6811cce798c0a6bc014a691dc7">PIOS_WDG_Init</a></div><div class="ttdeci">uint16_t PIOS_WDG_Init()</div><div class="ttdoc">Initialize the watchdog timer for a specified timeout. </div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__wdg_8c_source.html#l00063">pios_wdg.c:63</a></div></div>

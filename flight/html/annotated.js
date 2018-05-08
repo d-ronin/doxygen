@@ -35,7 +35,6 @@ var annotated =
     [ "dshot_command", "structdshot__command.html", "structdshot__command" ],
     [ "dshot_info", "structdshot__info.html", "structdshot__info" ],
     [ "DsmTest", "class_dsm_test.html", "class_dsm_test" ],
-    [ "EncodeDecode", "class_encode_decode.html", "class_encode_decode" ],
     [ "escHardware_t", "structesc_hardware__t.html", "structesc_hardware__t" ],
     [ "EventCallbackInfo", "struct_event_callback_info.html", "struct_event_callback_info" ],
     [ "EventStats", "struct_event_stats.html", "struct_event_stats" ],

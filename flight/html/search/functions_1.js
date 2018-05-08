@@ -14,7 +14,6 @@ var searchData=
   ['actuator_5ftask',['actuator_task',['../group___actuator_module.html#ga4c6cfb67ea6b930740d4f9a3d3659a8e',1,'actuator.c']]],
   ['actuatorinitialize',['ActuatorInitialize',['../group___actuator_module.html#gaa23ed2bf1c2252218764708ac5d8b2fb',1,'actuator.c']]],
   ['actuatorstart',['ActuatorStart',['../group___actuator_module.html#gacde7d1a4e7c4969a5b11e37315053034',1,'actuator.c']]],
-  ['add_5fpolys',['add_polys',['../berlekamp_8c.html#af5ea13e698651189b3705cb2b1e7d2cf',1,'add_polys(int dst[], int src[]):&#160;berlekamp.c'],['../ecc_8h.html#af5ea13e698651189b3705cb2b1e7d2cf',1,'add_polys(int dst[], int src[]):&#160;berlekamp.c']]],
   ['addackpending',['addAckPending',['../group___telemetry_module.html#gac9daba3ec53ac8875ed5bdda681b44ba',1,'telemetry.c']]],
   ['advance_5fby_5fn',['advance_by_n',['../circqueue_8c.html#acb2fd81d86d11e4af733e563d46fb49a',1,'circqueue.c']]],
   ['advancewaypoint',['advanceWaypoint',['../group___path_planner_module.html#ga50ff7bbde196840bbc8f7f009d6d8664',1,'pathplanner.c']]],

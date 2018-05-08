@@ -1,7 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"_s_t_m32_2inc_2pios__i2c__priv_8h.html#ac73b69ffe53544057fa2e4751fd9c22baf1bf5e65204f34bf3ab04ef69831a93d":[5,0,0,4,3,0,6,2,2],
-"_s_t_m32_2inc_2pios__i2c__priv_8h.html#ac73b69ffe53544057fa2e4751fd9c22baf617c80abdf7eabc425a2e6104a2728b":[5,0,0,4,3,0,6,2,6],
 "_s_t_m32_2inc_2pios__i2c__priv_8h.html#ace4c564ee87e97a12bf76c69b113b230":[5,0,0,4,3,0,6,4],
 "_s_t_m32_2inc_2pios__i2c__priv_8h.html#ace4c564ee87e97a12bf76c69b113b230a5c7272b41a6bc0595c2e7408233eefda":[5,0,0,4,3,0,6,4,2],
 "_s_t_m32_2inc_2pios__i2c__priv_8h.html#ace4c564ee87e97a12bf76c69b113b230a7652a614c638dd5c4118f5fed79f5891":[5,0,0,4,3,0,6,4,0],
@@ -140,8 +138,8 @@ var NAVTREEINDEX1 =
 "_s_t_m32_f0xx_2pios__tim_8c.html#gae8a61b27afdb07c70d6b863c44284ca6":[5,0,0,4,4,4,12],
 "_s_t_m32_f0xx_2pios__tim_8c.html#gaf316d2873f98d05747789d96d889491f":[5,0,0,4,4,4,4],
 "_s_t_m32_f0xx_2pios__tim_8c.html#gga7d425167804fd43bc76fe29c11386a6ca0c5dc16440e893937250b8ab7e88f777":[5,0,0,4,4,4,0,0],
-"_s_t_m32_f0xx_2pios__tim_8c.html#gga7d425167804fd43bc76fe29c11386a6ca0c5dc16440e893937250b8ab7e88f777":[5,0,0,4,4,4,0,2],
 "_s_t_m32_f0xx_2pios__tim_8c.html#gga7d425167804fd43bc76fe29c11386a6ca0c5dc16440e893937250b8ab7e88f777":[5,0,0,4,4,4,0,1],
+"_s_t_m32_f0xx_2pios__tim_8c.html#gga7d425167804fd43bc76fe29c11386a6ca0c5dc16440e893937250b8ab7e88f777":[5,0,0,4,4,4,0,2],
 "_s_t_m32_f0xx_2pios__tim_8c.html#gga7d425167804fd43bc76fe29c11386a6ca0c5dc16440e893937250b8ab7e88f777":[5,0,0,4,4,4,0,3],
 "_s_t_m32_f0xx_2pios__tim_8c_source.html":[5,0,0,4,4,4],
 "_s_t_m32_f0xx_2pios__usart_8c.html":[5,0,0,4,4,5],
@@ -249,5 +247,7 @@ var NAVTREEINDEX1 =
 "_s_t_m32_f10x_2pios__iap_8c.html#ga6d7dd1f71491af968d9770b090d0f5d1":[5,0,0,4,5,5,11],
 "_s_t_m32_f10x_2pios__iap_8c.html#ga71e5161387102a05d7dbe79bdb7d1794":[5,0,0,4,5,5,1],
 "_s_t_m32_f10x_2pios__iap_8c.html#ga727e2ab4e4516e678c92361691368cde":[5,0,0,4,5,5,8],
-"_s_t_m32_f10x_2pios__iap_8c.html#ga8bec76f66d6e57d6812ad00800a857ff":[5,0,0,4,5,5,5]
+"_s_t_m32_f10x_2pios__iap_8c.html#ga8bec76f66d6e57d6812ad00800a857ff":[5,0,0,4,5,5,5],
+"_s_t_m32_f10x_2pios__iap_8c.html#ga934ab6403364f7db094874c8b22ac39b":[5,0,0,4,5,5,10],
+"_s_t_m32_f10x_2pios__iap_8c.html#gaa146b4c361d3c35e63e9d4cd7f0b6951":[5,0,0,4,5,5,7]
 };

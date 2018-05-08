@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">4630f6f</span>
+   &#160;<span id="projectnumber">77a4471</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('pid_8c_source.html','');});
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * with this program; if not, see &lt;http://www.gnu.org/licenses/&gt;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;openpilot.h&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="openpilot_8h.html">openpilot.h</a>&quot;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;physical_constants.h&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="misc__math_8h.html">misc_math.h</a>&quot;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pid_8h.html">pid.h</a>&quot;</span></div>
@@ -379,6 +379,7 @@ $(document).ready(function(){initNavTree('pid_8c_source.html','');});
 <div class="ttc" id="group___flight_math_html_gaf4065716661678ffdbf9b3a191c55a76"><div class="ttname"><a href="group___flight_math.html#gaf4065716661678ffdbf9b3a191c55a76">cubic_deadband_setup</a></div><div class="ttdeci">void cubic_deadband_setup(float w, float b, float *m, float *r)</div><div class="ttdef"><b>Definition:</b> <a href="misc__math_8c_source.html#l00266">misc_math.c:266</a></div></div>
 <div class="ttc" id="group___flight_math_html_ga173a3f497f444827b07299891ad25e34"><div class="ttname"><a href="group___flight_math.html#ga173a3f497f444827b07299891ad25e34">pid_apply</a></div><div class="ttdeci">float pid_apply(struct pid *pid, const float err)</div><div class="ttdoc">Methods to use the pid structures. </div><div class="ttdef"><b>Definition:</b> <a href="pid_8c_source.html#l00048">pid.c:48</a></div></div>
 <div class="ttc" id="namespacepx__mkfw_html_ada4502124cbbf5a9984df3a21e079434"><div class="ttname"><a href="namespacepx__mkfw.html#ada4502124cbbf5a9984df3a21e079434">px_mkfw.f</a></div><div class="ttdeci">tuple f</div><div class="ttdef"><b>Definition:</b> <a href="px__mkfw_8py_source.html#l00081">px_mkfw.py:81</a></div></div>
+<div class="ttc" id="openpilot_8h_html"><div class="ttname"><a href="openpilot_8h.html">openpilot.h</a></div><div class="ttdoc">Includes PiOS and core architecture components. </div></div>
 <div class="ttc" id="structpid__deadband_html_aeffe5348ae1771bf68110f7af7d67138"><div class="ttname"><a href="structpid__deadband.html#aeffe5348ae1771bf68110f7af7d67138">pid_deadband::integrated_response</a></div><div class="ttdeci">float integrated_response</div><div class="ttdef"><b>Definition:</b> <a href="pid_8h_source.html#l00038">pid.h:38</a></div></div>
 <div class="ttc" id="group___flight_math_html_ga674dd92443c0a6b02bd28947131c98e3"><div class="ttname"><a href="group___flight_math.html#ga674dd92443c0a6b02bd28947131c98e3">pid_apply_setpoint</a></div><div class="ttdeci">float pid_apply_setpoint(struct pid *pid, struct pid_deadband *deadband, const float setpoint, const float measured)</div><div class="ttdef"><b>Definition:</b> <a href="pid_8c_source.html#l00141">pid.c:141</a></div></div>
 <div class="ttc" id="group___flight_math_html_gac965c1e7ddcf29b28c5e97496cdfb1c0"><div class="ttname"><a href="group___flight_math.html#gac965c1e7ddcf29b28c5e97496cdfb1c0">pid_apply_antiwindup</a></div><div class="ttdeci">float pid_apply_antiwindup(struct pid *pid, const float err, float min_bound, float max_bound, float aw_bound)</div><div class="ttdef"><b>Definition:</b> <a href="pid_8c_source.html#l00086">pid.c:86</a></div></div>

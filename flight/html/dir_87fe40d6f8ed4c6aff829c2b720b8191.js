@@ -5,7 +5,6 @@ var dir_87fe40d6f8ed4c6aff829c2b720b8191 =
     [ "math", "dir_441e28c588c74147da804bab46cd95fa.html", "dir_441e28c588c74147da804bab46cd95fa" ],
     [ "mgrs", "dir_61153de2363208547e08047c818e00fb.html", "dir_61153de2363208547e08047c818e00fb" ],
     [ "msp", "dir_bcb4304eb97b88ab9b27e0e5cd8872dd.html", "dir_bcb4304eb97b88ab9b27e0e5cd8872dd" ],
-    [ "rscode", "dir_86de06e82d6c3d153e22d3b4df3c5498.html", "dir_86de06e82d6c3d153e22d3b4df3c5498" ],
     [ "unusedins", "dir_e7d03001f2641eaac608f217ff3de83a.html", "dir_e7d03001f2641eaac608f217ff3de83a" ],
     [ "alarms.c", "alarms_8c.html", "alarms_8c" ],
     [ "circqueue.c", "circqueue_8c.html", "circqueue_8c" ],

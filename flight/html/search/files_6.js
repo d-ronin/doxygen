@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['galois_2ec',['galois.c',['../galois_8c.html',1,'']]],
   ['geofence_2ec',['geofence.c',['../geofence_8c.html',1,'']]],
   ['geofence_5fcontrol_2ec',['geofence_control.c',['../geofence__control_8c.html',1,'']]],
   ['geofence_5fcontrol_2eh',['geofence_control.h',['../geofence__control_8h.html',1,'']]],

@@ -62,6 +62,5 @@ var searchData=
   ['polar_5forigin_5flon_5ferror',['POLAR_ORIGIN_LON_ERROR',['../polarst_8h.html#af20ef9cde1ba0a13cfe3992a0d8153c7',1,'polarst.h']]],
   ['polar_5fpow',['POLAR_POW',['../polarst_8c.html#ac93e05257a848c4e6881bf95aded4e5e',1,'polarst.c']]],
   ['polar_5fradius_5ferror',['POLAR_RADIUS_ERROR',['../polarst_8h.html#aafe9eef22f206e822190c57c47c8cf5f',1,'polarst.h']]],
-  ['ppoly',['PPOLY',['../galois_8c.html#a3b4bb064a8584f5bd089708f846fefb6',1,'galois.c']]],
   ['pvd_5firqhandler',['PVD_IRQHandler',['../_s_t_m32_f10x_2pios__chibios__transition__priv_8h.html#a045476dfaec8c84f5e16b06b937c0c18',1,'PVD_IRQHandler():&#160;pios_chibios_transition_priv.h'],['../_s_t_m32_f30x_2inc_2pios__chibios__transition__priv_8h.html#a045476dfaec8c84f5e16b06b937c0c18',1,'PVD_IRQHandler():&#160;pios_chibios_transition_priv.h'],['../_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h.html#a045476dfaec8c84f5e16b06b937c0c18',1,'PVD_IRQHandler():&#160;pios_chibios_transition_priv.h']]]
 ];

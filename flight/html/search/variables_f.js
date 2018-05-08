@@ -15,7 +15,6 @@ var searchData=
   ['odr',['odr',['../group___p_i_o_s___b_m_i160.html#ga73ad0a4412b41d200b67f93d4951f773',1,'pios_bmi160_cfg']]],
   ['offset',['offset',['../structfilereq__data.html#a84440ce40c7be2adfb273f3739be25d8',1,'filereq_data::offset()'],['../structfileresp__data.html#a619a30889d50d95838c9dd018fd52988',1,'fileresp_data::offset()'],['../uavtalk__priv_8h.html#a894bdfa2d603d8343f8ef01dda6fcd23',1,'offset():&#160;uavtalk_priv.h'],['../group___common_f1.html#gaa9fff43968831437a312428836cab362',1,'offset():&#160;op_dfu.c']]],
   ['ok',['OK',['../classpx__uploader_1_1uploader.html#a49a822ad7bbeae12677f90bd191be29c',1,'px_uploader::uploader']]],
-  ['omega',['Omega',['../berlekamp_8c.html#a66628b30fa1d9abcdb4ecef58cd999da',1,'berlekamp.c']]],
   ['onscreendisplaysemaphore',['onScreenDisplaySemaphore',['../group___on_screen_display.html#gac41214cc02530d3311d80e6abe4a999e',1,'onscreendisplay.c']]],
   ['op_5fabort',['op_abort',['../structbl__messages.html#a41d7cc62ce5a71810e77d6787e196c2d',1,'bl_messages::op_abort()'],['../bl__messages_8h.html#a11ad5dcda7bc1629b5c023003ff74a79',1,'op_abort():&#160;bl_messages.h']]],
   ['op_5fend',['op_end',['../structbl__messages.html#a5f4545450c1f6ed8cfbb1f1e5e8cb030',1,'bl_messages::op_end()'],['../bl__messages_8h.html#a66f0227632a7be5df1edbcae25e1abae',1,'op_end():&#160;bl_messages.h']]],

@@ -14,8 +14,6 @@ var searchData=
   ['nav_5fvelned',['nav_velned',['../union_u_b_x_payload.html#ae525d323fa4053d1f5441bae99d81a95',1,'UBXPayload']]],
   ['navr',['navr',['../structmsp__pid.html#a28703c1c1ca851120e0d9a852a87e6ae',1,'msp_pid::navr()'],['../structmsp__set__pid.html#a5efd7ca6f36db2dea451eb12b565d108',1,'msp_set_pid::navr()'],['../msp__messages_8h.html#ae02ff04f1e1459c592a5287ed9c63da3',1,'navr():&#160;msp_messages.h']]],
   ['ndop',['nDOP',['../struct_u_b_x___n_a_v___d_o_p.html#ae3287c2656c08835bdd2ffa7e28d0ee4',1,'UBX_NAV_DOP']]],
-  ['nerasures',['NErasures',['../berlekamp_8c.html#af4e660925f042049e868812cd11cd752',1,'berlekamp.c']]],
-  ['nerrors',['NErrors',['../berlekamp_8c.html#a0d8487e9f148d13ed395d1362dd459b6',1,'berlekamp.c']]],
   ['nested_5fctr',['nested_ctr',['../group___p_i_o_s___i_r_q.html#ga158274a5376909848bbb08608a147327',1,'pios_irq.c']]],
   ['newuavobjinstancecb',['newUavObjInstanceCB',['../group___u_a_v_object_handling.html#ga08b75f95ad3a984b1348a37432145c68',1,'uavobjectmanager.c']]],
   ['next',['next',['../struct_periodic_object_list_struct.html#a53ed6bc407c59100bcfddb3a49ccb88f',1,'PeriodicObjectListStruct::next()'],['../struct_object_event_entry.html#af10cb19d61193416975d2cb2c78bf620',1,'ObjectEventEntry::next()'],['../struct_u_a_v_o_data.html#a69aa4b26e0e8727f2e9a418f42d056a0',1,'UAVOData::next()'],['../struct_u_a_v_o_multi_inst.html#a571693c984fd7e8e845fe57fca2d21d9',1,'UAVOMultiInst::next()'],['../uavobjectmanager_8c.html#a0463912be4bb882cee5d3d70c664b698',1,'next():&#160;uavobjectmanager.c']]],

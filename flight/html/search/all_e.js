@@ -16,8 +16,6 @@ var searchData=
   ['ndop',['nDOP',['../struct_u_b_x___n_a_v___d_o_p.html#ae3287c2656c08835bdd2ffa7e28d0ee4',1,'UBX_NAV_DOP']]],
   ['nelements',['NELEMENTS',['../group___p_i_o_s.html#ga012a11e78fa6eb27613a473e530348e2',1,'NELEMENTS():&#160;pios.h'],['../unittest__init_8c.html#a012a11e78fa6eb27613a473e530348e2',1,'NELEMENTS():&#160;unittest_init.c']]],
   ['neq',['NEQ',['../group___control.html#ga50f32989cb94e1e7a132b095b8265e0b',1,'transmitter_control.h']]],
-  ['nerasures',['NErasures',['../berlekamp_8c.html#af4e660925f042049e868812cd11cd752',1,'berlekamp.c']]],
-  ['nerrors',['NErrors',['../berlekamp_8c.html#a0d8487e9f148d13ed395d1362dd459b6',1,'berlekamp.c']]],
   ['nested_5fctr',['nested_ctr',['../group___p_i_o_s___i_r_q.html#ga158274a5376909848bbb08608a147327',1,'pios_irq.c']]],
   ['new_5fuavo_5finstance_5fcb_5ft',['new_uavo_instance_cb_t',['../uavobjectmanager_8h.html#a58db83831e3408beebc011830d0046d7',1,'uavobjectmanager.h']]],
   ['newreceiverdata',['NewReceiverData',['../group___radio_com_bridge_module.html#ga832ecedd65820ba8cc8c0e76e6a84fe7',1,'radiocombridge.c']]],

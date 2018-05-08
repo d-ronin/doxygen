@@ -37,7 +37,7 @@ var searchData=
   ['tranmerc_5fnorthing_5ferror',['TRANMERC_NORTHING_ERROR',['../tranmerc_8h.html#ad8898714523e31503313c5cb39b13304',1,'tranmerc.h']]],
   ['tranmerc_5forigin_5flat_5ferror',['TRANMERC_ORIGIN_LAT_ERROR',['../tranmerc_8h.html#a5f2d13263d5804a0391b4da5485a1d69',1,'tranmerc.h']]],
   ['tranmerc_5fscale_5ffactor_5ferror',['TRANMERC_SCALE_FACTOR_ERROR',['../tranmerc_8h.html#ad3f7ef60a31a184e3532cc70256c28b9',1,'tranmerc.h']]],
-  ['true',['TRUE',['../mgrs_8c.html#aa8cecfc5c5c054d2875c03e77b7be15d',1,'TRUE():&#160;mgrs.c'],['../ecc_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d',1,'TRUE():&#160;ecc.h']]],
+  ['true',['TRUE',['../mgrs_8c.html#aa8cecfc5c5c054d2875c03e77b7be15d',1,'mgrs.c']]],
   ['two_5fpi',['TWO_PI',['../polarst_8c.html#a3b947f4b635461030ff2d87833e5049e',1,'polarst.c']]],
   ['twomil',['TWOMIL',['../mgrs_8c.html#a2f2b2fa03cb63c508f579bf78d293d05',1,'mgrs.c']]]
 ];

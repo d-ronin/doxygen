@@ -9,7 +9,6 @@ var searchData=
   ['max_5fprecision',['MAX_PRECISION',['../mgrs_8c.html#a4ed9e805da6b82cc662002e83173a2b8',1,'mgrs.c']]],
   ['max_5fscale_5ffactor',['MAX_SCALE_FACTOR',['../tranmerc_8c.html#aeb7e2d758031ad5750dd8c5a53b169dc',1,'tranmerc.c']]],
   ['max_5futm_5flat',['MAX_UTM_LAT',['../mgrs_8c.html#a7d72195ef3f4218b38878813cf36a8b3',1,'mgrs.c']]],
-  ['maxdeg',['MAXDEG',['../ecc_8h.html#a8521f0d9a069c55226a07fc055408eed',1,'ecc.h']]],
   ['mgrs_5fa_5ferror',['MGRS_A_ERROR',['../mgrs_8h.html#a2fd537af1b179e0caf0bb05071605985',1,'mgrs.h']]],
   ['mgrs_5feasting_5ferror',['MGRS_EASTING_ERROR',['../mgrs_8h.html#abecb9e8880819c7cf8ca6ee4204e0b73',1,'mgrs.h']]],
   ['mgrs_5fhemisphere_5ferror',['MGRS_HEMISPHERE_ERROR',['../mgrs_8h.html#acb8da89cb8109d3f00c0eb4841a4de9f',1,'mgrs.h']]],

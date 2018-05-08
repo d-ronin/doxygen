@@ -1,7 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"_s_t_m32_f30x_2inc_2pios__chibios__transition__priv_8h.html#abc7315be5ac997b8f347fe1e22f58adf":[5,0,0,4,6,0,1,0],
-"_s_t_m32_f30x_2inc_2pios__chibios__transition__priv_8h.html#ac00abc7e88d4df1985f4431d1b7829ff":[5,0,0,4,6,0,1,41],
 "_s_t_m32_f30x_2inc_2pios__chibios__transition__priv_8h.html#ac468127e2887086eeafd0fc5044c8c1f":[5,0,0,4,6,0,1,20],
 "_s_t_m32_f30x_2inc_2pios__chibios__transition__priv_8h.html#ac635c00a20e7eabe13729819a1da315c":[5,0,0,4,6,0,1,50],
 "_s_t_m32_f30x_2inc_2pios__chibios__transition__priv_8h.html#ac9cb393b4527feb7fda840d9584d5edf":[5,0,0,4,6,0,1,35],
@@ -78,9 +76,9 @@ var NAVTREEINDEX3 =
 "_s_t_m32_f30x_2pios__tim_8c.html#gae8a61b27afdb07c70d6b863c44284ca6":[5,0,0,4,6,10,9],
 "_s_t_m32_f30x_2pios__tim_8c.html#gaf316d2873f98d05747789d96d889491f":[5,0,0,4,6,10,4],
 "_s_t_m32_f30x_2pios__tim_8c.html#gga7d425167804fd43bc76fe29c11386a6ca0c5dc16440e893937250b8ab7e88f777":[5,0,0,4,6,10,0,2],
-"_s_t_m32_f30x_2pios__tim_8c.html#gga7d425167804fd43bc76fe29c11386a6ca0c5dc16440e893937250b8ab7e88f777":[5,0,0,4,6,10,0,0],
-"_s_t_m32_f30x_2pios__tim_8c.html#gga7d425167804fd43bc76fe29c11386a6ca0c5dc16440e893937250b8ab7e88f777":[5,0,0,4,6,10,0,1],
 "_s_t_m32_f30x_2pios__tim_8c.html#gga7d425167804fd43bc76fe29c11386a6ca0c5dc16440e893937250b8ab7e88f777":[5,0,0,4,6,10,0,3],
+"_s_t_m32_f30x_2pios__tim_8c.html#gga7d425167804fd43bc76fe29c11386a6ca0c5dc16440e893937250b8ab7e88f777":[5,0,0,4,6,10,0,1],
+"_s_t_m32_f30x_2pios__tim_8c.html#gga7d425167804fd43bc76fe29c11386a6ca0c5dc16440e893937250b8ab7e88f777":[5,0,0,4,6,10,0,0],
 "_s_t_m32_f30x_2pios__tim_8c_source.html":[5,0,0,4,6,10],
 "_s_t_m32_f30x_2pios__usart_8c.html":[5,0,0,4,6,11],
 "_s_t_m32_f30x_2pios__usart_8c_source.html":[5,0,0,4,6,11],
@@ -249,5 +247,7 @@ var NAVTREEINDEX3 =
 "_s_t_m32_f4xx_2inc_2mcuconf_8h.html#ga7c6ca71505c504cbd011d772af8cf665":[5,0,0,4,7,0,0,195],
 "_s_t_m32_f4xx_2inc_2mcuconf_8h.html#ga7dd2cd16d440c306ca4078c26c6b32a1":[5,0,0,4,7,0,0,41],
 "_s_t_m32_f4xx_2inc_2mcuconf_8h.html#ga7e58662e757ecd7f20e8135c82393312":[5,0,0,4,7,0,0,182],
-"_s_t_m32_f4xx_2inc_2mcuconf_8h.html#ga7ec15e13e1cd4f876f8a4408e5cb1ed1":[5,0,0,4,7,0,0,45]
+"_s_t_m32_f4xx_2inc_2mcuconf_8h.html#ga7ec15e13e1cd4f876f8a4408e5cb1ed1":[5,0,0,4,7,0,0,45],
+"_s_t_m32_f4xx_2inc_2mcuconf_8h.html#ga7f657adda8b7f6aa955f0806a29b0b9d":[5,0,0,4,7,0,0,140],
+"_s_t_m32_f4xx_2inc_2mcuconf_8h.html#ga7fe3dc866ef2fdf7f3280ff2a81a0206":[5,0,0,4,7,0,0,42]
 };

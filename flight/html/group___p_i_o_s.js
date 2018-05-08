@@ -90,6 +90,7 @@ var group___p_i_o_s =
     [ "pios_max7456.c", "pios__max7456_8c.html", null ],
     [ "printf-stdarg.c", "printf-stdarg_8c.html", null ],
     [ "pios_max7456.c", "pios__max7456_8c.html", null ],
+    [ "openpilot.h", "openpilot_8h.html", null ],
     [ "pios.h", "pios_8h.html", null ],
     [ "pios_dac.h", "pios__dac_8h.html", null ],
     [ "pios_dac_cfg", "structpios__dac__cfg.html", [

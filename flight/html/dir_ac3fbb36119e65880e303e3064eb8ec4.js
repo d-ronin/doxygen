@@ -8,6 +8,6 @@ var dir_ac3fbb36119e65880e303e3064eb8ec4 =
     [ "STM32F10x", "dir_7d432041a987d59b30526ce272f2aad8.html", "dir_7d432041a987d59b30526ce272f2aad8" ],
     [ "STM32F30x", "dir_4b9474a4fbfb8ccb88460c15476c3b9a.html", "dir_4b9474a4fbfb8ccb88460c15476c3b9a" ],
     [ "STM32F4xx", "dir_dc351dddf16e2554136c6d7b25f61420.html", "dir_dc351dddf16e2554136c6d7b25f61420" ],
-    [ "openpilot.h", "_pi_o_s_2openpilot_8h.html", null ],
+    [ "openpilot.h", "openpilot_8h.html", null ],
     [ "pios.h", "pios_8h.html", "pios_8h" ]
 ];

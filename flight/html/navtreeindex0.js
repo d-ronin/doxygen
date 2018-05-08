@@ -193,8 +193,6 @@ var NAVTREEINDEX0 =
 "_pi_o_s_2_s_t_m32_2inc_2chconf_8h.html#gaf48947f33ed7a44a7701d84d83d94a1c":[5,0,0,4,3,0,1,23],
 "_pi_o_s_2_s_t_m32_2inc_2chconf_8h.html#gaff85f4d919dac30a337ce2f34e2fa1af":[5,0,0,4,3,0,1,20],
 "_pi_o_s_2_s_t_m32_2inc_2chconf_8h_source.html":[5,0,0,4,3,0,1],
-"_pi_o_s_2openpilot_8h.html":[5,0,0,4,8],
-"_pi_o_s_2openpilot_8h_source.html":[5,0,0,4,8],
 "_s_t_m32_2inc_2pios__dio_8h.html":[5,0,0,4,3,0,3],
 "_s_t_m32_2inc_2pios__dio_8h.html#ga1d92467854c7d4a9db7c0ba4aaf0fa2d":[5,0,0,4,3,0,3,28],
 "_s_t_m32_2inc_2pios__dio_8h.html#ga1e6f6b343b4f8d562e94393d70ebdb83":[5,0,0,4,3,0,3,8],
@@ -249,5 +247,7 @@ var NAVTREEINDEX0 =
 "_s_t_m32_2inc_2pios__i2c__priv_8h.html#ac73b69ffe53544057fa2e4751fd9c22ba35a5d616d4db99e0ba1c159912c38641":[5,0,0,4,3,0,6,2,1],
 "_s_t_m32_2inc_2pios__i2c__priv_8h.html#ac73b69ffe53544057fa2e4751fd9c22ba4658500475682b7c4750e07efeab6aa4":[5,0,0,4,3,0,6,2,4],
 "_s_t_m32_2inc_2pios__i2c__priv_8h.html#ac73b69ffe53544057fa2e4751fd9c22ba63906c0cdb52625f1d9d5729e8d49acd":[5,0,0,4,3,0,6,2,3],
-"_s_t_m32_2inc_2pios__i2c__priv_8h.html#ac73b69ffe53544057fa2e4751fd9c22ba96ed7394a387e079da7bb5d8173fb361":[5,0,0,4,3,0,6,2,0]
+"_s_t_m32_2inc_2pios__i2c__priv_8h.html#ac73b69ffe53544057fa2e4751fd9c22ba96ed7394a387e079da7bb5d8173fb361":[5,0,0,4,3,0,6,2,0],
+"_s_t_m32_2inc_2pios__i2c__priv_8h.html#ac73b69ffe53544057fa2e4751fd9c22baf1bf5e65204f34bf3ab04ef69831a93d":[5,0,0,4,3,0,6,2,2],
+"_s_t_m32_2inc_2pios__i2c__priv_8h.html#ac73b69ffe53544057fa2e4751fd9c22baf617c80abdf7eabc425a2e6104a2728b":[5,0,0,4,3,0,6,2,6]
 };
