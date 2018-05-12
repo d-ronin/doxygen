@@ -51,12 +51,12 @@ var searchData=
   ['lqg_5frun_5fcovariance',['lqg_run_covariance',['../group___flight_math.html#ga97e9b30062b984f6d99412200fa7f8f8',1,'lqg.c']]],
   ['lqg_5fset_5fx0',['lqg_set_x0',['../group___flight_math.html#ga536a61d891026a08fcc40c855d1e21a7',1,'lqg.c']]],
   ['lqg_5fsysident_5fcheck',['lqg_sysident_check',['../group___libraries.html#ga279b33822f3276cd85eefabb7c20c996',1,'sanitycheck.c']]],
-  ['lqr_5fcalculate_5fcovariance_5f2x2',['lqr_calculate_covariance_2x2',['../group___flight_math.html#ga0ec0dc27c9b22e24e3402e68b981e311',1,'lqg.c']]],
-  ['lqr_5fcalculate_5fgains_5fint',['lqr_calculate_gains_int',['../group___flight_math.html#ga39f5682e60984701ee8bb04ac6627855',1,'lqg.c']]],
-  ['lqr_5fcreate',['lqr_create',['../group___flight_math.html#gaff1d205d8a084b068b0478b24288425f',1,'lqg.c']]],
+  ['lqr_5fcalculate_5fcovariance_5f2x2',['lqr_calculate_covariance_2x2',['../group___flight_math.html#ga25ef5e6bf241de64bc85fb73b6ceb1d1',1,'lqg.c']]],
+  ['lqr_5fcalculate_5fgains_5fint',['lqr_calculate_gains_int',['../group___flight_math.html#gadc97d24cf1556b3e9c9ff848fd0a5351',1,'lqg.c']]],
+  ['lqr_5fcreate',['lqr_create',['../group___flight_math.html#gaaca0e35e387eceac2b60bc31d4a701cc',1,'lqg.c']]],
   ['lqr_5fget_5fgains',['lqr_get_gains',['../group___flight_math.html#ga38d510514079e13279aeb8231945d971',1,'lqg.c']]],
   ['lqr_5finitialize_5fmatrices_5fint',['lqr_initialize_matrices_int',['../group___flight_math.html#ga85e57012ad2344c917e68e7152fcba9c',1,'lqg.c']]],
   ['lqr_5fis_5fsolved',['lqr_is_solved',['../group___flight_math.html#ga4de1a48d5eda65f9f4408c83a47ccb12',1,'lqg.c']]],
   ['lqr_5fstabilize_5fcovariance',['lqr_stabilize_covariance',['../group___flight_math.html#gafa8a4d4c5867f0c1079530e359dd9d82',1,'lqg.c']]],
-  ['lqr_5fupdate',['lqr_update',['../group___flight_math.html#ga4af82421cc98549fe739d7a8464a438a',1,'lqg.c']]]
+  ['lqr_5fupdate',['lqr_update',['../group___flight_math.html#ga5f925d10bdb69a95070c3cc12f1eee86',1,'lqg.c']]]
 ];

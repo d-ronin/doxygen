@@ -1,5 +1,6 @@
 var NAVTREEINDEX98 =
 {
+"structlqr__state.html#ade31d9726a135503ebb30da703720c15":[2,1,1,11,7],
 "structmsg__capabilities__rep__all.html":[4,0,79],
 "structmsg__capabilities__rep__all.html#a8566e0c67b17e018a73a1eca2410fb33":[4,0,79,1],
 "structmsg__capabilities__rep__all.html#a905e35401367efca97709e1164b66006":[4,0,79,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX98 =
 "structpid.html#a97ebc09fc39d749940ebdc48926b8bb1":[2,1,1,14,2],
 "structpid.html#ab61187c1e1bf8e3f6b09501992bd744f":[2,1,1,14,6],
 "structpid.html#ae79ee69d35b5daccddb71cbe270fbbd1":[2,1,1,14,5],
-"structpid.html#afb7f8463c8cefe80b65db478c349a0b1":[2,1,1,14,3],
-"structpid__deadband.html":[2,1,1,13]
+"structpid.html#afb7f8463c8cefe80b65db478c349a0b1":[2,1,1,14,3]
 };

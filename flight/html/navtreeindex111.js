@@ -1,5 +1,6 @@
 var NAVTREEINDEX111 =
 {
+"ups_8h.html#a7fce3a573b137264f1e77c3e1c942d52":[5,0,0,1,3,7,0],
 "ups_8h.html#a880be9d5cd428467ca817c3352854c63":[5,0,0,1,3,7,8],
 "ups_8h.html#ab9a2752ac1b06301227f3d03ef1fba93":[5,0,0,1,3,7,9],
 "ups_8h.html#abe20d7d72498cb37c0e4808308cf68b9":[5,0,0,1,3,7,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX111 =
 "virtualflybar_8h_source.html":[5,0,0,3,21,0,1],
 "vtol__follower__control_8c.html":[5,0,0,3,35,0],
 "vtol__follower__control_8c.html#ga1fb5bf24111b36b2c0c37f1f749d06d8":[5,0,0,3,35,0,0],
-"vtol__follower__control_8c.html#ga26e67dbf59cc44ee583f49c2b1b9e35c":[5,0,0,3,35,0,12],
-"vtol__follower__control_8c.html#ga2fa90306327b02b68b72ee525a894866":[5,0,0,3,35,0,15]
+"vtol__follower__control_8c.html#ga26e67dbf59cc44ee583f49c2b1b9e35c":[5,0,0,3,35,0,12]
 };

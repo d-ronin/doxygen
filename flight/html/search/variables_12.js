@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['r',['R',['../structrtkf__state.html#ab5115cc1e5b19ffd761bb68070afb809',1,'rtkf_state::R()'],['../struct_w_m_mtype___coord_spherical.html#ad7a66b81a59d40782c0618c94256073f',1,'WMMtype_CoordSpherical::r()'],['../group___i_n_s_g_p_s.html#ga06fb8e491fbcc3c8cbe00ccaa0aa1aa7',1,'R():&#160;insgps14state.c'],['../group___libraries.html#ga06fb8e491fbcc3c8cbe00ccaa0aa1aa7',1,'R():&#160;insgps13state.c'],['../group___i_n_s_g_p_s.html#ga06fb8e491fbcc3c8cbe00ccaa0aa1aa7',1,'R():&#160;insgps16state.c']]],
+  ['r',['R',['../structrtkf__state.html#ab5115cc1e5b19ffd761bb68070afb809',1,'rtkf_state::R()'],['../structlqr__state.html#ad05573b6dbaf2d80b2282bc4de371790',1,'lqr_state::R()'],['../struct_w_m_mtype___coord_spherical.html#ad7a66b81a59d40782c0618c94256073f',1,'WMMtype_CoordSpherical::r()'],['../group___i_n_s_g_p_s.html#ga06fb8e491fbcc3c8cbe00ccaa0aa1aa7',1,'R():&#160;insgps14state.c'],['../group___libraries.html#ga06fb8e491fbcc3c8cbe00ccaa0aa1aa7',1,'R():&#160;insgps13state.c'],['../group___i_n_s_g_p_s.html#ga06fb8e491fbcc3c8cbe00ccaa0aa1aa7',1,'R():&#160;insgps16state.c']]],
   ['raceband_5ffreqs',['RACEBAND_FREQS',['../group___v_t_x_config.html#ga3fe8dcefb84eae270dfa806c290cd13f',1,'VTXConfig.c']]],
   ['radiorxtaskhandle',['radioRxTaskHandle',['../group___radio_com_bridge_module.html#gafbe49bdb4a85ec4a694d3672f5b9b117',1,'RadioComBridgeData']]],
   ['radiouavtalkcon',['radioUAVTalkCon',['../group___radio_com_bridge_module.html#gaed609dafd971885f4714e1658bebdfa9',1,'RadioComBridgeData']]],

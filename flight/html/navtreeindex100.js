@@ -1,5 +1,6 @@
 var NAVTREEINDEX100 =
 {
+"structpios__spi__cfg.html#ad45aed059de6082ab6c257da0018d867":[2,0,62,3,7],
 "structpios__spi__cfg.html#adaf88353246da685e0f82e927d72eaed":[2,0,62,3,3],
 "structpios__spi__cfg.html#adbc1199b6671cd7ab6856b5d76038020":[2,0,62,3,1],
 "structpios__spi__dev.html":[2,0,62,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX100 =
 "structusb__interface__association__desc.html":[2,0,69,2],
 "structusb__interface__desc.html":[2,0,69,3],
 "structusb__setup__request.html":[2,0,69,6],
-"structusb__string__langid.html":[2,0,69,11],
-"structuword__t.html":[2,4,29,2]
+"structusb__string__langid.html":[2,0,69,11]
 };

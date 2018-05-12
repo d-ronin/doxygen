@@ -1,5 +1,6 @@
 var NAVTREEINDEX105 =
 {
+"targets_2pipxtreme_2fw_2chconf_8h.html#gaff85f4d919dac30a337ce2f34e2fa1af":[5,0,0,5,11,2,0,20],
 "targets_2pipxtreme_2fw_2chconf_8h_source.html":[5,0,0,5,11,2,0],
 "targets_2pipxtreme_2fw_2pios__config_8h.html":[5,0,0,5,11,2,2],
 "targets_2pipxtreme_2fw_2pios__config_8h.html#ga08ff1c9a9c1942647c4ee60b087e4ca6":[5,0,0,5,11,2,2,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX105 =
 "targets_2revolution_2bl_2pios__config_8h.html#gabaec4c77cf420cd9ad55c5f96a10b192":[5,0,0,5,14,0,1,3],
 "targets_2revolution_2bl_2pios__config_8h.html#gacc93b5bb2caa11a16122f6eb0c619379":[5,0,0,5,14,0,1,6],
 "targets_2revolution_2bl_2pios__config_8h_source.html":[5,0,0,5,14,0,1],
-"targets_2revolution_2board-info_2pios__board_8h.html":[5,0,0,5,14,1,2],
-"targets_2revolution_2board-info_2pios__board_8h.html#ga05dca72c42c6c2b33fa62b8ee0fcb2ea":[5,0,0,5,14,1,2,46]
+"targets_2revolution_2board-info_2pios__board_8h.html":[5,0,0,5,14,1,2]
 };

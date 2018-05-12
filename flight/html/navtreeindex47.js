@@ -246,8 +246,8 @@ var NAVTREEINDEX47 =
 "group___s_t_m32_f0xx___system___private___functions.html":[2,5,7,0,2,6],
 "group___s_t_m32_f0xx___system___private___functions.html":[2,5,8,0,2,6],
 "group___s_t_m32_f0xx___system___private___functions.html":[2,6,11,0,2,6],
-"group___s_t_m32_f0xx___system___private___functions.html":[2,6,6,0,2,6],
 "group___s_t_m32_f0xx___system___private___functions.html":[2,5,9,0,2,6],
 "group___s_t_m32_f0xx___system___private___functions.html":[2,5,10,0,2,6],
-"group___s_t_m32_f0xx___system___private___functions.html":[2,5,11,0,2,6]
+"group___s_t_m32_f0xx___system___private___functions.html":[2,5,11,0,2,6],
+"group___s_t_m32_f0xx___system___private___functions.html":[2,5,12,0,2,6]
 };
