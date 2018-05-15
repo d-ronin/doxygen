@@ -7,7 +7,6 @@ var searchData=
   ['pios_5fbmm150_5forientation',['pios_bmm150_orientation',['../group___p_i_o_s___b_m_x055.html#gaff22ef86d336d60bec130dbec43b0a41',1,'pios_bmm150.h']]],
   ['pios_5fbmx055_5forientation',['pios_bmx055_orientation',['../group___p_i_o_s___b_m_x055.html#gad982ea8ce8497d06b5e54339f50ce7f9',1,'pios_bmx055.h']]],
   ['pios_5fcan_5fmessages',['pios_can_messages',['../group___p_i_o_s___c_a_n.html#gaea0e3673ecb9505faf3d04695da1f39d',1,'pios_can.h']]],
-  ['pios_5fdsm_5fdev_5fmagic',['pios_dsm_dev_magic',['../dsm_8h.html#aa8fd2b8b7432f69244c6af0ffd1c3c4b',1,'dsm.h']]],
   ['pios_5fflash_5fpartition_5flabels',['pios_flash_partition_labels',['../group___p_i_o_s___f_l_a_s_h.html#ga0b2f5069f81f627316a591a77e020616',1,'pios_flash.h']]],
   ['pios_5fflashfs_5flogfs_5fdev_5fmagic',['pios_flashfs_logfs_dev_magic',['../group___p_i_o_s___f_l_a_s_h_f_s.html#ga27472bb2a0fbfb6302378ef138c6a41f',1,'pios_flashfs_logfs.c']]],
   ['pios_5fflashfs_5fstreamfs_5fdev_5fmagic',['pios_flashfs_streamfs_dev_magic',['../group___p_i_o_s___f_l_a_s_h_f_s.html#ga38a5bb892173c7f3e087048ee812a2cf',1,'pios_streamfs.c']]],

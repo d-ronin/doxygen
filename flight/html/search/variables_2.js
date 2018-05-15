@@ -106,7 +106,6 @@ var searchData=
   ['busy',['busy',['../structpios__spi__dev.html#aeac11213c625a3544d9595b7a9db968b',1,'pios_spi_dev']]],
   ['bx',['Bx',['../struct_w_m_mtype___magnetic_results.html#ab47b493b060af6221ee19270b4a39529',1,'WMMtype_MagneticResults']]],
   ['by',['By',['../struct_w_m_mtype___magnetic_results.html#aa6dcc4f5525f563fd38032ca8ffbf02d',1,'WMMtype_MagneticResults']]],
-  ['byte_5fcount',['byte_count',['../structpios__dsm__state.html#ad73722b14672f205b7bfd9ebdac3b53a',1,'pios_dsm_state']]],
   ['bytes',['bytes',['../group___storm32bgc.html#ga298a9c9f9c3d0d39f3fb9d2f2894de6e',1,'@12::bytes()'],['../group___storm32bgc.html#ga740ee0880f571c3c726a20ad38c1261d',1,'@13::bytes()'],['../group___storm32bgc.html#ga105d9fe61fbf81be1011dbd04b2b9db8',1,'@14::bytes()'],['../storm32bgc_8c.html#aea539738daceba8bf54f30dbb1601eb9',1,'bytes():&#160;storm32bgc.c'],['../namespacepx__mkfw.html#aa8d3ebe474956cb67728fd7ad5beca87',1,'px_mkfw.bytes()']]],
   ['bytes_5fto_5fxfer',['bytes_to_xfer',['../structxfer__state.html#a7a93305892abd2543995d2a39b22f0fd',1,'xfer_state']]],
   ['bz',['Bz',['../struct_w_m_mtype___magnetic_results.html#acdc0be68c71feef834382316e7ea69de',1,'WMMtype_MagneticResults']]]

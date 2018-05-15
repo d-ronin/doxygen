@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>dRonin: flight/tests/dsm/dsm.c File Reference</title>
+<title>dRonin: flight/tests/dsm/pios_board.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">e60463a</span>
+   &#160;<span id="projectnumber">fb2324a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -88,7 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('dsm_8c.html','');});
+$(document).ready(function(){initNavTree('tests_2dsm_2pios__board_8h_source.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -106,109 +106,16 @@ $(document).ready(function(){initNavTree('dsm_8c.html','');});
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">dsm.c File Reference</div>  </div>
+<div class="title">pios_board.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="dsm_8h_source.html">dsm.h</a>&quot;</code><br/>
-<code>#include &quot;stdio.h&quot;</code><br/>
-</div>
-<p><a href="dsm_8c_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a399c65c6a3a32de596c905dc67cec950"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dsm_8c.html#a399c65c6a3a32de596c905dc67cec950">PIOS_DSM_Reset</a> (struct <a class="el" href="structpios__dsm__dev.html">pios_dsm_dev</a> *dsm_dev)</td></tr>
-<tr class="separator:a399c65c6a3a32de596c905dc67cec950"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3528afc12abf11b6136ff56d6ecc4075"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dsm_8c.html#a3528afc12abf11b6136ff56d6ecc4075">PIOS_DSM_GetResolution</a> (struct <a class="el" href="structpios__dsm__dev.html">pios_dsm_dev</a> *dsm_dev)</td></tr>
-<tr class="separator:a3528afc12abf11b6136ff56d6ecc4075"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af89548117fb59bf4d7604c11bdccfd0c"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="dsm_8h.html#aa74389f2d838aceac27d2f44fe95a76a">dsm_resolution</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dsm_8c.html#af89548117fb59bf4d7604c11bdccfd0c">PIOS_DSM_DetectResolution</a> (uint8_t *packet)</td></tr>
-<tr class="separator:af89548117fb59bf4d7604c11bdccfd0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff4fd4839a1173133b0ec07354c390c9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dsm_8c.html#aff4fd4839a1173133b0ec07354c390c9">PIOS_DSM_UnrollChannels</a> (struct <a class="el" href="structpios__dsm__dev.html">pios_dsm_dev</a> *dsm_dev)</td></tr>
-<tr class="separator:aff4fd4839a1173133b0ec07354c390c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="af89548117fb59bf4d7604c11bdccfd0c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="dsm_8h.html#aa74389f2d838aceac27d2f44fe95a76a">dsm_resolution</a> PIOS_DSM_DetectResolution </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>packet</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>DSM packets expect to have sequential channel numbers but based on resolution they will be shifted by one position </p>
-
-<p>Definition at line <a class="el" href="dsm_8c_source.html#l00026">26</a> of file <a class="el" href="dsm_8c_source.html">dsm.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a3528afc12abf11b6136ff56d6ecc4075"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int PIOS_DSM_GetResolution </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structpios__dsm__dev.html">pios_dsm_dev</a> *&#160;</td>
-          <td class="paramname"><em>dsm_dev</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dsm_8c_source.html#l00016">16</a> of file <a class="el" href="dsm_8c_source.html">dsm.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a399c65c6a3a32de596c905dc67cec950"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int PIOS_DSM_Reset </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structpios__dsm__dev.html">pios_dsm_dev</a> *&#160;</td>
-          <td class="paramname"><em>dsm_dev</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dsm_8c_source.html#l00005">5</a> of file <a class="el" href="dsm_8c_source.html">dsm.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aff4fd4839a1173133b0ec07354c390c9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int PIOS_DSM_UnrollChannels </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structpios__dsm__dev.html">pios_dsm_dev</a> *&#160;</td>
-          <td class="paramname"><em>dsm_dev</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This is the code from the PIOS_DSM layer </p>
-
-<p>Definition at line <a class="el" href="dsm_8c_source.html#l00061">61</a> of file <a class="el" href="dsm_8c_source.html">dsm.c</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+<a href="tests_2dsm_2pios__board_8h.html">Go to the documentation of this file.</a><div class="fragment"></div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_aa98a92d0ee4a874a8da6d1a4d95ab49.html">flight</a></li><li class="navelem"><a class="el" href="dir_80f31eee9cf89edb960fe823c08758ad.html">tests</a></li><li class="navelem"><a class="el" href="dir_ce5ff417607b25558bc632805252d5dd.html">dsm</a></li><li class="navelem"><a class="el" href="dsm_8c.html">dsm.c</a></li>
+    <li class="navelem"><a class="el" href="dir_aa98a92d0ee4a874a8da6d1a4d95ab49.html">flight</a></li><li class="navelem"><a class="el" href="dir_80f31eee9cf89edb960fe823c08758ad.html">tests</a></li><li class="navelem"><a class="el" href="dir_ce5ff417607b25558bc632805252d5dd.html">dsm</a></li><li class="navelem"><a class="el" href="tests_2dsm_2pios__board_8h.html">pios_board.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>

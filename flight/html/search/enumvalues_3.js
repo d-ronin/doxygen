@@ -27,8 +27,5 @@ var searchData=
   ['down_5fvelocity',['DOWN_VELOCITY',['../group___vtol_path_follower.html#ggaa1cc793c473ad52ad906c7feecdb3a37ac40aaeb4635693d0cf03af8e9372708d',1,'vtol_follower_priv.h']]],
   ['download',['Download',['../group___common_f1.html#gga882a151e21837eb51e9459f7c213918fa5a3ce8971b8570cbf1ba621d50e864ff',1,'common.h']]],
   ['download_5freq',['Download_Req',['../group___common_f1.html#gga882a151e21837eb51e9459f7c213918fad77b02b555d20eb5bcd3218a470c2e50',1,'common.h']]],
-  ['downloading',['downloading',['../group___common_f1.html#gga9a9e510f2da4e725074c7191d9d75d37ac11a9e1683ed24627ab6a8d3ddb30b28',1,'common.h']]],
-  ['dsm_5f10bit',['DSM_10BIT',['../dsm_8h.html#aa74389f2d838aceac27d2f44fe95a76aa9933998348f4c7fb61a308f2f693be32',1,'dsm.h']]],
-  ['dsm_5f11bit',['DSM_11BIT',['../dsm_8h.html#aa74389f2d838aceac27d2f44fe95a76aa59001a67f626ed791ed2b9e21568a0e2',1,'dsm.h']]],
-  ['dsm_5funknown',['DSM_UNKNOWN',['../dsm_8h.html#aa74389f2d838aceac27d2f44fe95a76aaa33a1822794a34cbd298436fe529a604',1,'dsm.h']]]
+  ['downloading',['downloading',['../group___common_f1.html#gga9a9e510f2da4e725074c7191d9d75d37ac11a9e1683ed24627ab6a8d3ddb30b28',1,'common.h']]]
 ];

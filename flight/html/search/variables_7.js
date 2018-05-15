@@ -30,7 +30,7 @@ var searchData=
   ['gpio_5finv_5fdisable',['gpio_inv_disable',['../structpios__sbus__cfg.html#a843ec7deaae570eeab1dc5770e77dafe',1,'pios_sbus_cfg']]],
   ['gpio_5finv_5fenable',['gpio_inv_enable',['../structpios__sbus__cfg.html#ab2b1ec166136b6e8ecfc96fa0c1319b5',1,'pios_sbus_cfg']]],
   ['gpio_5fpin',['gpio_pin',['../group___p_i_o_s___w_s2811.html#ga78e5d4cfe5de5b19cab8bbc100a98c1f',1,'pios_ws2811_cfg::gpio_pin()'],['../group___p_i_o_s.html#gabcc06cb27e5dbc4d937098dc976966b1',1,'pios_dac_cfg::gpio_pin()']]],
-  ['gps',['gps',['../unioncrsf__combo__payload.html#a5166652eb312278e5ea1606ef69d305e',1,'crsf_combo_payload::gps()'],['../structtelemetrydata.html#a878a8fe45c1db4366adc424d748c81e5',1,'telemetrydata::GPS()'],['../group___airspeed_module.html#gad418ce0c236d030cb672515e667a7f28',1,'gps():&#160;gps_airspeed.c']]],
+  ['gps',['GPS',['../structtelemetrydata.html#a878a8fe45c1db4366adc424d748c81e5',1,'telemetrydata::GPS()'],['../unioncrsf__combo__payload.html#a5166652eb312278e5ea1606ef69d305e',1,'crsf_combo_payload::gps()'],['../group___airspeed_module.html#gad418ce0c236d030cb672515e667a7f28',1,'gps():&#160;gps_airspeed.c']]],
   ['gps_5ffix_5fchar',['gps_fix_char',['../structhott__gps__message.html#a66da8d37604475ac681ff68845c2f688',1,'hott_gps_message']]],
   ['gps_5fhour',['gps_hour',['../structhott__gps__message.html#a080054a22b4839f3534bee6753b66b9b',1,'hott_gps_message']]],
   ['gps_5fmin',['gps_min',['../structhott__gps__message.html#a78c41171232507500bab008de7065a4f',1,'hott_gps_message']]],

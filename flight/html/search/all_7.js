@@ -112,7 +112,7 @@ var searchData=
   ['gpiod_5fdio',['GPIOD_DIO',['../group___p_i_o_s___d_i_o.html#gaeaa7dc8f91f5ff1219a3fda7a7bbf1d3',1,'pios_dio.h']]],
   ['gpioe_5fdio',['GPIOE_DIO',['../group___p_i_o_s___d_i_o.html#ga6c9ac4c16a4910bdc799073ad782b5da',1,'pios_dio.h']]],
   ['gpiof_5fdio',['GPIOF_DIO',['../group___p_i_o_s___d_i_o.html#gaddf68898b509414e27fd3d3381e0d729',1,'pios_dio.h']]],
-  ['gps',['gps',['../unioncrsf__combo__payload.html#a5166652eb312278e5ea1606ef69d305e',1,'crsf_combo_payload::gps()'],['../structtelemetrydata.html#a878a8fe45c1db4366adc424d748c81e5',1,'telemetrydata::GPS()'],['../group___airspeed_module.html#gad418ce0c236d030cb672515e667a7f28',1,'gps():&#160;gps_airspeed.c']]],
+  ['gps',['GPS',['../structtelemetrydata.html#a878a8fe45c1db4366adc424d748c81e5',1,'telemetrydata::GPS()'],['../unioncrsf__combo__payload.html#a5166652eb312278e5ea1606ef69d305e',1,'crsf_combo_payload::gps()'],['../group___airspeed_module.html#gad418ce0c236d030cb672515e667a7f28',1,'gps():&#160;gps_airspeed.c']]],
   ['gps_2ec',['GPS.c',['../_g_p_s_8c.html',1,'']]],
   ['gps_2eh',['GPS.h',['../_g_p_s_8h.html',1,'']]],
   ['gps_5fairspeed_2ec',['gps_airspeed.c',['../gps__airspeed_8c.html',1,'']]],

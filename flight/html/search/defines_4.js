@@ -41,9 +41,5 @@ var searchData=
   ['dronin_5fgettime',['DRONIN_GETTIME',['../pios__posix_8h.html#af4a0b85de88f5247c70f84416989c95d',1,'pios_posix.h']]],
   ['dshot_5fdeadband_5f3d',['DSHOT_DEADBAND_3D',['../actuator_8c.html#a065b51e9d9b2ce4ad5dc1ac15d1f4433',1,'actuator.c']]],
   ['dshot_5fdeadband_5f3drev',['DSHOT_DEADBAND_3DREV',['../actuator_8c.html#ac738422e642ec416b4dfc88ca034f597',1,'actuator.c']]],
-  ['dshot_5fdeadband_5fnormal',['DSHOT_DEADBAND_NORMAL',['../actuator_8c.html#a9700a8bf888bf57d839ad38fa7e5b7b1',1,'actuator.c']]],
-  ['dsm_5f2nd_5fframe_5fmask',['DSM_2ND_FRAME_MASK',['../dsm_8h.html#a93e02b258974bfdb14297f1e04d480eb',1,'dsm.h']]],
-  ['dsm_5fchannels_5fper_5fframe',['DSM_CHANNELS_PER_FRAME',['../dsm_8h.html#a50c5a2ccccb4058b7c96c819a58ffd34',1,'dsm.h']]],
-  ['dsm_5fdsm2_5fres_5fmask',['DSM_DSM2_RES_MASK',['../dsm_8h.html#a468b858e1eca59c7326f7b3a2fe1f414',1,'dsm.h']]],
-  ['dsm_5fframe_5flength',['DSM_FRAME_LENGTH',['../dsm_8h.html#a3b6185a4c780141de5fd38f8201cdcb2',1,'dsm.h']]]
+  ['dshot_5fdeadband_5fnormal',['DSHOT_DEADBAND_NORMAL',['../actuator_8c.html#a9700a8bf888bf57d839ad38fa7e5b7b1',1,'actuator.c']]]
 ];

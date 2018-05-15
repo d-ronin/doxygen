@@ -11,6 +11,5 @@ var group___p_i_o_s___e_x_t_i =
     ] ],
     [ "__exti_config", "group___p_i_o_s___e_x_t_i.html#gab9cc1b2b3233d1228a96fd81446ecb6f", null ],
     [ "PIOS_EXTI_DeInit", "group___p_i_o_s___e_x_t_i.html#gaf8f7c91129c69c7165d7f9ad8f54aecc", null ],
-    [ "PIOS_EXTI_Init", "group___p_i_o_s___e_x_t_i.html#gaa35c400a680d3af7d1ec1a0a3f91d93f", null ],
-    [ "__attribute__", "group___p_i_o_s___e_x_t_i.html#gad419cacb3bd69c15ae62f6c7b02d94ef", null ]
+    [ "PIOS_EXTI_Init", "group___p_i_o_s___e_x_t_i.html#gaa35c400a680d3af7d1ec1a0a3f91d93f", null ]
 ];

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">e60463a</span>
+   &#160;<span id="projectnumber">fb2324a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -119,7 +119,8 @@ $(document).ready(function(){initNavTree('dsm_2unittest_8cpp.html','');});
 <code>#include &lt;stdlib.h&gt;</code><br/>
 <code>#include &lt;string.h&gt;</code><br/>
 <code>#include &lt;stdint.h&gt;</code><br/>
-<code>#include &quot;<a class="el" href="dsm_8h_source.html">dsm.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="pios__dsm__priv_8h_source.html">pios_dsm_priv.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="pios__dsm_8c_source.html">../../PiOS/Common/pios_dsm.c</a>&quot;</code><br/>
 </div>
 <p><a href="dsm_2unittest_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -130,13 +131,17 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga399c65c6a3a32de596c905dc67cec950"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___unit_tests.html#ga399c65c6a3a32de596c905dc67cec950">PIOS_DSM_Reset</a> (struct pios_dsm_dev *dsm_dev)</td></tr>
+<tr class="separator:ga399c65c6a3a32de596c905dc67cec950"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3528afc12abf11b6136ff56d6ecc4075"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___unit_tests.html#ga3528afc12abf11b6136ff56d6ecc4075">PIOS_DSM_GetResolution</a> (struct pios_dsm_dev *dsm_dev)</td></tr>
+<tr class="separator:ga3528afc12abf11b6136ff56d6ecc4075"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac89dcb5e47be241627599b616fc3ea15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___unit_tests.html#gac89dcb5e47be241627599b616fc3ea15">verify_channels</a> (uint16_t *c1, uint16_t *c2)</td></tr>
 <tr class="separator:gac89dcb5e47be241627599b616fc3ea15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf6248bab38f029879da2bbaf6d4b4378"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___unit_tests.html#gaf6248bab38f029879da2bbaf6d4b4378">TEST_F</a> (<a class="el" href="class_dsm_test.html">DsmTest</a>, Invalid)</td></tr>
 <tr class="separator:gaf6248bab38f029879da2bbaf6d4b4378"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab41d00c459eebfe7f8b975b0f1bdc91f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___unit_tests.html#gab41d00c459eebfe7f8b975b0f1bdc91f">TEST_F</a> (<a class="el" href="class_dsm_test.html">DsmTest</a>, <a class="el" href="dsm_8h.html#aa74389f2d838aceac27d2f44fe95a76aa9933998348f4c7fb61a308f2f693be32">DSM_10BIT</a>)</td></tr>
+<tr class="memitem:gab41d00c459eebfe7f8b975b0f1bdc91f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___unit_tests.html#gab41d00c459eebfe7f8b975b0f1bdc91f">TEST_F</a> (<a class="el" href="class_dsm_test.html">DsmTest</a>, DSM_10BIT)</td></tr>
 <tr class="separator:gab41d00c459eebfe7f8b975b0f1bdc91f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga03f0a4ad5d239172befac5d12f1901c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___unit_tests.html#ga03f0a4ad5d239172befac5d12f1901c7">TEST_F</a> (<a class="el" href="class_dsm_test.html">DsmTest</a>, <a class="el" href="dsm_8h.html#aa74389f2d838aceac27d2f44fe95a76aa59001a67f626ed791ed2b9e21568a0e2">DSM_11BIT</a>)</td></tr>
+<tr class="memitem:ga03f0a4ad5d239172befac5d12f1901c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___unit_tests.html#ga03f0a4ad5d239172befac5d12f1901c7">TEST_F</a> (<a class="el" href="class_dsm_test.html">DsmTest</a>, DSM_11BIT)</td></tr>
 <tr class="separator:ga03f0a4ad5d239172befac5d12f1901c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafa006e4a791c07ee4b460ffce0fc0bad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___unit_tests.html#gafa006e4a791c07ee4b460ffce0fc0bad">TEST_F</a> (<a class="el" href="class_dsm_test.html">DsmTest</a>, DX7_DSM2_11ms_odd)</td></tr>
 <tr class="separator:gafa006e4a791c07ee4b460ffce0fc0bad"><td class="memSeparator" colspan="2">&#160;</td></tr>

@@ -27,6 +27,7 @@ var group___sim =
     [ "PIOS_INCLUDE_ANNUNC", "group___sim.html#ga464462d5068d115f79148efdffefb418", null ],
     [ "PIOS_INCLUDE_BL_HELPER", "group___sim.html#ga88ebbd46d7ad2cb2374e4886c3194b5e", null ],
     [ "PIOS_INCLUDE_COM", "group___sim.html#gaf8a678a8ce2142cdd87b127b78a89add", null ],
+    [ "PIOS_INCLUDE_FAKETICK", "group___sim.html#gaa5c334ccca39293cb42498fa71131c95", null ],
     [ "PIOS_INCLUDE_FLASH", "group___sim.html#gaab491daf240fca6cc9e3243ce8e8712d", null ],
     [ "PIOS_INCLUDE_GPS", "group___sim.html#ga2439a3372d8825b721a19c1bba571b0a", null ],
     [ "PIOS_INCLUDE_GPS_NMEA_PARSER", "group___sim.html#gaab8c5635b668265d63540a4f3daed710", null ],

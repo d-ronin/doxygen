@@ -26,6 +26,8 @@ var dir_fad6fa281ca7e047076b33e1c7de279c =
     [ "pios_debug.h", "inc_2pios__debug_8h.html", "inc_2pios__debug_8h" ],
     [ "pios_delay.h", "pios__delay_8h.html", "pios__delay_8h" ],
     [ "pios_dio.h", "inc_2pios__dio_8h.html", "inc_2pios__dio_8h" ],
+    [ "pios_dsm.h", "pios__dsm_8h.html", null ],
+    [ "pios_dsm_priv.h", "pios__dsm__priv_8h.html", "pios__dsm__priv_8h" ],
     [ "pios_etasv3.h", "pios__etasv3_8h.html", "pios__etasv3_8h" ],
     [ "pios_exti.h", "pios__exti_8h.html", "pios__exti_8h" ],
     [ "pios_flash.h", "pios__flash_8h.html", "pios__flash_8h" ],

@@ -1,5 +1,7 @@
 var dsm_2unittest_8cpp =
 [
+    [ "PIOS_DSM_GetResolution", "dsm_2unittest_8cpp.html#ga3528afc12abf11b6136ff56d6ecc4075", null ],
+    [ "PIOS_DSM_Reset", "dsm_2unittest_8cpp.html#ga399c65c6a3a32de596c905dc67cec950", null ],
     [ "TEST_F", "dsm_2unittest_8cpp.html#gaf6248bab38f029879da2bbaf6d4b4378", null ],
     [ "TEST_F", "dsm_2unittest_8cpp.html#gab41d00c459eebfe7f8b975b0f1bdc91f", null ],
     [ "TEST_F", "dsm_2unittest_8cpp.html#ga03f0a4ad5d239172befac5d12f1901c7", null ],
