@@ -17,7 +17,6 @@ var group___quanton =
     [ "IDLE_COUNTS_PER_SEC_AT_NO_LOAD", "group___quanton.html#ga9be33d810838161edf9412377209a4cf", null ],
     [ "MAX_DEL_RETRYS", "group___quanton.html#gab98ad41f0f40e6edd46ea98d46edb0af", null ],
     [ "PIOS_ADC_MAX_OVERSAMPLING", "group___quanton.html#ga208c18adb2e058348643425b79ae9e14", null ],
-    [ "PIOS_ADC_SUB_DRIVER_MAX_INSTANCES", "group___quanton.html#ga2be0b313025f4a19c9ac7d5f05d94000", null ],
     [ "PIOS_ANNUNCIATOR_BUZZER", "group___quanton.html#gafc809d2cdef7438cdb9abda6ea55f372", null ],
     [ "PIOS_COM_BRIDGE", "group___quanton.html#ga331e928969979bce99d9037027d9853b", null ],
     [ "PIOS_COM_FRSKY_SENSOR_HUB", "group___quanton.html#ga848fc544dbf2ea8c5b0536418f61e1c9", null ],

@@ -31,7 +31,6 @@ var group___brain =
     [ "OSD_USE_BRAINFPV_LOGO", "group___brain.html#gad621ac8b28786134f3c5f833f796201b", null ],
     [ "OSD_USE_MENU", "group___brain.html#ga2830c2da01675c3b650bcfd8e312b883", null ],
     [ "PIOS_ADC_MAX_OVERSAMPLING", "group___brain.html#ga208c18adb2e058348643425b79ae9e14", null ],
-    [ "PIOS_ADC_SUB_DRIVER_MAX_INSTANCES", "group___brain.html#ga2be0b313025f4a19c9ac7d5f05d94000", null ],
     [ "PIOS_COM_BRIDGE", "group___brain.html#ga331e928969979bce99d9037027d9853b", null ],
     [ "PIOS_COM_FRSKY_SENSOR_HUB", "group___brain.html#ga848fc544dbf2ea8c5b0536418f61e1c9", null ],
     [ "PIOS_COM_FRSKY_SPORT", "group___brain.html#gacd240b3acb49442511a220647c7d2e4f", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">8588372</span>
+   &#160;<span id="projectnumber">61202b4</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -348,109 +348,102 @@ $(document).ready(function(){initNavTree('dtfc_2fw_2pios__board_8c_source.html',
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_ADC)</span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="preprocessor"></span>    uintptr_t internal_adc_id;</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#gad0f8b2886a98358b41966677d7c184fc">PIOS_INTERNAL_ADC_Init</a>(&amp;internal_adc_id, &amp;internal_adc_cfg) &lt; 0)</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                <a class="code" href="group___p_i_o_s___h_a_l.html#gab9a9f4422da783012950ae6468130423">PIOS_HAL_CriticalError</a>(<a class="code" href="group___a_q32.html#gae4912a499d71db827918d7908055ce05">PIOS_LED_ALARM</a>, <a class="code" href="pios__hal_8h.html#aafe5055d05a85237ff35d915dff9a53bad02483414ee968bb2cf98d0e0d65f2a8">PIOS_HAL_PANIC_ADC</a>);</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___a_d_c.html#ga8a9178a11e2ccd209eed618a63eb552c">PIOS_ADC_Init</a>(&amp;<a class="code" href="group___a_q32.html#gafb354658d0ba22815d8632d97c062c0b">pios_internal_adc_id</a>, &amp;<a class="code" href="group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#ga7d936d31e2f61867467fac3ccbd561ab">pios_internal_adc_driver</a>, internal_adc_id) &lt; 0)</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                <a class="code" href="group___p_i_o_s___h_a_l.html#gab9a9f4422da783012950ae6468130423">PIOS_HAL_CriticalError</a>(<a class="code" href="group___a_q32.html#gae4912a499d71db827918d7908055ce05">PIOS_LED_ALARM</a>, <a class="code" href="pios__hal_8h.html#aafe5055d05a85237ff35d915dff9a53bad02483414ee968bb2cf98d0e0d65f2a8">PIOS_HAL_PANIC_ADC</a>);</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        <span class="comment">// Enable battery monitor module.</span></div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        ModuleSettingsData modulesettings;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        ModuleSettingsGet(&amp;modulesettings);</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        modulesettings.AdminState[MODULESETTINGS_ADMINSTATE_BATTERY] = MODULESETTINGS_ADMINSTATE_ENABLED;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        ModuleSettingsSet(&amp;modulesettings);</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <span class="comment">// Set voltage/current calibration values, if the current settings are UAVO defaults.</span></div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        FlightBatterySettingsInitialize();</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        FlightBatterySettingsData batterysettings;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        FlightBatterySettingsGet(&amp;batterysettings);</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="keywordflow">if</span>(batterysettings.SensorCalibrationFactor[FLIGHTBATTERYSETTINGS_SENSORCALIBRATIONFACTOR_CURRENT] == (<span class="keywordtype">float</span>)36.6)</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                batterysettings.SensorCalibrationFactor[FLIGHTBATTERYSETTINGS_SENSORCALIBRATIONFACTOR_CURRENT] = (float)DTFC_CURRENT_CALIBRATION_VALUE;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <span class="keywordflow">if</span>(batterysettings.SensorCalibrationFactor[FLIGHTBATTERYSETTINGS_SENSORCALIBRATIONFACTOR_VOLTAGE] == (<span class="keywordtype">float</span>)63.69)</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                batterysettings.SensorCalibrationFactor[FLIGHTBATTERYSETTINGS_SENSORCALIBRATIONFACTOR_VOLTAGE] = (float)DTFC_VOLTAGE_CALIBRATION_VALUE;</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        FlightBatterySettingsSet(&amp;batterysettings);</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_ADC */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        <a class="code" href="group___p_i_o_s___w_d_g.html#ga49f0e0259a9db3551d437e5d74fd48a1">PIOS_WDG_Clear</a>();</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_l_a_y.html#gacde17b263c115e410008da1357dd4ff8">PIOS_DELAY_WaitmS</a>(200);</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        <a class="code" href="group___p_i_o_s___w_d_g.html#ga49f0e0259a9db3551d437e5d74fd48a1">PIOS_WDG_Clear</a>();</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_MPU)</span></div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="preprocessor"></span>        <a class="code" href="group___p_i_o_s___m_p_u.html#ga8d1629885182d00fe0a521d98b48e76f">pios_mpu_dev_t</a> mpu_dev = NULL;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___m_p_u.html#ga7d62c583654ef78fcb792fad417c2be0">PIOS_MPU_SPI_Init</a>(&amp;mpu_dev, pios_spi_gyro_id, 0, &amp;<a class="code" href="structpios__mpu__cfg.html">pios_mpu_cfg</a>) != 0)</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                <a class="code" href="group___p_i_o_s___h_a_l.html#gab9a9f4422da783012950ae6468130423">PIOS_HAL_CriticalError</a>(<a class="code" href="group___a_q32.html#gae4912a499d71db827918d7908055ce05">PIOS_LED_ALARM</a>, <a class="code" href="pios__hal_8h.html#aafe5055d05a85237ff35d915dff9a53bad597a3b4fd20023d634e773c66207c22">PIOS_HAL_PANIC_IMU</a>);</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        HwDtfcGyroRangeOptions hw_gyro_range;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        HwDtfcGyroRangeGet(&amp;hw_gyro_range);</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <span class="keywordflow">switch</span>(hw_gyro_range) {</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                <span class="keywordflow">case</span> HWDTFC_GYRORANGE_250:</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                        <a class="code" href="group___p_i_o_s___m_p_u.html#ga6a0c7b604f7ecd28f8e39dc6684d4a52">PIOS_MPU_SetGyroRange</a>(<a class="code" href="group___p_i_o_s___m_p_u.html#ggadabcc04ab28fdab6eb2e43278d4446c4a3ce25733bbf72823d515d55ea0d9a185">PIOS_MPU_SCALE_250_DEG</a>);</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                <span class="keywordflow">case</span> HWDTFC_GYRORANGE_500:</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                        <a class="code" href="group___p_i_o_s___m_p_u.html#ga6a0c7b604f7ecd28f8e39dc6684d4a52">PIOS_MPU_SetGyroRange</a>(<a class="code" href="group___p_i_o_s___m_p_u.html#ggadabcc04ab28fdab6eb2e43278d4446c4adac7994bd3906154df7fc1c40a92bf94">PIOS_MPU_SCALE_500_DEG</a>);</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                <span class="keywordflow">case</span> HWDTFC_GYRORANGE_1000:</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                        <a class="code" href="group___p_i_o_s___m_p_u.html#ga6a0c7b604f7ecd28f8e39dc6684d4a52">PIOS_MPU_SetGyroRange</a>(<a class="code" href="group___p_i_o_s___m_p_u.html#ggadabcc04ab28fdab6eb2e43278d4446c4a1c4355c1120518122bd75101ecc5b0ef">PIOS_MPU_SCALE_1000_DEG</a>);</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                <span class="keywordflow">case</span> HWDTFC_GYRORANGE_2000:</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                        <a class="code" href="group___p_i_o_s___m_p_u.html#ga6a0c7b604f7ecd28f8e39dc6684d4a52">PIOS_MPU_SetGyroRange</a>(<a class="code" href="group___p_i_o_s___m_p_u.html#ggadabcc04ab28fdab6eb2e43278d4446c4adbacd2c3435e3329126e9fc2fc385e26">PIOS_MPU_SCALE_2000_DEG</a>);</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        }</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        HwDtfcAccelRangeOptions hw_accel_range;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        HwDtfcAccelRangeGet(&amp;hw_accel_range);</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <span class="keywordflow">switch</span>(hw_accel_range) {</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                <span class="keywordflow">case</span> HWDTFC_ACCELRANGE_2G:</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                        <a class="code" href="group___p_i_o_s___m_p_u.html#gae520bc3aa72e1e76215c954f28046d7c">PIOS_MPU_SetAccelRange</a>(<a class="code" href="group___p_i_o_s___m_p_u.html#gga16b33104a3113b41ef7f3051ac270c98a112af623ab310cc201404d88f6850eaf">PIOS_MPU_SCALE_2G</a>);</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                <span class="keywordflow">case</span> HWDTFC_ACCELRANGE_4G:</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                        <a class="code" href="group___p_i_o_s___m_p_u.html#gae520bc3aa72e1e76215c954f28046d7c">PIOS_MPU_SetAccelRange</a>(<a class="code" href="group___p_i_o_s___m_p_u.html#gga16b33104a3113b41ef7f3051ac270c98a93d943623f2a02f84838691a20789d68">PIOS_MPU_SCALE_4G</a>);</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                <span class="keywordflow">case</span> HWDTFC_ACCELRANGE_8G:</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                        <a class="code" href="group___p_i_o_s___m_p_u.html#gae520bc3aa72e1e76215c954f28046d7c">PIOS_MPU_SetAccelRange</a>(<a class="code" href="group___p_i_o_s___m_p_u.html#gga16b33104a3113b41ef7f3051ac270c98a564e1ecd68f1cf5e6911e23c98fef09c">PIOS_MPU_SCALE_8G</a>);</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                <span class="keywordflow">case</span> HWDTFC_ACCELRANGE_16G:</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                        <a class="code" href="group___p_i_o_s___m_p_u.html#gae520bc3aa72e1e76215c954f28046d7c">PIOS_MPU_SetAccelRange</a>(<a class="code" href="group___p_i_o_s___m_p_u.html#gga16b33104a3113b41ef7f3051ac270c98aeec5a8313f5c1e8da2b7f0959519d920">PIOS_MPU_SCALE_16G</a>);</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        }</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <span class="comment">// the filter has to be set before rate else divisor calculation will fail</span></div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        HwDtfcICM20608G_GyroLPFOptions hw_mpu_gyro_dlpf;</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        HwDtfcICM20608G_GyroLPFGet(&amp;hw_mpu_gyro_dlpf);</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        uint16_t gyro_bandwidth =</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                (hw_mpu_gyro_dlpf == HWDTFC_ICM20608G_GYROLPF_176) ? 176 :</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                (hw_mpu_gyro_dlpf == HWDTFC_ICM20608G_GYROLPF_92)  ?  92 :</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                (hw_mpu_gyro_dlpf == HWDTFC_ICM20608G_GYROLPF_41)  ?  41 :</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                (hw_mpu_gyro_dlpf == HWDTFC_ICM20608G_GYROLPF_20)  ?  20 :</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                (hw_mpu_gyro_dlpf == HWDTFC_ICM20608G_GYROLPF_10)  ?  10 :</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                (hw_mpu_gyro_dlpf == HWDTFC_ICM20608G_GYROLPF_5)   ?   5 :</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                176;</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <a class="code" href="group___p_i_o_s___m_p_u.html#ga68362058bd311562a3d1808ec0463991">PIOS_MPU_SetGyroBandwidth</a>(gyro_bandwidth);</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        HwDtfcICM20608G_AccelLPFOptions hw_mpu_accel_dlpf;</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        HwDtfcICM20608G_AccelLPFGet(&amp;hw_mpu_accel_dlpf);</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        uint16_t acc_bandwidth =</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;                (hw_mpu_accel_dlpf = HWDTFC_ICM20608G_ACCELLPF_218) ? 218 :</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                (hw_mpu_accel_dlpf = HWDTFC_ICM20608G_ACCELLPF_99)  ?  99 :</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;                (hw_mpu_accel_dlpf = HWDTFC_ICM20608G_ACCELLPF_45)  ?  45 :</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;                (hw_mpu_accel_dlpf = HWDTFC_ICM20608G_ACCELLPF_21)  ?  21 :</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                (hw_mpu_accel_dlpf = HWDTFC_ICM20608G_ACCELLPF_10)  ?  10 :</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                (hw_mpu_accel_dlpf = HWDTFC_ICM20608G_ACCELLPF_5)   ?   5 :</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                218;</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        <a class="code" href="group___p_i_o_s___m_p_u.html#gaba6d239c9a3214357a05a30197f048e0">PIOS_MPU_SetAccelBandwidth</a>(acc_bandwidth);</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_MPU */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        <span class="comment">//I2C is slow, sensor init as well, reset watchdog to prevent reset here</span></div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        <a class="code" href="group___p_i_o_s___w_d_g.html#ga49f0e0259a9db3551d437e5d74fd48a1">PIOS_WDG_Clear</a>();</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="preprocessor"></span>        uintptr_t unused_adc;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#gad0f8b2886a98358b41966677d7c184fc">PIOS_INTERNAL_ADC_Init</a>(&amp;<a class="code" href="group___a_q32.html#gafb354658d0ba22815d8632d97c062c0b">pios_internal_adc_id</a>, &amp;internal_adc_cfg) &lt; 0)</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <a class="code" href="group___p_i_o_s___a_d_c.html#ga8a9178a11e2ccd209eed618a63eb552c">PIOS_ADC_Init</a>(&amp;unused_adc, &amp;<a class="code" href="group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#ga7d936d31e2f61867467fac3ccbd561ab">pios_internal_adc_driver</a>, <a class="code" href="group___a_q32.html#gafb354658d0ba22815d8632d97c062c0b">pios_internal_adc_id</a>);</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        <span class="comment">// Set voltage/current calibration values, if the current settings are UAVO defaults.</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        FlightBatterySettingsInitialize();</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        FlightBatterySettingsData batterysettings;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        FlightBatterySettingsGet(&amp;batterysettings);</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <span class="keywordflow">if</span>(batterysettings.SensorCalibrationFactor[FLIGHTBATTERYSETTINGS_SENSORCALIBRATIONFACTOR_CURRENT] == (<span class="keywordtype">float</span>)36.6)</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                batterysettings.SensorCalibrationFactor[FLIGHTBATTERYSETTINGS_SENSORCALIBRATIONFACTOR_CURRENT] = (float)DTFC_CURRENT_CALIBRATION_VALUE;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <span class="keywordflow">if</span>(batterysettings.SensorCalibrationFactor[FLIGHTBATTERYSETTINGS_SENSORCALIBRATIONFACTOR_VOLTAGE] == (<span class="keywordtype">float</span>)63.69)</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                batterysettings.SensorCalibrationFactor[FLIGHTBATTERYSETTINGS_SENSORCALIBRATIONFACTOR_VOLTAGE] = (float)DTFC_VOLTAGE_CALIBRATION_VALUE;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        FlightBatterySettingsSet(&amp;batterysettings);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_ADC */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <a class="code" href="group___p_i_o_s___w_d_g.html#ga49f0e0259a9db3551d437e5d74fd48a1">PIOS_WDG_Clear</a>();</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_l_a_y.html#gacde17b263c115e410008da1357dd4ff8">PIOS_DELAY_WaitmS</a>(200);</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <a class="code" href="group___p_i_o_s___w_d_g.html#ga49f0e0259a9db3551d437e5d74fd48a1">PIOS_WDG_Clear</a>();</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_MPU)</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="preprocessor"></span>        <a class="code" href="group___p_i_o_s___m_p_u.html#ga8d1629885182d00fe0a521d98b48e76f">pios_mpu_dev_t</a> mpu_dev = NULL;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___m_p_u.html#ga7d62c583654ef78fcb792fad417c2be0">PIOS_MPU_SPI_Init</a>(&amp;mpu_dev, pios_spi_gyro_id, 0, &amp;<a class="code" href="structpios__mpu__cfg.html">pios_mpu_cfg</a>) != 0)</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                <a class="code" href="group___p_i_o_s___h_a_l.html#gab9a9f4422da783012950ae6468130423">PIOS_HAL_CriticalError</a>(<a class="code" href="group___a_q32.html#gae4912a499d71db827918d7908055ce05">PIOS_LED_ALARM</a>, <a class="code" href="pios__hal_8h.html#aafe5055d05a85237ff35d915dff9a53bad597a3b4fd20023d634e773c66207c22">PIOS_HAL_PANIC_IMU</a>);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        HwDtfcGyroRangeOptions hw_gyro_range;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        HwDtfcGyroRangeGet(&amp;hw_gyro_range);</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        <span class="keywordflow">switch</span>(hw_gyro_range) {</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                <span class="keywordflow">case</span> HWDTFC_GYRORANGE_250:</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                        <a class="code" href="group___p_i_o_s___m_p_u.html#ga6a0c7b604f7ecd28f8e39dc6684d4a52">PIOS_MPU_SetGyroRange</a>(<a class="code" href="group___p_i_o_s___m_p_u.html#ggadabcc04ab28fdab6eb2e43278d4446c4a3ce25733bbf72823d515d55ea0d9a185">PIOS_MPU_SCALE_250_DEG</a>);</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                <span class="keywordflow">case</span> HWDTFC_GYRORANGE_500:</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                        <a class="code" href="group___p_i_o_s___m_p_u.html#ga6a0c7b604f7ecd28f8e39dc6684d4a52">PIOS_MPU_SetGyroRange</a>(<a class="code" href="group___p_i_o_s___m_p_u.html#ggadabcc04ab28fdab6eb2e43278d4446c4adac7994bd3906154df7fc1c40a92bf94">PIOS_MPU_SCALE_500_DEG</a>);</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                <span class="keywordflow">case</span> HWDTFC_GYRORANGE_1000:</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                        <a class="code" href="group___p_i_o_s___m_p_u.html#ga6a0c7b604f7ecd28f8e39dc6684d4a52">PIOS_MPU_SetGyroRange</a>(<a class="code" href="group___p_i_o_s___m_p_u.html#ggadabcc04ab28fdab6eb2e43278d4446c4a1c4355c1120518122bd75101ecc5b0ef">PIOS_MPU_SCALE_1000_DEG</a>);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                <span class="keywordflow">case</span> HWDTFC_GYRORANGE_2000:</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                        <a class="code" href="group___p_i_o_s___m_p_u.html#ga6a0c7b604f7ecd28f8e39dc6684d4a52">PIOS_MPU_SetGyroRange</a>(<a class="code" href="group___p_i_o_s___m_p_u.html#ggadabcc04ab28fdab6eb2e43278d4446c4adbacd2c3435e3329126e9fc2fc385e26">PIOS_MPU_SCALE_2000_DEG</a>);</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        }</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        HwDtfcAccelRangeOptions hw_accel_range;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        HwDtfcAccelRangeGet(&amp;hw_accel_range);</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <span class="keywordflow">switch</span>(hw_accel_range) {</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                <span class="keywordflow">case</span> HWDTFC_ACCELRANGE_2G:</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                        <a class="code" href="group___p_i_o_s___m_p_u.html#gae520bc3aa72e1e76215c954f28046d7c">PIOS_MPU_SetAccelRange</a>(<a class="code" href="group___p_i_o_s___m_p_u.html#gga16b33104a3113b41ef7f3051ac270c98a112af623ab310cc201404d88f6850eaf">PIOS_MPU_SCALE_2G</a>);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                <span class="keywordflow">case</span> HWDTFC_ACCELRANGE_4G:</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                        <a class="code" href="group___p_i_o_s___m_p_u.html#gae520bc3aa72e1e76215c954f28046d7c">PIOS_MPU_SetAccelRange</a>(<a class="code" href="group___p_i_o_s___m_p_u.html#gga16b33104a3113b41ef7f3051ac270c98a93d943623f2a02f84838691a20789d68">PIOS_MPU_SCALE_4G</a>);</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                <span class="keywordflow">case</span> HWDTFC_ACCELRANGE_8G:</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                        <a class="code" href="group___p_i_o_s___m_p_u.html#gae520bc3aa72e1e76215c954f28046d7c">PIOS_MPU_SetAccelRange</a>(<a class="code" href="group___p_i_o_s___m_p_u.html#gga16b33104a3113b41ef7f3051ac270c98a564e1ecd68f1cf5e6911e23c98fef09c">PIOS_MPU_SCALE_8G</a>);</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                <span class="keywordflow">case</span> HWDTFC_ACCELRANGE_16G:</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                        <a class="code" href="group___p_i_o_s___m_p_u.html#gae520bc3aa72e1e76215c954f28046d7c">PIOS_MPU_SetAccelRange</a>(<a class="code" href="group___p_i_o_s___m_p_u.html#gga16b33104a3113b41ef7f3051ac270c98aeec5a8313f5c1e8da2b7f0959519d920">PIOS_MPU_SCALE_16G</a>);</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        }</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <span class="comment">// the filter has to be set before rate else divisor calculation will fail</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        HwDtfcICM20608G_GyroLPFOptions hw_mpu_gyro_dlpf;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        HwDtfcICM20608G_GyroLPFGet(&amp;hw_mpu_gyro_dlpf);</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        uint16_t gyro_bandwidth =</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;                (hw_mpu_gyro_dlpf == HWDTFC_ICM20608G_GYROLPF_176) ? 176 :</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                (hw_mpu_gyro_dlpf == HWDTFC_ICM20608G_GYROLPF_92)  ?  92 :</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                (hw_mpu_gyro_dlpf == HWDTFC_ICM20608G_GYROLPF_41)  ?  41 :</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                (hw_mpu_gyro_dlpf == HWDTFC_ICM20608G_GYROLPF_20)  ?  20 :</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                (hw_mpu_gyro_dlpf == HWDTFC_ICM20608G_GYROLPF_10)  ?  10 :</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                (hw_mpu_gyro_dlpf == HWDTFC_ICM20608G_GYROLPF_5)   ?   5 :</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                176;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <a class="code" href="group___p_i_o_s___m_p_u.html#ga68362058bd311562a3d1808ec0463991">PIOS_MPU_SetGyroBandwidth</a>(gyro_bandwidth);</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        HwDtfcICM20608G_AccelLPFOptions hw_mpu_accel_dlpf;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        HwDtfcICM20608G_AccelLPFGet(&amp;hw_mpu_accel_dlpf);</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        uint16_t acc_bandwidth =</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                (hw_mpu_accel_dlpf = HWDTFC_ICM20608G_ACCELLPF_218) ? 218 :</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                (hw_mpu_accel_dlpf = HWDTFC_ICM20608G_ACCELLPF_99)  ?  99 :</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                (hw_mpu_accel_dlpf = HWDTFC_ICM20608G_ACCELLPF_45)  ?  45 :</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                (hw_mpu_accel_dlpf = HWDTFC_ICM20608G_ACCELLPF_21)  ?  21 :</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                (hw_mpu_accel_dlpf = HWDTFC_ICM20608G_ACCELLPF_10)  ?  10 :</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                (hw_mpu_accel_dlpf = HWDTFC_ICM20608G_ACCELLPF_5)   ?   5 :</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                218;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        <a class="code" href="group___p_i_o_s___m_p_u.html#gaba6d239c9a3214357a05a30197f048e0">PIOS_MPU_SetAccelBandwidth</a>(acc_bandwidth);</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_MPU */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        <span class="comment">//I2C is slow, sensor init as well, reset watchdog to prevent reset here</span></div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        <a class="code" href="group___p_i_o_s___w_d_g.html#ga49f0e0259a9db3551d437e5d74fd48a1">PIOS_WDG_Clear</a>();</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        <span class="comment">//I2C is slow, sensor init as well, reset watchdog to prevent reset here</span></div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        <a class="code" href="group___p_i_o_s___w_d_g.html#ga49f0e0259a9db3551d437e5d74fd48a1">PIOS_WDG_Clear</a>();</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        <span class="comment">/* Make sure we have at least one telemetry link configured or else fail initialization */</span></div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(<a class="code" href="group___a_q32.html#ga513cc36d72b76de2fcb75ff233a79a4a">pios_com_telem_usb_id</a>);</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;}</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        <span class="comment">//I2C is slow, sensor init as well, reset watchdog to prevent reset here</span></div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        <a class="code" href="group___p_i_o_s___w_d_g.html#ga49f0e0259a9db3551d437e5d74fd48a1">PIOS_WDG_Clear</a>();</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        <span class="comment">/* Make sure we have at least one telemetry link configured or else fail initialization */</span></div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(<a class="code" href="group___a_q32.html#ga513cc36d72b76de2fcb75ff233a79a4a">pios_com_telem_usb_id</a>);</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;}</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;</div>
 <div class="ttc" id="group___p_i_o_s___m_p_u_html_gga16b33104a3113b41ef7f3051ac270c98a112af623ab310cc201404d88f6850eaf"><div class="ttname"><a href="group___p_i_o_s___m_p_u.html#gga16b33104a3113b41ef7f3051ac270c98a112af623ab310cc201404d88f6850eaf">PIOS_MPU_SCALE_2G</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__mpu_8h_source.html#l00120">pios_mpu.h:120</a></div></div>
 <div class="ttc" id="pios__flash__internal__priv_8h_html_a3d5cb37f9b8a2d915e2a51d0b9c9f587"><div class="ttname"><a href="pios__flash__internal__priv_8h.html#a3d5cb37f9b8a2d915e2a51d0b9c9f587">PIOS_Flash_Internal_Init</a></div><div class="ttdeci">int32_t PIOS_Flash_Internal_Init(uintptr_t *flash_id, const struct pios_flash_internal_cfg *cfg)</div></div>
 <div class="ttc" id="group___p_i_o_s___u_s_b___d_e_s_c_html_ga15a9a7a662d2bce8263b132b33753d75"><div class="ttname"><a href="group___p_i_o_s___u_s_b___d_e_s_c.html#ga15a9a7a662d2bce8263b132b33753d75">PIOS_USB_DESC_HID_CDC_Init</a></div><div class="ttdeci">int32_t PIOS_USB_DESC_HID_CDC_Init(void)</div><div class="ttdef"><b>Definition:</b> <a href="pios__usb__desc__hid__cdc_8c_source.html#l00249">pios_usb_desc_hid_cdc.c:249</a></div></div>
@@ -501,7 +494,6 @@ $(document).ready(function(){initNavTree('dtfc_2fw_2pios__board_8c_source.html',
 <div class="ttc" id="group___p_i_o_s___l_e_d_html_ga69b0a2fb77d18f0326b1fe0cee3a987d"><div class="ttname"><a href="group___p_i_o_s___l_e_d.html#ga69b0a2fb77d18f0326b1fe0cee3a987d">PIOS_ANNUNC_Init</a></div><div class="ttdeci">int32_t PIOS_ANNUNC_Init(const struct pios_annunc_cfg *cfg)</div></div>
 <div class="ttc" id="group___d_t_fc_html_gae8998ae2740c83f160a18fd0d447c3d9"><div class="ttname"><a href="group___d_t_fc.html#gae8998ae2740c83f160a18fd0d447c3d9">tim_1_cfg</a></div><div class="ttdeci">static const struct pios_tim_clock_cfg tim_1_cfg</div><div class="ttdef"><b>Definition:</b> <a href="dtfc_2board-info_2board__hw__defs_8c_source.html#l00483">board_hw_defs.c:483</a></div></div>
 <div class="ttc" id="group___p_i_o_s___r_t_c_html_ga0edcdea74daf967c3ebbf09d14f21f95"><div class="ttname"><a href="group___p_i_o_s___r_t_c.html#ga0edcdea74daf967c3ebbf09d14f21f95">PIOS_RTC_Init</a></div><div class="ttdeci">void PIOS_RTC_Init(const struct pios_rtc_cfg *cfg)</div></div>
-<div class="ttc" id="pios__hal_8h_html_aafe5055d05a85237ff35d915dff9a53bad02483414ee968bb2cf98d0e0d65f2a8"><div class="ttname"><a href="pios__hal_8h.html#aafe5055d05a85237ff35d915dff9a53bad02483414ee968bb2cf98d0e0d65f2a8">PIOS_HAL_PANIC_ADC</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__hal_8h_source.html#l00054">pios_hal.h:54</a></div></div>
 <div class="ttc" id="group___p_i_o_s___u_s_b___d_e_s_c_html_ga92ea05b354edae76dd1315a1e389d506"><div class="ttname"><a href="group___p_i_o_s___u_s_b___d_e_s_c.html#ga92ea05b354edae76dd1315a1e389d506">PIOS_USB_DESC_HID_ONLY_Init</a></div><div class="ttdeci">int32_t PIOS_USB_DESC_HID_ONLY_Init(void)</div><div class="ttdef"><b>Definition:</b> <a href="pios__usb__desc__hid__only_8c_source.html#l00154">pios_usb_desc_hid_only.c:154</a></div></div>
 <div class="ttc" id="pios__hal_8h_html_a08801aba33501d19d79d2be3362e15dd"><div class="ttname"><a href="pios__hal_8h.html#a08801aba33501d19d79d2be3362e15dd">PIOS_HAL_ConfigureHID</a></div><div class="ttdeci">void PIOS_HAL_ConfigureHID(HwSharedUSB_HIDPortOptions port_type, uintptr_t usb_id, const struct pios_usb_hid_cfg *hid_cfg)</div></div>
 <div class="ttc" id="group___p_i_o_s___s_e_r_v_o_html_ga9d74027bc92b7db6f1b0dc049ba1625d"><div class="ttname"><a href="group___p_i_o_s___s_e_r_v_o.html#ga9d74027bc92b7db6f1b0dc049ba1625d">PIOS_Servo_Init</a></div><div class="ttdeci">int32_t PIOS_Servo_Init(const struct pios_servo_cfg *cfg)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_2pios__servo_8c_source.html#l00109">pios_servo.c:109</a></div></div>

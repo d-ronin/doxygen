@@ -296,7 +296,7 @@ var searchData=
   ['status_5fgpsfix_5ftimeonly',['STATUS_GPSFIX_TIMEONLY',['../group___g_p_s_module.html#gaad223f22332eeddf57f8064dd9e5460a',1,'UBX.h']]],
   ['status_5finvalid_5ffor_5fdisarmed',['STATUS_INVALID_FOR_DISARMED',['../group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a7cc80e4fae135676e49fdf9b30027032',1,'control.h']]],
   ['status_5fnormal',['STATUS_NORMAL',['../group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231ad98b0fc232d7ddd6d4d6402764bdf576',1,'control.h']]],
-  ['status_5frep',['status_rep',['../structbl__messages.html#a3f6a87005b20c9c30db38f3b193b7b43',1,'bl_messages::status_rep()'],['../group___common_f1.html#gga882a151e21837eb51e9459f7c213918fa5bb01c5e992ff81a80920c2cd7e1afbf',1,'Status_Rep():&#160;common.h'],['../bl__messages_8h.html#ac7ae1dab57a0b1e8186f27b021d4976b',1,'status_rep():&#160;bl_messages.h']]],
+  ['status_5frep',['status_rep',['../structbl__messages.html#a3f6a87005b20c9c30db38f3b193b7b43',1,'bl_messages::status_rep()'],['../bl__messages_8h.html#ac7ae1dab57a0b1e8186f27b021d4976b',1,'status_rep():&#160;bl_messages.h'],['../group___common_f1.html#gga882a151e21837eb51e9459f7c213918fa5bb01c5e992ff81a80920c2cd7e1afbf',1,'Status_Rep():&#160;common.h']]],
   ['status_5freq',['status_req',['../structbl__messages.html#a90bcb3a804f0b1dc88f12dcd41eacf7b',1,'bl_messages::status_req()'],['../bl__messages_8h.html#acc38b6455ded1e1b21a8fc6bce548326',1,'status_req():&#160;bl_messages.h']]],
   ['status_5frequest',['Status_Request',['../group___common_f1.html#gga882a151e21837eb51e9459f7c213918fab91702aa5a803e1be0897d2a8e53d715',1,'common.h']]],
   ['status_5fsafetytimeout',['STATUS_SAFETYTIMEOUT',['../group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a19b41f016f92677af9a541576339f01b',1,'control.h']]],

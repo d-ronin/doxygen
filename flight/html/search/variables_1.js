@@ -108,7 +108,7 @@ var searchData=
   ['attitudetaskhandle',['attitudeTaskHandle',['../group___attitude_module.html#ga482eb3758803d8b9cafef7a51060f34c',1,'attitude.c']]],
   ['aux',['aux',['../group___common_f1.html#gac9bbabaf2ae72f5c475d939d06b3d9d1',1,'op_dfu.c']]],
   ['aux_5fdata_5flen',['aux_data_len',['../structat__flash__header.html#a857824167cf3f2d5d8c827882030f94c',1,'at_flash_header']]],
-  ['available',['available',['../structcharosd__state__t.html#a631762c2d9c6930142875585bd6cd36b',1,'charosd_state_t::available()'],['../structpios__adc__driver.html#a35544674ddd8c465240663b2ac161642',1,'pios_adc_driver::available()'],['../structpios__com__driver.html#adca3cddb8dee4b725dbd7b4106b79a55',1,'pios_com_driver::available()']]],
+  ['available',['available',['../structcharosd__state__t.html#a631762c2d9c6930142875585bd6cd36b',1,'charosd_state_t::available()'],['../structpios__com__driver.html#adca3cddb8dee4b725dbd7b4106b79a55',1,'pios_com_driver::available()']]],
   ['averaging',['Averaging',['../structpios__hmc5983__cfg.html#a44df092d13754a8a2d4a0f987d76706a',1,'pios_hmc5983_cfg']]],
   ['avg_5fcurrent_5flpf_5ffor_5ftime',['avg_current_lpf_for_time',['../group___battery_module.html#ga8f8d2dcff8999112ce80a130faa8fa9b',1,'battery.c']]],
   ['axis',['axis',['../structlqg__state.html#aa9640f2bc3f085c05bb872afff4b6028',1,'lqg_state::axis()'],['../structsmoothcontrol__state__internal.html#ab3a8d4c9578cc5933312ea587ea6404f',1,'smoothcontrol_state_internal::axis()']]],

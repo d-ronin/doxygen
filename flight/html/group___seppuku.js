@@ -19,7 +19,6 @@ var group___seppuku =
     [ "MODULE_FLIGHTSTATS_BUILTIN", "group___seppuku.html#ga5852869ec30fde13e651b38fe3aa97c7", null ],
     [ "OSD_USE_MENU", "group___seppuku.html#ga2830c2da01675c3b650bcfd8e312b883", null ],
     [ "PIOS_ADC_MAX_OVERSAMPLING", "group___seppuku.html#ga208c18adb2e058348643425b79ae9e14", null ],
-    [ "PIOS_ADC_SUB_DRIVER_MAX_INSTANCES", "group___seppuku.html#ga2be0b313025f4a19c9ac7d5f05d94000", null ],
     [ "PIOS_ANNUNCIATOR_BUZZER", "group___seppuku.html#gafc809d2cdef7438cdb9abda6ea55f372", null ],
     [ "PIOS_COM_BRIDGE", "group___seppuku.html#ga331e928969979bce99d9037027d9853b", null ],
     [ "PIOS_COM_FRSKY_SENSOR_HUB", "group___seppuku.html#ga848fc544dbf2ea8c5b0536418f61e1c9", null ],

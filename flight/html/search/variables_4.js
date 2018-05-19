@@ -90,7 +90,6 @@ var searchData=
   ['dma_5fbuffer_5flength',['dma_buffer_length',['../group___p_i_o_s___v_i_d_e_o.html#ga095e1f461bcd8a043fa54fcb580db3e6',1,'pios_video_type_cfg']]],
   ['dma_5fchan',['dma_chan',['../group___p_i_o_s___w_s2811.html#ga43475e446fb0aed17fc1c281fe3e4567',1,'pios_ws2811_cfg']]],
   ['dma_5fchannel',['dma_channel',['../group___p_i_o_s.html#ga7cd06487b8c5a81f097bc9f491fc5e47',1,'pios_dac_cfg']]],
-  ['dma_5fchannels',['dma_channels',['../pios__dma_8c.html#a5f61e6f0af52160f6f5e483c857892a3',1,'pios_dma.c']]],
   ['dma_5firqn',['dma_irqn',['../group___p_i_o_s___w_s2811.html#gaa302baf7dc52cabb7d200afef5f3bcfb',1,'pios_ws2811_cfg']]],
   ['dma_5fstarted',['dma_started',['../group___p_i_o_s___d_m_a_shot.html#gadad327968a15c00934dd7d1be092c4bd',1,'servo_timer']]],
   ['dma_5fstream',['dma_stream',['../group___p_i_o_s.html#ga3500efa7d1039fa9637538f76a05d8b7',1,'pios_dac_cfg']]],
