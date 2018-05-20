@@ -1,5 +1,10 @@
 var NAVTREEINDEX8 =
 {
+"gpsparser_8h.html":[6,0,0,0,0,1,14,13],
+"gpsparser_8h_source.html":[6,0,0,0,0,1,14,13],
+"gpssnrwidget_8cpp.html":[6,0,0,0,0,1,14,14],
+"gpssnrwidget_8cpp_source.html":[6,0,0,0,0,1,14,14],
+"gpssnrwidget_8h.html":[6,0,0,0,0,1,14,15],
 "gpssnrwidget_8h_source.html":[6,0,0,0,0,1,14,15],
 "group___boards___aero_quad_plugin.html":[3,2,3],
 "group___boards___aero_quad_plugin.html#ga064fe5c8e7de70da7d91dfc8a5e9edcf":[3,2,3,1,11],
@@ -244,10 +249,5 @@ var NAVTREEINDEX8 =
 "group___boards___tau_labs_plugin.html#ga2c9dca8af81dbafd9e93ea73e0d0b19f":[3,2,10,3,7],
 "group___boards___tau_labs_plugin.html#ga2c9dca8af81dbafd9e93ea73e0d0b19f":[3,2,10,34],
 "group___boards___tau_labs_plugin.html#ga2dddf503eedf520d420ba3810738e43e":[3,2,10,1,8],
-"group___boards___tau_labs_plugin.html#ga2dddf503eedf520d420ba3810738e43e":[3,2,10,19],
-"group___boards___tau_labs_plugin.html#ga2fbb5490338e52f79ca75d999ece07a4":[3,2,10,3,4],
-"group___boards___tau_labs_plugin.html#ga2fbb5490338e52f79ca75d999ece07a4":[3,2,10,16],
-"group___boards___tau_labs_plugin.html#ga3fee90fc0fc1207f830244a53c82e71b":[3,2,10,1,10],
-"group___boards___tau_labs_plugin.html#ga3fee90fc0fc1207f830244a53c82e71b":[3,2,10,24],
-"group___boards___tau_labs_plugin.html#ga452e479c3ed41eaa4cf5c3cb88d73391":[3,2,10,3,3]
+"group___boards___tau_labs_plugin.html#ga2dddf503eedf520d420ba3810738e43e":[3,2,10,19]
 };

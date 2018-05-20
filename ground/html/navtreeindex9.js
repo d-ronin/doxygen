@@ -1,5 +1,10 @@
 var NAVTREEINDEX9 =
 {
+"group___boards___tau_labs_plugin.html#ga2fbb5490338e52f79ca75d999ece07a4":[3,2,10,3,4],
+"group___boards___tau_labs_plugin.html#ga2fbb5490338e52f79ca75d999ece07a4":[3,2,10,16],
+"group___boards___tau_labs_plugin.html#ga3fee90fc0fc1207f830244a53c82e71b":[3,2,10,1,10],
+"group___boards___tau_labs_plugin.html#ga3fee90fc0fc1207f830244a53c82e71b":[3,2,10,24],
+"group___boards___tau_labs_plugin.html#ga452e479c3ed41eaa4cf5c3cb88d73391":[3,2,10,3,3],
 "group___boards___tau_labs_plugin.html#ga452e479c3ed41eaa4cf5c3cb88d73391":[3,2,10,11],
 "group___boards___tau_labs_plugin.html#ga4ab987f3509f712a5fcd81b5791a882f":[3,2,10,1,4],
 "group___boards___tau_labs_plugin.html#ga4ab987f3509f712a5fcd81b5791a882f":[3,2,10,10],
@@ -241,13 +246,8 @@ var NAVTREEINDEX9 =
 "group___config.html#gaf2fd3f93705d124c2a6c660edf425568":[3,2,12,0,9],
 "group___config.html#gaf2fd3f93705d124c2a6c660edf425568":[3,2,12,7],
 "group___config_plugin.html":[3,2,11],
-"group___config_plugin.html#ga00f0ef17d7a211c8cfa37feb02cc032c":[3,2,11,37,6],
-"group___config_plugin.html#ga00f0ef17d7a211c8cfa37feb02cc032c":[3,2,11,163],
+"group___config_plugin.html#ga00f0ef17d7a211c8cfa37feb02cc032c":[3,2,11,38,6],
+"group___config_plugin.html#ga00f0ef17d7a211c8cfa37feb02cc032c":[3,2,11,167],
 "group___config_plugin.html#ga00f7ee1317e4c7b92b8c60a5f513698d":[5,0,51,6],
-"group___config_plugin.html#ga00f7ee1317e4c7b92b8c60a5f513698d":[3,2,11,122],
-"group___config_plugin.html#ga01349ac34ae06409bc63d4d75fc7b557":[3,2,11,11,3],
-"group___config_plugin.html#ga01349ac34ae06409bc63d4d75fc7b557":[3,2,11,282],
-"group___config_plugin.html#ga0212bd7a414f18e297eef0ab1cbf04ad":[3,2,11,33,4],
-"group___config_plugin.html#ga0212bd7a414f18e297eef0ab1cbf04ad":[3,2,11,220],
-"group___config_plugin.html#ga02387dc8a031d4e249d535eb1602fc59":[3,2,11,11,17]
+"group___config_plugin.html#ga00f7ee1317e4c7b92b8c60a5f513698d":[3,2,11,124]
 };

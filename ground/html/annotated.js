@@ -73,6 +73,7 @@ var annotated =
     [ "ConfigOsdWidget", "class_config_osd_widget.html", "class_config_osd_widget" ],
     [ "ConfigOutputWidget", "class_config_output_widget.html", "class_config_output_widget" ],
     [ "ConfigPlugin", "class_config_plugin.html", "class_config_plugin" ],
+    [ "ConfigRadioWidget", "class_config_radio_widget.html", "class_config_radio_widget" ],
     [ "ConfigStabilizationWidget", "class_config_stabilization_widget.html", "class_config_stabilization_widget" ],
     [ "ConfigTaskWidget", "class_config_task_widget.html", "class_config_task_widget" ],
     [ "ConfigTxPIDWidget", "class_config_tx_p_i_d_widget.html", "class_config_tx_p_i_d_widget" ],

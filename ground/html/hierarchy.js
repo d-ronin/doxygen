@@ -663,6 +663,7 @@ var hierarchy =
         [ "ConfigModuleWidget", "class_config_module_widget.html", null ],
         [ "ConfigOsdWidget", "class_config_osd_widget.html", null ],
         [ "ConfigOutputWidget", "class_config_output_widget.html", null ],
+        [ "ConfigRadioWidget", "class_config_radio_widget.html", null ],
         [ "ConfigStabilizationWidget", "class_config_stabilization_widget.html", null ],
         [ "ConfigTxPIDWidget", "class_config_tx_p_i_d_widget.html", null ],
         [ "ConfigVehicleTypeWidget", "class_config_vehicle_type_widget.html", null ],

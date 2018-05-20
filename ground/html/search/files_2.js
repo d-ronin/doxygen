@@ -47,6 +47,8 @@ var searchData=
   ['configoutputwidget_2eh',['configoutputwidget.h',['../configoutputwidget_8h.html',1,'']]],
   ['configplugin_2ecpp',['configplugin.cpp',['../configplugin_8cpp.html',1,'']]],
   ['configplugin_2eh',['configplugin.h',['../configplugin_8h.html',1,'']]],
+  ['configradiowidget_2ecpp',['configradiowidget.cpp',['../configradiowidget_8cpp.html',1,'']]],
+  ['configradiowidget_2eh',['configradiowidget.h',['../configradiowidget_8h.html',1,'']]],
   ['configstabilizationwidget_2ecpp',['configstabilizationwidget.cpp',['../configstabilizationwidget_8cpp.html',1,'']]],
   ['configstabilizationwidget_2eh',['configstabilizationwidget.h',['../configstabilizationwidget_8h.html',1,'']]],
   ['configtaskwidget_2ecpp',['configtaskwidget.cpp',['../configtaskwidget_8cpp.html',1,'']]],

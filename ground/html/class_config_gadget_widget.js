@@ -11,7 +11,8 @@ var class_config_gadget_widget =
       [ "camerastabilization", "group___config_plugin.html#gga63fe84e8399ffe3db8ffa9c83b109c66afb489ec55c65ac005cbe0319bab20e11", null ],
       [ "txpid", "group___config_plugin.html#gga63fe84e8399ffe3db8ffa9c83b109c66a0926ebfc1e048a25fbe8816714dcb0c8", null ],
       [ "autotune", "group___config_plugin.html#gga63fe84e8399ffe3db8ffa9c83b109c66a446519617d79946d8c73fedbaf8b4e60", null ],
-      [ "osd", "group___config_plugin.html#gga63fe84e8399ffe3db8ffa9c83b109c66a88682e4baafa6941f37810aa606a3561", null ]
+      [ "osd", "group___config_plugin.html#gga63fe84e8399ffe3db8ffa9c83b109c66a88682e4baafa6941f37810aa606a3561", null ],
+      [ "radio", "group___config_plugin.html#gga63fe84e8399ffe3db8ffa9c83b109c66a93683b32dfbd1e824deecb6c6f4d3189", null ]
     ] ],
     [ "ConfigGadgetWidget", "group___config_plugin.html#ga5c4b23a3eaa7f779c326706cd09f07fc", null ],
     [ "~ConfigGadgetWidget", "group___config_plugin.html#gaeafab35f30d35ed548cda276953b8ad5", null ],

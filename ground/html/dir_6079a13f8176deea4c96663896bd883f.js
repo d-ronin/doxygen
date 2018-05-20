@@ -35,6 +35,8 @@ var dir_6079a13f8176deea4c96663896bd883f =
     [ "configoutputwidget.h", "configoutputwidget_8h.html", null ],
     [ "configplugin.cpp", "configplugin_8cpp.html", null ],
     [ "configplugin.h", "configplugin_8h.html", null ],
+    [ "configradiowidget.cpp", "configradiowidget_8cpp.html", null ],
+    [ "configradiowidget.h", "configradiowidget_8h.html", null ],
     [ "configstabilizationwidget.cpp", "configstabilizationwidget_8cpp.html", null ],
     [ "configstabilizationwidget.h", "configstabilizationwidget_8h.html", null ],
     [ "configtxpidwidget.cpp", "configtxpidwidget_8cpp.html", null ],

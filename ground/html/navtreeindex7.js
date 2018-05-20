@@ -1,5 +1,10 @@
 var NAVTREEINDEX7 =
 {
+"emptygadget_8h_source.html":[6,0,0,0,0,1,12,1],
+"emptygadgetfactory_8cpp.html":[6,0,0,0,0,1,12,2],
+"emptygadgetfactory_8cpp_source.html":[6,0,0,0,0,1,12,2],
+"emptygadgetfactory_8h.html":[6,0,0,0,0,1,12,3],
+"emptygadgetfactory_8h_source.html":[6,0,0,0,0,1,12,3],
 "emptygadgetwidget_8cpp.html":[6,0,0,0,0,1,12,4],
 "emptygadgetwidget_8cpp_source.html":[6,0,0,0,0,1,12,4],
 "emptygadgetwidget_8h.html":[6,0,0,0,0,1,12,5],
@@ -12,10 +17,10 @@ var NAVTREEINDEX7 =
 "eventfilteringmainwindow_8cpp_source.html":[6,0,0,0,0,1,9,21],
 "eventfilteringmainwindow_8h.html":[6,0,0,0,0,1,9,22],
 "eventfilteringmainwindow_8h_source.html":[6,0,0,0,0,1,9,22],
-"expocurve_8cpp.html":[6,0,0,0,0,1,8,43],
-"expocurve_8cpp_source.html":[6,0,0,0,0,1,8,43],
-"expocurve_8h.html":[6,0,0,0,0,1,8,44],
-"expocurve_8h_source.html":[6,0,0,0,0,1,8,44],
+"expocurve_8cpp.html":[6,0,0,0,0,1,8,45],
+"expocurve_8cpp_source.html":[6,0,0,0,0,1,8,45],
+"expocurve_8h.html":[6,0,0,0,0,1,8,46],
+"expocurve_8h_source.html":[6,0,0,0,0,1,8,46],
 "extensionsystem__global_8h.html":[6,0,0,0,0,0,1,1],
 "extensionsystem__global_8h_source.html":[6,0,0,0,0,0,1,1],
 "fieldtreeitem_8cpp.html":[6,0,0,0,0,1,34,4],
@@ -244,10 +249,5 @@ var NAVTREEINDEX7 =
 "gpsitem_8h.html":[6,0,0,0,0,0,4,2,3],
 "gpsitem_8h_source.html":[6,0,0,0,0,0,4,2,3],
 "gpsparser_8cpp.html":[6,0,0,0,0,1,14,12],
-"gpsparser_8cpp_source.html":[6,0,0,0,0,1,14,12],
-"gpsparser_8h.html":[6,0,0,0,0,1,14,13],
-"gpsparser_8h_source.html":[6,0,0,0,0,1,14,13],
-"gpssnrwidget_8cpp.html":[6,0,0,0,0,1,14,14],
-"gpssnrwidget_8cpp_source.html":[6,0,0,0,0,1,14,14],
-"gpssnrwidget_8h.html":[6,0,0,0,0,1,14,15]
+"gpsparser_8cpp_source.html":[6,0,0,0,0,1,14,12]
 };

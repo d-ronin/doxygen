@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">61202b4</span>
+   &#160;<span id="projectnumber">bf94a29</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -183,6 +183,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config_plugin.html">ConfigPlugin</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config_radio_widget.html">ConfigRadioWidget</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config_stabilization_widget.html">ConfigStabilizationWidget</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config_tx_p_i_d_widget.html">ConfigTxPIDWidget</a></td></tr>
@@ -234,7 +236,8 @@ Enumerations</h2></td></tr>
 <br/>
 &#160;&#160;<a class="el" href="group___config_plugin.html#gga63fe84e8399ffe3db8ffa9c83b109c66a0926ebfc1e048a25fbe8816714dcb0c8">ConfigGadgetWidget::txpid</a>, 
 <a class="el" href="group___config_plugin.html#gga63fe84e8399ffe3db8ffa9c83b109c66a446519617d79946d8c73fedbaf8b4e60">ConfigGadgetWidget::autotune</a>, 
-<a class="el" href="group___config_plugin.html#gga63fe84e8399ffe3db8ffa9c83b109c66a88682e4baafa6941f37810aa606a3561">ConfigGadgetWidget::osd</a>
+<a class="el" href="group___config_plugin.html#gga63fe84e8399ffe3db8ffa9c83b109c66a88682e4baafa6941f37810aa606a3561">ConfigGadgetWidget::osd</a>, 
+<a class="el" href="group___config_plugin.html#gga63fe84e8399ffe3db8ffa9c83b109c66a93683b32dfbd1e824deecb6c6f4d3189">ConfigGadgetWidget::radio</a>
 <br/>
  }</td></tr>
 <tr class="separator:ga63fe84e8399ffe3db8ffa9c83b109c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -503,6 +506,14 @@ Functions</h2></td></tr>
 <tr class="separator:ga583ddecf4689ec9d73a39ac36d47beb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8c6d4684111bd4a10d4940a803faf852"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___config_plugin.html#ga8c6d4684111bd4a10d4940a803faf852">ConfigOutputWidget::enableControls</a> (bool enable)</td></tr>
 <tr class="separator:ga8c6d4684111bd4a10d4940a803faf852"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga12f5f1d93665bbd2221620b8d5f6a411"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___config_plugin.html#ga12f5f1d93665bbd2221620b8d5f6a411">ConfigRadioWidget::ConfigRadioWidget</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="separator:ga12f5f1d93665bbd2221620b8d5f6a411"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaed35b03f61cd83f7e81da138b610b6ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___config_plugin.html#gaed35b03f61cd83f7e81da138b610b6ab">ConfigRadioWidget::~ConfigRadioWidget</a> ()</td></tr>
+<tr class="separator:gaed35b03f61cd83f7e81da138b610b6ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga948a4bb61cb7be74a6e59551798c193b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___config_plugin.html#ga948a4bb61cb7be74a6e59551798c193b">ConfigRadioWidget::resizeEvent</a> (QResizeEvent *event)</td></tr>
+<tr class="separator:ga948a4bb61cb7be74a6e59551798c193b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf3df2153e575f9699b5a6a4d83e151ff"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___config_plugin.html#gaf3df2153e575f9699b5a6a4d83e151ff">ConfigRadioWidget::enableControls</a> (bool enable)</td></tr>
+<tr class="separator:gaf3df2153e575f9699b5a6a4d83e151ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga50fb38f02cd96b756038eb4ac53551ac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___config_plugin.html#ga50fb38f02cd96b756038eb4ac53551ac">ConfigStabilizationWidget::ConfigStabilizationWidget</a> (QWidget *parent=nullptr)</td></tr>
 <tr class="separator:ga50fb38f02cd96b756038eb4ac53551ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaeca64ce80c3529dc40b452e3bcef2ffd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___config_plugin.html#gaeca64ce80c3529dc40b452e3bcef2ffd">ConfigStabilizationWidget::~ConfigStabilizationWidget</a> ()</td></tr>
@@ -1188,6 +1199,8 @@ SixPointInConstFieldCal</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="gga63fe84e8399ffe3db8ffa9c83b109c66a88682e4baafa6941f37810aa606a3561"></a>osd</em>&#160;</td><td class="fielddoc">
 </td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga63fe84e8399ffe3db8ffa9c83b109c66a93683b32dfbd1e824deecb6c6f4d3189"></a>radio</em>&#160;</td><td class="fielddoc">
+</td></tr>
 </table>
 
 <p>Definition at line <a class="el" href="configgadgetwidget_8h_source.html#l00051">51</a> of file <a class="el" href="configgadgetwidget_8h_source.html">configgadgetwidget.h</a>.</p>
@@ -1521,7 +1534,7 @@ SixPointInConstFieldCal</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="configgadgetwidget_8cpp_source.html#l00357">357</a> of file <a class="el" href="configgadgetwidget_8cpp_source.html">configgadgetwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="configgadgetwidget_8cpp_source.html#l00376">376</a> of file <a class="el" href="configgadgetwidget_8cpp_source.html">configgadgetwidget.cpp</a>.</p>
 
 </div>
 </div>
@@ -1934,7 +1947,7 @@ SixPointInConstFieldCal</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="configgadgetwidget_8cpp_source.html#l00057">57</a> of file <a class="el" href="configgadgetwidget_8cpp_source.html">configgadgetwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="configgadgetwidget_8cpp_source.html#l00058">58</a> of file <a class="el" href="configgadgetwidget_8cpp_source.html">configgadgetwidget.cpp</a>.</p>
 
 </div>
 </div>
@@ -2065,6 +2078,24 @@ SixPointInConstFieldCal</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="configoutputwidget_8cpp_source.html#l00057">57</a> of file <a class="el" href="configoutputwidget_8cpp_source.html">configoutputwidget.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga12f5f1d93665bbd2221620b8d5f6a411"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ConfigRadioWidget::ConfigRadioWidget </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="configradiowidget_8cpp_source.html#l00035">35</a> of file <a class="el" href="configradiowidget_8cpp_source.html">configradiowidget.cpp</a>.</p>
 
 </div>
 </div>
@@ -2458,6 +2489,42 @@ SixPointInConstFieldCal</h2></td></tr>
 <p>Helper function: enables/disables the named comboboxes within supplied uiowner </p>
 
 <p>Definition at line <a class="el" href="vehicleconfig_8cpp_source.html#l00137">137</a> of file <a class="el" href="vehicleconfig_8cpp_source.html">vehicleconfig.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaf3df2153e575f9699b5a6a4d83e151ff"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a> ConfigRadioWidget::enableControls </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>SLOT function used the enable or disable the SAVE, UPLOAD and RELOAD buttons </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>set to true to enable the buttons or false to disable them </td></tr>
+    <tr><td class="paramname">field</td><td>name of the field to add </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="group___u_a_v_object_widget_utils.html#gaad59e4e96d1e4a59067aa44828ddaa3f">ConfigTaskWidget</a>.</p>
+
+<p>Definition at line <a class="el" href="configradiowidget_8cpp_source.html#l00068">68</a> of file <a class="el" href="configradiowidget_8cpp_source.html">configradiowidget.cpp</a>.</p>
 
 </div>
 </div>
@@ -3506,7 +3573,7 @@ SixPointInConstFieldCal</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="configgadgetwidget_8cpp_source.html#l00226">226</a> of file <a class="el" href="configgadgetwidget_8cpp_source.html">configgadgetwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="configgadgetwidget_8cpp_source.html#l00238">238</a> of file <a class="el" href="configgadgetwidget_8cpp_source.html">configgadgetwidget.cpp</a>.</p>
 
 </div>
 </div>
@@ -3733,6 +3800,32 @@ SixPointInConstFieldCal</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga948a4bb61cb7be74a6e59551798c193b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a> ConfigRadioWidget::resizeEvent </td>
+          <td>(</td>
+          <td class="paramtype">QResizeEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="configradiowidget_8cpp_source.html#l00063">63</a> of file <a class="el" href="configradiowidget_8cpp_source.html">configradiowidget.cpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ga6422c7d13c247e91f9f9f9bc1d5a8531"></a>
 <div class="memitem">
 <div class="memproto">
@@ -3807,7 +3900,7 @@ SixPointInConstFieldCal</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="configgadgetwidget_8cpp_source.html#l00251">251</a> of file <a class="el" href="configgadgetwidget_8cpp_source.html">configgadgetwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="configgadgetwidget_8cpp_source.html#l00263">263</a> of file <a class="el" href="configgadgetwidget_8cpp_source.html">configgadgetwidget.cpp</a>.</p>
 
 </div>
 </div>
@@ -4903,7 +4996,7 @@ SixPointInConstFieldCal</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="configgadgetwidget_8cpp_source.html#l00242">242</a> of file <a class="el" href="configgadgetwidget_8cpp_source.html">configgadgetwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="configgadgetwidget_8cpp_source.html#l00254">254</a> of file <a class="el" href="configgadgetwidget_8cpp_source.html">configgadgetwidget.cpp</a>.</p>
 
 </div>
 </div>
@@ -5363,7 +5456,7 @@ SixPointInConstFieldCal</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="configgadgetwidget_8cpp_source.html#l00237">237</a> of file <a class="el" href="configgadgetwidget_8cpp_source.html">configgadgetwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="configgadgetwidget_8cpp_source.html#l00249">249</a> of file <a class="el" href="configgadgetwidget_8cpp_source.html">configgadgetwidget.cpp</a>.</p>
 
 </div>
 </div>
@@ -5468,6 +5561,23 @@ SixPointInConstFieldCal</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="configoutputwidget_8cpp_source.html#l00155">155</a> of file <a class="el" href="configoutputwidget_8cpp_source.html">configoutputwidget.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaed35b03f61cd83f7e81da138b610b6ab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ConfigRadioWidget::~ConfigRadioWidget </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="configradiowidget_8cpp_source.html#l00059">59</a> of file <a class="el" href="configradiowidget_8cpp_source.html">configradiowidget.cpp</a>.</p>
 
 </div>
 </div>
@@ -5866,7 +5976,7 @@ SixPointInConstFieldCal</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="configgadgetwidget_8h_source.html#l00080">80</a> of file <a class="el" href="configgadgetwidget_8h_source.html">configgadgetwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="configgadgetwidget_8h_source.html#l00081">81</a> of file <a class="el" href="configgadgetwidget_8h_source.html">configgadgetwidget.h</a>.</p>
 
 </div>
 </div>
@@ -6750,7 +6860,7 @@ SixPointInConstFieldCal</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="configgadgetwidget_8cpp_source.html#l00077">77</a> of file <a class="el" href="configgadgetwidget_8cpp_source.html">configgadgetwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="configgadgetwidget_8cpp_source.html#l00078">78</a> of file <a class="el" href="configgadgetwidget_8cpp_source.html">configgadgetwidget.cpp</a>.</p>
 
 </div>
 </div>
@@ -7179,7 +7289,7 @@ SixPointInConstFieldCal</h2></td></tr>
 </div><div class="memdoc">
 <p>Remove and recreate the attitude widget to refresh board capabilities </p>
 
-<p>Definition at line <a class="el" href="configgadgetwidget_8cpp_source.html#l00277">277</a> of file <a class="el" href="configgadgetwidget_8cpp_source.html">configgadgetwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="configgadgetwidget_8cpp_source.html#l00289">289</a> of file <a class="el" href="configgadgetwidget_8cpp_source.html">configgadgetwidget.cpp</a>.</p>
 
 </div>
 </div>
@@ -7204,7 +7314,7 @@ SixPointInConstFieldCal</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="configgadgetwidget_8cpp_source.html#l00256">256</a> of file <a class="el" href="configgadgetwidget_8cpp_source.html">configgadgetwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="configgadgetwidget_8cpp_source.html#l00268">268</a> of file <a class="el" href="configgadgetwidget_8cpp_source.html">configgadgetwidget.cpp</a>.</p>
 
 </div>
 </div>
@@ -7729,7 +7839,7 @@ SixPointInConstFieldCal</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="configgadgetwidget_8cpp_source.html#l00362">362</a> of file <a class="el" href="configgadgetwidget_8cpp_source.html">configgadgetwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="configgadgetwidget_8cpp_source.html#l00381">381</a> of file <a class="el" href="configgadgetwidget_8cpp_source.html">configgadgetwidget.cpp</a>.</p>
 
 </div>
 </div>

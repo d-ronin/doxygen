@@ -32,6 +32,7 @@ var searchData=
   ['_7econfigmultirotorwidget',['~ConfigMultiRotorWidget',['../group___config_plugin.html#gac8ee6c628cb4f8f195395978f8f086bb',1,'ConfigMultiRotorWidget']]],
   ['_7econfigosdwidget',['~ConfigOsdWidget',['../group___config_plugin.html#gac65dd0179d3ebd376363447f7b1c8d6f',1,'ConfigOsdWidget']]],
   ['_7econfigoutputwidget',['~ConfigOutputWidget',['../group___config_plugin.html#ga583ddecf4689ec9d73a39ac36d47beb5',1,'ConfigOutputWidget']]],
+  ['_7econfigradiowidget',['~ConfigRadioWidget',['../group___config_plugin.html#gaed35b03f61cd83f7e81da138b610b6ab',1,'ConfigRadioWidget']]],
   ['_7econfigstabilizationwidget',['~ConfigStabilizationWidget',['../group___config_plugin.html#gaeca64ce80c3529dc40b452e3bcef2ffd',1,'ConfigStabilizationWidget']]],
   ['_7econfigtaskwidget',['~ConfigTaskWidget',['../group___u_a_v_object_widget_utils.html#ga40fc17c487f66c2cbcd9aa678c6f20dd',1,'ConfigTaskWidget']]],
   ['_7econfigtxpidwidget',['~ConfigTxPIDWidget',['../group___config_plugin.html#ga2c39980676875ea742391215e79d5262',1,'ConfigTxPIDWidget']]],

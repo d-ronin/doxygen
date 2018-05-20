@@ -28,6 +28,7 @@ var searchData=
   ['configosdwidget',['ConfigOsdWidget',['../class_config_osd_widget.html',1,'']]],
   ['configoutputwidget',['ConfigOutputWidget',['../class_config_output_widget.html',1,'']]],
   ['configplugin',['ConfigPlugin',['../class_config_plugin.html',1,'']]],
+  ['configradiowidget',['ConfigRadioWidget',['../class_config_radio_widget.html',1,'']]],
   ['configstabilizationwidget',['ConfigStabilizationWidget',['../class_config_stabilization_widget.html',1,'']]],
   ['configtaskwidget',['ConfigTaskWidget',['../class_config_task_widget.html',1,'']]],
   ['configtxpidwidget',['ConfigTxPIDWidget',['../class_config_tx_p_i_d_widget.html',1,'']]],
