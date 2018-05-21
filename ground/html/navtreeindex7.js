@@ -1,5 +1,7 @@
 var NAVTREEINDEX7 =
 {
+"emptygadget_8cpp_source.html":[6,0,0,0,0,1,12,0],
+"emptygadget_8h.html":[6,0,0,0,0,1,12,1],
 "emptygadget_8h_source.html":[6,0,0,0,0,1,12,1],
 "emptygadgetfactory_8cpp.html":[6,0,0,0,0,1,12,2],
 "emptygadgetfactory_8cpp_source.html":[6,0,0,0,0,1,12,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX7 =
 "gpsitem_8cpp.html":[6,0,0,0,0,0,4,2,2],
 "gpsitem_8cpp_source.html":[6,0,0,0,0,0,4,2,2],
 "gpsitem_8h.html":[6,0,0,0,0,0,4,2,3],
-"gpsitem_8h_source.html":[6,0,0,0,0,0,4,2,3],
-"gpsparser_8cpp.html":[6,0,0,0,0,1,14,12],
-"gpsparser_8cpp_source.html":[6,0,0,0,0,1,14,12]
+"gpsitem_8h_source.html":[6,0,0,0,0,0,4,2,3]
 };

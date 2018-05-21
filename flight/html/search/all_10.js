@@ -605,7 +605,7 @@ var searchData=
   ['pios_5fflashfs_5flogfs_2ec',['pios_flashfs_logfs.c',['../pios__flashfs__logfs_8c.html',1,'']]],
   ['pios_5fflashfs_5flogfs_5falloc',['PIOS_FLASHFS_Logfs_alloc',['../group___p_i_o_s___f_l_a_s_h_f_s.html#gab2b41f383c5315527fd9fe95d1c559ec',1,'pios_flashfs_logfs.c']]],
   ['pios_5fflashfs_5flogfs_5fdestroy',['PIOS_FLASHFS_Logfs_Destroy',['../group___p_i_o_s___f_l_a_s_h_f_s.html#ga2fdf3f16270fb9c7f85a4c7a9bfce2ce',1,'pios_flashfs_logfs.c']]],
-  ['pios_5fflashfs_5flogfs_5fdev_5fmagic',['PIOS_FLASHFS_LOGFS_DEV_MAGIC',['../group___p_i_o_s___f_l_a_s_h_f_s.html#gga27472bb2a0fbfb6302378ef138c6a41fa48f1badb0700a4f00d8da2af591f701b',1,'PIOS_FLASHFS_LOGFS_DEV_MAGIC():&#160;pios_flashfs_logfs.c'],['../group___p_i_o_s___f_l_a_s_h_f_s.html#ga27472bb2a0fbfb6302378ef138c6a41f',1,'pios_flashfs_logfs_dev_magic():&#160;pios_flashfs_logfs.c']]],
+  ['pios_5fflashfs_5flogfs_5fdev_5fmagic',['pios_flashfs_logfs_dev_magic',['../group___p_i_o_s___f_l_a_s_h_f_s.html#ga27472bb2a0fbfb6302378ef138c6a41f',1,'pios_flashfs_logfs_dev_magic():&#160;pios_flashfs_logfs.c'],['../group___p_i_o_s___f_l_a_s_h_f_s.html#gga27472bb2a0fbfb6302378ef138c6a41fa48f1badb0700a4f00d8da2af591f701b',1,'PIOS_FLASHFS_LOGFS_DEV_MAGIC():&#160;pios_flashfs_logfs.c']]],
   ['pios_5fflashfs_5flogfs_5ffree',['PIOS_FLASHFS_Logfs_free',['../group___p_i_o_s___f_l_a_s_h_f_s.html#gafe41fbee1b97112df85134f85f1568c2',1,'pios_flashfs_logfs.c']]],
   ['pios_5fflashfs_5flogfs_5finit',['PIOS_FLASHFS_Logfs_Init',['../group___p_i_o_s___f_l_a_s_h_f_s.html#gac15fb3840a3295f0f0b938c7421f2914',1,'pios_flashfs_logfs.c']]],
   ['pios_5fflashfs_5flogfs_5fpriv_2eh',['pios_flashfs_logfs_priv.h',['../pios__flashfs__logfs__priv_8h.html',1,'']]],

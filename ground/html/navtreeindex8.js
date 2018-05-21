@@ -1,5 +1,7 @@
 var NAVTREEINDEX8 =
 {
+"gpsparser_8cpp.html":[6,0,0,0,0,1,14,12],
+"gpsparser_8cpp_source.html":[6,0,0,0,0,1,14,12],
 "gpsparser_8h.html":[6,0,0,0,0,1,14,13],
 "gpsparser_8h_source.html":[6,0,0,0,0,1,14,13],
 "gpssnrwidget_8cpp.html":[6,0,0,0,0,1,14,14],
@@ -247,7 +249,5 @@ var NAVTREEINDEX8 =
 "group___boards___tau_labs_plugin.html#ga2af601f04033e6066f1612fcf0475ed9":[3,2,10,1,7],
 "group___boards___tau_labs_plugin.html#ga2af601f04033e6066f1612fcf0475ed9":[3,2,10,18],
 "group___boards___tau_labs_plugin.html#ga2c9dca8af81dbafd9e93ea73e0d0b19f":[3,2,10,3,7],
-"group___boards___tau_labs_plugin.html#ga2c9dca8af81dbafd9e93ea73e0d0b19f":[3,2,10,34],
-"group___boards___tau_labs_plugin.html#ga2dddf503eedf520d420ba3810738e43e":[3,2,10,1,8],
-"group___boards___tau_labs_plugin.html#ga2dddf503eedf520d420ba3810738e43e":[3,2,10,19]
+"group___boards___tau_labs_plugin.html#ga2c9dca8af81dbafd9e93ea73e0d0b19f":[3,2,10,34]
 };

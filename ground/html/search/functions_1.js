@@ -79,6 +79,8 @@ var searchData=
   ['armedchanged',['armedChanged',['../group___g_c_s_control_gadget_plugin.html#ga52d0c855f166eaa650aa7acda3bd55be',1,'GCSControlGadgetWidget']]],
   ['arrayfieldtreeitem',['ArrayFieldTreeItem',['../group___u_a_v_object_browser_plugin.html#ga09bbcc0a12be347de21cd3f8df5246b9',1,'ArrayFieldTreeItem::ArrayFieldTreeItem(const QList&lt; QVariant &gt; &amp;data, TreeItem *parent=nullptr)'],['../group___u_a_v_object_browser_plugin.html#ga82a070969fa16277c6ba464a9ba044f5',1,'ArrayFieldTreeItem::ArrayFieldTreeItem(const QVariant &amp;data, TreeItem *parent=nullptr)']]],
   ['asktoabort',['askToAbort',['../group___core_plugin.html#ga1648c527c920c77b7ba0c74881b5879a',1,'Core::UAVConfigInfo']]],
+  ['assigned',['assigned',['../classinput_channel_form.html#a1094b3b3b2389edfacd35acdc1cd217a',1,'inputChannelForm']]],
+  ['assignmentchanged',['assignmentChanged',['../classinput_channel_form.html#a3f3fb817f2a370f688db90199a390fbb',1,'inputChannelForm']]],
   ['authorsdialog',['AuthorsDialog',['../group___core_plugin.html#ga8135a04d18c6e023051614472f4e6f9a',1,'Core::Internal::AuthorsDialog']]],
   ['autoconnect',['autoConnect',['../group___core_plugin.html#ga5416b64c1586447c9969590a9bd2f0c2',1,'Core::Internal::GeneralSettings']]],
   ['autoloadwidgets',['autoLoadWidgets',['../group___u_a_v_object_widget_utils.html#ga945551d9d4d280fe2cd14bc2646d8fbf',1,'ConfigTaskWidget']]],

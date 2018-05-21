@@ -1,5 +1,7 @@
 var NAVTREEINDEX53 =
 {
+"welcomemode_8cpp.html":[6,0,0,0,0,1,42,1],
+"welcomemode_8cpp_source.html":[6,0,0,0,0,1,42,1],
 "welcomemode_8h.html":[6,0,0,0,0,1,42,2],
 "welcomemode_8h_source.html":[6,0,0,0,0,1,42,2],
 "welcomeplugin_8cpp.html":[6,0,0,0,0,1,42,3],

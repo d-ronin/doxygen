@@ -1,5 +1,8 @@
 var lqg_8h =
 [
+    [ "LQG_SOLVER_DONE", "lqg_8h.html#ga70896fcdf62c4cf1fd714721cc93bb2d", null ],
+    [ "LQG_SOLVER_FAILED", "lqg_8h.html#gae9d73ae5914b5983d9182df859f0ce60", null ],
+    [ "LQG_SOLVER_RUNNING", "lqg_8h.html#ga0967c0e5e007c8f249d3f41ffb861e82", null ],
     [ "lqg_t", "lqg_8h.html#gabddd39dfffa3ddf892e56c4957abe71e", null ],
     [ "lqr_t", "lqg_8h.html#ga24ec3d5cf383d82d4735d6efb729556e", null ],
     [ "rtkf_t", "lqg_8h.html#ga506bde267554d0f719127bceeeda98d0", null ],
@@ -8,15 +11,15 @@ var lqg_8h =
     [ "lqg_get_lqr", "lqg_8h.html#ga8af68f18f918749f0badcfe9c39aeaf1", null ],
     [ "lqg_get_rtkf", "lqg_8h.html#ga18c51a43685fb151a21bb055a4d3fcef", null ],
     [ "lqg_get_rtkf_state", "lqg_8h.html#ga502766f4c789280a257096ed8aff3c3b", null ],
-    [ "lqg_is_solved", "lqg_8h.html#ga49e1cb9d119c0af92c6a35839b00aed6", null ],
     [ "lqg_run_covariance", "lqg_8h.html#ga97e9b30062b984f6d99412200fa7f8f8", null ],
     [ "lqg_set_x0", "lqg_8h.html#ga536a61d891026a08fcc40c855d1e21a7", null ],
+    [ "lqg_solver_status", "lqg_8h.html#ga5c0136fd293ceb635b61ce26ad1aeb3d", null ],
     [ "lqr_create", "lqg_8h.html#gaaca0e35e387eceac2b60bc31d4a701cc", null ],
     [ "lqr_get_gains", "lqg_8h.html#ga38d510514079e13279aeb8231945d971", null ],
-    [ "lqr_is_solved", "lqg_8h.html#ga4de1a48d5eda65f9f4408c83a47ccb12", null ],
+    [ "lqr_solver_status", "lqg_8h.html#ga02c17d3367540fd2e889bbfc39643a29", null ],
     [ "lqr_stabilize_covariance", "lqg_8h.html#gafa8a4d4c5867f0c1079530e359dd9d82", null ],
     [ "lqr_update", "lqg_8h.html#ga5f925d10bdb69a95070c3cc12f1eee86", null ],
     [ "rtkf_create", "lqg_8h.html#ga7e9d482db29da35ebe8c2c78b7e58278", null ],
-    [ "rtkf_is_solved", "lqg_8h.html#gae8cceae24d23efcb4cb2a0ca4a854972", null ],
+    [ "rtkf_solver_status", "lqg_8h.html#ga6311454780279ed451788186deb7bbac", null ],
     [ "rtkf_stabilize_covariance", "lqg_8h.html#ga7782671ecc5f2f9656c3ef3c88237fd4", null ]
 ];

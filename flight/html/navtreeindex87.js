@@ -1,5 +1,17 @@
 var NAVTREEINDEX87 =
 {
+"pios__rfm22b__regs_8h.html#ga7cc2489090187f3a2115f3607d270cc2":[5,0,0,4,1,79,175],
+"pios__rfm22b__regs_8h.html#ga7cec0b4ba844089a2876ada28a6d71ee":[5,0,0,4,1,79,256],
+"pios__rfm22b__regs_8h.html#ga7d7c580a41a9929633194287447b7eb2":[5,0,0,4,1,79,76],
+"pios__rfm22b__regs_8h.html#ga7eaa43de85ed1f65d904047172127eeb":[5,0,0,4,1,79,219],
+"pios__rfm22b__regs_8h.html#ga7f3995194fa02ee89475fc9439fec2b1":[5,0,0,4,1,79,97],
+"pios__rfm22b__regs_8h.html#ga800112da81101a2a95ea437d1d18dabd":[5,0,0,4,1,79,199],
+"pios__rfm22b__regs_8h.html#ga80164ad82fba0e96ac4c1b6821e5ceca":[5,0,0,4,1,79,118],
+"pios__rfm22b__regs_8h.html#ga80a7ccf3eea977fbc5ad44b35592b35c":[5,0,0,4,1,79,370],
+"pios__rfm22b__regs_8h.html#ga80abfc33f81a0e53425f795d20766726":[5,0,0,4,1,79,82],
+"pios__rfm22b__regs_8h.html#ga80b6667c3e8a1bbb06c08072bf25adcc":[5,0,0,4,1,79,327],
+"pios__rfm22b__regs_8h.html#ga80d59c3d040e429ca427865d55abfff3":[5,0,0,4,1,79,124],
+"pios__rfm22b__regs_8h.html#ga81015ec27fc056ffd27c865ff89c034e":[5,0,0,4,1,79,306],
 "pios__rfm22b__regs_8h.html#ga8134d9852a237403d6b2b45e851a9b1a":[5,0,0,4,1,79,192],
 "pios__rfm22b__regs_8h.html#ga81e0abcb602b66148458db8a2102d7c2":[5,0,0,4,1,79,333],
 "pios__rfm22b__regs_8h.html#ga823d206839104cc3937d412c1f516a1e":[5,0,0,4,1,79,80],
@@ -237,17 +249,5 @@ var NAVTREEINDEX87 =
 "pios__sbus__priv_8h_source.html":[5,0,0,4,3,0,7],
 "pios__semaphore_8h.html":[5,0,0,4,1,82],
 "pios__semaphore_8h.html#ga2bf3b406b0431606b13238e9b8b0bd13":[5,0,0,4,1,82,3],
-"pios__semaphore_8h.html#ga4be8d25f1ea7f6239c7ae7059a37ad2b":[5,0,0,4,1,82,4],
-"pios__semaphore_8h.html#ga8a6bf0a60107305779f304f6ac32fbb7":[5,0,0,4,1,82,5],
-"pios__semaphore_8h.html#ga8ef85c87885473f57f442c9980db7cdb":[5,0,0,4,1,82,2],
-"pios__semaphore_8h.html#ga9f80c0f562536f093d9c7c4dd7d77904":[5,0,0,4,1,82,0],
-"pios__semaphore_8h.html#gae3b8ab7e4cc3f9ddd090d77b92038158":[5,0,0,4,1,82,1],
-"pios__semaphore_8h_source.html":[5,0,0,4,1,82],
-"pios__sensors_8c.html":[5,0,0,4,0,43],
-"pios__sensors_8c.html#ga02d099f3d3a51697cc15d9b570d1cd0c":[5,0,0,4,0,43,10],
-"pios__sensors_8c.html#ga105d769094e1ce36069ef2ba221cbbd6":[5,0,0,4,0,43,13],
-"pios__sensors_8c.html#ga1fd801170ce4dd0981cedc6e3f23951b":[5,0,0,4,0,43,12],
-"pios__sensors_8c.html#ga27618579efcb571cfd29b287e6f687f1":[5,0,0,4,0,43,2],
-"pios__sensors_8c.html#ga33076968a01458ec4c02aee135f1bba1":[5,0,0,4,0,43,8],
-"pios__sensors_8c.html#ga382f3e734c0289835d99e3a8410a28bd":[5,0,0,4,0,43,4]
+"pios__semaphore_8h.html#ga4be8d25f1ea7f6239c7ae7059a37ad2b":[5,0,0,4,1,82,4]
 };

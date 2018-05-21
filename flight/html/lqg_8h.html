@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">bf94a29</span>
+   &#160;<span id="projectnumber">4c5eb32</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -107,6 +107,7 @@ $(document).ready(function(){initNavTree('lqg_8h.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -121,6 +122,15 @@ $(document).ready(function(){initNavTree('lqg_8h.html','');});
 </div>
 <p><a href="lqg_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:gae9d73ae5914b5983d9182df859f0ce60"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#gae9d73ae5914b5983d9182df859f0ce60">LQG_SOLVER_FAILED</a>&#160;&#160;&#160;-1</td></tr>
+<tr class="separator:gae9d73ae5914b5983d9182df859f0ce60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0967c0e5e007c8f249d3f41ffb861e82"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga0967c0e5e007c8f249d3f41ffb861e82">LQG_SOLVER_RUNNING</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ga0967c0e5e007c8f249d3f41ffb861e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga70896fcdf62c4cf1fd714721cc93bb2d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga70896fcdf62c4cf1fd714721cc93bb2d">LQG_SOLVER_DONE</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:ga70896fcdf62c4cf1fd714721cc93bb2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ga506bde267554d0f719127bceeeda98d0"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structrtkf__state.html">rtkf_state</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga506bde267554d0f719127bceeeda98d0">rtkf_t</a></td></tr>
@@ -136,22 +146,22 @@ Functions</h2></td></tr>
 <tr class="separator:ga7e9d482db29da35ebe8c2c78b7e58278"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7782671ecc5f2f9656c3ef3c88237fd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga7782671ecc5f2f9656c3ef3c88237fd4">rtkf_stabilize_covariance</a> (<a class="el" href="group___flight_math.html#ga506bde267554d0f719127bceeeda98d0">rtkf_t</a> rtkf, int iterations)</td></tr>
 <tr class="separator:ga7782671ecc5f2f9656c3ef3c88237fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae8cceae24d23efcb4cb2a0ca4a854972"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#gae8cceae24d23efcb4cb2a0ca4a854972">rtkf_is_solved</a> (<a class="el" href="group___flight_math.html#ga506bde267554d0f719127bceeeda98d0">rtkf_t</a> rtkf)</td></tr>
-<tr class="separator:gae8cceae24d23efcb4cb2a0ca4a854972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6311454780279ed451788186deb7bbac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga6311454780279ed451788186deb7bbac">rtkf_solver_status</a> (<a class="el" href="group___flight_math.html#ga506bde267554d0f719127bceeeda98d0">rtkf_t</a> rtkf)</td></tr>
+<tr class="separator:ga6311454780279ed451788186deb7bbac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaca0e35e387eceac2b60bc31d4a701cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___flight_math.html#ga24ec3d5cf383d82d4735d6efb729556e">lqr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#gaaca0e35e387eceac2b60bc31d4a701cc">lqr_create</a> (float beta, float tau, float Ts, float q1, float q2, float r)</td></tr>
 <tr class="separator:gaaca0e35e387eceac2b60bc31d4a701cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafa8a4d4c5867f0c1079530e359dd9d82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#gafa8a4d4c5867f0c1079530e359dd9d82">lqr_stabilize_covariance</a> (<a class="el" href="group___flight_math.html#ga24ec3d5cf383d82d4735d6efb729556e">lqr_t</a> lqr, int iterations)</td></tr>
 <tr class="separator:gafa8a4d4c5867f0c1079530e359dd9d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4de1a48d5eda65f9f4408c83a47ccb12"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga4de1a48d5eda65f9f4408c83a47ccb12">lqr_is_solved</a> (<a class="el" href="group___flight_math.html#ga24ec3d5cf383d82d4735d6efb729556e">lqr_t</a> lqr)</td></tr>
-<tr class="separator:ga4de1a48d5eda65f9f4408c83a47ccb12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga02c17d3367540fd2e889bbfc39643a29"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga02c17d3367540fd2e889bbfc39643a29">lqr_solver_status</a> (<a class="el" href="group___flight_math.html#ga24ec3d5cf383d82d4735d6efb729556e">lqr_t</a> lqr)</td></tr>
+<tr class="separator:ga02c17d3367540fd2e889bbfc39643a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5f925d10bdb69a95070c3cc12f1eee86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga5f925d10bdb69a95070c3cc12f1eee86">lqr_update</a> (<a class="el" href="group___flight_math.html#ga24ec3d5cf383d82d4735d6efb729556e">lqr_t</a> lqr, float q1, float q2, float r)</td></tr>
 <tr class="separator:ga5f925d10bdb69a95070c3cc12f1eee86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga38d510514079e13279aeb8231945d971"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga38d510514079e13279aeb8231945d971">lqr_get_gains</a> (<a class="el" href="group___flight_math.html#ga24ec3d5cf383d82d4735d6efb729556e">lqr_t</a> lqr, float <a class="el" href="group___i_n_s_g_p_s.html#ga1a9a9b26f7cab8703fc488c6cc258490">K</a>[2])</td></tr>
 <tr class="separator:ga38d510514079e13279aeb8231945d971"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac1eb6dd704623f47aef263a9cbf55561"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___flight_math.html#gabddd39dfffa3ddf892e56c4957abe71e">lqg_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#gac1eb6dd704623f47aef263a9cbf55561">lqg_create</a> (<a class="el" href="group___flight_math.html#ga506bde267554d0f719127bceeeda98d0">rtkf_t</a> rtkf, <a class="el" href="group___flight_math.html#ga24ec3d5cf383d82d4735d6efb729556e">lqr_t</a> lqr)</td></tr>
 <tr class="separator:gac1eb6dd704623f47aef263a9cbf55561"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga49e1cb9d119c0af92c6a35839b00aed6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga49e1cb9d119c0af92c6a35839b00aed6">lqg_is_solved</a> (<a class="el" href="group___flight_math.html#gabddd39dfffa3ddf892e56c4957abe71e">lqg_t</a> lqg)</td></tr>
-<tr class="separator:ga49e1cb9d119c0af92c6a35839b00aed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5c0136fd293ceb635b61ce26ad1aeb3d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga5c0136fd293ceb635b61ce26ad1aeb3d">lqg_solver_status</a> (<a class="el" href="group___flight_math.html#gabddd39dfffa3ddf892e56c4957abe71e">lqg_t</a> lqg)</td></tr>
+<tr class="separator:ga5c0136fd293ceb635b61ce26ad1aeb3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8af68f18f918749f0badcfe9c39aeaf1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___flight_math.html#ga24ec3d5cf383d82d4735d6efb729556e">lqr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga8af68f18f918749f0badcfe9c39aeaf1">lqg_get_lqr</a> (<a class="el" href="group___flight_math.html#gabddd39dfffa3ddf892e56c4957abe71e">lqg_t</a> lqg)</td></tr>
 <tr class="separator:ga8af68f18f918749f0badcfe9c39aeaf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga18c51a43685fb151a21bb055a4d3fcef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___flight_math.html#ga506bde267554d0f719127bceeeda98d0">rtkf_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga18c51a43685fb151a21bb055a4d3fcef">lqg_get_rtkf</a> (<a class="el" href="group___flight_math.html#gabddd39dfffa3ddf892e56c4957abe71e">lqg_t</a> lqg)</td></tr>

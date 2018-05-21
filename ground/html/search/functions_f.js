@@ -67,7 +67,7 @@ var searchData=
   ['opmapgadgetwidget',['OPMapGadgetWidget',['../group___o_p_map_plugin.html#ga222e0e42308e538e45d1f2a543261cf7',1,'OPMapGadgetWidget']]],
   ['opplots',['OPPlots',['../_o_p_plots_8m.html#a3efffb7acbd6d5c2b21b21ced1cf33d6',1,'OPPlots.m']]],
   ['optionsdialogrequested',['optionsDialogRequested',['../group___core_plugin.html#gafba7e27b9e0330206e2c77eebbeb7038',1,'Core::ICore']]],
-  ['optionspage',['optionsPage',['../group___i_p_conn_plugin.html#gab63780b114a985fc71a96c8ac14c162d',1,'IPConnection::optionsPage()'],['../group___serial_plugin.html#gaf86b9d4296b2b9e6429dd643fd113861',1,'SerialConnection::Optionspage()']]],
+  ['optionspage',['Optionspage',['../group___serial_plugin.html#gaf86b9d4296b2b9e6429dd643fd113861',1,'SerialConnection::Optionspage()'],['../group___i_p_conn_plugin.html#gab63780b114a985fc71a96c8ac14c162d',1,'IPConnection::optionsPage()']]],
   ['optionspagelessthan',['optionsPageLessThan',['../group___core_plugin.html#ga59869c2fab9a0f266809a3544c2f02e6',1,'settingsdialog.cpp']]],
   ['optionsparser',['OptionsParser',['../class_extension_system_1_1_internal_1_1_options_parser.html#aa7b18b131adb722eb43ad2fd8a01212b',1,'ExtensionSystem::Internal::OptionsParser']]],
   ['oscsincos',['OscSinCos',['../classffft_1_1_osc_sin_cos.html#aed332791021f51d86b05594629244f1e',1,'ffft::OscSinCos']]],

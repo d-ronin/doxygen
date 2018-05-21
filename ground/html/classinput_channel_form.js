@@ -6,6 +6,8 @@ var classinput_channel_form =
     ] ],
     [ "inputChannelForm", "classinput_channel_form.html#a18964851acec0881c6526e5ba26c5840", null ],
     [ "~inputChannelForm", "classinput_channel_form.html#ad20dfc97906fb50e1be3ab969ff22875", null ],
+    [ "assigned", "classinput_channel_form.html#a1094b3b3b2389edfacd35acdc1cd217a", null ],
+    [ "assignmentChanged", "classinput_channel_form.html#a3f3fb817f2a370f688db90199a390fbb", null ],
     [ "setName", "classinput_channel_form.html#ada1f4f0465faa839c8c541b18ae01704", null ],
     [ "ConfigInputWidget", "classinput_channel_form.html#a2a08d48cca33c79f7765524beaac4767", null ]
 ];

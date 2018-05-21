@@ -1,5 +1,17 @@
 var NAVTREEINDEX98 =
 {
+"structmsp__raw__gps.html#ac1c83e7dbd8abccde84e5c0e4119e46e":[2,1,2,9,2],
+"structmsp__raw__imu.html":[2,1,2,3],
+"structmsp__raw__imu.html#a214452d3d19ad211f205b7531a659ed6":[2,1,2,3,7],
+"structmsp__raw__imu.html#a43db29e01b471e6835e5572445876010":[2,1,2,3,4],
+"structmsp__raw__imu.html#a53e6504185f5594c848c4937389b85b0":[2,1,2,3,1],
+"structmsp__raw__imu.html#a6c8a484db4588166dd270d20e2b8d026":[2,1,2,3,5],
+"structmsp__raw__imu.html#aa11689878f13ec7ac0f98611c4775fca":[2,1,2,3,2],
+"structmsp__raw__imu.html#aa1a7f9750665bda0288555f2189dd0c2":[2,1,2,3,0],
+"structmsp__raw__imu.html#abb6d948188a5dfff1fab14e720490042":[2,1,2,3,6],
+"structmsp__raw__imu.html#acf18466ea9fd4a648e0b436930ed2a79":[2,1,2,3,3],
+"structmsp__raw__imu.html#ad073a59500417010b1b0ee2c3de3b2b3":[2,1,2,3,8],
+"structmsp__rc.html":[2,1,2,7],
 "structmsp__rc.html#abe7df670f15461f55918de57b9b9d469":[2,1,2,7,0],
 "structmsp__rc__tuning.html":[2,1,2,15],
 "structmsp__rc__tuning.html#a0c84c68516fa49c60815dbc31659b1ed":[2,1,2,15,0],
@@ -237,17 +249,5 @@ var NAVTREEINDEX98 =
 "structpios__internal__adc__cfg.html":[2,0,52,5],
 "structpios__internal__adc__cfg.html#a132c2559baa5c4dc0952036b579fb66e":[2,0,52,5,2],
 "structpios__internal__adc__cfg.html#a1c08390ebe63500dd873bd5e6aeb1aa6":[2,0,52,5,7],
-"structpios__internal__adc__cfg.html#a1c8ede53f98b8d8eee4d4144a4104427":[2,0,52,5,4],
-"structpios__internal__adc__cfg.html#a78fcf970c586ff2dc5a5464b3eda21e6":[2,0,52,5,1],
-"structpios__internal__adc__cfg.html#aaebf99178a47cbe3c440f294bfa0207b":[2,0,52,5,3],
-"structpios__internal__adc__cfg.html#aaf65057cc3e9e3db9c075162b8ecfe1b":[2,0,52,5,5],
-"structpios__internal__adc__cfg.html#ac7b103c963e512c7104bbcd2b6dc3281":[2,0,52,5,0],
-"structpios__internal__adc__cfg.html#ade026429ab4238f63092fa17b4f95e4e":[2,0,52,5,6],
-"structpios__internal__adc__simple__cfg.html":[2,0,52,6],
-"structpios__internal__adc__simple__cfg.html#ad665d0b9d81e4c66d3d3a0c1f0895b53":[2,0,52,6,0],
-"structpios__internal__adc__simple__cfg.html#af809d617f352632f6bbe0e5018b52f21":[2,0,52,6,1],
-"structpios__internal__adc__simple__cfg.html#afa452c4e41d7c54ab3c3bff3faffdeee":[2,0,52,6,2],
-"structpios__lis3mdl__cfg.html":[2,0,21,0],
-"structpios__lis3mdl__cfg.html#a617710474e70b7ea86e99d2c0ba8c2ac":[2,0,21,0,0],
-"structpios__mpu__cfg.html":[2,0,24,0]
+"structpios__internal__adc__cfg.html#a1c8ede53f98b8d8eee4d4144a4104427":[2,0,52,5,4]
 };

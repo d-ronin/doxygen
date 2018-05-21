@@ -1,5 +1,7 @@
 var NAVTREEINDEX49 =
 {
+"pluginmanager_8h_source.html":[6,0,0,0,0,0,1,12],
+"pluginmanager__p_8h.html":[6,0,0,0,0,0,1,13],
 "pluginmanager__p_8h_source.html":[6,0,0,0,0,0,1,13],
 "plugins_2coreplugin_2plugindialog_8cpp.html":[6,0,0,0,0,1,9,53],
 "plugins_2coreplugin_2plugindialog_8cpp_source.html":[6,0,0,0,0,1,9,53],
@@ -247,7 +249,5 @@ var NAVTREEINDEX49 =
 "shortcutsettings_8h_source.html":[6,0,0,0,0,1,9,1,9],
 "simulation_8cpp.html":[6,0,0,0,0,1,3,12],
 "simulation_8cpp_source.html":[6,0,0,0,0,1,3,12],
-"simulation_8h.html":[6,0,0,0,0,1,3,13],
-"simulation_8h_source.html":[6,0,0,0,0,1,3,13],
-"simulationconfiguration_8cpp.html":[6,0,0,0,0,1,3,14]
+"simulation_8h.html":[6,0,0,0,0,1,3,13]
 };

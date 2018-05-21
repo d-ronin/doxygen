@@ -1,5 +1,17 @@
 var NAVTREEINDEX88 =
 {
+"pios__semaphore_8h.html#ga8a6bf0a60107305779f304f6ac32fbb7":[5,0,0,4,1,82,5],
+"pios__semaphore_8h.html#ga8ef85c87885473f57f442c9980db7cdb":[5,0,0,4,1,82,2],
+"pios__semaphore_8h.html#ga9f80c0f562536f093d9c7c4dd7d77904":[5,0,0,4,1,82,0],
+"pios__semaphore_8h.html#gae3b8ab7e4cc3f9ddd090d77b92038158":[5,0,0,4,1,82,1],
+"pios__semaphore_8h_source.html":[5,0,0,4,1,82],
+"pios__sensors_8c.html":[5,0,0,4,0,43],
+"pios__sensors_8c.html#ga02d099f3d3a51697cc15d9b570d1cd0c":[5,0,0,4,0,43,10],
+"pios__sensors_8c.html#ga105d769094e1ce36069ef2ba221cbbd6":[5,0,0,4,0,43,13],
+"pios__sensors_8c.html#ga1fd801170ce4dd0981cedc6e3f23951b":[5,0,0,4,0,43,12],
+"pios__sensors_8c.html#ga27618579efcb571cfd29b287e6f687f1":[5,0,0,4,0,43,2],
+"pios__sensors_8c.html#ga33076968a01458ec4c02aee135f1bba1":[5,0,0,4,0,43,8],
+"pios__sensors_8c.html#ga382f3e734c0289835d99e3a8410a28bd":[5,0,0,4,0,43,4],
 "pios__sensors_8c.html#ga399bc94ad74cf50041c34cfd846cfcc5":[5,0,0,4,0,43,3],
 "pios__sensors_8c.html#ga6be593f500f0cc9edc08ad8ed92aa67f":[5,0,0,4,0,43,9],
 "pios__sensors_8c.html#ga77bbbd3e48c9ff22d516ea51ec129dae":[5,0,0,4,0,43,0],
@@ -237,17 +249,5 @@ var NAVTREEINDEX88 =
 "pios__usb__board__data_8c.html#gae0f4171e328334a837e94417dfe669a7":[5,0,0,4,3,14,23],
 "pios__usb__board__data_8c.html#gae4946eeaff39e9963d25a7ce8feda125":[5,0,0,4,3,14,5],
 "pios__usb__board__data_8c.html#gaece082cbaab0e9e7ccfe84e46e479e6e":[5,0,0,4,3,14,4],
-"pios__usb__board__data_8c.html#gaef198f7a860803a9673b9b7ed22d2cea":[5,0,0,4,3,14,1],
-"pios__usb__board__data_8c.html#gaf8738409a92064fafd91924822b1262b":[5,0,0,4,3,14,10],
-"pios__usb__board__data_8c_source.html":[5,0,0,4,3,14],
-"pios__usb__board__data_8h.html":[5,0,0,4,1,101],
-"pios__usb__board__data_8h.html#ga007e101874fb595709b6f50949ac9f35":[5,0,0,4,1,101,7],
-"pios__usb__board__data_8h.html#ga4b5be4363ddc411b8e1841cde2129485":[5,0,0,4,1,101,6],
-"pios__usb__board__data_8h.html#ga71c1891d07024986e5a249d991e1867b":[5,0,0,4,1,101,0],
-"pios__usb__board__data_8h.html#ga76a98428f2f7cad1b787b6f390781738":[5,0,0,4,1,101,1],
-"pios__usb__board__data_8h.html#ga7ce8753ec1333024258386fa8db2d06c":[5,0,0,4,1,101,2],
-"pios__usb__board__data_8h.html#gab6ef33a0055e1eb8c61bd71801907dae":[5,0,0,4,1,101,4],
-"pios__usb__board__data_8h.html#gac4f520b768eb8d2468d648fc0f2346e0":[5,0,0,4,1,101,3],
-"pios__usb__board__data_8h.html#gae4177b7c24195f8e3f020b7881e8533f":[5,0,0,4,1,101,5],
-"pios__usb__board__data_8h_source.html":[5,0,0,4,1,101]
+"pios__usb__board__data_8c.html#gaef198f7a860803a9673b9b7ed22d2cea":[5,0,0,4,3,14,1]
 };

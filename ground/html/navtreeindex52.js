@@ -1,5 +1,7 @@
 var NAVTREEINDEX52 =
 {
+"uavobjecttemplate_8h.html#gae812e608461959ae131d5aca91d97434":[6,0,0,0,0,1,35,21,8],
+"uavobjecttemplate_8h_source.html":[6,0,0,0,0,1,35,21],
 "uavobjecttemplate_8m.html":[6,0,0,0,0,1,35,22],
 "uavobjecttemplate_8m.html#a02572c77cf55e0d264a6d4971d8b067c":[6,0,0,0,0,1,35,22,35],
 "uavobjecttemplate_8m.html#a030dd534c8b9453d1d41e5822fa4462d":[6,0,0,0,0,1,35,22,46],
@@ -247,7 +249,5 @@ var NAVTREEINDEX52 =
 "waypointitem_8h.html":[6,0,0,0,0,0,4,2,31],
 "waypointitem_8h_source.html":[6,0,0,0,0,0,4,2,31],
 "welcome__global_8h.html":[6,0,0,0,0,1,42,0],
-"welcome__global_8h_source.html":[6,0,0,0,0,1,42,0],
-"welcomemode_8cpp.html":[6,0,0,0,0,1,42,1],
-"welcomemode_8cpp_source.html":[6,0,0,0,0,1,42,1]
+"welcome__global_8h_source.html":[6,0,0,0,0,1,42,0]
 };
