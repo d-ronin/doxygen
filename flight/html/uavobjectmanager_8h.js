@@ -14,7 +14,7 @@ var uavobjectmanager_8h =
     [ "UAVOBJ_TELEMETRY_UPDATE_MODE_SHIFT", "uavobjectmanager_8h.html#af0c1f7b30135f0fa6427afcb3a207694", null ],
     [ "UAVOBJ_UPDATE_MODE_MASK", "uavobjectmanager_8h.html#a55be00058905fc89ed2a1e3a36263775", null ],
     [ "new_uavo_instance_cb_t", "uavobjectmanager_8h.html#a58db83831e3408beebc011830d0046d7", null ],
-    [ "UAVObjEventCallback", "uavobjectmanager_8h.html#a7d2d49fa0dec2bf59c61ffe88270c331", null ],
+    [ "UAVObjEventCallback", "uavobjectmanager_8h.html#a60b44305f0cb4aaf49f93296bd2f7fda", null ],
     [ "UAVObjHandle", "uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23", null ],
     [ "UAVObjInitializeCallback", "uavobjectmanager_8h.html#a16def10911b9b7e8626c2d1e3fec6e67", null ],
     [ "UAVObjAccessType", "uavobjectmanager_8h.html#a04b37fd239d7727a21668d35d11ad7df", [
@@ -35,8 +35,8 @@ var uavobjectmanager_8h =
       [ "UPDATEMODE_THROTTLED", "uavobjectmanager_8h.html#afd571f69747daf7681eb869270e27208a58214a235c70b2326a2ced4b4b35b8e1", null ]
     ] ],
     [ "getEventMask", "uavobjectmanager_8h.html#ga4d5c4b56acbb2e636aa006ac36d943e5", null ],
-    [ "UAVObjCbCopyData", "uavobjectmanager_8h.html#ga101694515f3c2f2b64df132494f5e5ce", null ],
-    [ "UAVObjCbSetFlag", "uavobjectmanager_8h.html#ga3b833197442a5ead219180543075e2c0", null ],
+    [ "UAVObjCbCopyData", "uavobjectmanager_8h.html#gaa0c70ada71ac7e5c8386a0e5fcd2b696", null ],
+    [ "UAVObjCbSetFlag", "uavobjectmanager_8h.html#ga9041d044f7a4f83f8bde5ec6e276cb1f", null ],
     [ "UAVObjClearStats", "uavobjectmanager_8h.html#gae604f34af94a200b96787f24abb32ce1", null ],
     [ "UAVObjConnectCallback", "uavobjectmanager_8h.html#ga4564c9e55f64efa89658f190ffeddbf5", null ],
     [ "UAVObjConnectCallbackThrottled", "uavobjectmanager_8h.html#ga5e095821a92c8240dd92462a363a1ffe", null ],

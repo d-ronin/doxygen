@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">4c5eb32</span>
+   &#160;<span id="projectnumber">d3d619f</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -137,10 +137,10 @@ Functions</h2></td></tr>
 <tr class="separator:ga763140fa0b65be44e6adb39277a5a24a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga98f3d3e823cb34ab49773c13cf247b74"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___path_planner_module.html#ga98f3d3e823cb34ab49773c13cf247b74">process_pp_settings</a> ()</td></tr>
 <tr class="separator:ga98f3d3e823cb34ab49773c13cf247b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga176147c6a18280e0044da496be6b84f2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___path_planner_module.html#ga176147c6a18280e0044da496be6b84f2">waypointsUpdated</a> (<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev, void *ctx, void *obj, int len)</td></tr>
-<tr class="separator:ga176147c6a18280e0044da496be6b84f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa03a83d9f133754177ee9bb179ff7392"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___path_planner_module.html#gaa03a83d9f133754177ee9bb179ff7392">pathStatusUpdated</a> (<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev, void *ctx, void *obj, int len)</td></tr>
-<tr class="separator:gaa03a83d9f133754177ee9bb179ff7392"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0c169ff6e26fd31c78327631bf30decd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___path_planner_module.html#ga0c169ff6e26fd31c78327631bf30decd">waypointsUpdated</a> (const <a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev, void *ctx, void *obj, int len)</td></tr>
+<tr class="separator:ga0c169ff6e26fd31c78327631bf30decd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga80e9253e81726893a2188a678bbfdb6d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___path_planner_module.html#ga80e9253e81726893a2188a678bbfdb6d">pathStatusUpdated</a> (const <a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev, void *ctx, void *obj, int len)</td></tr>
+<tr class="separator:ga80e9253e81726893a2188a678bbfdb6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaedecef069e0cf6309eda62d5f48cf333"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___path_planner_module.html#gaedecef069e0cf6309eda62d5f48cf333">createPathBox</a> ()</td></tr>
 <tr class="separator:gaedecef069e0cf6309eda62d5f48cf333"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac6b27a755d97a6a9e0395dd6f43a3b0a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___path_planner_module.html#gac6b27a755d97a6a9e0395dd6f43a3b0a">createPathLogo</a> ()</td></tr>
@@ -264,7 +264,7 @@ Variables</h2></td></tr>
 <p>This method is called when a new waypoint is activated</p>
 <p>Note: The way this is called, it runs in an object callback. This is safe because the execution time is extremely short. If it starts to take a longer time then the main task look should monitor a flag (such as the waypoint changing) and call this method from the main task. </p>
 
-<p>Definition at line <a class="el" href="pathplanner_8c_source.html#l00361">361</a> of file <a class="el" href="pathplanner_8c_source.html">pathplanner.c</a>.</p>
+<p>Definition at line <a class="el" href="pathplanner_8c_source.html#l00365">365</a> of file <a class="el" href="pathplanner_8c_source.html">pathplanner.c</a>.</p>
 
 </div>
 </div>
@@ -290,7 +290,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Increment the waypoint index which triggers the active waypoint method </p>
 
-<p>Definition at line <a class="el" href="pathplanner_8c_source.html#l00329">329</a> of file <a class="el" href="pathplanner_8c_source.html">pathplanner.c</a>.</p>
+<p>Definition at line <a class="el" href="pathplanner_8c_source.html#l00333">333</a> of file <a class="el" href="pathplanner_8c_source.html">pathplanner.c</a>.</p>
 
 </div>
 </div>
@@ -315,7 +315,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pathplanner_8c_source.html#l00456">456</a> of file <a class="el" href="pathplanner_8c_source.html">pathplanner.c</a>.</p>
+<p>Definition at line <a class="el" href="pathplanner_8c_source.html#l00460">460</a> of file <a class="el" href="pathplanner_8c_source.html">pathplanner.c</a>.</p>
 
 </div>
 </div>
@@ -340,7 +340,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pathplanner_8c_source.html#l00503">503</a> of file <a class="el" href="pathplanner_8c_source.html">pathplanner.c</a>.</p>
+<p>Definition at line <a class="el" href="pathplanner_8c_source.html#l00507">507</a> of file <a class="el" href="pathplanner_8c_source.html">pathplanner.c</a>.</p>
 
 </div>
 </div>
@@ -366,7 +366,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Initial position hold at current position. This is used at the end of a path or in the case of a problem. </p>
 
-<p>Definition at line <a class="el" href="pathplanner_8c_source.html#l00258">258</a> of file <a class="el" href="pathplanner_8c_source.html">pathplanner.c</a>.</p>
+<p>Definition at line <a class="el" href="pathplanner_8c_source.html#l00262">262</a> of file <a class="el" href="pathplanner_8c_source.html">pathplanner.c</a>.</p>
 
 </div>
 </div>
@@ -393,7 +393,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Hold position at a specified waypoint. Used when we reach the end of valid waypoints. </p>
 
-<p>Definition at line <a class="el" href="pathplanner_8c_source.html#l00283">283</a> of file <a class="el" href="pathplanner_8c_source.html">pathplanner.c</a>.</p>
+<p>Definition at line <a class="el" href="pathplanner_8c_source.html#l00287">287</a> of file <a class="el" href="pathplanner_8c_source.html">pathplanner.c</a>.</p>
 
 </div>
 </div>
@@ -411,7 +411,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Module initialization </p>
 
-<p>Definition at line <a class="el" href="pathplanner_8c_source.html#l00099">99</a> of file <a class="el" href="pathplanner_8c_source.html">pathplanner.c</a>.</p>
+<p>Definition at line <a class="el" href="pathplanner_8c_source.html#l00101">101</a> of file <a class="el" href="pathplanner_8c_source.html">pathplanner.c</a>.</p>
 
 </div>
 </div>
@@ -429,7 +429,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Module initialization </p>
 
-<p>Definition at line <a class="el" href="pathplanner_8c_source.html#l00082">82</a> of file <a class="el" href="pathplanner_8c_source.html">pathplanner.c</a>.</p>
+<p>Definition at line <a class="el" href="pathplanner_8c_source.html#l00084">84</a> of file <a class="el" href="pathplanner_8c_source.html">pathplanner.c</a>.</p>
 
 </div>
 </div>
@@ -456,11 +456,11 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Module task </p>
 
-<p>Definition at line <a class="el" href="pathplanner_8c_source.html#l00141">141</a> of file <a class="el" href="pathplanner_8c_source.html">pathplanner.c</a>.</p>
+<p>Definition at line <a class="el" href="pathplanner_8c_source.html#l00143">143</a> of file <a class="el" href="pathplanner_8c_source.html">pathplanner.c</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="gaa03a83d9f133754177ee9bb179ff7392"></a>
+<a class="anchor" id="ga80e9253e81726893a2188a678bbfdb6d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -470,7 +470,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static void pathStatusUpdated </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *&#160;</td>
           <td class="paramname"><em>ev</em>, </td>
         </tr>
         <tr>
@@ -505,7 +505,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>When the PathStatus is updated indicate a new one is available to consume </p>
 
-<p>Definition at line <a class="el" href="pathplanner_8c_source.html#l00240">240</a> of file <a class="el" href="pathplanner_8c_source.html">pathplanner.c</a>.</p>
+<p>Definition at line <a class="el" href="pathplanner_8c_source.html#l00243">243</a> of file <a class="el" href="pathplanner_8c_source.html">pathplanner.c</a>.</p>
 
 </div>
 </div>
@@ -530,11 +530,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pathplanner_8c_source.html#l00436">436</a> of file <a class="el" href="pathplanner_8c_source.html">pathplanner.c</a>.</p>
+<p>Definition at line <a class="el" href="pathplanner_8c_source.html#l00440">440</a> of file <a class="el" href="pathplanner_8c_source.html">pathplanner.c</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga176147c6a18280e0044da496be6b84f2"></a>
+<a class="anchor" id="ga0c169ff6e26fd31c78327631bf30decd"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -544,7 +544,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static void waypointsUpdated </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *&#160;</td>
           <td class="paramname"><em>ev</em>, </td>
         </tr>
         <tr>
@@ -579,7 +579,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>On changed waypoints or active waypoint update position desired if we are in charge </p>
 
-<p>Definition at line <a class="el" href="pathplanner_8c_source.html#l00220">220</a> of file <a class="el" href="pathplanner_8c_source.html">pathplanner.c</a>.</p>
+<p>Definition at line <a class="el" href="pathplanner_8c_source.html#l00222">222</a> of file <a class="el" href="pathplanner_8c_source.html">pathplanner.c</a>.</p>
 
 </div>
 </div>
@@ -605,7 +605,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pathplanner_8c_source.html#l00307">307</a> of file <a class="el" href="pathplanner_8c_source.html">pathplanner.c</a>.</p>
+<p>Definition at line <a class="el" href="pathplanner_8c_source.html#l00311">311</a> of file <a class="el" href="pathplanner_8c_source.html">pathplanner.c</a>.</p>
 
 </div>
 </div>
@@ -630,7 +630,7 @@ Variables</h2></td></tr>
 
 <p>Store which waypoint has actually been pushed into PathDesired. </p>
 
-<p>Definition at line <a class="el" href="pathplanner_8c_source.html#l00076">76</a> of file <a class="el" href="pathplanner_8c_source.html">pathplanner.c</a>.</p>
+<p>Definition at line <a class="el" href="pathplanner_8c_source.html#l00078">78</a> of file <a class="el" href="pathplanner_8c_source.html">pathplanner.c</a>.</p>
 
 </div>
 </div>
@@ -652,7 +652,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pathplanner_8c_source.html#l00071">71</a> of file <a class="el" href="pathplanner_8c_source.html">pathplanner.c</a>.</p>
+<p>Definition at line <a class="el" href="pathplanner_8c_source.html#l00073">73</a> of file <a class="el" href="pathplanner_8c_source.html">pathplanner.c</a>.</p>
 
 </div>
 </div>
@@ -696,7 +696,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pathplanner_8c_source.html#l00073">73</a> of file <a class="el" href="pathplanner_8c_source.html">pathplanner.c</a>.</p>
+<p>Definition at line <a class="el" href="pathplanner_8c_source.html#l00075">75</a> of file <a class="el" href="pathplanner_8c_source.html">pathplanner.c</a>.</p>
 
 </div>
 </div>
@@ -742,7 +742,7 @@ Variables</h2></td></tr>
 
 <p>Store the previous waypoint which is used to determine the path trajectory. </p>
 
-<p>Definition at line <a class="el" href="pathplanner_8c_source.html#l00078">78</a> of file <a class="el" href="pathplanner_8c_source.html">pathplanner.c</a>.</p>
+<p>Definition at line <a class="el" href="pathplanner_8c_source.html#l00080">80</a> of file <a class="el" href="pathplanner_8c_source.html">pathplanner.c</a>.</p>
 
 </div>
 </div>

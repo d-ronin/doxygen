@@ -1,7 +1,5 @@
 var NAVTREEINDEX98 =
 {
-"structmsp__raw__gps.html#ac1c83e7dbd8abccde84e5c0e4119e46e":[2,1,2,9,2],
-"structmsp__raw__imu.html":[2,1,2,3],
 "structmsp__raw__imu.html#a214452d3d19ad211f205b7531a659ed6":[2,1,2,3,7],
 "structmsp__raw__imu.html#a43db29e01b471e6835e5572445876010":[2,1,2,3,4],
 "structmsp__raw__imu.html#a53e6504185f5594c848c4937389b85b0":[2,1,2,3,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX98 =
 "structpios__internal__adc__cfg.html":[2,0,52,5],
 "structpios__internal__adc__cfg.html#a132c2559baa5c4dc0952036b579fb66e":[2,0,52,5,2],
 "structpios__internal__adc__cfg.html#a1c08390ebe63500dd873bd5e6aeb1aa6":[2,0,52,5,7],
-"structpios__internal__adc__cfg.html#a1c8ede53f98b8d8eee4d4144a4104427":[2,0,52,5,4]
+"structpios__internal__adc__cfg.html#a1c8ede53f98b8d8eee4d4144a4104427":[2,0,52,5,4],
+"structpios__internal__adc__cfg.html#a78fcf970c586ff2dc5a5464b3eda21e6":[2,0,52,5,1],
+"structpios__internal__adc__cfg.html#aaebf99178a47cbe3c440f294bfa0207b":[2,0,52,5,3]
 };

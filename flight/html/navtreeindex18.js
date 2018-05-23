@@ -1,6 +1,5 @@
 var NAVTREEINDEX18 =
 {
-"group___com_usb_bridge_module.html#gad0b9bd8f45359133da342c354426cb80":[2,4,7,7],
 "group___com_usb_bridge_module.html#gae9d920339ab8c87f41795a2196f7eec9":[2,4,7,6],
 "group___com_usb_bridge_module.html#gaf633010421f36b1aa2d3ef32a2f34bdf":[2,4,7,12],
 "group___common.html":[2,6,1],
@@ -128,8 +127,8 @@ var NAVTREEINDEX18 =
 "group___common_f1.html#ga2771d0818cb705a0f5d36539e9996306":[2,6,2,35],
 "group___common_f1.html#ga2cee1725bfc6f9ac723c3decb193c8c2":[2,6,2,44],
 "group___common_f1.html#ga33196f517628dd8e2149305b76d75f8e":[2,6,2,25],
-"group___common_f1.html#ga342208ed1954c6486eac389edf7c7f86":[2,6,2,53],
 "group___common_f1.html#ga342208ed1954c6486eac389edf7c7f86":[2,6,2,54],
+"group___common_f1.html#ga342208ed1954c6486eac389edf7c7f86":[2,6,2,53],
 "group___common_f1.html#ga37137877683fa8bb290bf36655ca2359":[2,6,2,36],
 "group___common_f1.html#ga3758da4ce9164f008216ba0fc2a82edc":[2,6,2,21],
 "group___common_f1.html#ga4087ff5eba1dd1ed72c881f9c6ecc662":[2,6,2,40],
@@ -146,8 +145,8 @@ var NAVTREEINDEX18 =
 "group___common_f1.html#ga648c8e3066059c1bc314367bcae79b2f":[2,6,2,69],
 "group___common_f1.html#ga698c124f1c293f98840449d6c5b9d984":[2,6,2,7],
 "group___common_f1.html#ga6a2dbcb4687334b324d72b9824174903":[2,6,2,43],
-"group___common_f1.html#ga6c435d21e1e77b6e71943e6ecac43154":[2,6,2,66],
 "group___common_f1.html#ga6c435d21e1e77b6e71943e6ecac43154":[2,6,2,67],
+"group___common_f1.html#ga6c435d21e1e77b6e71943e6ecac43154":[2,6,2,66],
 "group___common_f1.html#ga6f3335509cc4943e20df66f72483910c":[2,6,2,47],
 "group___common_f1.html#ga7111da0ee6b0c162893b1637e86b2758":[2,6,2,28],
 "group___common_f1.html#ga75e30c099232f21fa6e08353b0dfcef7":[2,6,2,31],
@@ -249,5 +248,6 @@ var NAVTREEINDEX18 =
 "group___control.html#ga16a2fa9b05e1778d508450239854bdef":[2,4,15,67],
 "group___control.html#ga1b6a1d5c5701f7bd6c4cf4c4a6a2f231":[2,4,15,28],
 "group___control.html#ga1c9296e1c9bcec91ad215695869d066d":[2,4,15,26],
-"group___control.html#ga1cc58ced6fdcc946fada40658f7674a7":[2,4,15,35]
+"group___control.html#ga1cc58ced6fdcc946fada40658f7674a7":[2,4,15,35],
+"group___control.html#ga1ce79772381dd45988152d4c5eab2456":[2,4,15,94]
 };

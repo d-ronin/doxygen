@@ -1,7 +1,5 @@
 var NAVTREEINDEX64 =
 {
-"group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga10ba50525df01f4f9748debc1574f4b7":[2,4,27,9],
-"group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga24e4fa754136a7e6bb0f68882537adf0":[2,4,27,14],
 "group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga2cef379cf72c5e4b63f12fee9b2d2a2f":[2,4,27,11],
 "group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga3b124da1010ec0e5832f66e288689cfe":[2,4,27,1],
 "group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga4031d6dd9e49d276faf8ec3964623e1a":[2,4,27,3],
@@ -169,7 +167,6 @@ var NAVTREEINDEX64 =
 "group___u_a_v_object_handling.html#ga08b602bb9381c3c2806140ed32a5af74":[2,2,1,68],
 "group___u_a_v_object_handling.html#ga08b75f95ad3a984b1348a37432145c68":[2,2,1,110],
 "group___u_a_v_object_handling.html#ga0e590d06148882b63affa37888f043df":[2,2,1,99],
-"group___u_a_v_object_handling.html#ga101694515f3c2f2b64df132494f5e5ce":[2,2,1,42],
 "group___u_a_v_object_handling.html#ga10f109820071bea9b310dce65a46d784":[2,2,1,33],
 "group___u_a_v_object_handling.html#ga12d9a63661f62169d79e7b70efe95104":[2,2,1,75],
 "group___u_a_v_object_handling.html#ga17a9665c830f577232ad694ab4baaea6":[2,2,1,57],
@@ -186,7 +183,6 @@ var NAVTREEINDEX64 =
 "group___u_a_v_object_handling.html#ga2f07600725f528d36af8f71008b3d09d":[2,2,1,28],
 "group___u_a_v_object_handling.html#ga34e9f120ad77feee68d20f0a22adeb51":[2,2,1,32],
 "group___u_a_v_object_handling.html#ga383e4286d101cd29646b5e4b0e4b6199":[2,2,1,101],
-"group___u_a_v_object_handling.html#ga3b833197442a5ead219180543075e2c0":[2,2,1,43],
 "group___u_a_v_object_handling.html#ga403fb677c76ab748a98ed56843801cfc":[2,2,1,22],
 "group___u_a_v_object_handling.html#ga41bc89103a03ee52df38e34f6c0d7935":[2,2,1,113],
 "group___u_a_v_object_handling.html#ga43e002d9dd75b34a4392308763d6bb35":[2,2,1,100],
@@ -212,11 +208,11 @@ var NAVTREEINDEX64 =
 "group___u_a_v_object_handling.html#ga74aba825a99924f3c8e3f7c209409ab6":[2,2,1,52],
 "group___u_a_v_object_handling.html#ga74b0fdf730a72251d862ca233316cbcd":[2,2,1,87],
 "group___u_a_v_object_handling.html#ga78e3c762f51cb6b295c7b8f787fa2ba1":[2,2,1,78],
-"group___u_a_v_object_handling.html#ga7e848a8c74d7330d713bdbd3c663ee5b":[2,2,1,38],
 "group___u_a_v_object_handling.html#ga8569271d8e137f2080bb272319a0128d":[2,2,1,21],
 "group___u_a_v_object_handling.html#ga88eab3d936394b3dffd65db8a148b9b1":[2,2,1,86],
 "group___u_a_v_object_handling.html#ga8a79caa6ee3c1fd4df3d560e3d82cc9d":[2,2,1,41],
 "group___u_a_v_object_handling.html#ga8cffbda3c594871182864efec3236f5b":[2,2,1,112],
+"group___u_a_v_object_handling.html#ga9041d044f7a4f83f8bde5ec6e276cb1f":[2,2,1,43],
 "group___u_a_v_object_handling.html#ga90b88ba1823a707558d3056663d0c0c9":[2,2,1,76],
 "group___u_a_v_object_handling.html#ga914ce570d6529619085bb00319fc05e0":[2,2,1,35],
 "group___u_a_v_object_handling.html#ga938822e7233dbbb444a5bdde8f626fae":[2,2,1,31],
@@ -224,6 +220,7 @@ var NAVTREEINDEX64 =
 "group___u_a_v_object_handling.html#ga961f3df74e4106ee108a10b57536302f":[2,2,1,83],
 "group___u_a_v_object_handling.html#ga9964be94d5ce50f0b9b72875a36c7c4c":[2,2,1,102],
 "group___u_a_v_object_handling.html#ga9b6a21cc5abcfe4af811f65a3744d4f3":[2,2,1,66],
+"group___u_a_v_object_handling.html#gaa0c70ada71ac7e5c8386a0e5fcd2b696":[2,2,1,42],
 "group___u_a_v_object_handling.html#gaa6d1bbf0fd8db14aa2fcf583626e2f72":[2,2,1,17],
 "group___u_a_v_object_handling.html#gaa8751dc09767d568385113ea4d208666":[2,2,1,55],
 "group___u_a_v_object_handling.html#gaa9c916d3a8cabfc6d7a0f3d488d10803":[2,2,1,97],
@@ -249,5 +246,8 @@ var NAVTREEINDEX64 =
 "group___u_a_v_object_handling.html#gad5fdcf98dae5cb90223f849df2bda08b":[2,2,1,60],
 "group___u_a_v_object_handling.html#gad8682828352ae8c7713f2ee58adb48cc":[2,2,1,14],
 "group___u_a_v_object_handling.html#gadb5582c476cc047b4ca65d5ed03d687a":[2,2,1,15],
-"group___u_a_v_object_handling.html#gadc17f6e4b8121257308645c34c5e48c8":[2,2,1,65]
+"group___u_a_v_object_handling.html#gadc17f6e4b8121257308645c34c5e48c8":[2,2,1,65],
+"group___u_a_v_object_handling.html#gadce68671d7788ce17593ae16d93c747b":[2,2,1,109],
+"group___u_a_v_object_handling.html#gadd4119ec326e9718543908e796bf46b2":[2,2,1,79],
+"group___u_a_v_object_handling.html#gadf30e29acf5a8e1628a0099ba21c3638":[2,2,1,38]
 };

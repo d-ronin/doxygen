@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">4c5eb32</span>
+   &#160;<span id="projectnumber">d3d619f</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -158,8 +158,8 @@ Macros</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:a1534f957379f73e9eab328845f95ad23"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_u_a_v_o_base.html">UAVOBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a></td></tr>
 <tr class="separator:a1534f957379f73e9eab328845f95ad23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d2d49fa0dec2bf59c61ffe88270c331"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uavobjectmanager_8h.html#a7d2d49fa0dec2bf59c61ffe88270c331">UAVObjEventCallback</a> )(<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev, void *cb_ctx, void *uavo_data, int uavo_len)</td></tr>
-<tr class="separator:a7d2d49fa0dec2bf59c61ffe88270c331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60b44305f0cb4aaf49f93296bd2f7fda"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uavobjectmanager_8h.html#a60b44305f0cb4aaf49f93296bd2f7fda">UAVObjEventCallback</a> )(const <a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev, void *cb_ctx, void *uavo_data, int uavo_len)</td></tr>
+<tr class="separator:a60b44305f0cb4aaf49f93296bd2f7fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16def10911b9b7e8626c2d1e3fec6e67"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uavobjectmanager_8h.html#a16def10911b9b7e8626c2d1e3fec6e67">UAVObjInitializeCallback</a> )(<a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a> obj_handle, uint16_t instId)</td></tr>
 <tr class="separator:a16def10911b9b7e8626c2d1e3fec6e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58db83831e3408beebc011830d0046d7"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uavobjectmanager_8h.html#a58db83831e3408beebc011830d0046d7">new_uavo_instance_cb_t</a> )(uint32_t, uint32_t)</td></tr>
@@ -294,13 +294,13 @@ Functions</h2></td></tr>
 <tr class="separator:gaa8751dc09767d568385113ea4d208666"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga671a6dde943528e4018beea0f58b23ae"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_object_handling.html#ga671a6dde943528e4018beea0f58b23ae">UAVObjConnectQueueThrottled</a> (<a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a> obj_handle, struct <a class="el" href="structpios__queue.html">pios_queue</a> *<a class="el" href="group___vtol_path_follower.html#ga99a334ed9cdb3e7a7c694d5519d08d30">queue</a>, uint8_t eventMask, uint16_t interval)</td></tr>
 <tr class="separator:ga671a6dde943528e4018beea0f58b23ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4564c9e55f64efa89658f190ffeddbf5"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_object_handling.html#ga4564c9e55f64efa89658f190ffeddbf5">UAVObjConnectCallback</a> (<a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a> obj_handle, <a class="el" href="uavobjectmanager_8h.html#a7d2d49fa0dec2bf59c61ffe88270c331">UAVObjEventCallback</a> cb, void *cbCtx, uint8_t eventMask)</td></tr>
+<tr class="memitem:ga4564c9e55f64efa89658f190ffeddbf5"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_object_handling.html#ga4564c9e55f64efa89658f190ffeddbf5">UAVObjConnectCallback</a> (<a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a> obj_handle, <a class="el" href="uavobjectmanager_8h.html#a60b44305f0cb4aaf49f93296bd2f7fda">UAVObjEventCallback</a> cb, void *cbCtx, uint8_t eventMask)</td></tr>
 <tr class="separator:ga4564c9e55f64efa89658f190ffeddbf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5e095821a92c8240dd92462a363a1ffe"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_object_handling.html#ga5e095821a92c8240dd92462a363a1ffe">UAVObjConnectCallbackThrottled</a> (<a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a> obj_handle, <a class="el" href="uavobjectmanager_8h.html#a7d2d49fa0dec2bf59c61ffe88270c331">UAVObjEventCallback</a> cb, void *cbCtx, uint8_t eventMask, uint16_t interval)</td></tr>
+<tr class="memitem:ga5e095821a92c8240dd92462a363a1ffe"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_object_handling.html#ga5e095821a92c8240dd92462a363a1ffe">UAVObjConnectCallbackThrottled</a> (<a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a> obj_handle, <a class="el" href="uavobjectmanager_8h.html#a60b44305f0cb4aaf49f93296bd2f7fda">UAVObjEventCallback</a> cb, void *cbCtx, uint8_t eventMask, uint16_t interval)</td></tr>
 <tr class="separator:ga5e095821a92c8240dd92462a363a1ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9964be94d5ce50f0b9b72875a36c7c4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_object_handling.html#ga9964be94d5ce50f0b9b72875a36c7c4c">UAVObjUnblockThrottle</a> (struct <a class="el" href="struct_object_event_entry_throttled.html">ObjectEventEntryThrottled</a> *throttled)</td></tr>
 <tr class="separator:ga9964be94d5ce50f0b9b72875a36c7c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0736b07b95b7d2c2d3fcab7ecc8607e3"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_object_handling.html#ga0736b07b95b7d2c2d3fcab7ecc8607e3">UAVObjDisconnectCallback</a> (<a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a> obj_handle, <a class="el" href="uavobjectmanager_8h.html#a7d2d49fa0dec2bf59c61ffe88270c331">UAVObjEventCallback</a> cb, void *cbCtx)</td></tr>
+<tr class="memitem:ga0736b07b95b7d2c2d3fcab7ecc8607e3"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_object_handling.html#ga0736b07b95b7d2c2d3fcab7ecc8607e3">UAVObjDisconnectCallback</a> (<a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a> obj_handle, <a class="el" href="uavobjectmanager_8h.html#a60b44305f0cb4aaf49f93296bd2f7fda">UAVObjEventCallback</a> cb, void *cbCtx)</td></tr>
 <tr class="separator:ga0736b07b95b7d2c2d3fcab7ecc8607e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaadcab3b60f3004ccba0c5efa5c5bfb57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_object_handling.html#gaadcab3b60f3004ccba0c5efa5c5bfb57">UAVObjUpdated</a> (<a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a> obj)</td></tr>
 <tr class="separator:gaadcab3b60f3004ccba0c5efa5c5bfb57"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -314,10 +314,10 @@ Functions</h2></td></tr>
 <tr class="separator:ga04e1ab20c7049252ea9ca8089bf964cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaf83f415630a8b5bb4a862a5e5db9adb"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_object_handling.html#gaaf83f415630a8b5bb4a862a5e5db9adb">UAVObjIDByIndex</a> (uint8_t index)</td></tr>
 <tr class="separator:gaaf83f415630a8b5bb4a862a5e5db9adb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3b833197442a5ead219180543075e2c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_object_handling.html#ga3b833197442a5ead219180543075e2c0">UAVObjCbSetFlag</a> (<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *objEv, void *ctx, void *obj, int len)</td></tr>
-<tr class="separator:ga3b833197442a5ead219180543075e2c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga101694515f3c2f2b64df132494f5e5ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_object_handling.html#ga101694515f3c2f2b64df132494f5e5ce">UAVObjCbCopyData</a> (<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *objEv, void *ctx, void *obj, int len)</td></tr>
-<tr class="separator:ga101694515f3c2f2b64df132494f5e5ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9041d044f7a4f83f8bde5ec6e276cb1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_object_handling.html#ga9041d044f7a4f83f8bde5ec6e276cb1f">UAVObjCbSetFlag</a> (const <a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *objEv, void *ctx, void *obj, int len)</td></tr>
+<tr class="separator:ga9041d044f7a4f83f8bde5ec6e276cb1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa0c70ada71ac7e5c8386a0e5fcd2b696"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_object_handling.html#gaa0c70ada71ac7e5c8386a0e5fcd2b696">UAVObjCbCopyData</a> (const <a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *objEv, void *ctx, void *obj, int len)</td></tr>
+<tr class="separator:gaa0c70ada71ac7e5c8386a0e5fcd2b696"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="aecd9b9ac1f136650b2aec2b779f3e152"></a>
@@ -490,12 +490,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7d2d49fa0dec2bf59c61ffe88270c331"></a>
+<a class="anchor" id="a60b44305f0cb4aaf49f93296bd2f7fda"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* UAVObjEventCallback)(<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev, void *cb_ctx, void *uavo_data, int uavo_len)</td>
+          <td class="memname">typedef void(* UAVObjEventCallback)(const <a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev, void *cb_ctx, void *uavo_data, int uavo_len)</td>
         </tr>
       </table>
 </div><div class="memdoc">

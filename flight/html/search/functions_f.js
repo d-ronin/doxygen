@@ -15,7 +15,7 @@ var searchData=
   ['pathplannerinitialize',['PathPlannerInitialize',['../group___path_planner_module.html#ga851894b7d249ff14f2f5e1a6f294bf35',1,'pathplanner.c']]],
   ['pathplannerstart',['PathPlannerStart',['../group___path_planner_module.html#gaf0d1956d741a9004d4d88cb38d43b4c4',1,'pathplanner.c']]],
   ['pathplannertask',['pathPlannerTask',['../group___path_planner_module.html#ga763140fa0b65be44e6adb39277a5a24a',1,'pathplanner.c']]],
-  ['pathstatusupdated',['pathStatusUpdated',['../group___path_planner_module.html#gaa03a83d9f133754177ee9bb179ff7392',1,'pathplanner.c']]],
+  ['pathstatusupdated',['pathStatusUpdated',['../group___path_planner_module.html#ga80e9253e81726893a2188a678bbfdb6d',1,'pathplanner.c']]],
   ['perform_5ftc_5fsettings_5fupdate',['perform_tc_settings_update',['../group___control.html#gae35c4cd93249576871dfca4cd9c4a23e',1,'transmitter_control.c']]],
   ['pid_5fapply',['pid_apply',['../group___flight_math.html#ga173a3f497f444827b07299891ad25e34',1,'pid.c']]],
   ['pid_5fapply_5fantiwindup',['pid_apply_antiwindup',['../group___flight_math.html#gac965c1e7ddcf29b28c5e97496cdfb1c0',1,'pid.c']]],
@@ -528,7 +528,7 @@ var searchData=
   ['processusbactivity',['processUsbActivity',['../group___telemetry_module.html#ga63a7a7609325b2e485b176d5bc736066',1,'telemetry.c']]],
   ['program_5fcharacters',['program_characters',['../group___char_o_s_d.html#gab46b685b8f668a69727635d119751964',1,'charonscreendisplay.c']]],
   ['property',['property',['../classpx__uploader_1_1firmware.html#a8de5e3aaf04b998f53dda8379c1dd042',1,'px_uploader::firmware']]],
-  ['pumponeevent',['pumpOneEvent',['../group___u_a_v_object_handling.html#ga7e848a8c74d7330d713bdbd3c663ee5b',1,'uavobjectmanager.c']]],
+  ['pumponeevent',['pumpOneEvent',['../group___u_a_v_object_handling.html#gadf30e29acf5a8e1628a0099ba21c3638',1,'uavobjectmanager.c']]],
   ['pvportmalloc',['pvPortMalloc',['../group___p_i_o_s___h_e_a_p.html#ga79dd6b255a06cb7cb43adc98d8a3c8df',1,'pios_heap.c']]],
   ['pythag',['pythag',['../group___char_o_s_d.html#gac174129986fce93a3240504458351308',1,'panel.c']]]
 ];

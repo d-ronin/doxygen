@@ -15,7 +15,7 @@ var group___tx_p_i_d_module =
     [ "TxPIDInitialize", "group___tx_p_i_d_module.html#ga25f9f8de3b52c6d5d765abc545cdf923", null ],
     [ "TxPIDStart", "group___tx_p_i_d_module.html#ga471c809fc3395bf53e4c6b7888434d08", null ],
     [ "update", "group___tx_p_i_d_module.html#gad434c53f893938120c31f3ce7b017acd", null ],
-    [ "updatePIDs", "group___tx_p_i_d_module.html#gaf8393d7267577ee01fd7083983d03bfb", null ],
+    [ "updatePIDs", "group___tx_p_i_d_module.html#ga0046295952e169b321070f9b04c1fc06", null ],
     [ "txpid_data", "group___tx_p_i_d_module.html#ga9d103b6f46786f9f733ff608ffcb99d5", null ],
     [ "update", "group___tx_p_i_d_module.html#ga80072bd0c1ddc10b66d3fecb7a5982df", null ]
 ];

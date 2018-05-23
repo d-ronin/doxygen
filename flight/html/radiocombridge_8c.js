@@ -10,7 +10,7 @@ var radiocombridge_8c =
     [ "USB_ACTIVITY_TIMEOUT_MS", "radiocombridge_8c.html#ga2b77885d3b4992f77992bf84113980d6", null ],
     [ "getComPort", "radiocombridge_8c.html#ga079a96905407622d10643ce69c08b288", null ],
     [ "MODULE_INITCALL", "radiocombridge_8c.html#gac3af1d46c7b58e81ee6fe55f7310226c", null ],
-    [ "NewReceiverData", "radiocombridge_8c.html#ga832ecedd65820ba8cc8c0e76e6a84fe7", null ],
+    [ "NewReceiverData", "radiocombridge_8c.html#ga705018c46b1dc39e00241d9f87774f98", null ],
     [ "ProcessLocalStream", "radiocombridge_8c.html#ga6e31ec2031463aea22999edf10b995d7", null ],
     [ "ProcessRadioStream", "radiocombridge_8c.html#gade4bbfe7bfd08af2a781379ed60292f6", null ],
     [ "RadioComBridgeInitialize", "radiocombridge_8c.html#ga87a6834d60ae889d7c6cc4db49f26ad9", null ],

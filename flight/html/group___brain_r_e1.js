@@ -141,7 +141,7 @@ var group___brain_r_e1 =
     [ "PIOS_RE1FPGA_SetSyncThreshold", "group___brain_r_e1.html#gabe31089ecd7adf0044f5c9ec074caa1b", null ],
     [ "PIOS_RE1FPGA_SetXOffset", "group___brain_r_e1.html#ga9e28dcb577e3996eab9482f75a84558d", null ],
     [ "PIOS_RE1FPGA_SetXScale", "group___brain_r_e1.html#gaf781b9d89bc5ed624bfdab5c7655224c", null ],
-    [ "settingdUpdatedCb", "group___brain_r_e1.html#ga35bd05421aa6667423406271507c0ae2", null ],
+    [ "settingsUpdatedCb", "group___brain_r_e1.html#ga892eb1808c6c365780c7381b0a06b2c0", null ],
     [ "level_bits", "group___brain_r_e1.html#ga11c0902226e4d67fbe3c03915a5621e2", null ],
     [ "level_mask_bits", "group___brain_r_e1.html#ga1af1755811426df00f4a2077e1bc242c", null ],
     [ "llama_bits", "group___brain_r_e1.html#ga45dd334b361ae9c66263597580a95fee", null ],

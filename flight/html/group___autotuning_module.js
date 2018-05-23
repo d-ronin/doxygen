@@ -19,9 +19,9 @@ var group___autotuning_module =
       [ "AT_INIT", "group___autotuning_module.html#ggaccf89780733911b196b1df6702d71012a212188919cef420e2de9232d9029a92b", null ],
       [ "AT_RUN", "group___autotuning_module.html#ggaccf89780733911b196b1df6702d71012aaf059a2d0fa090f804f246b0c8ffdc89", null ]
     ] ],
-    [ "at_new_actuators", "group___autotuning_module.html#gac74087c60fbd25709e25f5d0af9a63c8", null ],
+    [ "at_new_actuators", "group___autotuning_module.html#ga28c52a3ec8837e286a241a3b05a70a90", null ],
     [ "autotune_save_averaging", "group___autotuning_module.html#gacfe3a46f19338440f1191119b113076c", null ],
-    [ "autotune_step", "group___autotuning_module.html#ga3e1fec617433ad535e6f572b855f70bc", null ],
+    [ "autotune_step", "group___autotuning_module.html#gaf6280d3619c9fdc9ec5512dd4d24158b", null ],
     [ "AutotuneInitialize", "group___autotuning_module.html#gadcd235231767c9940ae6782d9ad75892", null ],
     [ "AutotuneStart", "group___autotuning_module.html#ga4a975e6b1043a32ec5c88aaf7a9bc298", null ],
     [ "UpdateSystemIdent", "group___autotuning_module.html#gabd06ceed98a5cdec86ea930252142a3e", null ],

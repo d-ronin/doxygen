@@ -7,6 +7,6 @@ var txpid_8c =
     [ "TxPIDInitialize", "txpid_8c.html#ga25f9f8de3b52c6d5d765abc545cdf923", null ],
     [ "TxPIDStart", "txpid_8c.html#ga471c809fc3395bf53e4c6b7888434d08", null ],
     [ "update", "txpid_8c.html#gad434c53f893938120c31f3ce7b017acd", null ],
-    [ "updatePIDs", "txpid_8c.html#gaf8393d7267577ee01fd7083983d03bfb", null ],
+    [ "updatePIDs", "txpid_8c.html#ga0046295952e169b321070f9b04c1fc06", null ],
     [ "txpid_data", "txpid_8c.html#ga9d103b6f46786f9f733ff608ffcb99d5", null ]
 ];

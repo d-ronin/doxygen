@@ -1,7 +1,5 @@
 var NAVTREEINDEX91 =
 {
-"playuavosd_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[5,0,0,5,12,1,3,10],
-"playuavosd_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[5,0,0,5,12,1,3,9],
 "playuavosd_2board-info_2usb__conf_8h.html#ga76a9fa8f88128d0f1f15ee3854cb57ac":[5,0,0,5,12,1,3,6],
 "playuavosd_2board-info_2usb__conf_8h.html#ga8b374c2c4c44e27335ab7bca651371f8":[5,0,0,5,12,1,3,0],
 "playuavosd_2board-info_2usb__conf_8h.html#ga8e636a33b83aa2e43f5ea6ffa4f1f713":[5,0,0,5,12,1,3,8],
@@ -249,5 +247,7 @@ var NAVTREEINDEX91 =
 "posix_2pios__thread_8c_source.html":[5,0,0,4,2,23],
 "posix_2pios__wdg_8c.html":[5,0,0,4,2,24],
 "posix_2pios__wdg_8c.html#ga0cb157cf1f3763126ab097d9bf67658b":[5,0,0,4,2,24,3],
-"posix_2pios__wdg_8c.html#ga181128f13ffdec27ea07e13fc4a4e1ab":[5,0,0,4,2,24,5]
+"posix_2pios__wdg_8c.html#ga181128f13ffdec27ea07e13fc4a4e1ab":[5,0,0,4,2,24,5],
+"posix_2pios__wdg_8c.html#ga1ffcba6811cce798c0a6bc014a691dc7":[5,0,0,4,2,24,4],
+"posix_2pios__wdg_8c.html#ga37fde3d7139a4739308ac7a214dbe965":[5,0,0,4,2,24,11]
 };

@@ -11,7 +11,7 @@ var group___logging =
     [ "loggingTask", "group___logging.html#ga0a9dfd6edce86ce599fcaeca9aab266e", null ],
     [ "logSettings", "group___logging.html#ga25447c2e569c52ca72f4b2a456e7b574", null ],
     [ "MODULE_INITCALL", "group___logging.html#ga4bcdc6d8f98fb55017d35f0ea15cd3d0", null ],
-    [ "obj_updated_callback", "group___logging.html#gaabf90923185f524e4da3c059361a848b", null ],
+    [ "obj_updated_callback", "group___logging.html#ga4c52072e731d061b2b1c1ae0578cd95f", null ],
     [ "register_default_profile", "group___logging.html#ga406f1cacb994c74bc1a4eaa233b66999", null ],
     [ "register_object", "group___logging.html#ga2a02369f36d2833a71af2cf8e06d23d5", null ],
     [ "send_data", "group___logging.html#ga3e8bb197c86fa4ffe7ed8833e8776141", null ],

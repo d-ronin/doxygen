@@ -5,7 +5,7 @@ var searchData=
   ['warning',['warning',['../structhott__vario__message.html#ae2acd40c33e8f883d7934affddb7dfb8',1,'hott_vario_message::warning()'],['../structhott__gps__message.html#a758f27812f282cd2311e971cd97ed749',1,'hott_gps_message::warning()'],['../structhott__gam__message.html#aa53771150a51fe80663ddcb93e57fee7',1,'hott_gam_message::warning()'],['../structhott__eam__message.html#a099b8627af4903741bd29aa39447e222',1,'hott_eam_message::warning()'],['../structhott__esc__message.html#a4b87c207142b83d7d9ddb739aa558cb2',1,'hott_esc_message::warning()'],['../structhott__text__message.html#a04361587c85b91297d3b592d1d25650a',1,'hott_text_message::warning()']]],
   ['waypoint',['waypoint',['../group___path_planner_module.html#ga85a441f2f9f66aa976a8f17cfc1a6691',1,'pathplanner.c']]],
   ['waypointactive',['waypointActive',['../group___path_planner_module.html#gaa4327b3567060bdcda893270b5504310',1,'pathplanner.c']]],
-  ['waypointsupdated',['waypointsUpdated',['../group___path_planner_module.html#ga176147c6a18280e0044da496be6b84f2',1,'pathplanner.c']]],
+  ['waypointsupdated',['waypointsUpdated',['../group___path_planner_module.html#ga0c169ff6e26fd31c78327631bf30decd',1,'pathplanner.c']]],
   ['waypointvalid',['waypointValid',['../group___path_planner_module.html#ga200750d8d95710a2c5010d47d03d062b',1,'pathplanner.c']]],
   ['wday',['wday',['../group___libraries.html#ga652722d66b4003894f4cdfacc105d083',1,'__attribute__']]],
   ['wdg_5fcleared_5ftime',['wdg_cleared_time',['../group___p_i_o_s___w_d_g.html#gaad5cc53775aac9ab18240ee4dec36b8b',1,'pios_wdg.c']]],

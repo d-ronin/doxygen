@@ -21,7 +21,7 @@ var searchData=
   ['reset_5freceiver_5ftimer',['reset_receiver_timer',['../group___control.html#gae7668231582cbe152c919d7523277376',1,'transmitter_control.c']]],
   ['resetrcvractivity',['resetRcvrActivity',['../group___control.html#ga33384f5974fe891d5deb5ed3fac3842d',1,'transmitter_control.c']]],
   ['resetstats',['resetStats',['../group___flight.html#gaf48cbf34644d6ad7c6b11c51ea2bfda7',1,'flightstatsmodule.c']]],
-  ['resettask',['resetTask',['../group___firmware_i_a_p_module.html#ga57974530f884ad4bc482830d5ec6e30d',1,'firmwareiap.c']]],
+  ['resettask',['resetTask',['../group___firmware_i_a_p_module.html#ga9730f7ef9c0f7b206ff36beead4e40ac',1,'firmwareiap.c']]],
   ['resume',['Resume',['../pios__usb__hid__pwr_8h.html#a927a384b5759002b5f933f9c92a800ea',1,'Resume(RESUME_STATE eResumeSetVal):&#160;pios_usb_hid_pwr.c'],['../_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html#a927a384b5759002b5f933f9c92a800ea',1,'Resume(RESUME_STATE eResumeSetVal):&#160;pios_usb_hid_pwr.c'],['../_s_t_m32_f30x_2pios__usb__hid__pwr_8c.html#a927a384b5759002b5f933f9c92a800ea',1,'Resume(RESUME_STATE eResumeSetVal):&#160;pios_usb_hid_pwr.c']]],
   ['resume_5finit',['Resume_Init',['../pios__usb__hid__pwr_8h.html#aed055ac12f74727702bd41df2e35beec',1,'Resume_Init(void):&#160;pios_usb_hid_pwr.c'],['../_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html#aed055ac12f74727702bd41df2e35beec',1,'Resume_Init(void):&#160;pios_usb_hid_pwr.c'],['../_s_t_m32_f30x_2pios__usb__hid__pwr_8c.html#aed055ac12f74727702bd41df2e35beec',1,'Resume_Init(void):&#160;pios_usb_hid_pwr.c']]],
   ['rnefromlla',['RneFromLLA',['../group___flight_math.html#ga682c71aaf24cb8f77a2452e027daaff2',1,'coordinate_conversions.c']]],

@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['obj_5fupdated_5fcallback',['obj_updated_callback',['../group___logging.html#gaabf90923185f524e4da3c059361a848b',1,'logging.c']]],
+  ['obj_5fupdated_5fcallback',['obj_updated_callback',['../group___logging.html#ga4c52072e731d061b2b1c1ae0578cd95f',1,'logging.c']]],
   ['objecttransaction',['objectTransaction',['../group___u_a_v_talk.html#gac290a55b79dee2a5c6962d1db57cbe7c',1,'uavtalk.c']]],
-  ['objectupdatedcb',['objectUpdatedCb',['../group___system_module.html#gaf33480c6b247620915026fc37bb9232a',1,'systemmod.c']]],
+  ['objectupdatedcb',['objectUpdatedCb',['../group___system_module.html#ga1173141892897ec6419aecfa373c403a',1,'systemmod.c']]],
   ['ok_5fto_5farm',['ok_to_arm',['../group___control.html#gab4d9e85efcf5f9dafe0083f8599dfcf9',1,'manualcontrol.c']]],
   ['onscreendisplayinitialize',['OnScreenDisplayInitialize',['../group___on_screen_display.html#ga85f00556b28dd417b6ee883a594d2346',1,'onscreendisplay.c']]],
   ['onscreendisplaystart',['OnScreenDisplayStart',['../group___on_screen_display.html#ga0496475602e2b732b78ea39474e38305',1,'onscreendisplay.c']]],

@@ -1,7 +1,5 @@
 var NAVTREEINDEX99 =
 {
-"structpios__internal__adc__cfg.html#a78fcf970c586ff2dc5a5464b3eda21e6":[2,0,52,5,1],
-"structpios__internal__adc__cfg.html#aaebf99178a47cbe3c440f294bfa0207b":[2,0,52,5,3],
 "structpios__internal__adc__cfg.html#aaf65057cc3e9e3db9c075162b8ecfe1b":[2,0,52,5,5],
 "structpios__internal__adc__cfg.html#ac7b103c963e512c7104bbcd2b6dc3281":[2,0,52,5,0],
 "structpios__internal__adc__cfg.html#ade026429ab4238f63092fa17b4f95e4e":[2,0,52,5,6],
@@ -51,12 +49,12 @@ var NAVTREEINDEX99 =
 "structpios__re1fpga__cfg.html":[2,6,4,7],
 "structpios__re1fpga__cfg.html#a16a14f03c9b2a8236f095deafb11b0b4":[2,5,4,7,1],
 "structpios__re1fpga__cfg.html#a16a14f03c9b2a8236f095deafb11b0b4":[2,6,4,7,1],
-"structpios__re1fpga__cfg.html#a473e1443aaac0b9aa2e72f87c975ee7d":[2,5,4,7,3],
 "structpios__re1fpga__cfg.html#a473e1443aaac0b9aa2e72f87c975ee7d":[2,6,4,7,3],
+"structpios__re1fpga__cfg.html#a473e1443aaac0b9aa2e72f87c975ee7d":[2,5,4,7,3],
 "structpios__re1fpga__cfg.html#a70668b4c3a5e86a2ce5c7b20934c973a":[2,5,4,7,2],
 "structpios__re1fpga__cfg.html#a70668b4c3a5e86a2ce5c7b20934c973a":[2,6,4,7,2],
-"structpios__re1fpga__cfg.html#ad2c23fbdea25e5a36c5489a5a8ff26f7":[2,6,4,7,0],
 "structpios__re1fpga__cfg.html#ad2c23fbdea25e5a36c5489a5a8ff26f7":[2,5,4,7,0],
+"structpios__re1fpga__cfg.html#ad2c23fbdea25e5a36c5489a5a8ff26f7":[2,6,4,7,0],
 "structpios__recursive__mutex.html":[2,0,28,1],
 "structpios__recursive__mutex.html#a200855903286b62f64a45fd445f52799":[2,0,28,1,0],
 "structpios__rtc__cfg.html":[2,0,61,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX99 =
 "structstreamfs__state.html":[2,0,12,3],
 "structstreamfs__state.html#a02796b2d6349e5b70bc0d8901ae1e8a0":[2,0,12,3,10],
 "structstreamfs__state.html#a1dcf603a1df90d42a005dad12fa63791":[2,0,12,3,12],
-"structstreamfs__state.html#a206d2585d02291b60cdda262b2706a18":[2,0,12,3,13]
+"structstreamfs__state.html#a206d2585d02291b60cdda262b2706a18":[2,0,12,3,13],
+"structstreamfs__state.html#a2a183449c44c49110d18e91e482cdb61":[2,0,12,3,0],
+"structstreamfs__state.html#a2c43374da66fcc11a78dcda90dfea328":[2,0,12,3,16]
 };

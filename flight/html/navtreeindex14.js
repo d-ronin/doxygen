@@ -1,6 +1,5 @@
 var NAVTREEINDEX14 =
 {
-"group___actuator_module.html#ga52f86b354660f0addf6f0db8578d1b44":[2,4,0,31],
 "group___actuator_module.html#ga53f74eb0ae7002be03b4fae3e463464c":[2,4,0,28],
 "group___actuator_module.html#ga5665843aba35d577b6358ed5ab0497fa":[2,4,0,25],
 "group___actuator_module.html#ga5cc76a07cc04fa388959faec7a2d8c51":[2,4,0,7],
@@ -120,7 +119,7 @@ var NAVTREEINDEX14 =
 "group___attitude_module.html#gga2a3dfab57b52ff023f9197d9afe06ff4acfd7a1440ea5820f0b90b2943586a542":[2,4,2,6,3],
 "group___attitude_module.html#gga2a3dfab57b52ff023f9197d9afe06ff4aee904149480808a1828f1e546b365411":[2,4,2,6,1],
 "group___autotuning_module.html":[2,4,3],
-"group___autotuning_module.html#ga3e1fec617433ad535e6f572b855f70bc":[2,4,3,9],
+"group___autotuning_module.html#ga28c52a3ec8837e286a241a3b05a70a90":[2,4,3,7],
 "group___autotuning_module.html#ga4a975e6b1043a32ec5c88aaf7a9bc298":[2,4,3,11],
 "group___autotuning_module.html#ga63f2eb5b4fcec2383601b1cf39fbbbe1":[2,4,3,17],
 "group___autotuning_module.html#ga6d0285004afb926ad0ed377eade5bf57":[2,4,3,3],
@@ -134,11 +133,11 @@ var NAVTREEINDEX14 =
 "group___autotuning_module.html#gabd06ceed98a5cdec86ea930252142a3e":[2,4,3,12],
 "group___autotuning_module.html#gabd4de671c763079f8094cc063c7d958b":[2,4,3,20],
 "group___autotuning_module.html#gac6e2c894babe71154b4ed29cbdac9b3b":[2,4,3,13],
-"group___autotuning_module.html#gac74087c60fbd25709e25f5d0af9a63c8":[2,4,3,7],
 "group___autotuning_module.html#gaccf89780733911b196b1df6702d71012":[2,4,3,6],
 "group___autotuning_module.html#gacfe3a46f19338440f1191119b113076c":[2,4,3,8],
 "group___autotuning_module.html#gadcd235231767c9940ae6782d9ad75892":[2,4,3,10],
 "group___autotuning_module.html#gaf23900e05a20ba9fb4c80d4b11337de1":[2,4,3,15],
+"group___autotuning_module.html#gaf6280d3619c9fdc9ec5512dd4d24158b":[2,4,3,9],
 "group___autotuning_module.html#ggaccf89780733911b196b1df6702d71012a212188919cef420e2de9232d9029a92b":[2,4,3,6,0],
 "group___autotuning_module.html#ggaccf89780733911b196b1df6702d71012aaf059a2d0fa090f804f246b0c8ffdc89":[2,4,3,6,1],
 "group___battery_module.html":[2,4,4],
@@ -249,5 +248,6 @@ var NAVTREEINDEX14 =
 "group___brain.html#ga609bad0a7167d95b8aa65c05cd6cf739":[2,6,3,73],
 "group___brain.html#ga62e300631856e0c56b1c9b3cbcf5621d":[2,5,3,11],
 "group___brain.html#ga62e300631856e0c56b1c9b3cbcf5621d":[2,6,3,11],
-"group___brain.html#ga639f6a1cd17b535b17f2e4ae80835e7d":[2,5,3,48]
+"group___brain.html#ga639f6a1cd17b535b17f2e4ae80835e7d":[2,5,3,48],
+"group___brain.html#ga639f6a1cd17b535b17f2e4ae80835e7d":[2,6,3,48]
 };
