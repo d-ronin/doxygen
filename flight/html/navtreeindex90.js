@@ -1,15 +1,5 @@
 var NAVTREEINDEX90 =
 {
-"pios__usb__desc__hid__only__priv_8h.html":[5,0,0,4,1,106],
-"pios__usb__desc__hid__only__priv_8h.html#ga92ea05b354edae76dd1315a1e389d506":[5,0,0,4,1,106,0],
-"pios__usb__desc__hid__only__priv_8h_source.html":[5,0,0,4,1,106],
-"pios__usb__hid_8h.html":[5,0,0,4,1,107],
-"pios__usb__hid_8h.html#ga24ffa70cf0e157835a2e6ea2dfb7f916":[5,0,0,4,1,107,4],
-"pios__usb__hid_8h.html#ga2d215927e0302a88603e843e9975277e":[5,0,0,4,1,107,1],
-"pios__usb__hid_8h.html#ga4f30a843d1680813d9ae2784e63ba6ff":[5,0,0,4,1,107,2],
-"pios__usb__hid_8h.html#ga7bc7de75840613b8ba148d493d12598b":[5,0,0,4,1,107,0],
-"pios__usb__hid_8h.html#gab90f1c47b587196a2db9f82b0893c12b":[5,0,0,4,1,107,3],
-"pios__usb__hid_8h_source.html":[5,0,0,4,1,107],
 "pios__usb__hid__istr_8h.html":[5,0,0,4,1,108],
 "pios__usb__hid__istr_8h.html#a2dd10da611b3a42985262e134924bf22":[5,0,0,4,1,108,6],
 "pios__usb__hid__istr_8h.html#a644aaec32cb5d54d126f96b2a1b62cbd":[5,0,0,4,1,108,13],
@@ -249,5 +239,15 @@ var NAVTREEINDEX90 =
 "playuavosd_2board-info_2usb__conf_8h.html#ga2877e6e9de0b5b363604bdecf1a60c9e":[5,0,0,5,12,1,3,12],
 "playuavosd_2board-info_2usb__conf_8h.html#ga6cdceb8d052ea78e07b2e7423da7dbf1":[5,0,0,5,12,1,3,7],
 "playuavosd_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[5,0,0,5,12,1,3,10],
-"playuavosd_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[5,0,0,5,12,1,3,9]
+"playuavosd_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[5,0,0,5,12,1,3,9],
+"playuavosd_2board-info_2usb__conf_8h.html#ga76a9fa8f88128d0f1f15ee3854cb57ac":[5,0,0,5,12,1,3,6],
+"playuavosd_2board-info_2usb__conf_8h.html#ga8b374c2c4c44e27335ab7bca651371f8":[5,0,0,5,12,1,3,0],
+"playuavosd_2board-info_2usb__conf_8h.html#ga8e636a33b83aa2e43f5ea6ffa4f1f713":[5,0,0,5,12,1,3,8],
+"playuavosd_2board-info_2usb__conf_8h.html#gaa8f11863644f6e1694371c789a8d57d3":[5,0,0,5,12,1,3,5],
+"playuavosd_2board-info_2usb__conf_8h.html#gaaa12b03c58e2eb296bd7aa915ee540f3":[5,0,0,5,12,1,3,1],
+"playuavosd_2board-info_2usb__conf_8h.html#gab73da4e9cc0c73803db906ffa91f45c0":[5,0,0,5,12,1,3,2],
+"playuavosd_2board-info_2usb__conf_8h.html#gab76257de69c4dfbe6f439d76f5e3e660":[5,0,0,5,12,1,3,4],
+"playuavosd_2board-info_2usb__conf_8h.html#gad46a504a2195416b71d51d5d46b773c2":[5,0,0,5,12,1,3,3],
+"playuavosd_2board-info_2usb__conf_8h_source.html":[5,0,0,5,12,1,3],
+"playuavosd_2fw_2pios__board_8c.html":[5,0,0,5,12,2,0]
 };

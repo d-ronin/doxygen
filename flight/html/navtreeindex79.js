@@ -1,15 +1,5 @@
 var NAVTREEINDEX79 =
 {
-"osd__utils_8h.html#gaeeb6817f730ee1cfcb95f62d5fa13561":[5,0,0,3,18,0,6,27],
-"osd__utils_8h.html#gaef4730e1cc093c1b98a70d8e9241c3de":[5,0,0,3,18,0,6,47],
-"osd__utils_8h.html#gaf3f423795bedaed1846b429f9e11f186":[5,0,0,3,18,0,6,1],
-"osd__utils_8h.html#gaf40a4ff68d2c1d281e5f8666647bb053":[5,0,0,3,18,0,6,33],
-"osd__utils_8h.html#gaf6fc4b3f87ac8c0c944de1c9ff3a9cac":[5,0,0,3,18,0,6,30],
-"osd__utils_8h.html#gafe48278bdfb70633647317b54e927d07":[5,0,0,3,18,0,6,54],
-"osd__utils_8h_source.html":[5,0,0,3,18,0,6],
-"pages.html":[],
-"panel_8c.html":[5,0,0,3,6,6],
-"panel_8c.html#ga00438c0422c85919348bec3d6ea522a3":[5,0,0,3,6,6,13],
 "panel_8c.html#ga03e19b14477f9bcdad908a72308956c7":[5,0,0,3,6,6,18],
 "panel_8c.html#ga118e92f4ffa77715471b477d7f770ec8":[5,0,0,3,6,6,33],
 "panel_8c.html#ga170c211bc09c98570793de29ac86d9fb":[5,0,0,3,6,6,45],
@@ -249,5 +239,15 @@ var NAVTREEINDEX79 =
 "pios__bmm150__priv_8h.html#ga26077af5bcf14e835763a7d7a8b64166":[5,0,0,4,1,9,31],
 "pios__bmm150__priv_8h.html#ga266d4364c4e9640a81ddc2886cdebc54":[5,0,0,4,1,9,32],
 "pios__bmm150__priv_8h.html#ga2ba15d26119608ad90c18ac8e9e06133":[5,0,0,4,1,9,29],
-"pios__bmm150__priv_8h.html#ga302c064eac8c7c7a32f7689d9c9f26e8":[5,0,0,4,1,9,2]
+"pios__bmm150__priv_8h.html#ga302c064eac8c7c7a32f7689d9c9f26e8":[5,0,0,4,1,9,2],
+"pios__bmm150__priv_8h.html#ga321605f1e28728eb836756584f18a5c3":[5,0,0,4,1,9,5],
+"pios__bmm150__priv_8h.html#ga36bb0765715705583ed48f236b950173":[5,0,0,4,1,9,42],
+"pios__bmm150__priv_8h.html#ga3978ae078563d1c24f611b37b3bdeeb1":[5,0,0,4,1,9,28],
+"pios__bmm150__priv_8h.html#ga4346b01936c9cc7b8fb85e405d52dc47":[5,0,0,4,1,9,48],
+"pios__bmm150__priv_8h.html#ga492071d18f26bb76b7ecbd17c7a3e29a":[5,0,0,4,1,9,24],
+"pios__bmm150__priv_8h.html#ga498b0798438532ea176a050a7b258746":[5,0,0,4,1,9,3],
+"pios__bmm150__priv_8h.html#ga4b86d52b09ddfdba715a35c3f8e77f2f":[5,0,0,4,1,9,12],
+"pios__bmm150__priv_8h.html#ga4dd67e60e4ca6ceba96c7822abc31a2b":[5,0,0,4,1,9,8],
+"pios__bmm150__priv_8h.html#ga529bf9f83216da65480c252852d22068":[5,0,0,4,1,9,44],
+"pios__bmm150__priv_8h.html#ga56b7798f063b8511d514a719265449bf":[5,0,0,4,1,9,22]
 };

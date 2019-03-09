@@ -1,15 +1,5 @@
 var NAVTREEINDEX82 =
 {
-"pios__flash__posix_8c.html#ab789826bd7675af15f06c45f3986cf47":[5,0,0,4,2,6,3],
-"pios__flash__posix_8c.html#ac1bdc4742341a78f3585c5a7e9e69381":[5,0,0,4,2,6,12],
-"pios__flash__posix_8c.html#ad295641fe76394a3bd067f57c5b8bcc9":[5,0,0,4,2,6,7],
-"pios__flash__posix_8c.html#ae3df8a8e68274614b6310f7820521a14":[5,0,0,4,2,6,5],
-"pios__flash__posix_8c.html#aedcc4c03796afcb5f7c567e85db86a6d":[5,0,0,4,2,6,10],
-"pios__flash__posix_8c.html#aee209db8766f9e368cd6ff8fe8fd0186":[5,0,0,4,2,6,4],
-"pios__flash__posix_8c.html#aeed10ff705e62d2d1a4cd1af46bfa775":[5,0,0,4,2,6,6],
-"pios__flash__posix_8c.html#af838e6155a3c54487f3c5ed542ac0ef8":[5,0,0,4,2,6,1],
-"pios__flash__posix_8c.html#af838e6155a3c54487f3c5ed542ac0ef8a1a8d5dbd419d5ab261f44f5903b9b4df":[5,0,0,4,2,6,1,0],
-"pios__flash__posix_8c_source.html":[5,0,0,4,2,6],
 "pios__flash__posix__priv_8h.html":[5,0,0,4,2,0,4],
 "pios__flash__posix__priv_8h.html#a2cbd31eb54e75861f03ab588ec3f5bc1":[5,0,0,4,2,0,4,3],
 "pios__flash__posix__priv_8h.html#a58db917e3f558dfd8fd912aa4454a087":[5,0,0,4,2,0,4,4],
@@ -249,5 +239,15 @@ var NAVTREEINDEX82 =
 "pios__hmc5883__priv_8h.html#ga25ba1fae11fe900b0b86d664a3f9e69c":[5,0,0,4,1,42,9],
 "pios__hmc5883__priv_8h.html#ga29c1b50af0dae8c3eefa58de939533a1":[5,0,0,4,1,42,7],
 "pios__hmc5883__priv_8h.html#ga2b8bdc226b9b3b8cd52d70cfc6731510":[5,0,0,4,1,42,18],
-"pios__hmc5883__priv_8h.html#ga354c852d57c2a739ca8b5faef18029c5":[5,0,0,4,1,42,17]
+"pios__hmc5883__priv_8h.html#ga354c852d57c2a739ca8b5faef18029c5":[5,0,0,4,1,42,17],
+"pios__hmc5883__priv_8h.html#ga3584148d4d9aaccfa276bae61428b8f2":[5,0,0,4,1,42,4],
+"pios__hmc5883__priv_8h.html#ga3ceb6d8e1381c0a57d112f105f9450b3":[5,0,0,4,1,42,16],
+"pios__hmc5883__priv_8h.html#ga3e3c2c33c4f27024a210fe1c498401c8":[5,0,0,4,1,42,1],
+"pios__hmc5883__priv_8h.html#ga419255a8ada8101facfac6c59682c605":[5,0,0,4,1,42,14],
+"pios__hmc5883__priv_8h.html#ga47cd54147e3c9a2d4ca7f8df6baedfa8":[5,0,0,4,1,42,34],
+"pios__hmc5883__priv_8h.html#ga4f3dfd7c21c4bbe9b6246a9c7778453b":[5,0,0,4,1,42,23],
+"pios__hmc5883__priv_8h.html#ga52046d9a3fa5df1a77f9afe526d64df0":[5,0,0,4,1,42,25],
+"pios__hmc5883__priv_8h.html#ga5d22467dcce5bf9dfd9b18b28ac240ca":[5,0,0,4,1,42,3],
+"pios__hmc5883__priv_8h.html#ga5f28bb715ab7110308770dfcc0566ca6":[5,0,0,4,1,42,36],
+"pios__hmc5883__priv_8h.html#ga5f5fc9d43e021d50e4bbbd3f82f79a14":[5,0,0,4,1,42,39]
 };

@@ -1,15 +1,5 @@
 var NAVTREEINDEX97 =
 {
-"structhott__gam__message.html#af713bf6f3b6218a6afbb09f734d77eb2":[2,4,29,6,29],
-"structhott__gam__message.html#afaef5a06a46109325ec487caf0f4b7f0":[2,4,29,6,31],
-"structhott__gps__message.html":[2,4,29,5],
-"structhott__gps__message.html#a024599a8671b8500810e02b5a54991a7":[2,4,29,5,34],
-"structhott__gps__message.html#a030b24a17300e2dc0a9af0887fa1ca29":[2,4,29,5,29],
-"structhott__gps__message.html#a072044420ca313544cc8d357b7ef0de8":[2,4,29,5,11],
-"structhott__gps__message.html#a080054a22b4839f3534bee6753b66b9b":[2,4,29,5,15],
-"structhott__gps__message.html#a0fe796cf91c4fcb4c46bdaa22f20a3c4":[2,4,29,5,10],
-"structhott__gps__message.html#a12c8dbdd60a9366cb8e05564dfbcb25e":[2,4,29,5,8],
-"structhott__gps__message.html#a1a1236afd7d67d8bf481646d4b55f088":[2,4,29,5,27],
 "structhott__gps__message.html#a1f95c2e248434cd3e7ff403634e0e1cd":[2,4,29,5,22],
 "structhott__gps__message.html#a3428ecebe2a61bb0b90e984ff0ca5f4e":[2,4,29,5,3],
 "structhott__gps__message.html#a5093b17238c5109684185c9c7977a5bf":[2,4,29,5,6],
@@ -249,5 +239,15 @@ var NAVTREEINDEX97 =
 "structmsp__raw__gps.html#aa810588100795f6c80b66c480cc86643":[2,1,2,9,1],
 "structmsp__raw__gps.html#abb29aab4792bf00fc1b4e8a13bd5c8a5":[2,1,2,9,5],
 "structmsp__raw__gps.html#ac1c83e7dbd8abccde84e5c0e4119e46e":[2,1,2,9,2],
-"structmsp__raw__imu.html":[2,1,2,3]
+"structmsp__raw__imu.html":[2,1,2,3],
+"structmsp__raw__imu.html#a214452d3d19ad211f205b7531a659ed6":[2,1,2,3,7],
+"structmsp__raw__imu.html#a43db29e01b471e6835e5572445876010":[2,1,2,3,4],
+"structmsp__raw__imu.html#a53e6504185f5594c848c4937389b85b0":[2,1,2,3,1],
+"structmsp__raw__imu.html#a6c8a484db4588166dd270d20e2b8d026":[2,1,2,3,5],
+"structmsp__raw__imu.html#aa11689878f13ec7ac0f98611c4775fca":[2,1,2,3,2],
+"structmsp__raw__imu.html#aa1a7f9750665bda0288555f2189dd0c2":[2,1,2,3,0],
+"structmsp__raw__imu.html#abb6d948188a5dfff1fab14e720490042":[2,1,2,3,6],
+"structmsp__raw__imu.html#acf18466ea9fd4a648e0b436930ed2a79":[2,1,2,3,3],
+"structmsp__raw__imu.html#ad073a59500417010b1b0ee2c3de3b2b3":[2,1,2,3,8],
+"structmsp__rc.html":[2,1,2,7]
 };

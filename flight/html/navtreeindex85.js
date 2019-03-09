@@ -1,15 +1,5 @@
 var NAVTREEINDEX85 =
 {
-"pios__mpu_8h.html#gadabcc04ab28fdab6eb2e43278d4446c4":[5,0,0,4,1,58,8],
-"pios__mpu_8h.html#gae520bc3aa72e1e76215c954f28046d7c":[5,0,0,4,1,58,15],
-"pios__mpu_8h.html#gga101eaff57bbfbe38b6d39d3e64617949a04ace4b2ed294d3965aea2fbc8659255":[5,0,0,4,1,58,5,4],
-"pios__mpu_8h.html#gga101eaff57bbfbe38b6d39d3e64617949a54758a6d3a1acac06843c45529633573":[5,0,0,4,1,58,5,2],
-"pios__mpu_8h.html#gga101eaff57bbfbe38b6d39d3e64617949a87b6cbf58be498751a3e254bcc0bd684":[5,0,0,4,1,58,5,6],
-"pios__mpu_8h.html#gga101eaff57bbfbe38b6d39d3e64617949a950075e90ba4e7f8adb55e00f7f385f3":[5,0,0,4,1,58,5,0],
-"pios__mpu_8h.html#gga101eaff57bbfbe38b6d39d3e64617949aa95b1e8fa609b17a4efe572e68ba5963":[5,0,0,4,1,58,5,3],
-"pios__mpu_8h.html#gga101eaff57bbfbe38b6d39d3e64617949ab155a24b8b4c854f8b490497b708a983":[5,0,0,4,1,58,5,5],
-"pios__mpu_8h.html#gga101eaff57bbfbe38b6d39d3e64617949af755762e25b2d79251b1dbb67682fdf5":[5,0,0,4,1,58,5,1],
-"pios__mpu_8h.html#gga12d79a0f0f846f08a23cfc8a61062456a032388899729ec99420b93f76de0f3f8":[5,0,0,4,1,58,7,1],
 "pios__mpu_8h.html#gga12d79a0f0f846f08a23cfc8a61062456a033a6d4d0a833dc73df2ab4f9e9c4c7e":[5,0,0,4,1,58,7,2],
 "pios__mpu_8h.html#gga12d79a0f0f846f08a23cfc8a61062456a35cc8437402fd9a822dd285263c39ae9":[5,0,0,4,1,58,7,3],
 "pios__mpu_8h.html#gga12d79a0f0f846f08a23cfc8a61062456a7ea751518b3fe6f6b57a10437201e630":[5,0,0,4,1,58,7,4],
@@ -249,5 +239,15 @@ var NAVTREEINDEX85 =
 "pios__ppm_8h.html":[5,0,0,4,1,70],
 "pios__ppm_8h_source.html":[5,0,0,4,1,70],
 "pios__ppm__priv_8h.html":[5,0,0,4,1,71],
-"pios__ppm__priv_8h.html#ga7f973b24121b1d367d00ce6aab89d3e2":[5,0,0,4,1,71,1]
+"pios__ppm__priv_8h.html#ga7f973b24121b1d367d00ce6aab89d3e2":[5,0,0,4,1,71,1],
+"pios__ppm__priv_8h.html#ga9a361b816f4a65086de0fbd10f3687ce":[5,0,0,4,1,71,0],
+"pios__ppm__priv_8h_source.html":[5,0,0,4,1,71],
+"pios__pwm_8c.html":[5,0,0,4,3,9],
+"pios__pwm_8c_source.html":[5,0,0,4,3,9],
+"pios__pwm_8h.html":[5,0,0,4,1,72],
+"pios__pwm_8h_source.html":[5,0,0,4,1,72],
+"pios__pwm__priv_8h.html":[5,0,0,4,1,73],
+"pios__pwm__priv_8h.html#gac6c2df6167298a9fc27afd325ee283ef":[5,0,0,4,1,73,0],
+"pios__pwm__priv_8h.html#gacb60c3c70b08149ef5b1e4267482682c":[5,0,0,4,1,73,1],
+"pios__pwm__priv_8h_source.html":[5,0,0,4,1,73]
 };
