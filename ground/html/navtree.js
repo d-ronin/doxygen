@@ -89,16 +89,16 @@ var NAVTREEINDEX =
 "group___u_a_v_object_widget_utils.html#ga986b48d4e0086adbba03b2da6178524b",
 "group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c",
 "group___u_a_v_objects_plugin.html#gga80357a2f38fa4be23200de86614c3d77a97e59f527995175cc60e103001470e49",
-"group___u_a_v_talk_plugin.html#gafc2b2ad8c68063a80d64666d0e812572",
+"group___u_a_v_talk_plugin.html#gafb99b5df957808785013366dfd5bc636",
 "group___uploader.html#gga77a98a88ccfc2d6f0236ec9e053da638a53a7b75423c01453fe089ae707271189",
-"group__utils.html#ga609209b61b4bc46a6f3e982a580cdc2a",
-"lks94projection_8cpp_source.html",
-"namespacemembers_h.html",
-"pluginmanager_8h_source.html",
-"simulation_8h_source.html",
-"systemhealthgadgetoptionspage_8h_source.html",
-"uavobjecttemplate_8h.html#gae812e608461959ae131d5aca91d97434",
-"welcomemode_8cpp.html"
+"group__utils.html#ga5e226ff1c55371d39b91ad647cb3920f",
+"lineardialplugin_8h_source.html",
+"namespacemembers_func.html",
+"pluginmanager_8cpp_source.html",
+"simulation_8cpp_source.html",
+"systemhealthgadgetoptionspage_8cpp_source.html",
+"uavobjecttemplate_8h.html#gacbd8a57cc2bde1166c3cdc997e749579",
+"welcome__global_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

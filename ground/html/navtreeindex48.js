@@ -1,5 +1,7 @@
 var NAVTREEINDEX48 =
 {
+"namespacemembers_func.html":[4,1,1],
+"namespacemembers_g.html":[4,1,0,7],
 "namespacemembers_h.html":[4,1,0,8],
 "namespacemembers_i.html":[4,1,0,9],
 "namespacemembers_k.html":[4,1,0,10],
@@ -19,16 +21,16 @@ var NAVTREEINDEX48 =
 "namespaceprojections.html":[5,0,11],
 "namespaceprojections.html":[4,0,11],
 "namespaces.html":[4,0],
-"namespacestd.html":[4,0,12],
 "namespacestd.html":[5,0,12],
+"namespacestd.html":[4,0,12],
 "namespacetl__dfu.html":[5,0,13],
 "namespacetl__dfu.html":[4,0,13],
-"namespaceuavobject.html":[5,0,14],
 "namespaceuavobject.html":[4,0,14],
-"namespaceuavobjecttemplate.html":[4,0,15],
+"namespaceuavobject.html":[5,0,14],
 "namespaceuavobjecttemplate.html":[5,0,15],
-"namespaceuploader.html":[5,0,17],
+"namespaceuavobjecttemplate.html":[4,0,15],
 "namespaceuploader.html":[4,0,17],
+"namespaceuploader.html":[5,0,17],
 "notificationitem_8cpp.html":[6,0,0,0,0,1,22,0],
 "notificationitem_8cpp.html#ga16f7f909377f59dda529965c201a37a8":[6,0,0,0,0,1,22,0,1],
 "notificationitem_8cpp.html#ga52304989291ca82805ab0749694bfbce":[6,0,0,0,0,1,22,0,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX48 =
 "pluginerrorview_8h_source.html":[6,0,0,0,0,0,1,10],
 "pluginmanager_8cpp.html":[6,0,0,0,0,0,1,11],
 "pluginmanager_8cpp.html#ga89fa6f1a0418fbd38abe3aa1208ed1a6":[6,0,0,0,0,0,1,11,0],
-"pluginmanager_8cpp.html#gga06fc87d81c62e9abb8790b6e5713c55ba7aa36ea7ef68ed42b8cbbc435990537b":[6,0,0,0,0,0,1,11,1],
-"pluginmanager_8cpp_source.html":[6,0,0,0,0,0,1,11],
-"pluginmanager_8h.html":[6,0,0,0,0,0,1,12]
+"pluginmanager_8cpp.html#gga06fc87d81c62e9abb8790b6e5713c55ba7aa36ea7ef68ed42b8cbbc435990537b":[6,0,0,0,0,0,1,11,1]
 };

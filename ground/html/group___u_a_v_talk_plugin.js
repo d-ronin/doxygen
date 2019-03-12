@@ -65,7 +65,7 @@ var group___u_a_v_talk_plugin =
       [ "objID", "group___u_a_v_talk_plugin.html#gafeb9237a3ecd750861ef011af3b12413", null ]
     ] ],
     [ "UAVTalk", "class_u_a_v_talk.html", [
-      [ "UAVTalk", "group___u_a_v_talk_plugin.html#ga53c36c64288a62b44a285dfb40cee946", null ],
+      [ "UAVTalk", "group___u_a_v_talk_plugin.html#ga7990958d72a4491f26eb74945fdc8521", null ],
       [ "~UAVTalk", "group___u_a_v_talk_plugin.html#ga1c6de05403ed728008c21592d142375e", null ],
       [ "ackReceived", "group___u_a_v_talk_plugin.html#ga2d657cf81a725bce5e859eb6828cf80c", null ],
       [ "fileDataReceived", "group___u_a_v_talk_plugin.html#gae625070bc0bc716b7003f55e35803e64", null ],
@@ -84,6 +84,7 @@ var group___u_a_v_talk_plugin =
       [ "transmitSingleObject", "group___u_a_v_talk_plugin.html#ga474ec2f43670acca29d18ad9965b0440", null ],
       [ "updateCRC", "group___u_a_v_talk_plugin.html#gadefd185fb8609e37990694d45282ecd4", null ],
       [ "updateObject", "group___u_a_v_talk_plugin.html#ga06d53e41c45734baa38c0eb08d684af8", null ],
+      [ "canBlock", "group___u_a_v_talk_plugin.html#ga1f453f14c8bc120169fcf401a8db5b73", null ],
       [ "filledBytes", "group___u_a_v_talk_plugin.html#ga57c116a24c20c04bd6e0c925dc7e798d", null ],
       [ "io", "group___u_a_v_talk_plugin.html#ga0047f38af98ba4de8e38500e10b73046", null ],
       [ "objMngr", "group___u_a_v_talk_plugin.html#ga096422f1ff46ea45de07a92c41827aa5", null ],
@@ -144,7 +145,7 @@ var group___u_a_v_talk_plugin =
     [ "transmitNack", "group___u_a_v_talk_plugin.html#ga1ea574fb7b47dc949201d4c29b834208", null ],
     [ "transmitObject", "group___u_a_v_talk_plugin.html#ga81519c2c45745383850ccec92be1eb6a", null ],
     [ "transmitSingleObject", "group___u_a_v_talk_plugin.html#ga474ec2f43670acca29d18ad9965b0440", null ],
-    [ "UAVTalk", "group___u_a_v_talk_plugin.html#ga53c36c64288a62b44a285dfb40cee946", null ],
+    [ "UAVTalk", "group___u_a_v_talk_plugin.html#ga7990958d72a4491f26eb74945fdc8521", null ],
     [ "updateCRC", "group___u_a_v_talk_plugin.html#gadefd185fb8609e37990694d45282ecd4", null ],
     [ "updateObject", "group___u_a_v_talk_plugin.html#ga06d53e41c45734baa38c0eb08d684af8", null ],
     [ "~ObjectTransactionInfo", "group___u_a_v_talk_plugin.html#ga8b1a7a6e63feac107ca370ce1a68758f", null ],
@@ -156,6 +157,7 @@ var group___u_a_v_talk_plugin =
     [ "ALL_INSTANCES", "group___u_a_v_talk_plugin.html#ga71e922ea4fa7f9e0a9fe89ebdd2fe75c", null ],
     [ "allInstances", "group___u_a_v_talk_plugin.html#gaf134962f4df09323cf89245e3bc32f6e", null ],
     [ "allInstances", "group___u_a_v_talk_plugin.html#gaf8816b148dce6b50838c9e84272a1d04", null ],
+    [ "canBlock", "group___u_a_v_talk_plugin.html#ga1f453f14c8bc120169fcf401a8db5b73", null ],
     [ "CHECKSUM_LENGTH", "group___u_a_v_talk_plugin.html#ga094abac2d747f187a4b22bea1dd28ec0", null ],
     [ "crc_table", "group___u_a_v_talk_plugin.html#gac5c5c810a2edb31ed325bf2d54e1b289", null ],
     [ "event", "group___u_a_v_talk_plugin.html#ga6cc8fb5745c2e3cc2a6e0e4512542d7c", null ],

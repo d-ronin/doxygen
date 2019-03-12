@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">3af29e8</span>
+   &#160;<span id="projectnumber">2589251</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -228,7 +228,7 @@ $(document).ready(function(){initNavTree('loggingplugin_8cpp_source.html','');})
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *objManager = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a>&gt;();</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <a class="code" href="class_logging_thread.html#a0dfed803383ab861a16c748421396306">uavTalk</a> = <span class="keyword">new</span> <a class="code" href="class_u_a_v_talk.html">UAVTalk</a>(&amp;<a class="code" href="class_logging_thread.html#ab940b3322d9c974b3d3630b9509ef4bb">logFile</a>, objManager);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <a class="code" href="class_logging_thread.html#a0dfed803383ab861a16c748421396306">uavTalk</a> = <span class="keyword">new</span> <a class="code" href="class_u_a_v_talk.html">UAVTalk</a>(&amp;<a class="code" href="class_logging_thread.html#ab940b3322d9c974b3d3630b9509ef4bb">logFile</a>, objManager, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    connect(parent, SIGNAL(stopLoggingSignal()), <span class="keyword">this</span>, SLOT(<a class="code" href="group___logging.html#ga5eba425f2187c79f32c9a7b8187c4de4">stopLogging</a>()));</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -541,7 +541,7 @@ $(document).ready(function(){initNavTree('loggingplugin_8cpp_source.html','');})
 <div class="ttc" id="group___logging_html_ga3b3e0a7dac19231ef21518709df897c3"><div class="ttname"><a href="group___logging.html#ga3b3e0a7dac19231ef21518709df897c3">LoggingConnection::startReplay</a></div><div class="ttdeci">void startReplay(QString file)</div><div class="ttdef"><b>Definition:</b> <a href="loggingplugin_8cpp_source.html#l00091">loggingplugin.cpp:91</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga5e44e7795213bb2627acfa08a13f6a12"><div class="ttname"><a href="group___core_plugin.html#ga5e44e7795213bb2627acfa08a13f6a12">Core::ICore::actionManager</a></div><div class="ttdeci">virtual ActionManager * actionManager() const =0</div><div class="ttdoc">Returns the application&#39;s action manager. </div></div>
 <div class="ttc" id="_o_p_plots_8m_html_a6f6ccfcf58b31cb6412107d9d5281426"><div class="ttname"><a href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a></div><div class="ttdeci">for i</div><div class="ttdef"><b>Definition:</b> <a href="_o_p_plots_8m_source.html#l00140">OPPlots.m:140</a></div></div>
-<div class="ttc" id="group___u_a_v_talk_plugin_html_gafb99b5df957808785013366dfd5bc636"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#gafb99b5df957808785013366dfd5bc636">UAVTalk::sendObject</a></div><div class="ttdeci">bool sendObject(UAVObject *obj, bool acked, bool allInstances)</div><div class="ttdef"><b>Definition:</b> <a href="uavtalk_8cpp_source.html#l00154">uavtalk.cpp:154</a></div></div>
+<div class="ttc" id="group___u_a_v_talk_plugin_html_gafb99b5df957808785013366dfd5bc636"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#gafb99b5df957808785013366dfd5bc636">UAVTalk::sendObject</a></div><div class="ttdeci">bool sendObject(UAVObject *obj, bool acked, bool allInstances)</div><div class="ttdef"><b>Definition:</b> <a href="uavtalk_8cpp_source.html#l00155">uavtalk.cpp:155</a></div></div>
 <div class="ttc" id="class_logging_thread_html_a0dfed803383ab861a16c748421396306"><div class="ttname"><a href="class_logging_thread.html#a0dfed803383ab861a16c748421396306">LoggingThread::uavTalk</a></div><div class="ttdeci">UAVTalk * uavTalk</div><div class="ttdef"><b>Definition:</b> <a href="loggingplugin_8h_source.html#l00099">loggingplugin.h:99</a></div></div>
 <div class="ttc" id="group___logging_html_gaf569eb0407d501102e1257c067a05295"><div class="ttname"><a href="group___logging.html#gaf569eb0407d501102e1257c067a05295">LoggingConnection::shortName</a></div><div class="ttdeci">virtual QString shortName()</div><div class="ttdef"><b>Definition:</b> <a href="loggingplugin_8cpp_source.html#l00116">loggingplugin.cpp:116</a></div></div>
 <div class="ttc" id="class_logging_plugin_html_ae4b58354ecf67dd121229c169e93d570"><div class="ttname"><a href="class_logging_plugin.html#ae4b58354ecf67dd121229c169e93d570">LoggingPlugin::state</a></div><div class="ttdeci">enum LoggingPlugin::@8 state</div></div>

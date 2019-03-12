@@ -112,7 +112,7 @@ var searchData=
   ['opplots_2em',['OPPlots.m',['../_o_p_plots_8m.html',1,'']]],
   ['options',['options',['../class_u_a_v_object_field.html#a97fe1c3ed2d74eb06ea7e24abf4ce09c',1,'UAVObjectField::options()'],['../group___core_plugin.html#ga267bcce339e88888bc0201263e9bbdfb',1,'Core::Constants::OPTIONS()']]],
   ['optionsdialogrequested',['optionsDialogRequested',['../group___core_plugin.html#gafba7e27b9e0330206e2c77eebbeb7038',1,'Core::ICore']]],
-  ['optionspage',['Optionspage',['../group___serial_plugin.html#gaf86b9d4296b2b9e6429dd643fd113861',1,'SerialConnection::Optionspage()'],['../group___i_p_conn_plugin.html#gab63780b114a985fc71a96c8ac14c162d',1,'IPConnection::optionsPage()']]],
+  ['optionspage',['optionsPage',['../group___i_p_conn_plugin.html#gab63780b114a985fc71a96c8ac14c162d',1,'IPConnection::optionsPage()'],['../group___serial_plugin.html#gaf86b9d4296b2b9e6429dd643fd113861',1,'SerialConnection::Optionspage()']]],
   ['optionspagelessthan',['optionsPageLessThan',['../group___core_plugin.html#ga59869c2fab9a0f266809a3544c2f02e6',1,'settingsdialog.cpp']]],
   ['optionsparser',['OptionsParser',['../class_extension_system_1_1_internal_1_1_options_parser.html#aa7b18b131adb722eb43ad2fd8a01212b',1,'ExtensionSystem::Internal::OptionsParser']]],
   ['optionsparser',['OptionsParser',['../class_extension_system_1_1_internal_1_1_options_parser.html',1,'ExtensionSystem::Internal']]],

@@ -1,11 +1,5 @@
 var NAVTREEINDEX96 =
 {
-"structbl__messages.html#a233ff8d8de65de65c1a0c1a152bf993c":[2,6,1,0,34],
-"structbl__messages.html#a37746a3275dcb085e6f6acf7a3831b29":[2,6,1,0,10],
-"structbl__messages.html#a38a3bd4bec49b2172ba0d3d4c84c84c1":[2,6,1,0,15],
-"structbl__messages.html#a3c64adb7abb2ff43b6c1f63d4f197c43":[2,6,1,0,2],
-"structbl__messages.html#a3f6a87005b20c9c30db38f3b193b7b43":[2,6,1,0,28],
-"structbl__messages.html#a41d7cc62ce5a71810e77d6787e196c2d":[2,6,1,0,21],
 "structbl__messages.html#a4a32afbafb686aa1ff8631ffa48e067e":[2,6,1,0,25],
 "structbl__messages.html#a50b08001cff6d49c63c0d137ce2f76ce":[2,6,1,0,17],
 "structbl__messages.html#a5a9195cff58f5df2af218a7b81245ef6":[2,6,1,0,6],
@@ -249,5 +243,11 @@ var NAVTREEINDEX96 =
 "structhott__gps__message.html#a080054a22b4839f3534bee6753b66b9b":[2,4,29,5,15],
 "structhott__gps__message.html#a0fe796cf91c4fcb4c46bdaa22f20a3c4":[2,4,29,5,10],
 "structhott__gps__message.html#a12c8dbdd60a9366cb8e05564dfbcb25e":[2,4,29,5,8],
-"structhott__gps__message.html#a1a1236afd7d67d8bf481646d4b55f088":[2,4,29,5,27]
+"structhott__gps__message.html#a1a1236afd7d67d8bf481646d4b55f088":[2,4,29,5,27],
+"structhott__gps__message.html#a1f95c2e248434cd3e7ff403634e0e1cd":[2,4,29,5,22],
+"structhott__gps__message.html#a3428ecebe2a61bb0b90e984ff0ca5f4e":[2,4,29,5,3],
+"structhott__gps__message.html#a5093b17238c5109684185c9c7977a5bf":[2,4,29,5,6],
+"structhott__gps__message.html#a66da8d37604475ac681ff68845c2f688":[2,4,29,5,14],
+"structhott__gps__message.html#a68a220eec8a62c0650ce4eecc852ee35":[2,4,29,5,25],
+"structhott__gps__message.html#a69c2b8f4c6190a403a2410ea82931717":[2,4,29,5,28]
 };

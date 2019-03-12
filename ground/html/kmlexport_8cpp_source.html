@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">3af29e8</span>
+   &#160;<span id="projectnumber">2589251</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -158,7 +158,7 @@ $(document).ready(function(){initNavTree('kmlexport_8cpp_source.html','');});
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="group___u_a_v_objects_plugin.html#gaa5848573445b2e80691402f8bd9d2257">UAVObjectsInitialize</a>(kmlUAVObjectManager);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// Connect new UAVO manager to a UAVTalk instance</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    kmlTalk = <span class="keyword">new</span> <a class="code" href="class_u_a_v_talk.html">UAVTalk</a>(&amp;<a class="code" href="group___kml_export_plugin.html#ga465cd591372c473372a6d12904c997f6">logFile</a>, kmlUAVObjectManager);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    kmlTalk = <span class="keyword">new</span> <a class="code" href="class_u_a_v_talk.html">UAVTalk</a>(&amp;<a class="code" href="group___kml_export_plugin.html#ga465cd591372c473372a6d12904c997f6">logFile</a>, kmlUAVObjectManager, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// Get the UAVObjects</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    airspeedActual = AirspeedActual::GetInstance(kmlUAVObjectManager);</div>

@@ -1,11 +1,5 @@
 var NAVTREEINDEX97 =
 {
-"structhott__gps__message.html#a1f95c2e248434cd3e7ff403634e0e1cd":[2,4,29,5,22],
-"structhott__gps__message.html#a3428ecebe2a61bb0b90e984ff0ca5f4e":[2,4,29,5,3],
-"structhott__gps__message.html#a5093b17238c5109684185c9c7977a5bf":[2,4,29,5,6],
-"structhott__gps__message.html#a66da8d37604475ac681ff68845c2f688":[2,4,29,5,14],
-"structhott__gps__message.html#a68a220eec8a62c0650ce4eecc852ee35":[2,4,29,5,25],
-"structhott__gps__message.html#a69c2b8f4c6190a403a2410ea82931717":[2,4,29,5,28],
 "structhott__gps__message.html#a6c7c53b173d5d2b19ff3b235303acc5a":[2,4,29,5,0],
 "structhott__gps__message.html#a758f27812f282cd2311e971cd97ed749":[2,4,29,5,35],
 "structhott__gps__message.html#a76a13473a41d87403d74a548433f5c06":[2,4,29,5,30],
@@ -249,5 +243,11 @@ var NAVTREEINDEX97 =
 "structmsp__raw__imu.html#abb6d948188a5dfff1fab14e720490042":[2,1,2,3,6],
 "structmsp__raw__imu.html#acf18466ea9fd4a648e0b436930ed2a79":[2,1,2,3,3],
 "structmsp__raw__imu.html#ad073a59500417010b1b0ee2c3de3b2b3":[2,1,2,3,8],
-"structmsp__rc.html":[2,1,2,7]
+"structmsp__rc.html":[2,1,2,7],
+"structmsp__rc.html#abe7df670f15461f55918de57b9b9d469":[2,1,2,7,0],
+"structmsp__rc__tuning.html":[2,1,2,15],
+"structmsp__rc__tuning.html#a0c84c68516fa49c60815dbc31659b1ed":[2,1,2,15,0],
+"structmsp__rc__tuning.html#a0e57bb640a051c9705b4f414cf1385df":[2,1,2,15,4],
+"structmsp__rc__tuning.html#a3a163e1192b9e16cdd6bee082ab1cb97":[2,1,2,15,6],
+"structmsp__rc__tuning.html#a50b5dc0adfdd9845d013db3adcf18c14":[2,1,2,15,1]
 };

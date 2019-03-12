@@ -9,6 +9,7 @@ var searchData=
   ['c_5fwelcome_5fmode',['C_WELCOME_MODE',['../group___core_plugin.html#gad0a5b162b3b87854267c5508b62a9346',1,'Core::Constants']]],
   ['cachequeue',['cachequeue',['../group___t_l_map_widget.html#ga632c3be1045d7e97d09885aba0c18100',1,'core::KiberTileCache']]],
   ['calibration',['calibration',['../group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb',1,'ConfigAttitudeWidget']]],
+  ['canblock',['canBlock',['../group___u_a_v_talk_plugin.html#ga1f453f14c8bc120169fcf401a8db5b73',1,'UAVTalk']]],
   ['cap_5fextension_5fmagic',['cap_extension_magic',['../group___uploader.html#ga23bf7af9959542e2d73c3b65bb9c5438',1,'msg_capabilities_rep_specific']]],
   ['capext',['CapExt',['../group___uploader.html#gaff993b6ff97d634dcd24b473b454258a',1,'tl_dfu::device']]],
   ['category',['category',['../group___core_plugin.html#ga46b587255ad7653276bed9059aca7034',1,'PageData::category()'],['../group___u_a_v_objects_plugin.html#gae96da3f59e51fb5c3ca43056bda4a63e',1,'UAVObject::category()']]],

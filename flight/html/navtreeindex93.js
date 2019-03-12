@@ -1,11 +1,5 @@
 var NAVTREEINDEX93 =
 {
-"seppuku_2board-info_2cmsis__system_8c.html#ga0fa5a868f5cd056a04b1c42e454b9617":[5,0,0,5,15,1,1,0],
-"seppuku_2board-info_2cmsis__system_8c.html#ga1ee14ac28e60198cc998586807b51e4c":[5,0,0,5,15,1,1,5],
-"seppuku_2board-info_2cmsis__system_8c.html#ga290dcd27167e925d817e8334111c1c01":[5,0,0,5,15,1,1,2],
-"seppuku_2board-info_2cmsis__system_8c.html#ga40e1495541cbb4acbe3f1819bd87a9fe":[5,0,0,5,15,1,1,4],
-"seppuku_2board-info_2cmsis__system_8c.html#ga93f514700ccf00d08dbdcff7f1224eb2":[5,0,0,5,15,1,1,7],
-"seppuku_2board-info_2cmsis__system_8c.html#gaa3cd3e43291e81e795d642b79b6088e6":[5,0,0,5,15,1,1,9],
 "seppuku_2board-info_2cmsis__system_8c.html#gac958257ddb2537c539cffdb3a4543067":[5,0,0,5,15,1,1,3],
 "seppuku_2board-info_2cmsis__system_8c.html#gacdc3ef54c0704c90e69a8a84fb2d970d":[5,0,0,5,15,1,1,8],
 "seppuku_2board-info_2cmsis__system_8c.html#gae0c36a9591fe6e9c45ecb21a794f0f0f":[5,0,0,5,15,1,1,6],
@@ -184,8 +178,8 @@ var NAVTREEINDEX93 =
 "sparky2_2board-info_2usb__conf_8h.html#ga14cd9811fb5f3a70e2043f4d8ed66e28":[5,0,0,5,17,1,3,11],
 "sparky2_2board-info_2usb__conf_8h.html#ga2877e6e9de0b5b363604bdecf1a60c9e":[5,0,0,5,17,1,3,12],
 "sparky2_2board-info_2usb__conf_8h.html#ga6cdceb8d052ea78e07b2e7423da7dbf1":[5,0,0,5,17,1,3,7],
-"sparky2_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[5,0,0,5,17,1,3,10],
 "sparky2_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[5,0,0,5,17,1,3,9],
+"sparky2_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[5,0,0,5,17,1,3,10],
 "sparky2_2board-info_2usb__conf_8h.html#ga76a9fa8f88128d0f1f15ee3854cb57ac":[5,0,0,5,17,1,3,6],
 "sparky2_2board-info_2usb__conf_8h.html#ga8b374c2c4c44e27335ab7bca651371f8":[5,0,0,5,17,1,3,0],
 "sparky2_2board-info_2usb__conf_8h.html#ga8e636a33b83aa2e43f5ea6ffa4f1f713":[5,0,0,5,17,1,3,8],
@@ -249,5 +243,11 @@ var NAVTREEINDEX93 =
 "sprf3e_2board-info_2board__hw__defs_8c.html#ga1b914f100d3601810dea75526ed3434f":[5,0,0,5,18,1,0,9],
 "sprf3e_2board-info_2board__hw__defs_8c.html#ga4b999e26634a3f6ddd44884533fc653c":[5,0,0,5,18,1,0,4],
 "sprf3e_2board-info_2board__hw__defs_8c.html#ga60b39ced2092119b6091f4e1c9785804":[5,0,0,5,18,1,0,6],
-"sprf3e_2board-info_2board__hw__defs_8c.html#gaa150315660db35b61bd4dbfef4bd0413":[5,0,0,5,18,1,0,3]
+"sprf3e_2board-info_2board__hw__defs_8c.html#gaa150315660db35b61bd4dbfef4bd0413":[5,0,0,5,18,1,0,3],
+"sprf3e_2board-info_2board__hw__defs_8c.html#gacaddfb7f3f796800cf2fc2f779403aa6":[5,0,0,5,18,1,0,5],
+"sprf3e_2board-info_2board__hw__defs_8c.html#gacce35e1843680882ef80c4f80d41ed5c":[5,0,0,5,18,1,0,0],
+"sprf3e_2board-info_2board__hw__defs_8c.html#gad4ba982563803a6ee75e293e27ea571a":[5,0,0,5,18,1,0,2],
+"sprf3e_2board-info_2board__hw__defs_8c.html#gaf14eff61e8f08bddf3904d6fc4f17f15":[5,0,0,5,18,1,0,8],
+"sprf3e_2board-info_2board__hw__defs_8c_source.html":[5,0,0,5,18,1,0],
+"sprf3e_2board-info_2cmsis__system_8c.html":[5,0,0,5,18,1,1]
 };

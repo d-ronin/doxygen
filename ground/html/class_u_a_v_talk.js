@@ -1,6 +1,6 @@
 var class_u_a_v_talk =
 [
-    [ "UAVTalk", "group___u_a_v_talk_plugin.html#ga53c36c64288a62b44a285dfb40cee946", null ],
+    [ "UAVTalk", "group___u_a_v_talk_plugin.html#ga7990958d72a4491f26eb74945fdc8521", null ],
     [ "~UAVTalk", "group___u_a_v_talk_plugin.html#ga1c6de05403ed728008c21592d142375e", null ],
     [ "ackReceived", "group___u_a_v_talk_plugin.html#ga2d657cf81a725bce5e859eb6828cf80c", null ],
     [ "fileDataReceived", "group___u_a_v_talk_plugin.html#gae625070bc0bc716b7003f55e35803e64", null ],
@@ -19,6 +19,7 @@ var class_u_a_v_talk =
     [ "transmitSingleObject", "group___u_a_v_talk_plugin.html#ga474ec2f43670acca29d18ad9965b0440", null ],
     [ "updateCRC", "group___u_a_v_talk_plugin.html#gadefd185fb8609e37990694d45282ecd4", null ],
     [ "updateObject", "group___u_a_v_talk_plugin.html#ga06d53e41c45734baa38c0eb08d684af8", null ],
+    [ "canBlock", "group___u_a_v_talk_plugin.html#ga1f453f14c8bc120169fcf401a8db5b73", null ],
     [ "filledBytes", "group___u_a_v_talk_plugin.html#ga57c116a24c20c04bd6e0c925dc7e798d", null ],
     [ "io", "group___u_a_v_talk_plugin.html#ga0047f38af98ba4de8e38500e10b73046", null ],
     [ "objMngr", "group___u_a_v_talk_plugin.html#ga096422f1ff46ea45de07a92c41827aa5", null ],

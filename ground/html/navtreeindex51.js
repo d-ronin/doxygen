@@ -1,5 +1,7 @@
 var NAVTREEINDEX51 =
 {
+"systemhealthgadgetoptionspage_8cpp_source.html":[6,0,0,0,0,1,32,6],
+"systemhealthgadgetoptionspage_8h.html":[6,0,0,0,0,1,32,7],
 "systemhealthgadgetoptionspage_8h_source.html":[6,0,0,0,0,1,32,7],
 "systemhealthgadgetwidget_8cpp.html":[6,0,0,0,0,1,32,8],
 "systemhealthgadgetwidget_8cpp_source.html":[6,0,0,0,0,1,32,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX51 =
 "uavobjecttemplate_8h.html#ga6965ad51906707de7f1f1bd5c4b31502":[6,0,0,0,0,1,35,21,2],
 "uavobjecttemplate_8h.html#ga70dc88d1d9ca2e85da5f1285ee578d36":[6,0,0,0,0,1,35,21,4],
 "uavobjecttemplate_8h.html#ga7bfb4a458bedf2838118bc3069a93f1e":[6,0,0,0,0,1,35,21,6],
-"uavobjecttemplate_8h.html#gab86084dd3556b645fa8020dc33776d88":[6,0,0,0,0,1,35,21,0],
-"uavobjecttemplate_8h.html#gacbd8a57cc2bde1166c3cdc997e749579":[6,0,0,0,0,1,35,21,5],
-"uavobjecttemplate_8h.html#gadbb0efe3eb3d7d1bd9bd99b256339c37":[6,0,0,0,0,1,35,21,7]
+"uavobjecttemplate_8h.html#gab86084dd3556b645fa8020dc33776d88":[6,0,0,0,0,1,35,21,0]
 };

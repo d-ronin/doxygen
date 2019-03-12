@@ -1,11 +1,5 @@
 var NAVTREEINDEX103 =
 {
-"targets_2lux_2fw_2pios__config_8h.html#ga3925877e791baa885fbc268aeb8048c7":[5,0,0,5,8,2,1,11],
-"targets_2lux_2fw_2pios__config_8h.html#ga4f21d78d9c6d8c65a1b4278ca726e0d7":[5,0,0,5,8,2,1,6],
-"targets_2lux_2fw_2pios__config_8h.html#ga867e829c0aaaf0e6f1c0f229b670e71e":[5,0,0,5,8,2,1,0],
-"targets_2lux_2fw_2pios__config_8h.html#ga8de02d8defc3d19ac2f9ad75fc5441c1":[5,0,0,5,8,2,1,2],
-"targets_2lux_2fw_2pios__config_8h.html#ga9342ac55ca81b9d977fec30f45813847":[5,0,0,5,8,2,1,4],
-"targets_2lux_2fw_2pios__config_8h.html#ga9be33d810838161edf9412377209a4cf":[5,0,0,5,8,2,1,1],
 "targets_2lux_2fw_2pios__config_8h.html#gaabf5c613fb366d3da49a87e7114a09e2":[5,0,0,5,8,2,1,13],
 "targets_2lux_2fw_2pios__config_8h.html#gabad4c3dcdc9a7f45bc23006b85854f0d":[5,0,0,5,8,2,1,8],
 "targets_2lux_2fw_2pios__config_8h.html#gac4bc284e13454f25bd55839f3d9b0a10":[5,0,0,5,8,2,1,5],
@@ -249,5 +243,11 @@ var NAVTREEINDEX103 =
 "targets_2pipxtreme_2board-info_2pios__board_8h.html#gabed34fab9b2b2c4c92ecc825c75c9244":[5,0,0,5,11,1,2,39],
 "targets_2pipxtreme_2board-info_2pios__board_8h.html#gac040f05fa048688ee0269c2768698a14":[5,0,0,5,11,1,2,63],
 "targets_2pipxtreme_2board-info_2pios__board_8h.html#gac2d33ccaf63f5d5b66552b95426c0137":[5,0,0,5,11,1,2,2],
-"targets_2pipxtreme_2board-info_2pios__board_8h.html#gac43ab394e5335d86b06d100780c67682":[5,0,0,5,11,1,2,27]
+"targets_2pipxtreme_2board-info_2pios__board_8h.html#gac43ab394e5335d86b06d100780c67682":[5,0,0,5,11,1,2,27],
+"targets_2pipxtreme_2board-info_2pios__board_8h.html#gac6f2f934014b1b5a79f6a26cdd75e6ca":[5,0,0,5,11,1,2,43],
+"targets_2pipxtreme_2board-info_2pios__board_8h.html#gacd240b3acb49442511a220647c7d2e4f":[5,0,0,5,11,1,2,11],
+"targets_2pipxtreme_2board-info_2pios__board_8h.html#gad74175c4c77c23fb1045cf101ae97dcc":[5,0,0,5,11,1,2,40],
+"targets_2pipxtreme_2board-info_2pios__board_8h.html#gad9504d2174472de2d678814e430678c9":[5,0,0,5,11,1,2,34],
+"targets_2pipxtreme_2board-info_2pios__board_8h.html#gadbe2bc366ea08ebb85a0c8ca4c7800e0":[5,0,0,5,11,1,2,10],
+"targets_2pipxtreme_2board-info_2pios__board_8h.html#gae4912a499d71db827918d7908055ce05":[5,0,0,5,11,1,2,24]
 };

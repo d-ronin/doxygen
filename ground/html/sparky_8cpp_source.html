@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">3af29e8</span>
+   &#160;<span id="projectnumber">2589251</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -237,180 +237,162 @@ $(document).ready(function(){initNavTree('sparky_8cpp_source.html','');});
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a31fe1d6cca4c01278726456091ab0168">INPUT_TYPE_DSM</a>:</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        settings.RcvrPort = HwSparky::RCVRPORT_DSM;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a4b2a9bae9965b28d4f89a5b509dc4c18">INPUT_TYPE_HOTTSUMD</a>:</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        settings.RcvrPort = HwSparky::RCVRPORT_HOTTSUMD;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5aac99a1120f746f02f6f2b373a71a64df">INPUT_TYPE_IBUS</a>:</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        settings.RcvrPort = HwSparky::RCVRPORT_IBUS;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5aaf05e6963a9513bb97a3201470de6b02">INPUT_TYPE_HOTTSUMH</a>:</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        settings.RcvrPort = HwSparky::RCVRPORT_HOTTSUMH;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a67a6040e0defa97a56c0b70b29a0e0ef">INPUT_TYPE_SRXL</a>:</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        settings.RcvrPort = HwSparky::RCVRPORT_SRXL;</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5aac99a1120f746f02f6f2b373a71a64df">INPUT_TYPE_IBUS</a>:</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        settings.RcvrPort = HwSparky::RCVRPORT_IBUS;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a67a6040e0defa97a56c0b70b29a0e0ef">INPUT_TYPE_SRXL</a>:</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        settings.RcvrPort = HwSparky::RCVRPORT_SRXL;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5ab5a8a2fca5471ba84e3d3b1fbfaffc87">INPUT_TYPE_TBSCROSSFIRE</a>:</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        settings.RcvrPort = HwSparky::RCVRPORT_TBSCROSSFIRE;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    }</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="comment">// Apply these changes</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    hwSparky-&gt;setData(settings);</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;}</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
-<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="group___boards___tau_labs_plugin.html#ga5a604b25660f512391d1ef9ef154c2b6">  179</a></span>&#160;<a class="code" href="group___core_plugin.html#ga599a013aa05047b3c7741e35a9c59ab5">Core::IBoardType::InputType</a> <a class="code" href="group___boards___tau_labs_plugin.html#ga5a604b25660f512391d1ef9ef154c2b6">Sparky::getInputType</a>()</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;{</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *uavoManager = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a>&gt;();</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    HwSparky *hwSparky = HwSparky::GetInstance(uavoManager);</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    Q_ASSERT(hwSparky);</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordflow">if</span> (!hwSparky)</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5aa85b3ae4f26ecca41f8aec403b16bca4">INPUT_TYPE_UNKNOWN</a>;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    HwSparky::DataFields settings = hwSparky-&gt;getData();</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordflow">switch</span> (settings.RcvrPort) {</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordflow">case</span> HwSparky::RCVRPORT_PPM:</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a6a0be085963c5e9ea15f81949822d8df">INPUT_TYPE_PPM</a>;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordflow">case</span> HwSparky::RCVRPORT_SBUS:</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a411cfb75a64850fa69d3978fc7f7d837">INPUT_TYPE_SBUS</a>;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordflow">case</span> HwSparky::RCVRPORT_SBUSNONINVERTED:</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a4be041ae589a34b4e9825b644e25eda1">INPUT_TYPE_SBUSNONINVERTED</a>;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordflow">case</span> HwSparky::RCVRPORT_DSM:</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a31fe1d6cca4c01278726456091ab0168">INPUT_TYPE_DSM</a>;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordflow">case</span> HwSparky::RCVRPORT_HOTTSUMD:</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a4b2a9bae9965b28d4f89a5b509dc4c18">INPUT_TYPE_HOTTSUMD</a>;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordflow">case</span> HwSparky::RCVRPORT_HOTTSUMH:</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5aaf05e6963a9513bb97a3201470de6b02">INPUT_TYPE_HOTTSUMH</a>;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keywordflow">case</span> HwSparky::RCVRPORT_IBUS:</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5aac99a1120f746f02f6f2b373a71a64df">INPUT_TYPE_IBUS</a>;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordflow">case</span> HwSparky::RCVRPORT_SRXL:</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a67a6040e0defa97a56c0b70b29a0e0ef">INPUT_TYPE_SRXL</a>;</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordflow">case</span> HwSparky::RCVRPORT_TBSCROSSFIRE:</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5ab5a8a2fca5471ba84e3d3b1fbfaffc87">INPUT_TYPE_TBSCROSSFIRE</a>;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    }</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="comment">// Apply these changes</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    hwSparky-&gt;setData(settings);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;}</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="group___boards___tau_labs_plugin.html#ga5a604b25660f512391d1ef9ef154c2b6">  170</a></span>&#160;<a class="code" href="group___core_plugin.html#ga599a013aa05047b3c7741e35a9c59ab5">Core::IBoardType::InputType</a> <a class="code" href="group___boards___tau_labs_plugin.html#ga5a604b25660f512391d1ef9ef154c2b6">Sparky::getInputType</a>()</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;{</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *uavoManager = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a>&gt;();</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    HwSparky *hwSparky = HwSparky::GetInstance(uavoManager);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    Q_ASSERT(hwSparky);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordflow">if</span> (!hwSparky)</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5aa85b3ae4f26ecca41f8aec403b16bca4">INPUT_TYPE_UNKNOWN</a>;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    HwSparky::DataFields settings = hwSparky-&gt;getData();</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keywordflow">switch</span> (settings.RcvrPort) {</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordflow">case</span> HwSparky::RCVRPORT_PPM:</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a6a0be085963c5e9ea15f81949822d8df">INPUT_TYPE_PPM</a>;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordflow">case</span> HwSparky::RCVRPORT_SBUS:</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a411cfb75a64850fa69d3978fc7f7d837">INPUT_TYPE_SBUS</a>;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordflow">case</span> HwSparky::RCVRPORT_SBUSNONINVERTED:</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a4be041ae589a34b4e9825b644e25eda1">INPUT_TYPE_SBUSNONINVERTED</a>;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordflow">case</span> HwSparky::RCVRPORT_DSM:</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a31fe1d6cca4c01278726456091ab0168">INPUT_TYPE_DSM</a>;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordflow">case</span> HwSparky::RCVRPORT_IBUS:</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5aac99a1120f746f02f6f2b373a71a64df">INPUT_TYPE_IBUS</a>;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordflow">case</span> HwSparky::RCVRPORT_SRXL:</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a67a6040e0defa97a56c0b70b29a0e0ef">INPUT_TYPE_SRXL</a>;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    }</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keywordflow">switch</span> (settings.FlexiPort) {</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordflow">case</span> HwSparky::FLEXIPORT_DSM:</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a31fe1d6cca4c01278726456091ab0168">INPUT_TYPE_DSM</a>;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordflow">case</span> HwSparky::FLEXIPORT_SBUS:</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a411cfb75a64850fa69d3978fc7f7d837">INPUT_TYPE_SBUS</a>;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keywordflow">case</span> HwSparky::FLEXIPORT_SBUSNONINVERTED:</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a4be041ae589a34b4e9825b644e25eda1">INPUT_TYPE_SBUSNONINVERTED</a>;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordflow">case</span> HwSparky::FLEXIPORT_IBUS:</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5aac99a1120f746f02f6f2b373a71a64df">INPUT_TYPE_IBUS</a>;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordflow">case</span> HwSparky::FLEXIPORT_SRXL:</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a67a6040e0defa97a56c0b70b29a0e0ef">INPUT_TYPE_SRXL</a>;</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keywordflow">default</span>:</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    }</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keywordflow">switch</span> (settings.FlexiPort) {</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordflow">case</span> HwSparky::FLEXIPORT_DSM:</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keywordflow">switch</span> (settings.MainPort) {</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordflow">case</span> HwSparky::MAINPORT_DSM:</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a31fe1d6cca4c01278726456091ab0168">INPUT_TYPE_DSM</a>;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="keywordflow">case</span> HwSparky::FLEXIPORT_SBUS:</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="keywordflow">case</span> HwSparky::MAINPORT_SBUS:</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a411cfb75a64850fa69d3978fc7f7d837">INPUT_TYPE_SBUS</a>;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keywordflow">case</span> HwSparky::FLEXIPORT_SBUSNONINVERTED:</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keywordflow">case</span> HwSparky::MAINPORT_SBUSNONINVERTED:</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a4be041ae589a34b4e9825b644e25eda1">INPUT_TYPE_SBUSNONINVERTED</a>;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordflow">case</span> HwSparky::FLEXIPORT_IBUS:</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordflow">case</span> HwSparky::MAINPORT_IBUS:</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5aac99a1120f746f02f6f2b373a71a64df">INPUT_TYPE_IBUS</a>;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordflow">case</span> HwSparky::FLEXIPORT_SRXL:</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordflow">case</span> HwSparky::MAINPORT_SRXL:</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a67a6040e0defa97a56c0b70b29a0e0ef">INPUT_TYPE_SRXL</a>;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keywordflow">case</span> HwSparky::FLEXIPORT_TBSCROSSFIRE:</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5ab5a8a2fca5471ba84e3d3b1fbfaffc87">INPUT_TYPE_TBSCROSSFIRE</a>;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    }</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordflow">switch</span> (settings.MainPort) {</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keywordflow">case</span> HwSparky::MAINPORT_DSM:</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a31fe1d6cca4c01278726456091ab0168">INPUT_TYPE_DSM</a>;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keywordflow">case</span> HwSparky::MAINPORT_SBUSNONINVERTED:</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a4be041ae589a34b4e9825b644e25eda1">INPUT_TYPE_SBUSNONINVERTED</a>;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keywordflow">case</span> HwSparky::MAINPORT_IBUS:</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5aac99a1120f746f02f6f2b373a71a64df">INPUT_TYPE_IBUS</a>;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="keywordflow">case</span> HwSparky::MAINPORT_SRXL:</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a67a6040e0defa97a56c0b70b29a0e0ef">INPUT_TYPE_SRXL</a>;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keywordflow">case</span> HwSparky::MAINPORT_TBSCROSSFIRE:</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5ab5a8a2fca5471ba84e3d3b1fbfaffc87">INPUT_TYPE_TBSCROSSFIRE</a>;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    }</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5aa85b3ae4f26ecca41f8aec403b16bca4">INPUT_TYPE_UNKNOWN</a>;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;}</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
-<div class="line"><a name="l00248"></a><span class="lineno"><a class="line" href="group___boards___tau_labs_plugin.html#ga73f231850f1a406923692e944725397e">  248</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___boards___tau_labs_plugin.html#ga73f231850f1a406923692e944725397e">Sparky::queryMaxGyroRate</a>()</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;{</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *uavoManager = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a>&gt;();</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    HwSparky *hwSparky = HwSparky::GetInstance(uavoManager);</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    Q_ASSERT(hwSparky);</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keywordflow">if</span> (!hwSparky)</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    HwSparky::DataFields settings = hwSparky-&gt;getData();</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keywordflow">switch</span> (settings.GyroRange) {</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordflow">case</span> HwSparky::GYRORANGE_250:</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="keywordflow">return</span> 250;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordflow">case</span> HwSparky::GYRORANGE_500:</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        <span class="keywordflow">return</span> 500;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keywordflow">case</span> HwSparky::GYRORANGE_1000:</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="keywordflow">return</span> 1000;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keywordflow">case</span> HwSparky::GYRORANGE_2000:</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="keywordflow">return</span> 2000;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    }</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordflow">return</span> 500;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;}</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
-<div class="line"><a name="l00275"></a><span class="lineno"><a class="line" href="group___boards___tau_labs_plugin.html#gaae8fbbe3a7103a633b52ef1832a327a4">  275</a></span>&#160;QStringList <a class="code" href="group___boards___tau_labs_plugin.html#gaae8fbbe3a7103a633b52ef1832a327a4">Sparky::getAdcNames</a>()</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;{</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *uavoManager = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a>&gt;();</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    HwSparky *hwSparky = HwSparky::GetInstance(uavoManager);</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    Q_ASSERT(hwSparky);</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="keywordflow">if</span> (!hwSparky)</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        <span class="keywordflow">return</span> QStringList();</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    QStringList names;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    HwSparky::DataFields settings = hwSparky-&gt;getData();</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keywordflow">if</span> (settings.OutPort == HwSparky::OUTPORT_PWM82ADC</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        || settings.OutPort == HwSparky::OUTPORT_PWM72ADCPWM_IN)</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        names &lt;&lt; <span class="stringliteral">&quot;PWM10&quot;</span></div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;              &lt;&lt; <span class="stringliteral">&quot;PWM9&quot;</span></div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;              &lt;&lt; <span class="stringliteral">&quot;Disabled&quot;</span>;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (settings.OutPort == HwSparky::OUTPORT_PWM73ADC)</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        names &lt;&lt; <span class="stringliteral">&quot;PWM10&quot;</span></div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;              &lt;&lt; <span class="stringliteral">&quot;PWM9&quot;</span></div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;              &lt;&lt; <span class="stringliteral">&quot;PWM8&quot;</span>;</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        names &lt;&lt; <span class="stringliteral">&quot;Disabled&quot;</span></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;              &lt;&lt; <span class="stringliteral">&quot;Disabled&quot;</span></div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;              &lt;&lt; <span class="stringliteral">&quot;Disabled&quot;</span>;</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordflow">return</span> names;</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;}</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;</div>
-<div class="line"><a name="l00303"></a><span class="lineno"><a class="line" href="group___boards___tau_labs_plugin.html#ga0cc5d361eb4745cfd31840cdfdb2e75e">  303</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___boards___tau_labs_plugin.html#ga0cc5d361eb4745cfd31840cdfdb2e75e">Sparky::hasAnnunciator</a>(<a class="code" href="group___core_plugin.html#ga615a5aa573c867267162df009eb6496e">AnnunciatorType</a> annunc)</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;{</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="keywordflow">switch</span> (annunc) {</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea5b0d30e0af1244cb88af714cd0d94cfb">ANNUNCIATOR_HEARTBEAT</a>:</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea050ec18498ff2e8f0042d6b9a386be2f">ANNUNCIATOR_ALARM</a>:</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea6107521cf9a071d510ef950872e029b1">ANNUNCIATOR_BUZZER</a>:</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea4e98e8c917cdb73d1acac091465d1f79">ANNUNCIATOR_RGB</a>:</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea1fcd68e3a8ae34852cc1d71f749ef2f5">ANNUNCIATOR_DAC</a>:</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    }</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;}</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    }</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5aa85b3ae4f26ecca41f8aec403b16bca4">INPUT_TYPE_UNKNOWN</a>;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;}</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
+<div class="line"><a name="l00231"></a><span class="lineno"><a class="line" href="group___boards___tau_labs_plugin.html#ga73f231850f1a406923692e944725397e">  231</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___boards___tau_labs_plugin.html#ga73f231850f1a406923692e944725397e">Sparky::queryMaxGyroRate</a>()</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;{</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *uavoManager = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a>&gt;();</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    HwSparky *hwSparky = HwSparky::GetInstance(uavoManager);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    Q_ASSERT(hwSparky);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="keywordflow">if</span> (!hwSparky)</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    HwSparky::DataFields settings = hwSparky-&gt;getData();</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <span class="keywordflow">switch</span> (settings.GyroRange) {</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keywordflow">case</span> HwSparky::GYRORANGE_250:</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="keywordflow">return</span> 250;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="keywordflow">case</span> HwSparky::GYRORANGE_500:</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="keywordflow">return</span> 500;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="keywordflow">case</span> HwSparky::GYRORANGE_1000:</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <span class="keywordflow">return</span> 1000;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keywordflow">case</span> HwSparky::GYRORANGE_2000:</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="keywordflow">return</span> 2000;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    }</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keywordflow">return</span> 500;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;}</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
+<div class="line"><a name="l00258"></a><span class="lineno"><a class="line" href="group___boards___tau_labs_plugin.html#gaae8fbbe3a7103a633b52ef1832a327a4">  258</a></span>&#160;QStringList <a class="code" href="group___boards___tau_labs_plugin.html#gaae8fbbe3a7103a633b52ef1832a327a4">Sparky::getAdcNames</a>()</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;{</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *uavoManager = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a>&gt;();</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    HwSparky *hwSparky = HwSparky::GetInstance(uavoManager);</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    Q_ASSERT(hwSparky);</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keywordflow">if</span> (!hwSparky)</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="keywordflow">return</span> QStringList();</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    QStringList names;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    HwSparky::DataFields settings = hwSparky-&gt;getData();</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keywordflow">if</span> (settings.OutPort == HwSparky::OUTPORT_PWM82ADC</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        || settings.OutPort == HwSparky::OUTPORT_PWM72ADCPWM_IN)</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        names &lt;&lt; <span class="stringliteral">&quot;PWM10&quot;</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;              &lt;&lt; <span class="stringliteral">&quot;PWM9&quot;</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;              &lt;&lt; <span class="stringliteral">&quot;Disabled&quot;</span>;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (settings.OutPort == HwSparky::OUTPORT_PWM73ADC)</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        names &lt;&lt; <span class="stringliteral">&quot;PWM10&quot;</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;              &lt;&lt; <span class="stringliteral">&quot;PWM9&quot;</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;              &lt;&lt; <span class="stringliteral">&quot;PWM8&quot;</span>;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        names &lt;&lt; <span class="stringliteral">&quot;Disabled&quot;</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;              &lt;&lt; <span class="stringliteral">&quot;Disabled&quot;</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;              &lt;&lt; <span class="stringliteral">&quot;Disabled&quot;</span>;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="keywordflow">return</span> names;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;}</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
+<div class="line"><a name="l00286"></a><span class="lineno"><a class="line" href="group___boards___tau_labs_plugin.html#ga0cc5d361eb4745cfd31840cdfdb2e75e">  286</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___boards___tau_labs_plugin.html#ga0cc5d361eb4745cfd31840cdfdb2e75e">Sparky::hasAnnunciator</a>(<a class="code" href="group___core_plugin.html#ga615a5aa573c867267162df009eb6496e">AnnunciatorType</a> annunc)</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;{</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keywordflow">switch</span> (annunc) {</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea5b0d30e0af1244cb88af714cd0d94cfb">ANNUNCIATOR_HEARTBEAT</a>:</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea050ec18498ff2e8f0042d6b9a386be2f">ANNUNCIATOR_ALARM</a>:</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea6107521cf9a071d510ef950872e029b1">ANNUNCIATOR_BUZZER</a>:</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea4e98e8c917cdb73d1acac091465d1f79">ANNUNCIATOR_RGB</a>:</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea1fcd68e3a8ae34852cc1d71f749ef2f5">ANNUNCIATOR_DAC</a>:</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    }</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;}</div>
 <div class="ttc" id="group___core_plugin_html_gga599a013aa05047b3c7741e35a9c59ab5a7c55fd7edcb4bc2fc1fd699f9972525c"><div class="ttname"><a href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a7c55fd7edcb4bc2fc1fd699f9972525c">Core::IBoardType::INPUT_TYPE_PWM</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00160">iboardtype.h:160</a></div></div>
 <div class="ttc" id="group___boards___tau_labs_plugin_html_ga53e085a977e64c71dde6c29926cfa568"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#ga53e085a977e64c71dde6c29926cfa568">Sparky::getBoardPicture</a></div><div class="ttdeci">virtual QPixmap getBoardPicture()</div><div class="ttdoc">getBoardPicture </div><div class="ttdef"><b>Definition:</b> <a href="sparky_8cpp_source.html#l00097">sparky.cpp:97</a></div></div>
 <div class="ttc" id="sparky_8h_html"><div class="ttname"><a href="sparky_8h.html">sparky.h</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gga615a5aa573c867267162df009eb6496ea1fcd68e3a8ae34852cc1d71f749ef2f5"><div class="ttname"><a href="group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea1fcd68e3a8ae34852cc1d71f749ef2f5">Core::IBoardType::ANNUNCIATOR_DAC</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00179">iboardtype.h:179</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga254a5750afd5834f9f88056ce6fadb66"><div class="ttname"><a href="group___core_plugin.html#ga254a5750afd5834f9f88056ce6fadb66">Core::IBoardType::boardType</a></div><div class="ttdeci">qint32 boardType</div><div class="ttdoc">The numerical board type ID. </div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00284">iboardtype.h:284</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gga599a013aa05047b3c7741e35a9c59ab5a411cfb75a64850fa69d3978fc7f7d837"><div class="ttname"><a href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a411cfb75a64850fa69d3978fc7f7d837">Core::IBoardType::INPUT_TYPE_SBUS</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00163">iboardtype.h:163</a></div></div>
-<div class="ttc" id="group___boards___tau_labs_plugin_html_ga0cc5d361eb4745cfd31840cdfdb2e75e"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#ga0cc5d361eb4745cfd31840cdfdb2e75e">Sparky::hasAnnunciator</a></div><div class="ttdeci">virtual bool hasAnnunciator(AnnunciatorType annunc)</div><div class="ttdoc">Check if the board has the given type of annunciator. </div><div class="ttdef"><b>Definition:</b> <a href="sparky_8cpp_source.html#l00303">sparky.cpp:303</a></div></div>
+<div class="ttc" id="group___boards___tau_labs_plugin_html_ga0cc5d361eb4745cfd31840cdfdb2e75e"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#ga0cc5d361eb4745cfd31840cdfdb2e75e">Sparky::hasAnnunciator</a></div><div class="ttdeci">virtual bool hasAnnunciator(AnnunciatorType annunc)</div><div class="ttdoc">Check if the board has the given type of annunciator. </div><div class="ttdef"><b>Definition:</b> <a href="sparky_8cpp_source.html#l00286">sparky.cpp:286</a></div></div>
 <div class="ttc" id="pluginmanager_8h_html"><div class="ttname"><a href="pluginmanager_8h.html">pluginmanager.h</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gga599a013aa05047b3c7741e35a9c59ab5aa85b3ae4f26ecca41f8aec403b16bca4"><div class="ttname"><a href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5aa85b3ae4f26ecca41f8aec403b16bca4">Core::IBoardType::INPUT_TYPE_UNKNOWN</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00170">iboardtype.h:170</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga599a013aa05047b3c7741e35a9c59ab5"><div class="ttname"><a href="group___core_plugin.html#ga599a013aa05047b3c7741e35a9c59ab5">Core::IBoardType::InputType</a></div><div class="ttdeci">InputType</div><div class="ttdoc">Types of input to configure for the default port. </div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00158">iboardtype.h:158</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gga599a013aa05047b3c7741e35a9c59ab5ab5a8a2fca5471ba84e3d3b1fbfaffc87"><div class="ttname"><a href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5ab5a8a2fca5471ba84e3d3b1fbfaffc87">Core::IBoardType::INPUT_TYPE_TBSCROSSFIRE</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00169">iboardtype.h:169</a></div></div>
-<div class="ttc" id="group___boards___tau_labs_plugin_html_ga5a604b25660f512391d1ef9ef154c2b6"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#ga5a604b25660f512391d1ef9ef154c2b6">Sparky::getInputType</a></div><div class="ttdeci">virtual Core::IBoardType::InputType getInputType()</div><div class="ttdoc">getInputType get the current input type </div><div class="ttdef"><b>Definition:</b> <a href="sparky_8cpp_source.html#l00179">sparky.cpp:179</a></div></div>
+<div class="ttc" id="group___boards___tau_labs_plugin_html_ga5a604b25660f512391d1ef9ef154c2b6"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#ga5a604b25660f512391d1ef9ef154c2b6">Sparky::getInputType</a></div><div class="ttdeci">virtual Core::IBoardType::InputType getInputType()</div><div class="ttdoc">getInputType get the current input type </div><div class="ttdef"><b>Definition:</b> <a href="sparky_8cpp_source.html#l00170">sparky.cpp:170</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gadb3667a0ce7a87dcc05de3fb6f3bfd6b"><div class="ttname"><a href="group___core_plugin.html#gadb3667a0ce7a87dcc05de3fb6f3bfd6b">Core::IBoardType::channelBanks</a></div><div class="ttdeci">QVector&lt; QVector&lt; qint32 &gt; &gt; channelBanks</div><div class="ttdoc">The channel groups that are driven by timers. </div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00287">iboardtype.h:287</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gga599a013aa05047b3c7741e35a9c59ab5a6a0be085963c5e9ea15f81949822d8df"><div class="ttname"><a href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a6a0be085963c5e9ea15f81949822d8df">Core::IBoardType::INPUT_TYPE_PPM</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00161">iboardtype.h:161</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gga599a013aa05047b3c7741e35a9c59ab5a31fe1d6cca4c01278726456091ab0168"><div class="ttname"><a href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a31fe1d6cca4c01278726456091ab0168">Core::IBoardType::INPUT_TYPE_DSM</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00162">iboardtype.h:162</a></div></div>
@@ -427,11 +409,10 @@ $(document).ready(function(){initNavTree('sparky_8cpp_source.html','');});
 <div class="ttc" id="group___core_plugin_html_gga01b09218f2a13aaeee6db007ac6bd967a769644e0a335cd070adf4c24017a462f"><div class="ttname"><a href="group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967a769644e0a335cd070adf4c24017a462f">Core::IBoardType::BOARD_CAPABILITIES_MAGS</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00095">iboardtype.h:95</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga615a5aa573c867267162df009eb6496e"><div class="ttname"><a href="group___core_plugin.html#ga615a5aa573c867267162df009eb6496e">Core::IBoardType::AnnunciatorType</a></div><div class="ttdeci">AnnunciatorType</div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00174">iboardtype.h:174</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gga615a5aa573c867267162df009eb6496ea4e98e8c917cdb73d1acac091465d1f79"><div class="ttname"><a href="group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea4e98e8c917cdb73d1acac091465d1f79">Core::IBoardType::ANNUNCIATOR_RGB</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00178">iboardtype.h:178</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gga599a013aa05047b3c7741e35a9c59ab5aaf05e6963a9513bb97a3201470de6b02"><div class="ttname"><a href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5aaf05e6963a9513bb97a3201470de6b02">Core::IBoardType::INPUT_TYPE_HOTTSUMH</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00166">iboardtype.h:166</a></div></div>
 <div class="ttc" id="group___boards___tau_labs_plugin_html_ga81d45abeade9a73a7d354c71e826e906"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#ga81d45abeade9a73a7d354c71e826e906">Sparky::Sparky</a></div><div class="ttdeci">Sparky()</div><div class="ttdoc">Sparky::Sparky This is the Sparky board definition. </div><div class="ttdef"><b>Definition:</b> <a href="sparky_8cpp_source.html#l00041">sparky.cpp:41</a></div></div>
 <div class="ttc" id="group___boards___tau_labs_plugin_html_ga55bf22772b1dd57db236483dde80704e"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#ga55bf22772b1dd57db236483dde80704e">Sparky::setInputType</a></div><div class="ttdeci">virtual bool setInputType(Core::IBoardType::InputType type)</div><div class="ttdef"><b>Definition:</b> <a href="sparky_8cpp_source.html#l00126">sparky.cpp:126</a></div></div>
 <div class="ttc" id="group___boards___tau_labs_plugin_html_ga4b25de756ae522bc8ec649c4885a4e91"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#ga4b25de756ae522bc8ec649c4885a4e91">Sparky::queryCapabilities</a></div><div class="ttdeci">virtual bool queryCapabilities(BoardCapabilities capability)</div><div class="ttdoc">Return which capabilities this board has. </div><div class="ttdef"><b>Definition:</b> <a href="sparky_8cpp_source.html#l00081">sparky.cpp:81</a></div></div>
-<div class="ttc" id="group___boards___tau_labs_plugin_html_ga73f231850f1a406923692e944725397e"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#ga73f231850f1a406923692e944725397e">Sparky::queryMaxGyroRate</a></div><div class="ttdeci">virtual int queryMaxGyroRate()</div><div class="ttdoc">Query the board for the currently set max rate of the gyro. </div><div class="ttdef"><b>Definition:</b> <a href="sparky_8cpp_source.html#l00248">sparky.cpp:248</a></div></div>
+<div class="ttc" id="group___boards___tau_labs_plugin_html_ga73f231850f1a406923692e944725397e"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#ga73f231850f1a406923692e944725397e">Sparky::queryMaxGyroRate</a></div><div class="ttdeci">virtual int queryMaxGyroRate()</div><div class="ttdoc">Query the board for the currently set max rate of the gyro. </div><div class="ttdef"><b>Definition:</b> <a href="sparky_8cpp_source.html#l00231">sparky.cpp:231</a></div></div>
 <div class="ttc" id="group___boards___tau_labs_plugin_html_gad1cc49687204bd5c0bf274a079996ddd"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#gad1cc49687204bd5c0bf274a079996ddd">Sparky::isInputConfigurationSupported</a></div><div class="ttdeci">virtual bool isInputConfigurationSupported(Core::IBoardType::InputType type)</div><div class="ttdoc">Determine if this board supports configuring the receiver. </div><div class="ttdef"><b>Definition:</b> <a href="sparky_8cpp_source.html#l00108">sparky.cpp:108</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ggae5da6a391b4825fe57d10ab08b5e6482afa5d4de451c06ed1f5f9887949519e81"><div class="ttname"><a href="group___core_plugin.html#ggae5da6a391b4825fe57d10ab08b5e6482afa5d4de451c06ed1f5f9887949519e81">Core::IBoardType::BCD_DEVICE_FIRMWARE</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00273">iboardtype.h:273</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gga01b09218f2a13aaeee6db007ac6bd967a6490aec954e127f73371f4fb9b457b7c"><div class="ttname"><a href="group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967a6490aec954e127f73371f4fb9b457b7c">Core::IBoardType::BOARD_CAPABILITIES_GYROS</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00093">iboardtype.h:93</a></div></div>
@@ -442,9 +423,8 @@ $(document).ready(function(){initNavTree('sparky_8cpp_source.html','');});
 <div class="ttc" id="class_u_a_v_object_manager_html"><div class="ttname"><a href="class_u_a_v_object_manager.html">UAVObjectManager</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8h_source.html#l00046">uavobjectmanager.h:46</a></div></div>
 <div class="ttc" id="group___boards___tau_labs_plugin_html_gafad187a9e7207b7b14ca0c71eaa7ad48"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#gafad187a9e7207b7b14ca0c71eaa7ad48">Sparky::~Sparky</a></div><div class="ttdeci">virtual ~Sparky()</div><div class="ttdef"><b>Definition:</b> <a href="sparky_8cpp_source.html#l00066">sparky.cpp:66</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gga615a5aa573c867267162df009eb6496ea6107521cf9a071d510ef950872e029b1"><div class="ttname"><a href="group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea6107521cf9a071d510ef950872e029b1">Core::IBoardType::ANNUNCIATOR_BUZZER</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00177">iboardtype.h:177</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gga599a013aa05047b3c7741e35a9c59ab5a4b2a9bae9965b28d4f89a5b509dc4c18"><div class="ttname"><a href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a4b2a9bae9965b28d4f89a5b509dc4c18">Core::IBoardType::INPUT_TYPE_HOTTSUMD</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00165">iboardtype.h:165</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gga599a013aa05047b3c7741e35a9c59ab5a4be041ae589a34b4e9825b644e25eda1"><div class="ttname"><a href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a4be041ae589a34b4e9825b644e25eda1">Core::IBoardType::INPUT_TYPE_SBUSNONINVERTED</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00164">iboardtype.h:164</a></div></div>
-<div class="ttc" id="group___boards___tau_labs_plugin_html_gaae8fbbe3a7103a633b52ef1832a327a4"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#gaae8fbbe3a7103a633b52ef1832a327a4">Sparky::getAdcNames</a></div><div class="ttdeci">virtual QStringList getAdcNames()</div><div class="ttdef"><b>Definition:</b> <a href="sparky_8cpp_source.html#l00275">sparky.cpp:275</a></div></div>
+<div class="ttc" id="group___boards___tau_labs_plugin_html_gaae8fbbe3a7103a633b52ef1832a327a4"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#gaae8fbbe3a7103a633b52ef1832a327a4">Sparky::getAdcNames</a></div><div class="ttdeci">virtual QStringList getAdcNames()</div><div class="ttdef"><b>Definition:</b> <a href="sparky_8cpp_source.html#l00258">sparky.cpp:258</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ggae5da6a391b4825fe57d10ab08b5e6482aba1aeecbe5a021f1a2839064dd1ef7d1"><div class="ttname"><a href="group___core_plugin.html#ggae5da6a391b4825fe57d10ab08b5e6482aba1aeecbe5a021f1a2839064dd1ef7d1">Core::IBoardType::BCD_DEVICE_BOOTLOADER</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00272">iboardtype.h:272</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gga615a5aa573c867267162df009eb6496ea5b0d30e0af1244cb88af714cd0d94cfb"><div class="ttname"><a href="group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea5b0d30e0af1244cb88af714cd0d94cfb">Core::IBoardType::ANNUNCIATOR_HEARTBEAT</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00175">iboardtype.h:175</a></div></div>
 <div class="ttc" id="uavobjectmanager_8h_html"><div class="ttname"><a href="uavobjectmanager_8h.html">uavobjectmanager.h</a></div></div>

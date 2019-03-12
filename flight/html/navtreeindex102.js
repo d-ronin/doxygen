@@ -1,11 +1,5 @@
 var NAVTREEINDEX102 =
 {
-"targets_2dtfc_2board-info_2pios__board_8h.html#ga24c6da05c7d0a33b87b0c66cca0700d6":[5,0,0,5,5,1,2,32],
-"targets_2dtfc_2board-info_2pios__board_8h.html#ga288a8e6f061b1dbd7930b5ffdf805c69":[5,0,0,5,5,1,2,31],
-"targets_2dtfc_2board-info_2pios__board_8h.html#ga2a5b4da2757e6727567656c3a9025ccd":[5,0,0,5,5,1,2,21],
-"targets_2dtfc_2board-info_2pios__board_8h.html#ga2a94396f6c828bcf3a1c79e82a3d738a":[5,0,0,5,5,1,2,27],
-"targets_2dtfc_2board-info_2pios__board_8h.html#ga2d0de5022c647a603359c8a7514c658e":[5,0,0,5,5,1,2,55],
-"targets_2dtfc_2board-info_2pios__board_8h.html#ga331e928969979bce99d9037027d9853b":[5,0,0,5,5,1,2,5],
 "targets_2dtfc_2board-info_2pios__board_8h.html#ga359750ecdbec9fcd99d86d9b1cd11110":[5,0,0,5,5,1,2,41],
 "targets_2dtfc_2board-info_2pios__board_8h.html#ga422d4d808a71d4b756877ac8e2d16255":[5,0,0,5,5,1,2,29],
 "targets_2dtfc_2board-info_2pios__board_8h.html#ga513cc36d72b76de2fcb75ff233a79a4a":[5,0,0,5,5,1,2,56],
@@ -249,5 +243,11 @@ var NAVTREEINDEX102 =
 "targets_2lux_2fw_2pios__config_8h.html#ga02110c152ec1a097f4ff145b650b6309":[5,0,0,5,8,2,1,12],
 "targets_2lux_2fw_2pios__config_8h.html#ga1e0f4680d2bce7eee244f3b0b67b23b9":[5,0,0,5,8,2,1,3],
 "targets_2lux_2fw_2pios__config_8h.html#ga24a6e0d324a2669cacb50de89b60c0a9":[5,0,0,5,8,2,1,7],
-"targets_2lux_2fw_2pios__config_8h.html#ga2989b6f1854d52ff08b9933bfb9b35fd":[5,0,0,5,8,2,1,10]
+"targets_2lux_2fw_2pios__config_8h.html#ga2989b6f1854d52ff08b9933bfb9b35fd":[5,0,0,5,8,2,1,10],
+"targets_2lux_2fw_2pios__config_8h.html#ga3925877e791baa885fbc268aeb8048c7":[5,0,0,5,8,2,1,11],
+"targets_2lux_2fw_2pios__config_8h.html#ga4f21d78d9c6d8c65a1b4278ca726e0d7":[5,0,0,5,8,2,1,6],
+"targets_2lux_2fw_2pios__config_8h.html#ga867e829c0aaaf0e6f1c0f229b670e71e":[5,0,0,5,8,2,1,0],
+"targets_2lux_2fw_2pios__config_8h.html#ga8de02d8defc3d19ac2f9ad75fc5441c1":[5,0,0,5,8,2,1,2],
+"targets_2lux_2fw_2pios__config_8h.html#ga9342ac55ca81b9d977fec30f45813847":[5,0,0,5,8,2,1,4],
+"targets_2lux_2fw_2pios__config_8h.html#ga9be33d810838161edf9412377209a4cf":[5,0,0,5,8,2,1,1]
 };
