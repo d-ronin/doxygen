@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">bfd660f</span>
+   &#160;<span id="projectnumber">3b6e3ca</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -327,385 +327,392 @@ $(document).ready(function(){initNavTree('revolution_2fw_2pios__board_8c_source.
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="comment">/* Configure IO ports */</span></div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_I2C)</span></div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">if</span> ((!is_modified_clone) &amp;&amp; <a class="code" href="posix_2inc_2pios__i2c__priv_8h.html#a4638989ec4e4f44464061eb000f4d702">PIOS_I2C_Init</a>(&amp;pios_i2c_mag_pressure_adapter_id, &amp;pios_i2c_mag_pressure_adapter_cfg)) {</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                <a class="code" href="group___p_i_o_s___h_a_l.html#gab9a9f4422da783012950ae6468130423">PIOS_HAL_CriticalError</a>(<a class="code" href="group___a_q32.html#ga2a94396f6c828bcf3a1c79e82a3d738a">PIOS_LED_HEARTBEAT</a>, <a class="code" href="pios__hal_8h.html#aafe5055d05a85237ff35d915dff9a53ba5a1654e51cbb5915661e6c1458518cd3">PIOS_HAL_PANIC_I2C_INT</a>);</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        }</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <span class="keywordflow">if</span> ((!is_modified_clone) &amp;&amp;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                        (<a class="code" href="group___p_i_o_s___i2_c.html#ga4b1eb637def8eab1e651248b646c41a2">PIOS_I2C_CheckClear</a>(pios_i2c_mag_pressure_adapter_id) != 0)) {</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                <a class="code" href="group___p_i_o_s___h_a_l.html#gab9a9f4422da783012950ae6468130423">PIOS_HAL_CriticalError</a>(<a class="code" href="group___a_q32.html#ga2a94396f6c828bcf3a1c79e82a3d738a">PIOS_LED_HEARTBEAT</a>, <a class="code" href="pios__hal_8h.html#aafe5055d05a85237ff35d915dff9a53ba5a1654e51cbb5915661e6c1458518cd3">PIOS_HAL_PANIC_I2C_INT</a>);</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!is_modified_clone) {</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="group___libraries.html#gad166792501b216a64df3e1ec0017db04">AlarmsGet</a>(SYSTEMALARMS_ALARM_I2C) == SYSTEMALARMS_ALARM_UNINITIALISED) {</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                        <a class="code" href="group___libraries.html#gadd1139478e7c6bc1b6afaaa0d1d114dd">AlarmsSet</a>(SYSTEMALARMS_ALARM_I2C, SYSTEMALARMS_ALARM_OK);</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                }</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        }</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor">#endif  // PIOS_INCLUDE_I2C</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        HwRevolutionDSMxModeOptions hw_DSMxMode;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        HwRevolutionDSMxModeGet(&amp;hw_DSMxMode);</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <span class="comment">/* Configure main USART port */</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">if</span> (<a class="code" href="posix_2inc_2pios__i2c__priv_8h.html#a4638989ec4e4f44464061eb000f4d702">PIOS_I2C_Init</a>(&amp;pios_i2c_mag_pressure_adapter_id, &amp;pios_i2c_mag_pressure_adapter_cfg)) {</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                <span class="keywordflow">if</span> (!is_modified_clone) {</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                        <a class="code" href="group___p_i_o_s___h_a_l.html#gab9a9f4422da783012950ae6468130423">PIOS_HAL_CriticalError</a>(<a class="code" href="group___a_q32.html#ga2a94396f6c828bcf3a1c79e82a3d738a">PIOS_LED_HEARTBEAT</a>, <a class="code" href="pios__hal_8h.html#aafe5055d05a85237ff35d915dff9a53ba5a1654e51cbb5915661e6c1458518cd3">PIOS_HAL_PANIC_I2C_INT</a>);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                }</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="group___libraries.html#gad166792501b216a64df3e1ec0017db04">AlarmsGet</a>(SYSTEMALARMS_ALARM_I2C) == SYSTEMALARMS_ALARM_UNINITIALISED) {</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                        <a class="code" href="group___libraries.html#gadd1139478e7c6bc1b6afaaa0d1d114dd">AlarmsSet</a>(SYSTEMALARMS_ALARM_I2C, SYSTEMALARMS_ALARM_OK);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                }</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        }</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="preprocessor">#endif  // PIOS_INCLUDE_I2C</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        HwRevolutionDSMxModeOptions hw_DSMxMode;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        HwRevolutionDSMxModeGet(&amp;hw_DSMxMode);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <span class="comment">/* Configure main USART port */</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        uint8_t hw_mainport;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        HwRevolutionMainPortGet(&amp;hw_mainport);</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        uint8_t hw_mainport;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        HwRevolutionMainPortGet(&amp;hw_mainport);</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        PIOS_HAL_ConfigurePort(hw_mainport,          <span class="comment">// port type protocol</span></div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                        &amp;<a class="code" href="group___play_u_a_v_o_s_d.html#ga0e5e1b8910d71466edb2fd6f8d12356c">pios_usart_main_cfg</a>,                <span class="comment">// usart_port_cfg</span></div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                        &amp;<a class="code" href="group___p_i_o_s___u_s_a_r_t.html#gaa18aa39830281e33f66deabc31c2a86e">pios_usart_com_driver</a>,              <span class="comment">// com_driver</span></div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                        NULL,                                <span class="comment">// i2c_id</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                        NULL,                                <span class="comment">// i2c_cfg</span></div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                        NULL,                                <span class="comment">// ppm_cfg</span></div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                        NULL,                                <span class="comment">// pwm_cfg</span></div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                        <a class="code" href="group___a_q32.html#ga2a94396f6c828bcf3a1c79e82a3d738a">PIOS_LED_HEARTBEAT</a>,                      <span class="comment">// led_id</span></div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                        &amp;pios_dsm_main_cfg,                  <span class="comment">// dsm_cfg</span></div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                        hw_DSMxMode &gt;= HWREVOLUTION_DSMXMODE_BIND3PULSES ? HWREVOLUTION_DSMXMODE_AUTODETECT : hw_DSMxMode <span class="comment">/* No bind on main port */</span>,</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                        &amp;<a class="code" href="structpios__sbus__cfg.html">pios_sbus_cfg</a>);                     <span class="comment">// sbus_cfg</span></div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="comment">/* Configure FlexiPort */</span></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        uint8_t hw_flexiport;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        HwRevolutionFlexiPortGet(&amp;hw_flexiport);</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        PIOS_HAL_ConfigurePort(hw_flexiport,         <span class="comment">// port type protocol</span></div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                        &amp;<a class="code" href="group___sparky2.html#ga0174e687ba7445d8d419a6b3fd6d5bba">pios_usart_flexi_cfg</a>,               <span class="comment">// usart_port_cfg</span></div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                        &amp;<a class="code" href="group___p_i_o_s___u_s_a_r_t.html#gaa18aa39830281e33f66deabc31c2a86e">pios_usart_com_driver</a>,              <span class="comment">// com_driver</span></div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                        &amp;pios_i2c_flexiport_adapter_id,      <span class="comment">// i2c_id</span></div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                        &amp;pios_i2c_flexiport_adapter_cfg,     <span class="comment">// i2c_cfg</span></div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                        NULL,                                <span class="comment">// ppm_cfg</span></div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                        NULL,                                <span class="comment">// pwm_cfg</span></div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                        <a class="code" href="group___a_q32.html#ga2a94396f6c828bcf3a1c79e82a3d738a">PIOS_LED_HEARTBEAT</a>,                      <span class="comment">// led_id</span></div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                        &amp;pios_dsm_flexi_cfg,                 <span class="comment">// dsm_cfg</span></div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                        hw_DSMxMode,                         <span class="comment">// dsm_mode</span></div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                        NULL);                               <span class="comment">// sbus_cfg</span></div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <span class="comment">/* Configure the receiver port*/</span></div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        uint8_t hw_rxport;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        HwRevolutionRxPortGet(&amp;hw_rxport);</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        <span class="keywordflow">switch</span> (hw_rxport) {</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <span class="keywordflow">case</span> HWREVOLUTION_RXPORT_DISABLED:</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="keywordflow">case</span> HWREVOLUTION_RXPORT_PWM:</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                PIOS_HAL_ConfigurePort(HWSHARED_PORTTYPES_PWM,  <span class="comment">// port type protocol</span></div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                                NULL,                                   <span class="comment">// usart_port_cfg</span></div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                                NULL,                                   <span class="comment">// com_driver</span></div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                                NULL,                                   <span class="comment">// i2c_id</span></div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                                NULL,                                   <span class="comment">// i2c_cfg</span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                                NULL,                                   <span class="comment">// ppm_cfg</span></div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                                &amp;<a class="code" href="structpios__pwm__cfg.html">pios_pwm_cfg</a>,                          <span class="comment">// pwm_cfg</span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                                <a class="code" href="group___a_q32.html#ga2a94396f6c828bcf3a1c79e82a3d738a">PIOS_LED_HEARTBEAT</a>,                         <span class="comment">// led_id</span></div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                                NULL,                                   <span class="comment">// dsm_cfg</span></div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                                0,                                      <span class="comment">// dsm_mode</span></div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                                NULL);                                  <span class="comment">// sbus_cfg</span></div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <span class="keywordflow">case</span> HWREVOLUTION_RXPORT_PPM:</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        <span class="keywordflow">case</span> HWREVOLUTION_RXPORT_PPMOUTPUTS:</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                PIOS_HAL_ConfigurePort(HWSHARED_PORTTYPES_PPM,  <span class="comment">// port type protocol</span></div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                                NULL,                                   <span class="comment">// usart_port_cfg</span></div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                                NULL,                                   <span class="comment">// com_driver</span></div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                                NULL,                                   <span class="comment">// i2c_id</span></div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;                                NULL,                                   <span class="comment">// i2c_cfg</span></div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                                &amp;<a class="code" href="structpios__ppm__cfg.html">pios_ppm_cfg</a>,                          <span class="comment">// ppm_cfg</span></div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                                NULL,                                   <span class="comment">// pwm_cfg</span></div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                                <a class="code" href="group___a_q32.html#ga2a94396f6c828bcf3a1c79e82a3d738a">PIOS_LED_HEARTBEAT</a>,                         <span class="comment">// led_id</span></div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                                NULL,                                   <span class="comment">// dsm_cfg</span></div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                                0,                                      <span class="comment">// dsm_mode</span></div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;                                NULL);                                  <span class="comment">// sbus_cfg</span></div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <span class="keywordflow">case</span> HWREVOLUTION_RXPORT_UART:</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                use_rxport_usart = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        PIOS_HAL_ConfigurePort(hw_mainport,          <span class="comment">// port type protocol</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                        &amp;<a class="code" href="group___play_u_a_v_o_s_d.html#ga0e5e1b8910d71466edb2fd6f8d12356c">pios_usart_main_cfg</a>,                <span class="comment">// usart_port_cfg</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                        &amp;<a class="code" href="group___p_i_o_s___u_s_a_r_t.html#gaa18aa39830281e33f66deabc31c2a86e">pios_usart_com_driver</a>,              <span class="comment">// com_driver</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                        NULL,                                <span class="comment">// i2c_id</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                        NULL,                                <span class="comment">// i2c_cfg</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                        NULL,                                <span class="comment">// ppm_cfg</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                        NULL,                                <span class="comment">// pwm_cfg</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                        <a class="code" href="group___a_q32.html#ga2a94396f6c828bcf3a1c79e82a3d738a">PIOS_LED_HEARTBEAT</a>,                      <span class="comment">// led_id</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                        &amp;pios_dsm_main_cfg,                  <span class="comment">// dsm_cfg</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                        hw_DSMxMode &gt;= HWREVOLUTION_DSMXMODE_BIND3PULSES ? HWREVOLUTION_DSMXMODE_AUTODETECT : hw_DSMxMode <span class="comment">/* No bind on main port */</span>,</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                        &amp;<a class="code" href="structpios__sbus__cfg.html">pios_sbus_cfg</a>);                     <span class="comment">// sbus_cfg</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="comment">/* Configure FlexiPort */</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        uint8_t hw_flexiport;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        HwRevolutionFlexiPortGet(&amp;hw_flexiport);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        PIOS_HAL_ConfigurePort(hw_flexiport,         <span class="comment">// port type protocol</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                        &amp;<a class="code" href="group___sparky2.html#ga0174e687ba7445d8d419a6b3fd6d5bba">pios_usart_flexi_cfg</a>,               <span class="comment">// usart_port_cfg</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                        &amp;<a class="code" href="group___p_i_o_s___u_s_a_r_t.html#gaa18aa39830281e33f66deabc31c2a86e">pios_usart_com_driver</a>,              <span class="comment">// com_driver</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                        &amp;pios_i2c_flexiport_adapter_id,      <span class="comment">// i2c_id</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                        &amp;pios_i2c_flexiport_adapter_cfg,     <span class="comment">// i2c_cfg</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                        NULL,                                <span class="comment">// ppm_cfg</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                        NULL,                                <span class="comment">// pwm_cfg</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                        <a class="code" href="group___a_q32.html#ga2a94396f6c828bcf3a1c79e82a3d738a">PIOS_LED_HEARTBEAT</a>,                      <span class="comment">// led_id</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                        &amp;pios_dsm_flexi_cfg,                 <span class="comment">// dsm_cfg</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                        hw_DSMxMode,                         <span class="comment">// dsm_mode</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                        NULL);                               <span class="comment">// sbus_cfg</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        <span class="comment">/* Configure the receiver port*/</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        uint8_t hw_rxport;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        HwRevolutionRxPortGet(&amp;hw_rxport);</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <span class="keywordflow">switch</span> (hw_rxport) {</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <span class="keywordflow">case</span> HWREVOLUTION_RXPORT_DISABLED:</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <span class="keywordflow">case</span> HWREVOLUTION_RXPORT_PWM:</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                PIOS_HAL_ConfigurePort(HWSHARED_PORTTYPES_PWM,  <span class="comment">// port type protocol</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                                NULL,                                   <span class="comment">// usart_port_cfg</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                                NULL,                                   <span class="comment">// com_driver</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                                NULL,                                   <span class="comment">// i2c_id</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                                NULL,                                   <span class="comment">// i2c_cfg</span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                                NULL,                                   <span class="comment">// ppm_cfg</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                                &amp;<a class="code" href="structpios__pwm__cfg.html">pios_pwm_cfg</a>,                          <span class="comment">// pwm_cfg</span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                                <a class="code" href="group___a_q32.html#ga2a94396f6c828bcf3a1c79e82a3d738a">PIOS_LED_HEARTBEAT</a>,                         <span class="comment">// led_id</span></div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                                NULL,                                   <span class="comment">// dsm_cfg</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                                0,                                      <span class="comment">// dsm_mode</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                                NULL);                                  <span class="comment">// sbus_cfg</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        <span class="keywordflow">case</span> HWREVOLUTION_RXPORT_PPM:</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        <span class="keywordflow">case</span> HWREVOLUTION_RXPORT_PPMOUTPUTS:</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                PIOS_HAL_ConfigurePort(HWSHARED_PORTTYPES_PPM,  <span class="comment">// port type protocol</span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                                NULL,                                   <span class="comment">// usart_port_cfg</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                                NULL,                                   <span class="comment">// com_driver</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                                NULL,                                   <span class="comment">// i2c_id</span></div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                                NULL,                                   <span class="comment">// i2c_cfg</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                                &amp;<a class="code" href="structpios__ppm__cfg.html">pios_ppm_cfg</a>,                          <span class="comment">// ppm_cfg</span></div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                                NULL,                                   <span class="comment">// pwm_cfg</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;                                <a class="code" href="group___a_q32.html#ga2a94396f6c828bcf3a1c79e82a3d738a">PIOS_LED_HEARTBEAT</a>,                         <span class="comment">// led_id</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                                NULL,                                   <span class="comment">// dsm_cfg</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                                0,                                      <span class="comment">// dsm_mode</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                                NULL);                                  <span class="comment">// sbus_cfg</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <span class="keywordflow">case</span> HWREVOLUTION_RXPORT_UART:</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                use_rxport_usart = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <span class="keywordflow">case</span> HWREVOLUTION_RXPORT_PPMUART:</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                use_rxport_usart = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="keywordflow">case</span> HWREVOLUTION_RXPORT_PPMUART:</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                use_rxport_usart = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                PIOS_HAL_ConfigurePort(HWSHARED_PORTTYPES_PPM,  <span class="comment">// port type protocol</span></div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                                NULL,                                   <span class="comment">// usart_port_cfg</span></div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                                NULL,                                   <span class="comment">// com_driver</span></div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                                NULL,                                   <span class="comment">// i2c_id</span></div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                                NULL,                                   <span class="comment">// i2c_cfg</span></div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                                &amp;<a class="code" href="structpios__ppm__cfg.html">pios_ppm_cfg</a>,                          <span class="comment">// ppm_cfg</span></div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                                NULL,                                   <span class="comment">// pwm_cfg</span></div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                                <a class="code" href="group___a_q32.html#ga2a94396f6c828bcf3a1c79e82a3d738a">PIOS_LED_HEARTBEAT</a>,                         <span class="comment">// led_id</span></div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                                NULL,                                   <span class="comment">// dsm_cfg</span></div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;                                0,                                      <span class="comment">// dsm_mode</span></div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                                NULL);                                  <span class="comment">// sbus_cfg</span></div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        }</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        <span class="comment">/* Configure the RxPort USART */</span></div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        <span class="keywordflow">if</span> (use_rxport_usart) {</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;                uint8_t hw_rxportusart;</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                HwRevolutionRxPortUsartGet(&amp;hw_rxportusart);</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                PIOS_HAL_ConfigurePort(hw_rxportusart,       <span class="comment">// port type protocol</span></div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;                                &amp;pios_rxportusart_cfg,               <span class="comment">// usart_port_cfg</span></div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;                                &amp;<a class="code" href="group___p_i_o_s___u_s_a_r_t.html#gaa18aa39830281e33f66deabc31c2a86e">pios_usart_com_driver</a>,              <span class="comment">// com_driver</span></div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                                NULL,                                <span class="comment">// i2c_id</span></div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                                NULL,                                <span class="comment">// i2c_cfg</span></div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;                                NULL,                                <span class="comment">// ppm_cfg</span></div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;                                NULL,                                <span class="comment">// pwm_cfg</span></div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                                <a class="code" href="group___a_q32.html#ga2a94396f6c828bcf3a1c79e82a3d738a">PIOS_LED_HEARTBEAT</a>,                      <span class="comment">// led_id</span></div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;                                &amp;pios_rxportusart_dsm_aux_cfg,       <span class="comment">// dsm_cfg</span></div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                                hw_DSMxMode,                         <span class="comment">// dsm_mode</span></div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                                NULL);                               <span class="comment">// sbus_cfg</span></div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        }</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="preprocessor">#ifndef PIOS_DEBUG_ENABLE_DEBUG_PINS</span></div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">switch</span> (hw_rxport) {</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        <span class="keywordflow">case</span> HWREVOLUTION_RXPORT_DISABLED:</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        <span class="keywordflow">case</span> HWREVOLUTION_RXPORT_PWM:</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        <span class="keywordflow">case</span> HWREVOLUTION_RXPORT_PPM:</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        <span class="keywordflow">case</span> HWREVOLUTION_RXPORT_UART:</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        <span class="keywordflow">case</span> HWREVOLUTION_RXPORT_PPMUART:</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        <span class="comment">/* Set up the servo outputs */</span></div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_SERVO</span></div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="preprocessor"></span>                <a class="code" href="group___p_i_o_s___s_e_r_v_o.html#ga9d74027bc92b7db6f1b0dc049ba1625d">PIOS_Servo_Init</a>(&amp;<a class="code" href="structpios__servo__cfg.html">pios_servo_cfg</a>);</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="preprocessor"></span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        <span class="keywordflow">case</span> HWREVOLUTION_RXPORT_PPMOUTPUTS:</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_SERVO</span></div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="preprocessor"></span>                <a class="code" href="group___p_i_o_s___s_e_r_v_o.html#ga9d74027bc92b7db6f1b0dc049ba1625d">PIOS_Servo_Init</a>(&amp;pios_servo_rcvr_ppm_cfg);</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="preprocessor"></span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        <span class="keywordflow">case</span> HWREVOLUTION_RXPORT_OUTPUTS:</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_SERVO</span></div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="preprocessor"></span>                <a class="code" href="group___p_i_o_s___s_e_r_v_o.html#ga9d74027bc92b7db6f1b0dc049ba1625d">PIOS_Servo_Init</a>(&amp;pios_servo_rcvr_all_cfg);</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="preprocessor"></span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        }</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="preprocessor"></span>        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#ga798f6007adad3e5de566d49c17695899">PIOS_DEBUG_Init</a>(&amp;pios_tim_servo_all_channels, <a class="code" href="group___p_i_o_s.html#ga012a11e78fa6eb27613a473e530348e2">NELEMENTS</a>(pios_tim_servo_all_channels));</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        HwRevolutionData hwRevoMini;</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        HwRevolutionGet(&amp;hwRevoMini);</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        uint8_t hw_spiperiph;</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        HwRevolutionSPIPeripheralGet(&amp;hw_spiperiph);</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        <span class="keywordflow">switch</span> (hw_spiperiph) {</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;                <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;                        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0);</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                <span class="keywordflow">case</span> HWREVOLUTION_SPIPERIPHERAL_DISABLED:</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_MAX7456</span></div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="preprocessor"></span>                <span class="keywordflow">case</span> HWREVOLUTION_SPIPERIPHERAL_MAX7456OSD:</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;                        <span class="keywordflow">if</span> (!<a class="code" href="group___p_i_o_s.html#gadf1c9945f28cdba22ed5569036d4f4f1">PIOS_MAX7456_init</a>(&amp;pios_max7456_id, pios_spi_telem_flash_id,</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;                                                0)) {</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;                                <span class="comment">// XXX do something?</span></div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;                        }</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_OPENLRS</span></div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="preprocessor"></span>                <span class="keywordflow">case</span> HWREVOLUTION_SPIPERIPHERAL_RADIO:</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;                        (void) 0;</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;                        <span class="keyword">const</span> <span class="keyword">struct </span>pios_openlrs_cfg *openlrs_cfg =PIOS_BOARD_HW_DEFS_GetOpenLRSCfg(bdinfo-&gt;<a class="code" href="structpios__board__info.html#a7c5ba691095b534927e3f0b6cc7202d6">board_rev</a>);</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;                        PIOS_HAL_ConfigureRFM22B(pios_spi_telem_flash_id,</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;                                        bdinfo-&gt;<a class="code" href="structpios__board__info.html#a5aff4607db694a6885c0ce5361afa9bb">board_type</a>, bdinfo-&gt;<a class="code" href="structpios__board__info.html#a7c5ba691095b534927e3f0b6cc7202d6">board_rev</a>,</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;                                        hwRevoMini.RfBand,</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;                                        hwRevoMini.MaxRfPower,</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;                                        openlrs_cfg,</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;                                        &amp;openlrs_handle);</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_OPENLRS */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;<span class="preprocessor"></span>        }</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                PIOS_HAL_ConfigurePort(HWSHARED_PORTTYPES_PPM,  <span class="comment">// port type protocol</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                                NULL,                                   <span class="comment">// usart_port_cfg</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                                NULL,                                   <span class="comment">// com_driver</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                                NULL,                                   <span class="comment">// i2c_id</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                                NULL,                                   <span class="comment">// i2c_cfg</span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                                &amp;<a class="code" href="structpios__ppm__cfg.html">pios_ppm_cfg</a>,                          <span class="comment">// ppm_cfg</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                                NULL,                                   <span class="comment">// pwm_cfg</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                                <a class="code" href="group___a_q32.html#ga2a94396f6c828bcf3a1c79e82a3d738a">PIOS_LED_HEARTBEAT</a>,                         <span class="comment">// led_id</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                                NULL,                                   <span class="comment">// dsm_cfg</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                                0,                                      <span class="comment">// dsm_mode</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                                NULL);                                  <span class="comment">// sbus_cfg</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        }</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        <span class="comment">/* Configure the RxPort USART */</span></div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        <span class="keywordflow">if</span> (use_rxport_usart) {</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                uint8_t hw_rxportusart;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                HwRevolutionRxPortUsartGet(&amp;hw_rxportusart);</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;                PIOS_HAL_ConfigurePort(hw_rxportusart,       <span class="comment">// port type protocol</span></div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                                &amp;pios_rxportusart_cfg,               <span class="comment">// usart_port_cfg</span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                                &amp;<a class="code" href="group___p_i_o_s___u_s_a_r_t.html#gaa18aa39830281e33f66deabc31c2a86e">pios_usart_com_driver</a>,              <span class="comment">// com_driver</span></div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                                NULL,                                <span class="comment">// i2c_id</span></div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;                                NULL,                                <span class="comment">// i2c_cfg</span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;                                NULL,                                <span class="comment">// ppm_cfg</span></div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                                NULL,                                <span class="comment">// pwm_cfg</span></div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                                <a class="code" href="group___a_q32.html#ga2a94396f6c828bcf3a1c79e82a3d738a">PIOS_LED_HEARTBEAT</a>,                      <span class="comment">// led_id</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;                                &amp;pios_rxportusart_dsm_aux_cfg,       <span class="comment">// dsm_cfg</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;                                hw_DSMxMode,                         <span class="comment">// dsm_mode</span></div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                                NULL);                               <span class="comment">// sbus_cfg</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        }</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="preprocessor">#ifndef PIOS_DEBUG_ENABLE_DEBUG_PINS</span></div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">switch</span> (hw_rxport) {</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        <span class="keywordflow">case</span> HWREVOLUTION_RXPORT_DISABLED:</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        <span class="keywordflow">case</span> HWREVOLUTION_RXPORT_PWM:</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        <span class="keywordflow">case</span> HWREVOLUTION_RXPORT_PPM:</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        <span class="keywordflow">case</span> HWREVOLUTION_RXPORT_UART:</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        <span class="keywordflow">case</span> HWREVOLUTION_RXPORT_PPMUART:</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        <span class="comment">/* Set up the servo outputs */</span></div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_SERVO</span></div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="preprocessor"></span>                <a class="code" href="group___p_i_o_s___s_e_r_v_o.html#ga9d74027bc92b7db6f1b0dc049ba1625d">PIOS_Servo_Init</a>(&amp;<a class="code" href="structpios__servo__cfg.html">pios_servo_cfg</a>);</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="preprocessor"></span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        <span class="keywordflow">case</span> HWREVOLUTION_RXPORT_PPMOUTPUTS:</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_SERVO</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="preprocessor"></span>                <a class="code" href="group___p_i_o_s___s_e_r_v_o.html#ga9d74027bc92b7db6f1b0dc049ba1625d">PIOS_Servo_Init</a>(&amp;pios_servo_rcvr_ppm_cfg);</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;<span class="preprocessor"></span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        <span class="keywordflow">case</span> HWREVOLUTION_RXPORT_OUTPUTS:</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_SERVO</span></div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="preprocessor"></span>                <a class="code" href="group___p_i_o_s___s_e_r_v_o.html#ga9d74027bc92b7db6f1b0dc049ba1625d">PIOS_Servo_Init</a>(&amp;pios_servo_rcvr_all_cfg);</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="preprocessor"></span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        }</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="preprocessor"></span>        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#ga798f6007adad3e5de566d49c17695899">PIOS_DEBUG_Init</a>(&amp;pios_tim_servo_all_channels, <a class="code" href="group___p_i_o_s.html#ga012a11e78fa6eb27613a473e530348e2">NELEMENTS</a>(pios_tim_servo_all_channels));</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        HwRevolutionData hwRevoMini;</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        HwRevolutionGet(&amp;hwRevoMini);</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        uint8_t hw_spiperiph;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        HwRevolutionSPIPeripheralGet(&amp;hw_spiperiph);</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        <span class="keywordflow">switch</span> (hw_spiperiph) {</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;                <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;                        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0);</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;                <span class="keywordflow">case</span> HWREVOLUTION_SPIPERIPHERAL_DISABLED:</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_MAX7456</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="preprocessor"></span>                <span class="keywordflow">case</span> HWREVOLUTION_SPIPERIPHERAL_MAX7456OSD:</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;                        <span class="keywordflow">if</span> (!<a class="code" href="group___p_i_o_s.html#gadf1c9945f28cdba22ed5569036d4f4f1">PIOS_MAX7456_init</a>(&amp;pios_max7456_id, pios_spi_telem_flash_id,</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;                                                0)) {</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;                                <span class="comment">// XXX do something?</span></div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;                        }</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_OPENLRS</span></div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="preprocessor"></span>                <span class="keywordflow">case</span> HWREVOLUTION_SPIPERIPHERAL_RADIO:</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;                        (void) 0;</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;                        <span class="keyword">const</span> <span class="keyword">struct </span>pios_openlrs_cfg *openlrs_cfg =PIOS_BOARD_HW_DEFS_GetOpenLRSCfg(bdinfo-&gt;<a class="code" href="structpios__board__info.html#a7c5ba691095b534927e3f0b6cc7202d6">board_rev</a>);</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;                        PIOS_HAL_ConfigureRFM22B(pios_spi_telem_flash_id,</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;                                        bdinfo-&gt;<a class="code" href="structpios__board__info.html#a5aff4607db694a6885c0ce5361afa9bb">board_type</a>, bdinfo-&gt;<a class="code" href="structpios__board__info.html#a7c5ba691095b534927e3f0b6cc7202d6">board_rev</a>,</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;                                        hwRevoMini.RfBand,</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;                                        hwRevoMini.MaxRfPower,</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;                                        openlrs_cfg,</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;                                        &amp;openlrs_handle);</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_OPENLRS */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="preprocessor"></span>        }</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_WS2811</span></div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;<span class="preprocessor"></span>        uint8_t num_leds;</div>
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_WS2811</span></div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;<span class="preprocessor"></span>        uint8_t num_leds;</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;        RGBLEDSettingsInitialize();</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;        RGBLEDSettingsNumLedsGet(&amp;num_leds);</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        <span class="keywordflow">if</span> (num_leds &gt; 0) {</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;                <span class="keywordflow">switch</span> (hwRevoMini.WS2811Pin) {</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;                        <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;                        <span class="keywordflow">case</span> HWREVOLUTION_WS2811PIN_DISABLED:</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;                                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;                        <span class="keywordflow">case</span> HWREVOLUTION_WS2811PIN_PB12INPORTPIN3:</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;                                <a class="code" href="group___p_i_o_s___w_s2811.html#ga03a2c7b63a6c66ceea7a068a40ab36fc">PIOS_WS2811_init</a>(&amp;<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>,</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;                                                &amp;pios_ws2811_cfg_pb12,</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;                                                num_leds);</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;                                <a class="code" href="group___p_i_o_s___w_s2811.html#gaf5cff810f4d02d3844f9af889754e32c">PIOS_WS2811_trigger_update</a>(<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>);</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;                                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;                        <span class="keywordflow">case</span> HWREVOLUTION_WS2811PIN_PD2OMNIBUSF4LEDPORT:</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;                                <span class="keywordflow">if</span> (hw_spiperiph == HWREVOLUTION_SPIPERIPHERAL_RADIO) {</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;                                        <span class="comment">// Not compatible with radio use.</span></div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;                                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;                                }</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;                                <a class="code" href="group___p_i_o_s___w_s2811.html#ga03a2c7b63a6c66ceea7a068a40ab36fc">PIOS_WS2811_init</a>(&amp;<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>,</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;                                                &amp;pios_ws2811_cfg_pd2,</div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;                                                num_leds);</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;                                <a class="code" href="group___p_i_o_s___w_s2811.html#gaf5cff810f4d02d3844f9af889754e32c">PIOS_WS2811_trigger_update</a>(<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>);</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;                                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;                        <span class="keywordflow">case</span> HWREVOLUTION_WS2811PIN_PB6OMNIBUSF4V2LEDPORT:</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;                                <a class="code" href="group___p_i_o_s___w_s2811.html#ga03a2c7b63a6c66ceea7a068a40ab36fc">PIOS_WS2811_init</a>(&amp;<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>,</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;                                                &amp;pios_ws2811_cfg_pb6,</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;                                                num_leds);</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;                                <a class="code" href="group___p_i_o_s___w_s2811.html#gaf5cff810f4d02d3844f9af889754e32c">PIOS_WS2811_trigger_update</a>(<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>);</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;                                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;                        <span class="keywordflow">case</span> HWREVOLUTION_WS2811PIN_PA0SERVOOUT6:</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;                                <span class="comment">/* 0 indexed */</span></div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;                                <a class="code" href="group___p_i_o_s___s_e_r_v_o.html#gaf3c9c148e8f9d54901aca2b9ce950aa1">PIOS_Servo_DisableChannel</a>(6 - 1);</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;                                <a class="code" href="group___p_i_o_s___w_s2811.html#ga03a2c7b63a6c66ceea7a068a40ab36fc">PIOS_WS2811_init</a>(&amp;<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>,</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;                                                &amp;pios_ws2811_cfg_pa0,</div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;                                                num_leds);</div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;                                <a class="code" href="group___p_i_o_s___w_s2811.html#gaf5cff810f4d02d3844f9af889754e32c">PIOS_WS2811_trigger_update</a>(<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>);</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;                                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;                }</div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;        }</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_WS2811 */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;        <span class="comment">/* init sensor queue registration */</span></div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;        <a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga382f3e734c0289835d99e3a8410a28bd">PIOS_SENSORS_Init</a>();</div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;</div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;        <a class="code" href="group___p_i_o_s___w_d_g.html#ga49f0e0259a9db3551d437e5d74fd48a1">PIOS_WDG_Clear</a>();</div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_l_a_y.html#gacde17b263c115e410008da1357dd4ff8">PIOS_DELAY_WaitmS</a>(200);</div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;        <a class="code" href="group___p_i_o_s___w_d_g.html#ga49f0e0259a9db3551d437e5d74fd48a1">PIOS_WDG_Clear</a>();</div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_MPU)</span></div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;<span class="preprocessor"></span>        <a class="code" href="group___p_i_o_s___m_p_u.html#ga8d1629885182d00fe0a521d98b48e76f">pios_mpu_dev_t</a> mpu_dev = NULL;</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___m_p_u.html#ga7d62c583654ef78fcb792fad417c2be0">PIOS_MPU_SPI_Init</a>(&amp;mpu_dev, pios_spi_gyro_id, 0, &amp;<a class="code" href="structpios__mpu__cfg.html">pios_mpu_cfg</a>) != 0)</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;                <a class="code" href="group___p_i_o_s___h_a_l.html#gab9a9f4422da783012950ae6468130423">PIOS_HAL_CriticalError</a>(<a class="code" href="group___a_q32.html#ga2a94396f6c828bcf3a1c79e82a3d738a">PIOS_LED_HEARTBEAT</a>, <a class="code" href="pios__hal_8h.html#aafe5055d05a85237ff35d915dff9a53bad597a3b4fd20023d634e773c66207c22">PIOS_HAL_PANIC_IMU</a>);</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;        HwRevolutionGyroRangeOptions hw_gyro_range;</div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;        HwRevolutionGyroRangeGet(&amp;hw_gyro_range);</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;        <span class="keywordflow">switch</span>(hw_gyro_range) {</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;                <span class="keywordflow">case</span> HWREVOLUTION_GYRORANGE_250:</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;                        <a class="code" href="group___p_i_o_s___m_p_u.html#ga6a0c7b604f7ecd28f8e39dc6684d4a52">PIOS_MPU_SetGyroRange</a>(<a class="code" href="group___p_i_o_s___m_p_u.html#ggadabcc04ab28fdab6eb2e43278d4446c4a3ce25733bbf72823d515d55ea0d9a185">PIOS_MPU_SCALE_250_DEG</a>);</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;        RGBLEDSettingsInitialize();</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;        RGBLEDSettingsNumLedsGet(&amp;num_leds);</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;        <span class="keywordflow">if</span> (num_leds &gt; 0) {</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;                <span class="keywordflow">switch</span> (hwRevoMini.WS2811Pin) {</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;                        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;                        <span class="keywordflow">case</span> HWREVOLUTION_WS2811PIN_DISABLED:</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;                                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;                        <span class="keywordflow">case</span> HWREVOLUTION_WS2811PIN_PB12INPORTPIN3:</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;                                <a class="code" href="group___p_i_o_s___w_s2811.html#ga03a2c7b63a6c66ceea7a068a40ab36fc">PIOS_WS2811_init</a>(&amp;<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>,</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;                                                &amp;pios_ws2811_cfg_pb12,</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;                                                num_leds);</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;                                <a class="code" href="group___p_i_o_s___w_s2811.html#gaf5cff810f4d02d3844f9af889754e32c">PIOS_WS2811_trigger_update</a>(<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>);</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;                                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;                        <span class="keywordflow">case</span> HWREVOLUTION_WS2811PIN_PD2OMNIBUSF4LEDPORT:</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;                                <span class="keywordflow">if</span> (hw_spiperiph == HWREVOLUTION_SPIPERIPHERAL_RADIO) {</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;                                        <span class="comment">// Not compatible with radio use.</span></div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;                                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;                                }</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;                                <a class="code" href="group___p_i_o_s___w_s2811.html#ga03a2c7b63a6c66ceea7a068a40ab36fc">PIOS_WS2811_init</a>(&amp;<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>,</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;                                                &amp;pios_ws2811_cfg_pd2,</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;                                                num_leds);</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;                                <a class="code" href="group___p_i_o_s___w_s2811.html#gaf5cff810f4d02d3844f9af889754e32c">PIOS_WS2811_trigger_update</a>(<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>);</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;                                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;                        <span class="keywordflow">case</span> HWREVOLUTION_WS2811PIN_PB6OMNIBUSF4V2LEDPORT:</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;                                <a class="code" href="group___p_i_o_s___w_s2811.html#ga03a2c7b63a6c66ceea7a068a40ab36fc">PIOS_WS2811_init</a>(&amp;<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>,</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;                                                &amp;pios_ws2811_cfg_pb6,</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;                                                num_leds);</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;                                <a class="code" href="group___p_i_o_s___w_s2811.html#gaf5cff810f4d02d3844f9af889754e32c">PIOS_WS2811_trigger_update</a>(<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>);</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;                                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;                        <span class="keywordflow">case</span> HWREVOLUTION_WS2811PIN_PA0SERVOOUT6:</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;                                <span class="comment">/* 0 indexed */</span></div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;                                <a class="code" href="group___p_i_o_s___s_e_r_v_o.html#gaf3c9c148e8f9d54901aca2b9ce950aa1">PIOS_Servo_DisableChannel</a>(6 - 1);</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;                                <a class="code" href="group___p_i_o_s___w_s2811.html#ga03a2c7b63a6c66ceea7a068a40ab36fc">PIOS_WS2811_init</a>(&amp;<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>,</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;                                                &amp;pios_ws2811_cfg_pa0,</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;                                                num_leds);</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;                                <a class="code" href="group___p_i_o_s___w_s2811.html#gaf5cff810f4d02d3844f9af889754e32c">PIOS_WS2811_trigger_update</a>(<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>);</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;                                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;                }</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;        }</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_WS2811 */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;        <span class="comment">/* init sensor queue registration */</span></div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;        <a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga382f3e734c0289835d99e3a8410a28bd">PIOS_SENSORS_Init</a>();</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;        <a class="code" href="group___p_i_o_s___w_d_g.html#ga49f0e0259a9db3551d437e5d74fd48a1">PIOS_WDG_Clear</a>();</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_l_a_y.html#gacde17b263c115e410008da1357dd4ff8">PIOS_DELAY_WaitmS</a>(200);</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;        <a class="code" href="group___p_i_o_s___w_d_g.html#ga49f0e0259a9db3551d437e5d74fd48a1">PIOS_WDG_Clear</a>();</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_MPU)</span></div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;<span class="preprocessor"></span>        <a class="code" href="group___p_i_o_s___m_p_u.html#ga8d1629885182d00fe0a521d98b48e76f">pios_mpu_dev_t</a> mpu_dev = NULL;</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___m_p_u.html#ga7d62c583654ef78fcb792fad417c2be0">PIOS_MPU_SPI_Init</a>(&amp;mpu_dev, pios_spi_gyro_id, 0, &amp;<a class="code" href="structpios__mpu__cfg.html">pios_mpu_cfg</a>) != 0)</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;                <a class="code" href="group___p_i_o_s___h_a_l.html#gab9a9f4422da783012950ae6468130423">PIOS_HAL_CriticalError</a>(<a class="code" href="group___a_q32.html#ga2a94396f6c828bcf3a1c79e82a3d738a">PIOS_LED_HEARTBEAT</a>, <a class="code" href="pios__hal_8h.html#aafe5055d05a85237ff35d915dff9a53bad597a3b4fd20023d634e773c66207c22">PIOS_HAL_PANIC_IMU</a>);</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        HwRevolutionGyroRangeOptions hw_gyro_range;</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;        HwRevolutionGyroRangeGet(&amp;hw_gyro_range);</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;        <span class="keywordflow">switch</span>(hw_gyro_range) {</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;                <span class="keywordflow">case</span> HWREVOLUTION_GYRORANGE_250:</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;                        <a class="code" href="group___p_i_o_s___m_p_u.html#ga6a0c7b604f7ecd28f8e39dc6684d4a52">PIOS_MPU_SetGyroRange</a>(<a class="code" href="group___p_i_o_s___m_p_u.html#ggadabcc04ab28fdab6eb2e43278d4446c4a3ce25733bbf72823d515d55ea0d9a185">PIOS_MPU_SCALE_250_DEG</a>);</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;                <span class="keywordflow">case</span> HWREVOLUTION_GYRORANGE_500:</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;                        <a class="code" href="group___p_i_o_s___m_p_u.html#ga6a0c7b604f7ecd28f8e39dc6684d4a52">PIOS_MPU_SetGyroRange</a>(<a class="code" href="group___p_i_o_s___m_p_u.html#ggadabcc04ab28fdab6eb2e43278d4446c4adac7994bd3906154df7fc1c40a92bf94">PIOS_MPU_SCALE_500_DEG</a>);</div>
 <div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;                <span class="keywordflow">case</span> HWREVOLUTION_GYRORANGE_500:</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;                        <a class="code" href="group___p_i_o_s___m_p_u.html#ga6a0c7b604f7ecd28f8e39dc6684d4a52">PIOS_MPU_SetGyroRange</a>(<a class="code" href="group___p_i_o_s___m_p_u.html#ggadabcc04ab28fdab6eb2e43278d4446c4adac7994bd3906154df7fc1c40a92bf94">PIOS_MPU_SCALE_500_DEG</a>);</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;                <span class="keywordflow">case</span> HWREVOLUTION_GYRORANGE_1000:</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;                        <a class="code" href="group___p_i_o_s___m_p_u.html#ga6a0c7b604f7ecd28f8e39dc6684d4a52">PIOS_MPU_SetGyroRange</a>(<a class="code" href="group___p_i_o_s___m_p_u.html#ggadabcc04ab28fdab6eb2e43278d4446c4a1c4355c1120518122bd75101ecc5b0ef">PIOS_MPU_SCALE_1000_DEG</a>);</div>
 <div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;                <span class="keywordflow">case</span> HWREVOLUTION_GYRORANGE_1000:</div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;                        <a class="code" href="group___p_i_o_s___m_p_u.html#ga6a0c7b604f7ecd28f8e39dc6684d4a52">PIOS_MPU_SetGyroRange</a>(<a class="code" href="group___p_i_o_s___m_p_u.html#ggadabcc04ab28fdab6eb2e43278d4446c4a1c4355c1120518122bd75101ecc5b0ef">PIOS_MPU_SCALE_1000_DEG</a>);</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;                <span class="keywordflow">case</span> HWREVOLUTION_GYRORANGE_2000:</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;                        <a class="code" href="group___p_i_o_s___m_p_u.html#ga6a0c7b604f7ecd28f8e39dc6684d4a52">PIOS_MPU_SetGyroRange</a>(<a class="code" href="group___p_i_o_s___m_p_u.html#ggadabcc04ab28fdab6eb2e43278d4446c4adbacd2c3435e3329126e9fc2fc385e26">PIOS_MPU_SCALE_2000_DEG</a>);</div>
 <div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;                <span class="keywordflow">case</span> HWREVOLUTION_GYRORANGE_2000:</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;                        <a class="code" href="group___p_i_o_s___m_p_u.html#ga6a0c7b604f7ecd28f8e39dc6684d4a52">PIOS_MPU_SetGyroRange</a>(<a class="code" href="group___p_i_o_s___m_p_u.html#ggadabcc04ab28fdab6eb2e43278d4446c4adbacd2c3435e3329126e9fc2fc385e26">PIOS_MPU_SCALE_2000_DEG</a>);</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;        }</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;        HwRevolutionAccelRangeOptions hw_accel_range;</div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;        HwRevolutionAccelRangeGet(&amp;hw_accel_range);</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;        <span class="keywordflow">switch</span>(hw_accel_range) {</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;                <span class="keywordflow">case</span> HWREVOLUTION_ACCELRANGE_2G:</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;                        <a class="code" href="group___p_i_o_s___m_p_u.html#gae520bc3aa72e1e76215c954f28046d7c">PIOS_MPU_SetAccelRange</a>(<a class="code" href="group___p_i_o_s___m_p_u.html#gga16b33104a3113b41ef7f3051ac270c98a112af623ab310cc201404d88f6850eaf">PIOS_MPU_SCALE_2G</a>);</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;        }</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;        HwRevolutionAccelRangeOptions hw_accel_range;</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;        HwRevolutionAccelRangeGet(&amp;hw_accel_range);</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;        <span class="keywordflow">switch</span>(hw_accel_range) {</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;                <span class="keywordflow">case</span> HWREVOLUTION_ACCELRANGE_2G:</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;                        <a class="code" href="group___p_i_o_s___m_p_u.html#gae520bc3aa72e1e76215c954f28046d7c">PIOS_MPU_SetAccelRange</a>(<a class="code" href="group___p_i_o_s___m_p_u.html#gga16b33104a3113b41ef7f3051ac270c98a112af623ab310cc201404d88f6850eaf">PIOS_MPU_SCALE_2G</a>);</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;                <span class="keywordflow">case</span> HWREVOLUTION_ACCELRANGE_4G:</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;                        <a class="code" href="group___p_i_o_s___m_p_u.html#gae520bc3aa72e1e76215c954f28046d7c">PIOS_MPU_SetAccelRange</a>(<a class="code" href="group___p_i_o_s___m_p_u.html#gga16b33104a3113b41ef7f3051ac270c98a93d943623f2a02f84838691a20789d68">PIOS_MPU_SCALE_4G</a>);</div>
 <div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;                <span class="keywordflow">case</span> HWREVOLUTION_ACCELRANGE_4G:</div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;                        <a class="code" href="group___p_i_o_s___m_p_u.html#gae520bc3aa72e1e76215c954f28046d7c">PIOS_MPU_SetAccelRange</a>(<a class="code" href="group___p_i_o_s___m_p_u.html#gga16b33104a3113b41ef7f3051ac270c98a93d943623f2a02f84838691a20789d68">PIOS_MPU_SCALE_4G</a>);</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;                <span class="keywordflow">case</span> HWREVOLUTION_ACCELRANGE_8G:</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;                        <a class="code" href="group___p_i_o_s___m_p_u.html#gae520bc3aa72e1e76215c954f28046d7c">PIOS_MPU_SetAccelRange</a>(<a class="code" href="group___p_i_o_s___m_p_u.html#gga16b33104a3113b41ef7f3051ac270c98a564e1ecd68f1cf5e6911e23c98fef09c">PIOS_MPU_SCALE_8G</a>);</div>
 <div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;                <span class="keywordflow">case</span> HWREVOLUTION_ACCELRANGE_8G:</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;                        <a class="code" href="group___p_i_o_s___m_p_u.html#gae520bc3aa72e1e76215c954f28046d7c">PIOS_MPU_SetAccelRange</a>(<a class="code" href="group___p_i_o_s___m_p_u.html#gga16b33104a3113b41ef7f3051ac270c98a564e1ecd68f1cf5e6911e23c98fef09c">PIOS_MPU_SCALE_8G</a>);</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;                <span class="keywordflow">case</span> HWREVOLUTION_ACCELRANGE_16G:</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;                        <a class="code" href="group___p_i_o_s___m_p_u.html#gae520bc3aa72e1e76215c954f28046d7c">PIOS_MPU_SetAccelRange</a>(<a class="code" href="group___p_i_o_s___m_p_u.html#gga16b33104a3113b41ef7f3051ac270c98aeec5a8313f5c1e8da2b7f0959519d920">PIOS_MPU_SCALE_16G</a>);</div>
 <div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;                <span class="keywordflow">case</span> HWREVOLUTION_ACCELRANGE_16G:</div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;                        <a class="code" href="group___p_i_o_s___m_p_u.html#gae520bc3aa72e1e76215c954f28046d7c">PIOS_MPU_SetAccelRange</a>(<a class="code" href="group___p_i_o_s___m_p_u.html#gga16b33104a3113b41ef7f3051ac270c98aeec5a8313f5c1e8da2b7f0959519d920">PIOS_MPU_SCALE_16G</a>);</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;        }</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;</div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;        <span class="comment">// the filter has to be set before rate else divisor calculation will fail</span></div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;        HwRevolutionMPU6000DLPFOptions hw_mpu_dlpf;</div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;        HwRevolutionMPU6000DLPFGet(&amp;hw_mpu_dlpf);</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;        uint16_t bandwidth = \</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;                (hw_mpu_dlpf == HWREVOLUTION_MPU6000DLPF_188) ? 188 : \</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;                (hw_mpu_dlpf == HWREVOLUTION_MPU6000DLPF_98)  ? 98  : \</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;                (hw_mpu_dlpf == HWREVOLUTION_MPU6000DLPF_42)  ? 42  : \</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;                (hw_mpu_dlpf == HWREVOLUTION_MPU6000DLPF_20)  ? 20  : \</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;                (hw_mpu_dlpf == HWREVOLUTION_MPU6000DLPF_10)  ? 10  : \</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;                (hw_mpu_dlpf == HWREVOLUTION_MPU6000DLPF_5)   ? 5   : \</div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;                188;</div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;        <a class="code" href="group___p_i_o_s___m_p_u.html#ga68362058bd311562a3d1808ec0463991">PIOS_MPU_SetGyroBandwidth</a>(bandwidth);</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_I2C)</span></div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;<span class="preprocessor"></span>        <a class="code" href="group___p_i_o_s___w_d_g.html#ga49f0e0259a9db3551d437e5d74fd48a1">PIOS_WDG_Clear</a>();</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;        }</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;        <span class="comment">// the filter has to be set before rate else divisor calculation will fail</span></div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;        HwRevolutionMPU6000DLPFOptions hw_mpu_dlpf;</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;        HwRevolutionMPU6000DLPFGet(&amp;hw_mpu_dlpf);</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;        uint16_t bandwidth = \</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;                (hw_mpu_dlpf == HWREVOLUTION_MPU6000DLPF_188) ? 188 : \</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;                (hw_mpu_dlpf == HWREVOLUTION_MPU6000DLPF_98)  ? 98  : \</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;                (hw_mpu_dlpf == HWREVOLUTION_MPU6000DLPF_42)  ? 42  : \</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;                (hw_mpu_dlpf == HWREVOLUTION_MPU6000DLPF_20)  ? 20  : \</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;                (hw_mpu_dlpf == HWREVOLUTION_MPU6000DLPF_10)  ? 10  : \</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;                (hw_mpu_dlpf == HWREVOLUTION_MPU6000DLPF_5)   ? 5   : \</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;                188;</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;        <a class="code" href="group___p_i_o_s___m_p_u.html#ga68362058bd311562a3d1808ec0463991">PIOS_MPU_SetGyroBandwidth</a>(bandwidth);</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_I2C)</span></div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;<span class="preprocessor"></span>        <a class="code" href="group___p_i_o_s___w_d_g.html#ga49f0e0259a9db3551d437e5d74fd48a1">PIOS_WDG_Clear</a>();</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;        uint8_t hw_magnetometer;</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;        HwRevolutionMagnetometerGet(&amp;hw_magnetometer);</div>
 <div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;        uint8_t hw_magnetometer;</div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;        HwRevolutionMagnetometerGet(&amp;hw_magnetometer);</div>
-<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;</div>
-<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;        <span class="keywordflow">if</span> (!pios_i2c_mag_pressure_adapter_id) {</div>
-<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;                hw_magnetometer = HWREVOLUTION_MAGNETOMETER_NONE;</div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;        }</div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;</div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;        <span class="keywordflow">switch</span> (hw_magnetometer) {</div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;                <span class="keywordflow">case</span> HWREVOLUTION_MAGNETOMETER_NONE:</div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;</div>
-<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;                <span class="keywordflow">case</span> HWREVOLUTION_MAGNETOMETER_INTERNAL:</div>
-<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_HMC5883)</span></div>
-<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;<span class="preprocessor"></span>                        <span class="keywordflow">if</span> ((<a class="code" href="group___p_i_o_s___h_m_c5883.html#ga8131d2872f033102f17640b32819a57d">PIOS_HMC5883_Init</a>(pios_i2c_mag_pressure_adapter_id, &amp;<a class="code" href="structpios__hmc5883__cfg.html">pios_hmc5883_cfg</a>) != 0) ||</div>
-<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;                                        (<a class="code" href="group___p_i_o_s___h_m_c5883.html#gacea6145300c5c975b46bca1acfe800bf">PIOS_HMC5883_Test</a>() != 0)) {</div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;                                <span class="keywordflow">if</span> (!is_modified_clone) {</div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;                                        <a class="code" href="group___p_i_o_s___h_a_l.html#gab9a9f4422da783012950ae6468130423">PIOS_HAL_CriticalError</a>(<a class="code" href="group___a_q32.html#ga2a94396f6c828bcf3a1c79e82a3d738a">PIOS_LED_HEARTBEAT</a>, <a class="code" href="pios__hal_8h.html#aafe5055d05a85237ff35d915dff9a53ba98022b48aadda9cb1e78744fccbdd426">PIOS_HAL_PANIC_MAG</a>);</div>
-<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;                                }</div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;                        }</div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_HMC5883 */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;<span class="preprocessor"></span>                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;</div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;                <span class="comment">/* default external mags and handle them in PiOS HAL rather than maintaining list here */</span></div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;                <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;                        <span class="keywordflow">if</span> (hw_flexiport == HWSHARED_PORTTYPES_I2C) {</div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;                                uint8_t hw_orientation;</div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;                                HwRevolutionExtMagOrientationGet(&amp;hw_orientation);</div>
-<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;</div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;                                <a class="code" href="group___p_i_o_s___h_a_l.html#ga968645163d5add29facfd6bdc32cb3bd">PIOS_HAL_ConfigureExternalMag</a>(hw_magnetometer, hw_orientation,</div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;                                        &amp;pios_i2c_flexiport_adapter_id, &amp;pios_i2c_flexiport_adapter_cfg);</div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;                        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;                                <a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga02d099f3d3a51697cc15d9b570d1cd0c">PIOS_SENSORS_SetMissing</a>(<a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ggadad1b67d985a6c9c150a70d23aac96a0a5a4ddf59e023cf155e5af7f8304e644f">PIOS_SENSOR_MAG</a>);</div>
-<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;                        }</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;        }</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;        <span class="keywordflow">if</span> (!pios_i2c_mag_pressure_adapter_id) {</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;                hw_magnetometer = HWREVOLUTION_MAGNETOMETER_NONE;</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;        }</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;        <span class="keywordflow">switch</span> (hw_magnetometer) {</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;                <span class="keywordflow">case</span> HWREVOLUTION_MAGNETOMETER_NONE:</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;                <span class="keywordflow">case</span> HWREVOLUTION_MAGNETOMETER_INTERNAL:</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_HMC5883)</span></div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;<span class="preprocessor"></span>                        <span class="keywordflow">if</span> ((<a class="code" href="group___p_i_o_s___h_m_c5883.html#ga8131d2872f033102f17640b32819a57d">PIOS_HMC5883_Init</a>(pios_i2c_mag_pressure_adapter_id, &amp;<a class="code" href="structpios__hmc5883__cfg.html">pios_hmc5883_cfg</a>) != 0) ||</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;                                        (<a class="code" href="group___p_i_o_s___h_m_c5883.html#gacea6145300c5c975b46bca1acfe800bf">PIOS_HMC5883_Test</a>() != 0)) {</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;                                <span class="keywordflow">if</span> (!is_modified_clone) {</div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;                                        <a class="code" href="group___p_i_o_s___h_a_l.html#gab9a9f4422da783012950ae6468130423">PIOS_HAL_CriticalError</a>(<a class="code" href="group___a_q32.html#ga2a94396f6c828bcf3a1c79e82a3d738a">PIOS_LED_HEARTBEAT</a>, <a class="code" href="pios__hal_8h.html#aafe5055d05a85237ff35d915dff9a53ba98022b48aadda9cb1e78744fccbdd426">PIOS_HAL_PANIC_MAG</a>);</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;                                }</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;                        }</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_HMC5883 */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;<span class="preprocessor"></span>                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;                <span class="comment">/* default external mags and handle them in PiOS HAL rather than maintaining list here */</span></div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;                <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;                        <span class="keywordflow">if</span> (hw_flexiport == HWSHARED_PORTTYPES_I2C) {</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;                                uint8_t hw_orientation;</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;                                HwRevolutionExtMagOrientationGet(&amp;hw_orientation);</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;                                <a class="code" href="group___p_i_o_s___h_a_l.html#ga968645163d5add29facfd6bdc32cb3bd">PIOS_HAL_ConfigureExternalMag</a>(hw_magnetometer, hw_orientation,</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;                                        &amp;pios_i2c_flexiport_adapter_id, &amp;pios_i2c_flexiport_adapter_cfg);</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;                        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;                                <a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga02d099f3d3a51697cc15d9b570d1cd0c">PIOS_SENSORS_SetMissing</a>(<a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ggadad1b67d985a6c9c150a70d23aac96a0a5a4ddf59e023cf155e5af7f8304e644f">PIOS_SENSOR_MAG</a>);</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;                        }</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;        }</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;        <span class="comment">/* I2C is slow, sensor init as well, reset watchdog to prevent reset here */</span></div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;        <a class="code" href="group___p_i_o_s___w_d_g.html#ga49f0e0259a9db3551d437e5d74fd48a1">PIOS_WDG_Clear</a>();</div>
 <div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;</div>
-<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;        <span class="comment">/* I2C is slow, sensor init as well, reset watchdog to prevent reset here */</span></div>
-<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;        <a class="code" href="group___p_i_o_s___w_d_g.html#ga49f0e0259a9db3551d437e5d74fd48a1">PIOS_WDG_Clear</a>();</div>
-<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;</div>
-<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_MS5611)</span></div>
-<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">if</span> ((!pios_i2c_mag_pressure_adapter_id) || (<a class="code" href="group___p_i_o_s___m_s5611.html#gae108503f762eeeeaaf6e105249ba8891">PIOS_MS5611_Init</a>(&amp;<a class="code" href="structpios__ms5611__cfg.html">pios_ms5611_cfg</a>, pios_i2c_mag_pressure_adapter_id) != 0) || (PIOS_MS5611_Test() != 0)) {</div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;                <span class="keywordflow">if</span> (!is_modified_clone) {</div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;                        <a class="code" href="group___p_i_o_s___h_a_l.html#gab9a9f4422da783012950ae6468130423">PIOS_HAL_CriticalError</a>(<a class="code" href="group___a_q32.html#ga2a94396f6c828bcf3a1c79e82a3d738a">PIOS_LED_HEARTBEAT</a>, <a class="code" href="pios__hal_8h.html#aafe5055d05a85237ff35d915dff9a53ba2e24b798af9934434ef518953082b2c5">PIOS_HAL_PANIC_BARO</a>);</div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;                }</div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;        }</div>
-<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;        <span class="comment">//I2C is slow, sensor init as well, reset watchdog to prevent reset here</span></div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;        <a class="code" href="group___p_i_o_s___w_d_g.html#ga49f0e0259a9db3551d437e5d74fd48a1">PIOS_WDG_Clear</a>();</div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;</div>
-<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;<span class="preprocessor">#endif    </span><span class="comment">/* PIOS_INCLUDE_I2C */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_SPI</span></div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifdef PIOS_INCLUDE_BMP280_SPI</span></div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;<span class="preprocessor"></span>        <span class="comment">// BMP280 support</span></div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;        <span class="keywordflow">if</span> ((!flash_chip_ok) &amp;&amp;</div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;                        (!<a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#gaec307d7810722bc86d390c8d58079975">PIOS_SENSORS_IsRegistered</a>(<a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ggadad1b67d985a6c9c150a70d23aac96a0aa17c455b7f9000f88b8d60d6c3ab1db0">PIOS_SENSOR_BARO</a>))) {</div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;                <span class="comment">/* Best effort */</span></div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;                <a class="code" href="group___p_i_o_s___b_m_p280.html#ga549623a3a8e955473cd448f76684b77c">PIOS_BMP280_SPI_Init</a>(&amp;<a class="code" href="structpios__bmp280__cfg.html">pios_bmp280_cfg</a>,</div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;                                pios_spi_telem_flash_id, 1);</div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;        }</div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_BMP280_SPI */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_ADC)</span></div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;<span class="preprocessor"></span>        uintptr_t internal_adc_id;</div>
-<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;        <a class="code" href="group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#gad0f8b2886a98358b41966677d7c184fc">PIOS_INTERNAL_ADC_Init</a>(&amp;internal_adc_id, &amp;pios_adc_cfg);</div>
-<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;        <a class="code" href="group___p_i_o_s___a_d_c.html#ga8a9178a11e2ccd209eed618a63eb552c">PIOS_ADC_Init</a>(&amp;<a class="code" href="group___a_q32.html#gafb354658d0ba22815d8632d97c062c0b">pios_internal_adc_id</a>, &amp;<a class="code" href="group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#ga7d936d31e2f61867467fac3ccbd561ab">pios_internal_adc_driver</a>, internal_adc_id);</div>
-<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;</div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;                <span class="comment">// configure the pullup for PA8 (inhibit pullups from current/sonar shared pin)</span></div>
-<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;                GPIO_Init(pios_current_sonar_pin.gpio, &amp;pios_current_sonar_pin.init);</div>
-<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_MS5611)</span></div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">if</span> ((!pios_i2c_mag_pressure_adapter_id) || (<a class="code" href="group___p_i_o_s___m_s5611.html#gae108503f762eeeeaaf6e105249ba8891">PIOS_MS5611_Init</a>(&amp;<a class="code" href="structpios__ms5611__cfg.html">pios_ms5611_cfg</a>, pios_i2c_mag_pressure_adapter_id) != 0) || (PIOS_MS5611_Test() != 0)) {</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;                <span class="keywordflow">if</span> (!is_modified_clone) {</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;                        <a class="code" href="group___p_i_o_s___h_a_l.html#gab9a9f4422da783012950ae6468130423">PIOS_HAL_CriticalError</a>(<a class="code" href="group___a_q32.html#ga2a94396f6c828bcf3a1c79e82a3d738a">PIOS_LED_HEARTBEAT</a>, <a class="code" href="pios__hal_8h.html#aafe5055d05a85237ff35d915dff9a53ba2e24b798af9934434ef518953082b2c5">PIOS_HAL_PANIC_BARO</a>);</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;                }</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;        }</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;        <span class="comment">//I2C is slow, sensor init as well, reset watchdog to prevent reset here</span></div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;        <a class="code" href="group___p_i_o_s___w_d_g.html#ga49f0e0259a9db3551d437e5d74fd48a1">PIOS_WDG_Clear</a>();</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_BMP280) &amp;&amp; !defined(PIOS_EXCLUDE_BMP280_I2C)</span></div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;<span class="preprocessor"></span>        <span class="comment">/* BMP280 I2C onboard support on clones */</span></div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;        <span class="keywordflow">if</span> (is_modified_clone &amp;&amp;</div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;                        (pios_i2c_mag_pressure_adapter_id) &amp;&amp;</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;                        (!<a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#gaec307d7810722bc86d390c8d58079975">PIOS_SENSORS_IsRegistered</a>(<a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ggadad1b67d985a6c9c150a70d23aac96a0aa17c455b7f9000f88b8d60d6c3ab1db0">PIOS_SENSOR_BARO</a>))) {</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;                <a class="code" href="group___p_i_o_s___b_m_p280.html#gaacd85bb70ecad8aa9916319d0f9f564a">PIOS_BMP280_Init</a>(&amp;<a class="code" href="structpios__bmp280__cfg.html">pios_bmp280_cfg</a>,</div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;                                pios_i2c_mag_pressure_adapter_id);</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;        }</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_BMP280) &amp;&amp; !defined(PIOS_EXCLUDE_BMP280_I2C) */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;<span class="preprocessor">#endif    </span><span class="comment">/* PIOS_INCLUDE_I2C */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_SPI</span></div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifdef PIOS_INCLUDE_BMP280_SPI</span></div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;<span class="preprocessor"></span>        <span class="comment">// BMP280 support</span></div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;        <span class="keywordflow">if</span> ((!flash_chip_ok) &amp;&amp;</div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;                        (!<a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#gaec307d7810722bc86d390c8d58079975">PIOS_SENSORS_IsRegistered</a>(<a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ggadad1b67d985a6c9c150a70d23aac96a0aa17c455b7f9000f88b8d60d6c3ab1db0">PIOS_SENSOR_BARO</a>))) {</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;                <span class="comment">/* Best effort */</span></div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;                <a class="code" href="group___p_i_o_s___b_m_p280.html#ga549623a3a8e955473cd448f76684b77c">PIOS_BMP280_SPI_Init</a>(&amp;<a class="code" href="structpios__bmp280__cfg.html">pios_bmp280_cfg</a>,</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;                                pios_spi_telem_flash_id, 1);</div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;        }</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_BMP280_SPI */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_ADC)</span></div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;<span class="preprocessor"></span>        uintptr_t internal_adc_id;</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;        <a class="code" href="group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#gad0f8b2886a98358b41966677d7c184fc">PIOS_INTERNAL_ADC_Init</a>(&amp;internal_adc_id, &amp;pios_adc_cfg);</div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;        <a class="code" href="group___p_i_o_s___a_d_c.html#ga8a9178a11e2ccd209eed618a63eb552c">PIOS_ADC_Init</a>(&amp;<a class="code" href="group___a_q32.html#gafb354658d0ba22815d8632d97c062c0b">pios_internal_adc_id</a>, &amp;<a class="code" href="group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#ga7d936d31e2f61867467fac3ccbd561ab">pios_internal_adc_driver</a>, internal_adc_id);</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;                <span class="comment">// configure the pullup for PA8 (inhibit pullups from current/sonar shared pin)</span></div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;                GPIO_Init(pios_current_sonar_pin.gpio, &amp;pios_current_sonar_pin.init);</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;</div>
 <div class="ttc" id="group___p_i_o_s___m_p_u_html_gga16b33104a3113b41ef7f3051ac270c98a112af623ab310cc201404d88f6850eaf"><div class="ttname"><a href="group___p_i_o_s___m_p_u.html#gga16b33104a3113b41ef7f3051ac270c98a112af623ab310cc201404d88f6850eaf">PIOS_MPU_SCALE_2G</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__mpu_8h_source.html#l00120">pios_mpu.h:120</a></div></div>
 <div class="ttc" id="pios__flash__internal__priv_8h_html_a3d5cb37f9b8a2d915e2a51d0b9c9f587"><div class="ttname"><a href="pios__flash__internal__priv_8h.html#a3d5cb37f9b8a2d915e2a51d0b9c9f587">PIOS_Flash_Internal_Init</a></div><div class="ttdeci">int32_t PIOS_Flash_Internal_Init(uintptr_t *flash_id, const struct pios_flash_internal_cfg *cfg)</div></div>
 <div class="ttc" id="group___p_i_o_s___u_s_b___d_e_s_c_html_ga15a9a7a662d2bce8263b132b33753d75"><div class="ttname"><a href="group___p_i_o_s___u_s_b___d_e_s_c.html#ga15a9a7a662d2bce8263b132b33753d75">PIOS_USB_DESC_HID_CDC_Init</a></div><div class="ttdeci">int32_t PIOS_USB_DESC_HID_CDC_Init(void)</div><div class="ttdef"><b>Definition:</b> <a href="pios__usb__desc__hid__cdc_8c_source.html#l00249">pios_usb_desc_hid_cdc.c:249</a></div></div>
@@ -716,7 +723,6 @@ $(document).ready(function(){initNavTree('revolution_2fw_2pios__board_8c_source.
 <div class="ttc" id="group___p_i_o_s___m_p_u_html_gga16b33104a3113b41ef7f3051ac270c98aeec5a8313f5c1e8da2b7f0959519d920"><div class="ttname"><a href="group___p_i_o_s___m_p_u.html#gga16b33104a3113b41ef7f3051ac270c98aeec5a8313f5c1e8da2b7f0959519d920">PIOS_MPU_SCALE_16G</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__mpu_8h_source.html#l00123">pios_mpu.h:123</a></div></div>
 <div class="ttc" id="pios__hal_8h_html"><div class="ttname"><a href="pios__hal_8h.html">pios_hal.h</a></div></div>
 <div class="ttc" id="group___p_i_o_s___m_p_u_html_ggadabcc04ab28fdab6eb2e43278d4446c4adac7994bd3906154df7fc1c40a92bf94"><div class="ttname"><a href="group___p_i_o_s___m_p_u.html#ggadabcc04ab28fdab6eb2e43278d4446c4adac7994bd3906154df7fc1c40a92bf94">PIOS_MPU_SCALE_500_DEG</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__mpu_8h_source.html#l00114">pios_mpu.h:114</a></div></div>
-<div class="ttc" id="group___p_i_o_s___i2_c_html_ga4b1eb637def8eab1e651248b646c41a2"><div class="ttname"><a href="group___p_i_o_s___i2_c.html#ga4b1eb637def8eab1e651248b646c41a2">PIOS_I2C_CheckClear</a></div><div class="ttdeci">int32_t PIOS_I2C_CheckClear(pios_i2c_t i2c_id)</div></div>
 <div class="ttc" id="group___p_i_o_s___h_m_c5883_html_gacea6145300c5c975b46bca1acfe800bf"><div class="ttname"><a href="group___p_i_o_s___h_m_c5883.html#gacea6145300c5c975b46bca1acfe800bf">PIOS_HMC5883_Test</a></div><div class="ttdeci">int32_t PIOS_HMC5883_Test(void)</div></div>
 <div class="ttc" id="structpios__spi__dev_html"><div class="ttname"><a href="structpios__spi__dev.html">pios_spi_dev</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__spi__priv_8h_source.html#l00038">pios_spi_priv.h:38</a></div></div>
 <div class="ttc" id="group___p_i_o_s_html_ga012a11e78fa6eb27613a473e530348e2"><div class="ttname"><a href="group___p_i_o_s.html#ga012a11e78fa6eb27613a473e530348e2">NELEMENTS</a></div><div class="ttdeci">#define NELEMENTS(x)</div><div class="ttdef"><b>Definition:</b> <a href="pios_8h_source.html#l00192">pios.h:192</a></div></div>
@@ -785,6 +791,7 @@ $(document).ready(function(){initNavTree('revolution_2fw_2pios__board_8c_source.
 <div class="ttc" id="group___a_q32_html_ga86167cdf7eaace383bf74d35f23cb49e"><div class="ttname"><a href="group___a_q32.html#ga86167cdf7eaace383bf74d35f23cb49e">pios_com_openlog_logging_id</a></div><div class="ttdeci">uintptr_t pios_com_openlog_logging_id</div><div class="ttdef"><b>Definition:</b> <a href="aq32_2fw_2pios__board_8c_source.html#l00049">pios_board.c:49</a></div></div>
 <div class="ttc" id="group___p_i_o_s___f_l_a_s_h_html_gga0b2f5069f81f627316a591a77e020616a35ba86347414aeed88afa7eca6e8e541"><div class="ttname"><a href="group___p_i_o_s___f_l_a_s_h.html#gga0b2f5069f81f627316a591a77e020616a35ba86347414aeed88afa7eca6e8e541">FLASH_PARTITION_LABEL_SETTINGS</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__flash_8h_source.html#l00035">pios_flash.h:35</a></div></div>
 <div class="ttc" id="structpios__ppm__cfg_html"><div class="ttname"><a href="structpios__ppm__cfg.html">pios_ppm_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__ppm__priv_8h_source.html#l00036">pios_ppm_priv.h:36</a></div></div>
+<div class="ttc" id="group___p_i_o_s___b_m_p280_html_gaacd85bb70ecad8aa9916319d0f9f564a"><div class="ttname"><a href="group___p_i_o_s___b_m_p280.html#gaacd85bb70ecad8aa9916319d0f9f564a">PIOS_BMP280_Init</a></div><div class="ttdeci">int32_t PIOS_BMP280_Init(const struct pios_bmp280_cfg *cfg, pios_i2c_t i2c_device)</div></div>
 <div class="ttc" id="structpios__board__info_html"><div class="ttname"><a href="structpios__board__info.html">pios_board_info</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__board__info_8h_source.html#l00008">pios_board_info.h:8</a></div></div>
 <div class="ttc" id="group___brain_html_ga8a3391113e465d74c92def57807d830e"><div class="ttname"><a href="group___brain.html#ga8a3391113e465d74c92def57807d830e">tim_12_cfg</a></div><div class="ttdeci">static const struct pios_tim_clock_cfg tim_12_cfg</div><div class="ttdef"><b>Definition:</b> <a href="brain_2board-info_2board__hw__defs_8c_source.html#l00702">board_hw_defs.c:702</a></div></div>
 <div class="ttc" id="group___p_i_o_s___u_s_b_h_o_o_k_html_gaa9dd93041af333771c368a4eb0171caa"><div class="ttname"><a href="group___p_i_o_s___u_s_b_h_o_o_k.html#gaa9dd93041af333771c368a4eb0171caa">PIOS_USBHOOK_Activate</a></div><div class="ttdeci">void PIOS_USBHOOK_Activate(void)</div><div class="ttdef"><b>Definition:</b> <a href="4xx_2pios__usbhook_8c_source.html#l00080">pios_usbhook.c:80</a></div></div>

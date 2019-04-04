@@ -1,5 +1,7 @@
 var NAVTREEINDEX98 =
 {
+"structmsp__rc__tuning.html#a3a163e1192b9e16cdd6bee082ab1cb97":[2,1,2,15,6],
+"structmsp__rc__tuning.html#a50b5dc0adfdd9845d013db3adcf18c14":[2,1,2,15,1],
 "structmsp__rc__tuning.html#aad0762ebee58305169e0b11fabc68f97":[2,1,2,15,2],
 "structmsp__rc__tuning.html#ab64915e8c51f39b9ad456779ec327669":[2,1,2,15,3],
 "structmsp__rc__tuning.html#ac6478c3e9d39aecef1ed919396564f0e":[2,1,2,15,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX98 =
 "structpios__mpu__cfg.html#a3a8ff0f9e918a3951f9cb1be0311ec6a":[2,0,24,0,3],
 "structpios__mpu__cfg.html#a98ac98911cbf8e5acbd51f7dd5bab676":[2,0,24,0,1],
 "structpios__mpu__cfg.html#ab09d091960139e4cebd5e29e459184e6":[2,0,24,0,2],
-"structpios__mpu__cfg.html#abf2358ba0ef34f017eff9021f198075f":[2,0,24,0,0],
-"structpios__ms5611__cfg.html":[2,0,27,5],
-"structpios__ms5611__cfg.html#a07e19545d4961ed113e3413ad0c4965c":[2,0,27,5,0]
+"structpios__mpu__cfg.html#abf2358ba0ef34f017eff9021f198075f":[2,0,24,0,0]
 };

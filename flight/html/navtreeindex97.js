@@ -1,5 +1,7 @@
 var NAVTREEINDEX97 =
 {
+"structhott__gps__message.html#a68a220eec8a62c0650ce4eecc852ee35":[2,4,29,5,25],
+"structhott__gps__message.html#a69c2b8f4c6190a403a2410ea82931717":[2,4,29,5,28],
 "structhott__gps__message.html#a6c7c53b173d5d2b19ff3b235303acc5a":[2,4,29,5,0],
 "structhott__gps__message.html#a758f27812f282cd2311e971cd97ed749":[2,4,29,5,35],
 "structhott__gps__message.html#a76a13473a41d87403d74a548433f5c06":[2,4,29,5,30],
@@ -247,7 +249,5 @@ var NAVTREEINDEX97 =
 "structmsp__rc.html#abe7df670f15461f55918de57b9b9d469":[2,1,2,7,0],
 "structmsp__rc__tuning.html":[2,1,2,15],
 "structmsp__rc__tuning.html#a0c84c68516fa49c60815dbc31659b1ed":[2,1,2,15,0],
-"structmsp__rc__tuning.html#a0e57bb640a051c9705b4f414cf1385df":[2,1,2,15,4],
-"structmsp__rc__tuning.html#a3a163e1192b9e16cdd6bee082ab1cb97":[2,1,2,15,6],
-"structmsp__rc__tuning.html#a50b5dc0adfdd9845d013db3adcf18c14":[2,1,2,15,1]
+"structmsp__rc__tuning.html#a0e57bb640a051c9705b4f414cf1385df":[2,1,2,15,4]
 };
