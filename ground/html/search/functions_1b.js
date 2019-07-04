@@ -117,6 +117,7 @@ var searchData=
   ['_7emagicwaypointgadgetwidget',['~MagicWaypointGadgetWidget',['../group___g_c_s_control_gadget_plugin.html#ga2ffd0cf503fdefb31aa45a42b5cf63ba',1,'MagicWaypointGadgetWidget']]],
   ['_7emainwindow',['~MainWindow',['../group___core_plugin.html#gae98d00a93bc118200eeef9f9bba1dba7',1,'Core::Internal::MainWindow']]],
   ['_7emapripform',['~MapRipForm',['../group___t_l_map_widget.html#gabc703f61b0a3e678f85ec3fa6b9c896a',1,'MapRipForm']]],
+  ['_7ematek405',['~MATEK405',['../group___boards___matek_plugin.html#ga56c4687f68575fd34a8253b18632a00d',1,'MATEK405']]],
   ['_7emetadatadialog',['~MetadataDialog',['../group___telemetry_scheduler_gadget_plugin.html#gae1f623f8f053ac2dc1582cde50cd2d05',1,'MetadataDialog']]],
   ['_7emixercurve',['~MixerCurve',['../group___config_plugin.html#ga1ecc6d88c82c0c4403185f1741bd096c',1,'MixerCurve']]],
   ['_7emixercurvewidget',['~MixerCurveWidget',['../group___u_a_v_object_widget_utils.html#ga95ab335915408821a081b9be9b837866',1,'MixerCurveWidget']]],

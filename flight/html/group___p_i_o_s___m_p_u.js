@@ -103,24 +103,24 @@ var group___p_i_o_s___m_p_u =
     [ "PIOS_MPU_USERCTL_I2C_MST_EN", "group___p_i_o_s___m_p_u.html#gad490ccbe8f41fc560b1e2e52f33e911a", null ],
     [ "PIOS_MPU_WHOAMI", "group___p_i_o_s___m_p_u.html#ga0127a88c803bf8c2c9719b8f337ee99c", null ],
     [ "pios_mpu_dev_t", "group___p_i_o_s___m_p_u.html#ga8d1629885182d00fe0a521d98b48e76f", null ],
-    [ "pios_icm20608g_accel_filter", "group___p_i_o_s___m_p_u.html#ga62962064bb92494b54f0f80fc1a990fc", [
-      [ "PIOS_ICM20608G_ACCEL_LOWPASS_218_HZ", "group___p_i_o_s___m_p_u.html#gga62962064bb92494b54f0f80fc1a990fcaddeaa7732e18be4541850055db74d9fd", null ],
-      [ "PIOS_ICM20608G_ACCEL_LOWPASS_99_HZ", "group___p_i_o_s___m_p_u.html#gga62962064bb92494b54f0f80fc1a990fca90e786bc6194dc3be154c783194ea7cb", null ],
-      [ "PIOS_ICM20608G_ACCEL_LOWPASS_45_HZ", "group___p_i_o_s___m_p_u.html#gga62962064bb92494b54f0f80fc1a990fca5a0f6051ae739120674e62ac0072bc6e", null ],
-      [ "PIOS_ICM20608G_ACCEL_LOWPASS_21_HZ", "group___p_i_o_s___m_p_u.html#gga62962064bb92494b54f0f80fc1a990fcabc928c0a8da1625c14599542c1f0a191", null ],
-      [ "PIOS_ICM20608G_ACCEL_LOWPASS_10_HZ", "group___p_i_o_s___m_p_u.html#gga62962064bb92494b54f0f80fc1a990fca709384980aed8823ecb9bb5782e60560", null ],
-      [ "PIOS_ICM20608G_ACCEL_LOWPASS_5_HZ", "group___p_i_o_s___m_p_u.html#gga62962064bb92494b54f0f80fc1a990fca4117cdc9994eaf1cc3b245acf980340e", null ],
-      [ "PIOS_ICM20608G_ACCEL_LOWPASS_420_HZ", "group___p_i_o_s___m_p_u.html#gga62962064bb92494b54f0f80fc1a990fcad5bce7c4622be205f91715a321dcd263", null ]
+    [ "pios_icm206xx_accel_filter", "group___p_i_o_s___m_p_u.html#gaba9bd049b7e267385f2f7993024d5e9d", [
+      [ "PIOS_ICM206XX_ACCEL_LOWPASS_218_HZ", "group___p_i_o_s___m_p_u.html#ggaba9bd049b7e267385f2f7993024d5e9dad57cd02f2ec788288c1703a75bc6a0e3", null ],
+      [ "PIOS_ICM206XX_ACCEL_LOWPASS_99_HZ", "group___p_i_o_s___m_p_u.html#ggaba9bd049b7e267385f2f7993024d5e9da6a7390b991e80dd20ebb1be80222c547", null ],
+      [ "PIOS_ICM206XX_ACCEL_LOWPASS_45_HZ", "group___p_i_o_s___m_p_u.html#ggaba9bd049b7e267385f2f7993024d5e9da18ca5ae8524a8a36224b951612ee2cc9", null ],
+      [ "PIOS_ICM206XX_ACCEL_LOWPASS_21_HZ", "group___p_i_o_s___m_p_u.html#ggaba9bd049b7e267385f2f7993024d5e9da5ba5308a1c2ff8f84e3b54a258abf003", null ],
+      [ "PIOS_ICM206XX_ACCEL_LOWPASS_10_HZ", "group___p_i_o_s___m_p_u.html#ggaba9bd049b7e267385f2f7993024d5e9daca901ca9bfb511ba144a486df1303588", null ],
+      [ "PIOS_ICM206XX_ACCEL_LOWPASS_5_HZ", "group___p_i_o_s___m_p_u.html#ggaba9bd049b7e267385f2f7993024d5e9da5e64c12f1b89ccb1f97e276c769cba0e", null ],
+      [ "PIOS_ICM206XX_ACCEL_LOWPASS_420_HZ", "group___p_i_o_s___m_p_u.html#ggaba9bd049b7e267385f2f7993024d5e9dab4542362b9d1b87ec185636d77c2744c", null ]
     ] ],
-    [ "pios_icm20608g_gyro_filter", "group___p_i_o_s___m_p_u.html#ga1fd86b480013c235fbc1dbfb59652761", [
-      [ "PIOS_ICM20608G_GYRO_LOWPASS_250_HZ", "group___p_i_o_s___m_p_u.html#gga1fd86b480013c235fbc1dbfb59652761ad35f8afb8ed17454ab33f2aba04cdc52", null ],
-      [ "PIOS_ICM20608G_GYRO_LOWPASS_176_HZ", "group___p_i_o_s___m_p_u.html#gga1fd86b480013c235fbc1dbfb59652761a96e7a16cc494cbd670f36bb21eefc20c", null ],
-      [ "PIOS_ICM20608G_GYRO_LOWPASS_92_HZ", "group___p_i_o_s___m_p_u.html#gga1fd86b480013c235fbc1dbfb59652761a06532f2e66d6eee1471c360249eacc5e", null ],
-      [ "PIOS_ICM20608G_GYRO_LOWPASS_41_HZ", "group___p_i_o_s___m_p_u.html#gga1fd86b480013c235fbc1dbfb59652761ae05881238b98070ac25ffa9d32380369", null ],
-      [ "PIOS_ICM20608G_GYRO_LOWPASS_20_HZ", "group___p_i_o_s___m_p_u.html#gga1fd86b480013c235fbc1dbfb59652761a4c6588f7163ae38a3e012a6d87f22d08", null ],
-      [ "PIOS_ICM20608G_GYRO_LOWPASS_10_HZ", "group___p_i_o_s___m_p_u.html#gga1fd86b480013c235fbc1dbfb59652761a46e9ca836f7158129b04b25a3391baed", null ],
-      [ "PIOS_ICM20608G_GYRO_LOWPASS_5_HZ", "group___p_i_o_s___m_p_u.html#gga1fd86b480013c235fbc1dbfb59652761a1e2823a8d9996b3caef751c35ce28ca3", null ],
-      [ "PIOS_ICM20608G_GYRO_LOWPASS_3281_HZ", "group___p_i_o_s___m_p_u.html#gga1fd86b480013c235fbc1dbfb59652761ae862f8533d93191721a92dae10381e0d", null ]
+    [ "pios_icm206xx_gyro_filter", "group___p_i_o_s___m_p_u.html#ga1afcb6236d908bebe6d86b87c753c53a", [
+      [ "PIOS_ICM206XX_GYRO_LOWPASS_250_HZ", "group___p_i_o_s___m_p_u.html#gga1afcb6236d908bebe6d86b87c753c53aa2169d96ec59ac24e7bb7e65fdbb56f81", null ],
+      [ "PIOS_ICM206XX_GYRO_LOWPASS_176_HZ", "group___p_i_o_s___m_p_u.html#gga1afcb6236d908bebe6d86b87c753c53aad9252e0203c90d96dd7cc64aa409b999", null ],
+      [ "PIOS_ICM206XX_GYRO_LOWPASS_92_HZ", "group___p_i_o_s___m_p_u.html#gga1afcb6236d908bebe6d86b87c753c53aa8da1eb385539575cefbc0ed8aca61b1c", null ],
+      [ "PIOS_ICM206XX_GYRO_LOWPASS_41_HZ", "group___p_i_o_s___m_p_u.html#gga1afcb6236d908bebe6d86b87c753c53aa6dbfb424ab949f5cc8545ffd10155fb4", null ],
+      [ "PIOS_ICM206XX_GYRO_LOWPASS_20_HZ", "group___p_i_o_s___m_p_u.html#gga1afcb6236d908bebe6d86b87c753c53aa0fd5e97ec4cedbe4ca06083c9c690f16", null ],
+      [ "PIOS_ICM206XX_GYRO_LOWPASS_10_HZ", "group___p_i_o_s___m_p_u.html#gga1afcb6236d908bebe6d86b87c753c53aab28b6bd49623aa2e8c979bdcc2aae44b", null ],
+      [ "PIOS_ICM206XX_GYRO_LOWPASS_5_HZ", "group___p_i_o_s___m_p_u.html#gga1afcb6236d908bebe6d86b87c753c53aa194d72515c451d8e78cde6a779761624", null ],
+      [ "PIOS_ICM206XX_GYRO_LOWPASS_3281_HZ", "group___p_i_o_s___m_p_u.html#gga1afcb6236d908bebe6d86b87c753c53aa72170c0fc9f825926dac5d6cfc8e6ebb", null ]
     ] ],
     [ "pios_mpu60x0_gyro_filter", "group___p_i_o_s___m_p_u.html#gab8c2daaaa28b0a3a92c25fb5d02da603", [
       [ "PIOS_MPU60X0_GYRO_LOWPASS_256_HZ", "group___p_i_o_s___m_p_u.html#ggab8c2daaaa28b0a3a92c25fb5d02da603adbb06915ac2d502c5d46e1cc689ccf6c", null ],
@@ -188,6 +188,8 @@ var group___p_i_o_s___m_p_u =
       [ "PIOS_MPU9150", "group___p_i_o_s___m_p_u.html#ggaaffbfd684b812c02cbff16399baca438ae1294f50939230a9c3ccbf9f70238f9a", null ],
       [ "PIOS_MPU9250", "group___p_i_o_s___m_p_u.html#ggaaffbfd684b812c02cbff16399baca438a4dfb4b892d94339f8fcc4cd21e932ea8", null ],
       [ "PIOS_ICM20608G", "group___p_i_o_s___m_p_u.html#ggaaffbfd684b812c02cbff16399baca438a917ccdefe458d7ee1dd9ad4531b40f20", null ],
+      [ "PIOS_ICM20602", "group___p_i_o_s___m_p_u.html#ggaaffbfd684b812c02cbff16399baca438ac77c433ecae53fc9fdcefe3d254a3897", null ],
+      [ "PIOS_ICM20689", "group___p_i_o_s___m_p_u.html#ggaaffbfd684b812c02cbff16399baca438a11b8bf2dfb81bc937ac39f7d994ce757", null ],
       [ "PIOS_MPU_NUM", "group___p_i_o_s___m_p_u.html#ggaaffbfd684b812c02cbff16399baca438a4d59ed9b2895d81aa0f4a073dd723fd9", null ]
     ] ],
     [ "PIOS_MPU_GetType", "group___p_i_o_s___m_p_u.html#ga1f57ad5fc58b91108d3e95f9da02ed03", null ],

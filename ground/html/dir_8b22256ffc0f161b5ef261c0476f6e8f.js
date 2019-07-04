@@ -5,6 +5,7 @@ var dir_8b22256ffc0f161b5ef261c0476f6e8f =
     [ "boards_brotronics", "dir_288cdcb8f51034c5a2340f5eb26496f4.html", "dir_288cdcb8f51034c5a2340f5eb26496f4" ],
     [ "boards_dronin", "dir_682a7d12a5379ce0eb74b165e1454394.html", "dir_682a7d12a5379ce0eb74b165e1454394" ],
     [ "boards_dtf", "dir_177dce5ab0e63fe9aae0751be85c3638.html", "dir_177dce5ab0e63fe9aae0751be85c3638" ],
+    [ "boards_matek", "dir_95a637c934dbc87dcdd59f0a7e374350.html", "dir_95a637c934dbc87dcdd59f0a7e374350" ],
     [ "boards_openpilot", "dir_f509799d1afbdf4fd1dded57a7e71a25.html", "dir_f509799d1afbdf4fd1dded57a7e71a25" ],
     [ "boards_quantec", "dir_0a87399a2ab2cb95d97382f79b9f7684.html", "dir_0a87399a2ab2cb95d97382f79b9f7684" ],
     [ "boards_taulabs", "dir_25d4547cf503e68c1c6689f4607d626b.html", "dir_25d4547cf503e68c1c6689f4607d626b" ],

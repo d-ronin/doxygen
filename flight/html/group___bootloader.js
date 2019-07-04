@@ -8,6 +8,7 @@ var group___bootloader =
     [ "Bootloader Updater", "group___updater.html", "group___updater" ],
     [ "AIRDTF DTFc", "group___d_t_fc.html", "group___d_t_fc" ],
     [ "Lumenier LUX", "group___l_u_x.html", "group___l_u_x" ],
+    [ "Matek MATEK405", "group___m_a_t_e_k405.html", "group___m_a_t_e_k405" ],
     [ "OmnibusF3", "group___o_m_n_i_b_u_s_f3.html", "group___o_m_n_i_b_u_s_f3" ],
     [ "PikoBLX", "group___piko_b_l_x.html", "group___piko_b_l_x" ],
     [ "PipXtreme Radio", "group___pip_x.html", "group___pip_x" ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">3b6e3ca</span>
+   &#160;<span id="projectnumber">42b2f80</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -343,6 +343,8 @@ Enumerations</h2></td></tr>
 <a class="el" href="group___p_i_o_s___m_p_u.html#ggaaffbfd684b812c02cbff16399baca438a4dfb4b892d94339f8fcc4cd21e932ea8">PIOS_MPU9250</a>, 
 <br/>
 &#160;&#160;<a class="el" href="group___p_i_o_s___m_p_u.html#ggaaffbfd684b812c02cbff16399baca438a917ccdefe458d7ee1dd9ad4531b40f20">PIOS_ICM20608G</a>, 
+<a class="el" href="group___p_i_o_s___m_p_u.html#ggaaffbfd684b812c02cbff16399baca438ac77c433ecae53fc9fdcefe3d254a3897">PIOS_ICM20602</a>, 
+<a class="el" href="group___p_i_o_s___m_p_u.html#ggaaffbfd684b812c02cbff16399baca438a11b8bf2dfb81bc937ac39f7d994ce757">PIOS_ICM20689</a>, 
 <a class="el" href="group___p_i_o_s___m_p_u.html#ggaaffbfd684b812c02cbff16399baca438a4d59ed9b2895d81aa0f4a073dd723fd9">PIOS_MPU_NUM</a>
 <br/>
  }</td></tr>
@@ -371,19 +373,19 @@ Enumerations</h2></td></tr>
 <br/>
  }</td></tr>
 <tr class="separator:ga101eaff57bbfbe38b6d39d3e64617949"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1fd86b480013c235fbc1dbfb59652761"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___m_p_u.html#ga1fd86b480013c235fbc1dbfb59652761">pios_icm20608g_gyro_filter</a> { <br/>
-&#160;&#160;<a class="el" href="group___p_i_o_s___m_p_u.html#gga1fd86b480013c235fbc1dbfb59652761ad35f8afb8ed17454ab33f2aba04cdc52">PIOS_ICM20608G_GYRO_LOWPASS_250_HZ</a> = 0x00, 
-<a class="el" href="group___p_i_o_s___m_p_u.html#gga1fd86b480013c235fbc1dbfb59652761a96e7a16cc494cbd670f36bb21eefc20c">PIOS_ICM20608G_GYRO_LOWPASS_176_HZ</a> = 0x01, 
-<a class="el" href="group___p_i_o_s___m_p_u.html#gga1fd86b480013c235fbc1dbfb59652761a06532f2e66d6eee1471c360249eacc5e">PIOS_ICM20608G_GYRO_LOWPASS_92_HZ</a> = 0x02, 
-<a class="el" href="group___p_i_o_s___m_p_u.html#gga1fd86b480013c235fbc1dbfb59652761ae05881238b98070ac25ffa9d32380369">PIOS_ICM20608G_GYRO_LOWPASS_41_HZ</a> = 0x03, 
+<tr class="memitem:ga1afcb6236d908bebe6d86b87c753c53a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___m_p_u.html#ga1afcb6236d908bebe6d86b87c753c53a">pios_icm206xx_gyro_filter</a> { <br/>
+&#160;&#160;<a class="el" href="group___p_i_o_s___m_p_u.html#gga1afcb6236d908bebe6d86b87c753c53aa2169d96ec59ac24e7bb7e65fdbb56f81">PIOS_ICM206XX_GYRO_LOWPASS_250_HZ</a> = 0x00, 
+<a class="el" href="group___p_i_o_s___m_p_u.html#gga1afcb6236d908bebe6d86b87c753c53aad9252e0203c90d96dd7cc64aa409b999">PIOS_ICM206XX_GYRO_LOWPASS_176_HZ</a> = 0x01, 
+<a class="el" href="group___p_i_o_s___m_p_u.html#gga1afcb6236d908bebe6d86b87c753c53aa8da1eb385539575cefbc0ed8aca61b1c">PIOS_ICM206XX_GYRO_LOWPASS_92_HZ</a> = 0x02, 
+<a class="el" href="group___p_i_o_s___m_p_u.html#gga1afcb6236d908bebe6d86b87c753c53aa6dbfb424ab949f5cc8545ffd10155fb4">PIOS_ICM206XX_GYRO_LOWPASS_41_HZ</a> = 0x03, 
 <br/>
-&#160;&#160;<a class="el" href="group___p_i_o_s___m_p_u.html#gga1fd86b480013c235fbc1dbfb59652761a4c6588f7163ae38a3e012a6d87f22d08">PIOS_ICM20608G_GYRO_LOWPASS_20_HZ</a> = 0x04, 
-<a class="el" href="group___p_i_o_s___m_p_u.html#gga1fd86b480013c235fbc1dbfb59652761a46e9ca836f7158129b04b25a3391baed">PIOS_ICM20608G_GYRO_LOWPASS_10_HZ</a> = 0x05, 
-<a class="el" href="group___p_i_o_s___m_p_u.html#gga1fd86b480013c235fbc1dbfb59652761a1e2823a8d9996b3caef751c35ce28ca3">PIOS_ICM20608G_GYRO_LOWPASS_5_HZ</a> = 0x06, 
-<a class="el" href="group___p_i_o_s___m_p_u.html#gga1fd86b480013c235fbc1dbfb59652761ae862f8533d93191721a92dae10381e0d">PIOS_ICM20608G_GYRO_LOWPASS_3281_HZ</a> = 0x07
+&#160;&#160;<a class="el" href="group___p_i_o_s___m_p_u.html#gga1afcb6236d908bebe6d86b87c753c53aa0fd5e97ec4cedbe4ca06083c9c690f16">PIOS_ICM206XX_GYRO_LOWPASS_20_HZ</a> = 0x04, 
+<a class="el" href="group___p_i_o_s___m_p_u.html#gga1afcb6236d908bebe6d86b87c753c53aab28b6bd49623aa2e8c979bdcc2aae44b">PIOS_ICM206XX_GYRO_LOWPASS_10_HZ</a> = 0x05, 
+<a class="el" href="group___p_i_o_s___m_p_u.html#gga1afcb6236d908bebe6d86b87c753c53aa194d72515c451d8e78cde6a779761624">PIOS_ICM206XX_GYRO_LOWPASS_5_HZ</a> = 0x06, 
+<a class="el" href="group___p_i_o_s___m_p_u.html#gga1afcb6236d908bebe6d86b87c753c53aa72170c0fc9f825926dac5d6cfc8e6ebb">PIOS_ICM206XX_GYRO_LOWPASS_3281_HZ</a> = 0x07
 <br/>
  }</td></tr>
-<tr class="separator:ga1fd86b480013c235fbc1dbfb59652761"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ga1afcb6236d908bebe6d86b87c753c53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad60dce70fdf90cebbfef5e0fa96800b7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___m_p_u.html#gad60dce70fdf90cebbfef5e0fa96800b7">pios_mpu6500_accel_filter</a> { <br/>
 &#160;&#160;<a class="el" href="group___p_i_o_s___m_p_u.html#ggad60dce70fdf90cebbfef5e0fa96800b7aad9c42fe544636edac04a6950366950e">PIOS_MPU6500_ACCEL_LOWPASS_460_HZ</a> = 0x00, 
 <a class="el" href="group___p_i_o_s___m_p_u.html#ggad60dce70fdf90cebbfef5e0fa96800b7ab6e85035fae44f7baebb08410bc57477">PIOS_MPU6500_ACCEL_LOWPASS_184_HZ</a> = 0x01, 
@@ -396,18 +398,18 @@ Enumerations</h2></td></tr>
 <br/>
  }</td></tr>
 <tr class="separator:gad60dce70fdf90cebbfef5e0fa96800b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga62962064bb92494b54f0f80fc1a990fc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___m_p_u.html#ga62962064bb92494b54f0f80fc1a990fc">pios_icm20608g_accel_filter</a> { <br/>
-&#160;&#160;<a class="el" href="group___p_i_o_s___m_p_u.html#gga62962064bb92494b54f0f80fc1a990fcaddeaa7732e18be4541850055db74d9fd">PIOS_ICM20608G_ACCEL_LOWPASS_218_HZ</a> = 0x00, 
-<a class="el" href="group___p_i_o_s___m_p_u.html#gga62962064bb92494b54f0f80fc1a990fca90e786bc6194dc3be154c783194ea7cb">PIOS_ICM20608G_ACCEL_LOWPASS_99_HZ</a> = 0x02, 
-<a class="el" href="group___p_i_o_s___m_p_u.html#gga62962064bb92494b54f0f80fc1a990fca5a0f6051ae739120674e62ac0072bc6e">PIOS_ICM20608G_ACCEL_LOWPASS_45_HZ</a> = 0x03, 
-<a class="el" href="group___p_i_o_s___m_p_u.html#gga62962064bb92494b54f0f80fc1a990fcabc928c0a8da1625c14599542c1f0a191">PIOS_ICM20608G_ACCEL_LOWPASS_21_HZ</a> = 0x04, 
+<tr class="memitem:gaba9bd049b7e267385f2f7993024d5e9d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___m_p_u.html#gaba9bd049b7e267385f2f7993024d5e9d">pios_icm206xx_accel_filter</a> { <br/>
+&#160;&#160;<a class="el" href="group___p_i_o_s___m_p_u.html#ggaba9bd049b7e267385f2f7993024d5e9dad57cd02f2ec788288c1703a75bc6a0e3">PIOS_ICM206XX_ACCEL_LOWPASS_218_HZ</a> = 0x00, 
+<a class="el" href="group___p_i_o_s___m_p_u.html#ggaba9bd049b7e267385f2f7993024d5e9da6a7390b991e80dd20ebb1be80222c547">PIOS_ICM206XX_ACCEL_LOWPASS_99_HZ</a> = 0x02, 
+<a class="el" href="group___p_i_o_s___m_p_u.html#ggaba9bd049b7e267385f2f7993024d5e9da18ca5ae8524a8a36224b951612ee2cc9">PIOS_ICM206XX_ACCEL_LOWPASS_45_HZ</a> = 0x03, 
+<a class="el" href="group___p_i_o_s___m_p_u.html#ggaba9bd049b7e267385f2f7993024d5e9da5ba5308a1c2ff8f84e3b54a258abf003">PIOS_ICM206XX_ACCEL_LOWPASS_21_HZ</a> = 0x04, 
 <br/>
-&#160;&#160;<a class="el" href="group___p_i_o_s___m_p_u.html#gga62962064bb92494b54f0f80fc1a990fca709384980aed8823ecb9bb5782e60560">PIOS_ICM20608G_ACCEL_LOWPASS_10_HZ</a> = 0x05, 
-<a class="el" href="group___p_i_o_s___m_p_u.html#gga62962064bb92494b54f0f80fc1a990fca4117cdc9994eaf1cc3b245acf980340e">PIOS_ICM20608G_ACCEL_LOWPASS_5_HZ</a> = 0x06, 
-<a class="el" href="group___p_i_o_s___m_p_u.html#gga62962064bb92494b54f0f80fc1a990fcad5bce7c4622be205f91715a321dcd263">PIOS_ICM20608G_ACCEL_LOWPASS_420_HZ</a> = 0x07
+&#160;&#160;<a class="el" href="group___p_i_o_s___m_p_u.html#ggaba9bd049b7e267385f2f7993024d5e9daca901ca9bfb511ba144a486df1303588">PIOS_ICM206XX_ACCEL_LOWPASS_10_HZ</a> = 0x05, 
+<a class="el" href="group___p_i_o_s___m_p_u.html#ggaba9bd049b7e267385f2f7993024d5e9da5e64c12f1b89ccb1f97e276c769cba0e">PIOS_ICM206XX_ACCEL_LOWPASS_5_HZ</a> = 0x06, 
+<a class="el" href="group___p_i_o_s___m_p_u.html#ggaba9bd049b7e267385f2f7993024d5e9dab4542362b9d1b87ec185636d77c2744c">PIOS_ICM206XX_ACCEL_LOWPASS_420_HZ</a> = 0x07
 <br/>
  }</td></tr>
-<tr class="separator:ga62962064bb92494b54f0f80fc1a990fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:gaba9bd049b7e267385f2f7993024d5e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadabcc04ab28fdab6eb2e43278d4446c4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___m_p_u.html#gadabcc04ab28fdab6eb2e43278d4446c4">pios_mpu_gyro_range</a> { <a class="el" href="group___p_i_o_s___m_p_u.html#ggadabcc04ab28fdab6eb2e43278d4446c4a3ce25733bbf72823d515d55ea0d9a185">PIOS_MPU_SCALE_250_DEG</a> = 0x00, 
 <a class="el" href="group___p_i_o_s___m_p_u.html#ggadabcc04ab28fdab6eb2e43278d4446c4adac7994bd3906154df7fc1c40a92bf94">PIOS_MPU_SCALE_500_DEG</a> = 0x08, 
 <a class="el" href="group___p_i_o_s___m_p_u.html#ggadabcc04ab28fdab6eb2e43278d4446c4a1c4355c1120518122bd75101ecc5b0ef">PIOS_MPU_SCALE_1000_DEG</a> = 0x10, 
@@ -1823,70 +1825,70 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__mpu_8h_source.html#l00148">148</a> of file <a class="el" href="pios__mpu_8h_source.html">pios_mpu.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__mpu_8h_source.html#l00150">150</a> of file <a class="el" href="pios__mpu_8h_source.html">pios_mpu.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="ga62962064bb92494b54f0f80fc1a990fc"></a>
+<a class="anchor" id="gaba9bd049b7e267385f2f7993024d5e9d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="group___p_i_o_s___m_p_u.html#ga62962064bb92494b54f0f80fc1a990fc">pios_icm20608g_accel_filter</a></td>
+          <td class="memname">enum <a class="el" href="group___p_i_o_s___m_p_u.html#gaba9bd049b7e267385f2f7993024d5e9d">pios_icm206xx_accel_filter</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga62962064bb92494b54f0f80fc1a990fcaddeaa7732e18be4541850055db74d9fd"></a>PIOS_ICM20608G_ACCEL_LOWPASS_218_HZ</em>&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ggaba9bd049b7e267385f2f7993024d5e9dad57cd02f2ec788288c1703a75bc6a0e3"></a>PIOS_ICM206XX_ACCEL_LOWPASS_218_HZ</em>&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga62962064bb92494b54f0f80fc1a990fca90e786bc6194dc3be154c783194ea7cb"></a>PIOS_ICM20608G_ACCEL_LOWPASS_99_HZ</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="ggaba9bd049b7e267385f2f7993024d5e9da6a7390b991e80dd20ebb1be80222c547"></a>PIOS_ICM206XX_ACCEL_LOWPASS_99_HZ</em>&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga62962064bb92494b54f0f80fc1a990fca5a0f6051ae739120674e62ac0072bc6e"></a>PIOS_ICM20608G_ACCEL_LOWPASS_45_HZ</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="ggaba9bd049b7e267385f2f7993024d5e9da18ca5ae8524a8a36224b951612ee2cc9"></a>PIOS_ICM206XX_ACCEL_LOWPASS_45_HZ</em>&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga62962064bb92494b54f0f80fc1a990fcabc928c0a8da1625c14599542c1f0a191"></a>PIOS_ICM20608G_ACCEL_LOWPASS_21_HZ</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="ggaba9bd049b7e267385f2f7993024d5e9da5ba5308a1c2ff8f84e3b54a258abf003"></a>PIOS_ICM206XX_ACCEL_LOWPASS_21_HZ</em>&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga62962064bb92494b54f0f80fc1a990fca709384980aed8823ecb9bb5782e60560"></a>PIOS_ICM20608G_ACCEL_LOWPASS_10_HZ</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="ggaba9bd049b7e267385f2f7993024d5e9daca901ca9bfb511ba144a486df1303588"></a>PIOS_ICM206XX_ACCEL_LOWPASS_10_HZ</em>&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga62962064bb92494b54f0f80fc1a990fca4117cdc9994eaf1cc3b245acf980340e"></a>PIOS_ICM20608G_ACCEL_LOWPASS_5_HZ</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="ggaba9bd049b7e267385f2f7993024d5e9da5e64c12f1b89ccb1f97e276c769cba0e"></a>PIOS_ICM206XX_ACCEL_LOWPASS_5_HZ</em>&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga62962064bb92494b54f0f80fc1a990fcad5bce7c4622be205f91715a321dcd263"></a>PIOS_ICM20608G_ACCEL_LOWPASS_420_HZ</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="ggaba9bd049b7e267385f2f7993024d5e9dab4542362b9d1b87ec185636d77c2744c"></a>PIOS_ICM206XX_ACCEL_LOWPASS_420_HZ</em>&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="pios__mpu_8h_source.html#l00102">102</a> of file <a class="el" href="pios__mpu_8h_source.html">pios_mpu.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__mpu_8h_source.html#l00104">104</a> of file <a class="el" href="pios__mpu_8h_source.html">pios_mpu.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga1fd86b480013c235fbc1dbfb59652761"></a>
+<a class="anchor" id="ga1afcb6236d908bebe6d86b87c753c53a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="group___p_i_o_s___m_p_u.html#ga1fd86b480013c235fbc1dbfb59652761">pios_icm20608g_gyro_filter</a></td>
+          <td class="memname">enum <a class="el" href="group___p_i_o_s___m_p_u.html#ga1afcb6236d908bebe6d86b87c753c53a">pios_icm206xx_gyro_filter</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga1fd86b480013c235fbc1dbfb59652761ad35f8afb8ed17454ab33f2aba04cdc52"></a>PIOS_ICM20608G_GYRO_LOWPASS_250_HZ</em>&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga1afcb6236d908bebe6d86b87c753c53aa2169d96ec59ac24e7bb7e65fdbb56f81"></a>PIOS_ICM206XX_GYRO_LOWPASS_250_HZ</em>&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga1fd86b480013c235fbc1dbfb59652761a96e7a16cc494cbd670f36bb21eefc20c"></a>PIOS_ICM20608G_GYRO_LOWPASS_176_HZ</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="gga1afcb6236d908bebe6d86b87c753c53aad9252e0203c90d96dd7cc64aa409b999"></a>PIOS_ICM206XX_GYRO_LOWPASS_176_HZ</em>&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga1fd86b480013c235fbc1dbfb59652761a06532f2e66d6eee1471c360249eacc5e"></a>PIOS_ICM20608G_GYRO_LOWPASS_92_HZ</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="gga1afcb6236d908bebe6d86b87c753c53aa8da1eb385539575cefbc0ed8aca61b1c"></a>PIOS_ICM206XX_GYRO_LOWPASS_92_HZ</em>&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga1fd86b480013c235fbc1dbfb59652761ae05881238b98070ac25ffa9d32380369"></a>PIOS_ICM20608G_GYRO_LOWPASS_41_HZ</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="gga1afcb6236d908bebe6d86b87c753c53aa6dbfb424ab949f5cc8545ffd10155fb4"></a>PIOS_ICM206XX_GYRO_LOWPASS_41_HZ</em>&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga1fd86b480013c235fbc1dbfb59652761a4c6588f7163ae38a3e012a6d87f22d08"></a>PIOS_ICM20608G_GYRO_LOWPASS_20_HZ</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="gga1afcb6236d908bebe6d86b87c753c53aa0fd5e97ec4cedbe4ca06083c9c690f16"></a>PIOS_ICM206XX_GYRO_LOWPASS_20_HZ</em>&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga1fd86b480013c235fbc1dbfb59652761a46e9ca836f7158129b04b25a3391baed"></a>PIOS_ICM20608G_GYRO_LOWPASS_10_HZ</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="gga1afcb6236d908bebe6d86b87c753c53aab28b6bd49623aa2e8c979bdcc2aae44b"></a>PIOS_ICM206XX_GYRO_LOWPASS_10_HZ</em>&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga1fd86b480013c235fbc1dbfb59652761a1e2823a8d9996b3caef751c35ce28ca3"></a>PIOS_ICM20608G_GYRO_LOWPASS_5_HZ</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="gga1afcb6236d908bebe6d86b87c753c53aa194d72515c451d8e78cde6a779761624"></a>PIOS_ICM206XX_GYRO_LOWPASS_5_HZ</em>&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga1fd86b480013c235fbc1dbfb59652761ae862f8533d93191721a92dae10381e0d"></a>PIOS_ICM20608G_GYRO_LOWPASS_3281_HZ</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="gga1afcb6236d908bebe6d86b87c753c53aa72170c0fc9f825926dac5d6cfc8e6ebb"></a>PIOS_ICM206XX_GYRO_LOWPASS_3281_HZ</em>&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="pios__mpu_8h_source.html#l00081">81</a> of file <a class="el" href="pios__mpu_8h_source.html">pios_mpu.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__mpu_8h_source.html#l00083">83</a> of file <a class="el" href="pios__mpu_8h_source.html">pios_mpu.h</a>.</p>
 
 </div>
 </div>
@@ -1916,7 +1918,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="pios__mpu_8h_source.html#l00061">61</a> of file <a class="el" href="pios__mpu_8h_source.html">pios_mpu.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__mpu_8h_source.html#l00063">63</a> of file <a class="el" href="pios__mpu_8h_source.html">pios_mpu.h</a>.</p>
 
 </div>
 </div>
@@ -1946,7 +1948,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="pios__mpu_8h_source.html#l00092">92</a> of file <a class="el" href="pios__mpu_8h_source.html">pios_mpu.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__mpu_8h_source.html#l00094">94</a> of file <a class="el" href="pios__mpu_8h_source.html">pios_mpu.h</a>.</p>
 
 </div>
 </div>
@@ -1976,7 +1978,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="pios__mpu_8h_source.html#l00071">71</a> of file <a class="el" href="pios__mpu_8h_source.html">pios_mpu.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__mpu_8h_source.html#l00073">73</a> of file <a class="el" href="pios__mpu_8h_source.html">pios_mpu.h</a>.</p>
 
 </div>
 </div>
@@ -2000,7 +2002,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="pios__mpu_8h_source.html#l00119">119</a> of file <a class="el" href="pios__mpu_8h_source.html">pios_mpu.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__mpu_8h_source.html#l00121">121</a> of file <a class="el" href="pios__mpu_8h_source.html">pios_mpu.h</a>.</p>
 
 </div>
 </div>
@@ -2059,7 +2061,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="pios__mpu_8h_source.html#l00112">112</a> of file <a class="el" href="pios__mpu_8h_source.html">pios_mpu.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__mpu_8h_source.html#l00114">114</a> of file <a class="el" href="pios__mpu_8h_source.html">pios_mpu.h</a>.</p>
 
 </div>
 </div>
@@ -2091,7 +2093,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="pios__mpu_8h_source.html#l00126">126</a> of file <a class="el" href="pios__mpu_8h_source.html">pios_mpu.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__mpu_8h_source.html#l00128">128</a> of file <a class="el" href="pios__mpu_8h_source.html">pios_mpu.h</a>.</p>
 
 </div>
 </div>
@@ -2120,6 +2122,12 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="ggaaffbfd684b812c02cbff16399baca438a917ccdefe458d7ee1dd9ad4531b40f20"></a>PIOS_ICM20608G</em>&#160;</td><td class="fielddoc">
 <p>ICM-20608-G, SPI/I2C </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ggaaffbfd684b812c02cbff16399baca438ac77c433ecae53fc9fdcefe3d254a3897"></a>PIOS_ICM20602</em>&#160;</td><td class="fielddoc">
+<p>ICM-20602, SPI/I2C </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ggaaffbfd684b812c02cbff16399baca438a11b8bf2dfb81bc937ac39f7d994ce757"></a>PIOS_ICM20689</em>&#160;</td><td class="fielddoc">
+<p>ICM-20689, SPI/I2C </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="ggaaffbfd684b812c02cbff16399baca438a4d59ed9b2895d81aa0f4a073dd723fd9"></a>PIOS_MPU_NUM</em>&#160;</td><td class="fielddoc">
 <p>Number of elements </p>

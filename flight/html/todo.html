@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">3b6e3ca</span>
+   &#160;<span id="projectnumber">42b2f80</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('todo.html','');});
 </dd>
 <dt><a class="anchor" id="_todo000015"></a>Global <a class="el" href="group___control.html#ga7323ef978c5860ebcd1fa329831ae0f9">manualControlTask</a>  (void *parameters)</dt>
 <dd>could consider having a maximum time before we go to safety  </dd>
-<dt><a class="anchor" id="_todo000045"></a>Global <a class="el" href="group___u_a_v_object_handling.html#ga4472cacd4838d41d67f80347ddaf042a">MetaBaseObjectPtr</a>  (obj)</dt>
+<dt><a class="anchor" id="_todo000046"></a>Global <a class="el" href="group___u_a_v_object_handling.html#ga4472cacd4838d41d67f80347ddaf042a">MetaBaseObjectPtr</a>  (obj)</dt>
 <dd>All this reckless casting needs to die a horrific death!  </dd>
 <dt><a class="anchor" id="_todo000003"></a>Global <a class="el" href="group___m_s_p.html#ga579c35c0a67d67f7ae7b0cf1747e3ddb">msp_process_com</a>  (struct <a class="el" href="structmsp__parser.html">msp_parser</a> *parser, struct pios_com_dev *com)</dt>
 <dd>fix PIOS_COM to take a pointer  </dd>
@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('todo.html','');});
 <dd>check scaling  </dd>
 <dt><a class="anchor" id="_todo000020"></a>Global <a class="el" href="group___msp_uavo_bridge.html#ga978841ede4259b4611bcf9a45f2c7e88">mspUavoBridge_Init</a>  (void)</dt>
 <dd>make pios_com use real pointer  </dd>
-<dt><a class="anchor" id="_todo000044"></a>Global <a class="el" href="group___play_u_a_v_o_s_d.html#ga2dec40a9db68ab57282e52a77d244752">PIOS_BOARD_Init_Uavos</a>  (void)</dt>
+<dt><a class="anchor" id="_todo000045"></a>Global <a class="el" href="group___play_u_a_v_o_s_d.html#ga2dec40a9db68ab57282e52a77d244752">PIOS_BOARD_Init_Uavos</a>  (void)</dt>
 <dd>something nicer about this  </dd>
 <dt><a class="anchor" id="_todo000034"></a>Global <a class="el" href="group___p_i_o_s___d_e_l_a_y.html#ga069586911fc7a5a023d4f58d340ad909">PIOS_DELAY_GetuS</a>  ()</dt>
 <dd>fixup to be more precise  </dd>
@@ -165,12 +165,14 @@ $(document).ready(function(){initNavTree('todo.html','');});
 <dt><a class="anchor" id="_todo000033"></a>Global <a class="el" href="group___p_i_o_s___s_e_r_v_o.html#ga956e12d1248d0481acd1238fe6b3ffc2">PIOS_Servo_SetMode</a>  (const uint16_t *out_rate, const int banks, const uint16_t *channel_max, const uint16_t *channel_min)</dt>
 <dd>attempts to just fall back to bitbanging, which seems not ideal&ndash; no benefit to doing DMA if we are bitbanging at the same time.  </dd>
 <dt><a class="anchor" id="_todo000041"></a>Global <a class="el" href="group___a_q32.html#ga8f592a960a21018006bd68f30692ab5b">PIOS_SYSCLK</a>  </dt>
-<dd>: come up with a better solution to get pios types into here  </dd>
+<dd><p class="startdd">: come up with a better solution to get pios types into here </p>
+<p class="enddd">: come up with a better solution to get pios types into here  </p>
+</dd>
 <dt><a class="anchor" id="_todo000029"></a>Global <a class="el" href="group___p_i_o_s___thread.html#ga09d287bd6511f4991e2119402a9a7b34">PIOS_Thread_Get_Runtime</a>  (struct pios_thread *threadp)</dt>
 <dd></dd>
 <dt><a class="anchor" id="_todo000028"></a>Global <a class="el" href="group___p_i_o_s___thread.html#gaab2b02e46c65db61a9d6f1591cb7b463">PIOS_Thread_Get_Stack_Usage</a>  (struct pios_thread *threadp)</dt>
 <dd></dd>
-<dt><a class="anchor" id="_todo000043"></a>Global <a class="el" href="group___u_a_v_object_handling.html#gab060f441dd600b08386c0ca1b487217a">pios_uavo_settings_fs_id</a>  </dt>
+<dt><a class="anchor" id="_todo000044"></a>Global <a class="el" href="group___u_a_v_object_handling.html#gab060f441dd600b08386c0ca1b487217a">pios_uavo_settings_fs_id</a>  </dt>
 <dd>something nicer about these  </dd>
 <dt><a class="anchor" id="_todo000002"></a>Global <a class="el" href="group___flight_math.html#gac0bf3a76acd6dcffaa2ace73d95bb304">randomize_int</a>  (uint32_t interval)</dt>
 <dd>This could improve a lot from constant static value evaluation in the optimizer, so it may belong in the header as inline...  </dd>

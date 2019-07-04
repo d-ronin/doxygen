@@ -183,6 +183,8 @@ var annotated =
     [ "MagicWaypointGadgetWidget", "class_magic_waypoint_gadget_widget.html", "class_magic_waypoint_gadget_widget" ],
     [ "MagicWaypointPlugin", "class_magic_waypoint_plugin.html", null ],
     [ "MapRipForm", "class_map_rip_form.html", "class_map_rip_form" ],
+    [ "MATEK405", "class_m_a_t_e_k405.html", "class_m_a_t_e_k405" ],
+    [ "MatekPlugin", "class_matek_plugin.html", null ],
     [ "MetadataDialog", "class_metadata_dialog.html", "class_metadata_dialog" ],
     [ "MetaObjectTreeItem", "class_meta_object_tree_item.html", "class_meta_object_tree_item" ],
     [ "mixerChannelSettings", "structmixer_channel_settings.html", "structmixer_channel_settings" ],

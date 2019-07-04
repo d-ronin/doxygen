@@ -8,6 +8,7 @@ var group___g_c_s_plugins =
     [ "Brotronics boards support Plugin", "group___boards___brotronics.html", "group___boards___brotronics" ],
     [ "dRonin board support plugin", "group___boards__d_ronin.html", "group___boards__d_ronin" ],
     [ "DTF boards support Plugin", "group___boards___d_t_f.html", "group___boards___d_t_f" ],
+    [ "Matek boards support Plugin", "group___boards___matek_plugin.html", "group___boards___matek_plugin" ],
     [ "OpenPilot boards support Plugin", "group___boards___open_pilot_plugin.html", "group___boards___open_pilot_plugin" ],
     [ "Quantec boards support Plugin", "group___boards___quantec.html", "group___boards___quantec" ],
     [ "Tau Labs boards support Plugin", "group___boards___tau_labs_plugin.html", "group___boards___tau_labs_plugin" ],
